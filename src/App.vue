@@ -1,28 +1,51 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div id="nav">
+      <TopMenu />
+    </div>
+    <div id="main-container">
+      <router-view/>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// @ is an alias to /src
+import TopMenu from '@/components/TopMenu.vue'
 
 export default {
-  name: 'app',
   components: {
-    HelloWorld
+    TopMenu
   }
 }
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css?family=Roboto:300i,400,500,500i,700,700i&display=swap');
+body, html {
+  height: 100%;
+}
+
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  padding-top: 1px;
+  margin-top: -1px;
+  /* margin-top: 60px; */
+}
+
+#nav {
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+}
+
+#main-container {
+  margin-top: 75px;
+  height: calc(100% - 74px);
 }
 </style>
