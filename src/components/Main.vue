@@ -3,8 +3,21 @@
     <div class="image-overlay"></div>
     <div class="main-container">
       <div class="logos-container">
-        <div v-for="logo in logos" v-bind:key="logo.title" class="organization-logo">
-          <img alt="vasyr logo" :src="require('@/assets/logos/' + logo.url)">
+        <div class="logos-row">
+          <div class="organization-logo">
+            <img alt="vasyr logo" :src="require('@/assets/logos/Interagency-logo.png')">
+          </div>
+          <div class="organization-logo">
+            <img alt="vasyr logo" :src="require('@/assets/logos/unhcr-logo.png')">
+          </div>
+        </div>
+        <div class="logos-row">
+          <div class="organization-logo">
+            <img alt="vasyr logo" :src="require('@/assets/logos/wfp-logo.png')">
+          </div>
+          <div class="organization-logo">
+            <img alt="vasyr logo" :src="require('@/assets/logos/unicef-logo.png')">
+          </div>
         </div>
       </div>
       <div class="intro-container">
@@ -12,8 +25,8 @@
           {{introduction}}
         </div>
       </div>
-      <div class="">
-
+      <div class="download-button">
+        <a :href="this.vasyrDownloadLink2019" v-bind:year="this.vasyrDownloadLink2019" target="_blank" class="btn btn-info">DOWNLOAD VASyR 2019</a>
       </div>
     </div>
   </div>
@@ -26,11 +39,12 @@ export default {
   data: () => ({
     dataService: new DataService(),
     logos: [],
-    introduction: ''
+    introduction: '',
+    vasyrDownloadLink2019: ''
   }),
   mounted() {
-    this.logos = this.dataService.getLogos();
     this.introduction = this.dataService.getHomeIntro();
+    this.vasyrDownloadLink2019 = this.dataService.getVasyrDownloadLink('2019');
   },
   methods: {
     getImgUrl(img) {
@@ -78,7 +92,12 @@ export default {
 }
 
 .logos-container {
+  display: inline-block;
   text-align: center;
+}
+
+.logos-row {
+  display: inline-block;
 }
 
 .intro-text {
@@ -86,6 +105,7 @@ export default {
   color: white;
   padding: 45px 20%;
 }
+
 
 @media screen and (min-width: 817px) and (max-width: 1218px) {
   .main-container {
@@ -120,6 +140,16 @@ export default {
     color: white;
     padding: 10px;
     font-size: 13px;
+  }
+
+  .logos-container {
+    display: block;
+    text-align: center;
+  }
+
+  .logos-row {
+    display: inline-block;
+    padding: 10px;
   }
 }
 

@@ -32,24 +32,12 @@ export default class DataService {
         }
     ];
 
-    logos = [
-        {
-            title: 'inter agency',
-            url: 'Interagency-logo.png'
-        },
-        {
-            title: 'unhcr',
-            url: 'unhcr-logo.png'
-        },
-        {
-            title: 'wfp',
-            url: 'wfp-logo.png'
-        },
-        {
-            title: 'unicef',
-            url: 'unicef-logo.png'
-        },
-    ];
+    vasyrDownloadLinks = {
+        '2019': 'link',
+        '2018': 'link',
+        '2017': 'link',
+        '2016': 'link'
+    };
 
     homeIntro = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum';
 
@@ -57,11 +45,16 @@ export default class DataService {
         return this.topMenu;
     }
 
-    getLogos() {
-        return this.logos;
-    }
-
     getHomeIntro() {
         return this.homeIntro;
+    }
+
+    getVasyrDownloadLink(year) {
+        console.log(this.vasyrDownloadLinks[year]);
+        return this.vasyrDownloadLinks[year];
+    }
+
+    getRoadMapData() {
+        return this.roadMapData;
     }
 }

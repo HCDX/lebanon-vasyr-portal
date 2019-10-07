@@ -10,7 +10,7 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="menu-items col">
       <li v-for="item in menuItems" v-bind:key="item.item" class="menu-item" :class="{'is-active' : item.url === currentActive}">
-        <a v-if="item.isScrollable && currentActive === '/'" v-on:click="scrollTo(item.url)">{{item.item}}</a>
+        <a href="#" v-if="item.isScrollable && currentActive === '/'" v-on:click="scrollTo(item.url)">{{item.item}}</a>
         <router-link v-if="item.isScrollable && currentActive !== '/'" to="/" v-on:click.native="scrollTo(item.url)">{{item.item}}</router-link>
         <router-link v-if="!item.isScrollable" :to="item.url" v-on:click.native="setCurrentActive(item.url)">{{item.item}}</router-link>
       </li>
@@ -56,12 +56,12 @@ export default {
       this.clickedLink = true;
       this.currentActive = url;
       let container = this.$parent.$el.querySelector('#' + url);
-      this.scrollToSmoothly(container.offsetTop - 75, 5, this.afterScroll);
+      this.scrollToSmoothly(container.offsetTop - 75, 0.1, this.afterScroll);
     },
     setCurrentActive(url) {
       this.clickedLink = true;
       this.currentActive = url;
-      this.scrollToSmoothly(0, 5, this.afterScroll);
+      this.scrollToSmoothly(0, 0.1, this.afterScroll);
     },
     scrollPosition() {
       if(!this.clickedLink){
