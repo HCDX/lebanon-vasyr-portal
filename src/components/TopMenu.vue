@@ -56,12 +56,12 @@ export default {
       this.clickedLink = true;
       this.currentActive = url;
       let container = this.$parent.$el.querySelector('#' + url);
-      this.scrollToSmoothly(container.offsetTop - 75, 0.1, this.afterScroll);
+      this.scrollToSmoothly(container.offsetTop - 75, 1, this.afterScroll);
     },
     setCurrentActive(url) {
       this.clickedLink = true;
       this.currentActive = url;
-      this.scrollToSmoothly(0, 0.1, this.afterScroll);
+      this.scrollToSmoothly(0, 1, this.afterScroll);
     },
     scrollPosition() {
       if(!this.clickedLink){
@@ -105,7 +105,7 @@ export default {
             clearInterval(x);
             callBack();
           }
-          i += 10;
+          i += 20;
         }, time);
       } else {
         time = time || 2;
@@ -118,12 +118,11 @@ export default {
             callBack();
           }
 
-          i -= 10;
+          i -= 20;
         }, time);
       }
     },
     afterScroll() {
-      console.log('callback');
       this.clickedLink = false;
     }
   }
