@@ -119,6 +119,7 @@ export default {
     margin-top: 20px;
     color: white;
     padding: 10px;
+    font-size: 13px;
   }
 }
 

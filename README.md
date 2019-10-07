@@ -27,3 +27,5 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+# lebanon-vasyr-portal
+The Lebanon online VASyR portal
