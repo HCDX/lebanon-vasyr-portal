@@ -22,6 +22,7 @@
 
 <script>
 import DataService from '@/services/data.service';
+import helper from '@/helpers/helpers';
 
 export default {
   name: 'TopMenu',
@@ -45,10 +46,16 @@ export default {
     }
 
     this.mainPosition = 0;
-    this.chaptersPosition = this.$parent.$el.querySelector('#chapters').offsetTop - 75;
-    this.mapsPosition = this.$parent.$el.querySelector('#maps').offsetTop - 75;
-    this.reportPosition = this.$parent.$el.querySelector('#reports').offsetTop + 75;
-    
+
+
+    setTimeout(() => {
+      
+      this.chaptersPosition = this.$parent.$el.querySelector('#chapters').offsetTop - 75;
+      this.mapsPosition = this.$parent.$el.querySelector('#maps').offsetTop - 75;
+      this.reportPosition = this.$parent.$el.querySelector('#reports').offsetTop + 75;
+      this.scrollPosition();
+      
+    }, 1000);
     window.addEventListener('scroll', this.scrollPosition);
   },
   methods: {
@@ -56,74 +63,83 @@ export default {
       this.clickedLink = true;
       this.currentActive = url;
       let container = this.$parent.$el.querySelector('#' + url);
-      this.scrollToSmoothly(container.offsetTop - 75, 1, this.afterScroll);
+      helper.scrollTo('#' + url, 800);
+   
     },
     setCurrentActive(url) {
       this.clickedLink = true;
       this.currentActive = url;
-      this.scrollToSmoothly(0, 1, this.afterScroll);
+      if(url === '/')
+      helper.scrollTo('#home', 1000);
     },
     scrollPosition() {
-      if(!this.clickedLink){
-        switch(true) {
-          case (window.scrollY > this.chaptersPosition - 75 && window.scrollY < this.mapsPosition - 75):
-            this.currentActive = 'chapters';
-            break;
+      // if(!this.clickedLink && this.mapsPosition){
+      //   switch(true) {
+      //     case (window.scrollY > this.chaptersPosition - 75 && window.scrollY < this.mapsPosition - 75):
+      //       this.currentActive = 'chapters';
+      //       break;
   
-          case (window.scrollY > this.mapsPosition - 75 && window.scrollY < this.reportPosition - 200):
-            this.currentActive = 'maps';
-            break;
+      //     case (window.scrollY > this.mapsPosition - 75 && window.scrollY < this.reportPosition - 200):
+      //       this.currentActive = 'maps';
+      //       break;
   
-          case (window.scrollY >= this.reportPosition - 200):
-            this.currentActive = 'reports';
-            break;
+      //     case (window.scrollY >= this.reportPosition - 200):
+      //       this.currentActive = 'reports';
+      //       break;
   
-          default:
-            this.currentActive = '/';
-        }
-      }
+      //     default:
+      //       this.currentActive = '/';
+      //   }
+      // }
     },
     scrollToSmoothly(pos, time, callBack){
-      if(isNaN(pos)){
-        throw "Position must be a number";
-      }
+      // if(isNaN(pos)){
+      //   throw "Position must be a number";
+      // }
 
-      if(pos < 0){
-        throw "Position can not be negative";
-      }
+      // if(pos < 0){
+      //   throw "Position can not be negative";
+      // }
 
-      let currentPos = window.scrollY || window.screenTop;
+      // let currentPos = window.scrollY || window.screenTop;
+      
+      // if(currentPos < pos){
+      //   time = time || 2;
+      //   let x;
+      //   let i = currentPos;
+      //   let parent = this;
 
-      if(currentPos < pos){
-        time = time || 2;
-        let x;
-        let i = currentPos;
+      //   x = setInterval(function(){
+      //     console.log(i);
+      //     window.scrollTo(0, i);
+      //     if(i >= pos) {
+      //       clearInterval(x);
+      //       callBack();
+      //     }
+      //     i += helper.easeOutQuad(1);
+      //   }, time);
+      // } else {
+      //   time = time || 2;
+      //   let i = currentPos;
+      //   let x;
 
-        x = setInterval(function(){
-          window.scrollTo(0, i);
-          if(i >= pos) {
-            clearInterval(x);
-            callBack();
-          }
-          i += 20;
-        }, time);
-      } else {
-        time = time || 2;
-        let i = currentPos;
-        let x;
-        x = setInterval(function(){
-          window.scrollTo(0, i);
-          if(i <= pos){
-            clearInterval(x);
-            callBack();
-          }
+      //   x = setInterval(function(){
+      //     window.scrollTo(0, i);
+      //     if(i <= pos){
+      //       clearInterval(x);
+      //       callBack();
+      //     }
 
-          i -= 20;
-        }, time);
-      }
+      //     i -= 10;
+      //   }, time);
+      // }
     },
     afterScroll() {
       this.clickedLink = false;
+    },
+    easeIn(step, currentPos, originalPos) {
+      console.log(step, originalPos, currentPos);
+      return step - (originalPos / currentPos);
     }
   }
 }

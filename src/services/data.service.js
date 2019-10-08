@@ -133,6 +133,96 @@ export default class DataService {
         },
     ]
 
+    roadMapData = [
+        {
+            title: 'CHAPTERS',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate',
+            icon: '/icons/icon-chapters.png',
+            top: true
+        },
+        {
+            title: 'MAPS',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate',
+            icon: '/icons/icon-maps.png',
+            top: false
+        },
+        {
+            title: 'FULL REPORT',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate',
+            icon: '/icons/icon-report.png',
+            top: true
+        },
+        {
+            title: 'VAULT',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate',
+            icon: '/icons/icon-vault.png',
+            top: false
+        },
+        {
+            title: 'TOOLS',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate',
+            icon: '/icons/icon-tools.png',
+            top: true
+        },
+        {
+            title: 'REQUEST',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate',
+            icon: '/icons/icon-requests.png',
+            top: false
+        },
+    ];
+    
+    maps = [
+        {
+            title: 'Health Getaways',
+            url: 'link',
+            image: '/images/maps/health-getaways.png',
+            description: 'This is the map description if needed to be added'
+        },
+        {
+            title: 'Informal Setlements - Flood Risks and Snow Accumulation',
+            url: 'link',
+            image: '/images/maps/informal-settlements.png',
+            description: 'This is the map description if needed to be added'
+        },
+        {
+            title: 'Shelter Upgraded 2015-2018',
+            url: 'link',
+            image: '/images/maps/shelter-upgraded.png',
+            description: 'This is the map description if needed to be added'
+        },
+        {
+            title: 'Shelter National Gap Analysis 2018',
+            url: 'link',
+            image: '/images/maps/shelter-national-gap.png',
+            description: 'This is the map description if needed to be added'
+        },
+        {
+            title: 'Informal Settlements (IAMP 57)',
+            url: 'link',
+            image: '/images/maps/informal-settlements-iamp57.png',
+            description: 'This is the map description if needed to be added'
+        },
+        {
+            title: 'Out of School Children - June 2016',
+            url: 'link',
+            image: '/images/maps/out-of-school-children.png',
+            description: 'This is the map description if needed to be added'
+        },
+        {
+            title: 'Social Development Center',
+            url: 'link',
+            image: '/images/maps/social-development.png',
+            description: 'This is the map description if needed to be added'
+        },
+        {
+            title: 'Lebanon Admin',
+            url: 'link',
+            image: '/images/maps/lebanon-admin.png',
+            description: 'This is the map description if needed to be added'
+        },
+    ];
+
     homeIntro = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum';
 
     getTopMenuData() {
@@ -153,5 +243,9 @@ export default class DataService {
 
     getChaptersData() {
         return this.chaptersData;
+    }
+
+    getMapsData() {
+        return this.maps;
     }
 }

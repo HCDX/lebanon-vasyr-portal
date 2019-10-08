@@ -1,114 +1,27 @@
-<template>
+<template style="background-color: #273b56;">
 	<div id="road-map" style="background-color: #273b56;">
-		<div class="row main-container">
-			<div class="col col-md-2 col-12" style="color: white;">
-				<div class="info-container text-top">
-					<div class="info-text">
+		<div class="row main-container contained">
+			<div v-for="(group, index) in roadMapData" v-bind:key="index" class="col col-md-2 col-12" style="color: white;">
+				<div class="info-container" :class="{'text-top' : group.top, 'text-bottom' : !group.top}">
+					<!-- remove the v-id from both text containers to have them both present if the original design is needed -->
+					<div class="info-text" v-if="group.top">
 						<div class="text">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate
+							{{group.description}}
 						</div>
 					</div>
 					<div class="title-container">
-						<div class="info-icon"></div>
+						<div class="info-icon">
+							<img alt="Icon" :src="require('@/assets' + group.icon)"/>
+						</div>
 						<div class="title">
-							CHAPTERS
+							{{group.title}}
 						</div>
 					</div>
-					<div class="info-text">
-						<!-- Add same empty text above for design identical to the original design -->
-					</div>
-				</div>
-			</div>
-			<div class="col col-md-2 col-12" style="color: white;">
-				<div class="info-container text-bottom">
-					<div class="info-text">
-					</div>
-					<div class="title-container">
-						<div class="info-icon"></div>
-						<div class="title">
-							MAPS
+					<!-- remove the v-id from both text containers to have them both present if the original design is needed -->
+					<div class="info-text" v-if="!group.top">
+						<div class="text">
+							{{group.description}}
 						</div>
-					</div>
-					<div class="info-text">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate
-					</div>
-				</div>
-			</div>
-			<div class="col col-md-2 col-12" style="color: white;">
-				<div class="info-container text-top">
-					<div class="info-text">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate
-					</div>
-					<div class="title-container">
-						<div class="info-icon"></div>
-						<div class="title">
-							CHAPTERS
-						</div>
-					</div>
-					<div class="info-text">
-					</div>
-				</div>
-			</div>
-			<div class="col col-md-2 col-12" style="color: white;">
-				<div class="info-container text-bottom">
-					<div class="info-text">
-					</div>
-					<div class="title-container">
-						<div class="info-icon"></div>
-						<div class="title">
-							MAPS
-						</div>
-					</div>
-					<div class="info-text">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate
-					</div>
-				</div>
-			</div>
-			<div class="col col-md-2 col-12" style="color: white;">
-				<div class="info-container text-top">
-					<div class="info-text">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate
-					</div>
-					<div class="title-container">
-						<div class="info-icon"></div>
-						<div class="title">
-							CHAPTERS
-						</div>
-					</div>
-					<div class="info-text">
-					</div>
-				</div>
-			</div>
-			<div class="col col-md-2 col-12" style="color: white;">
-				<div class="info-container text-bottom">
-					<div class="info-text">
-					</div>
-					<div class="title-container">
-						<div class="info-icon"></div>
-						<div class="title">
-							MAPS
-						</div>
-					</div>
-					<div class="info-text">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate
 					</div>
 				</div>
 			</div>
@@ -119,7 +32,7 @@
 	import DataService from '@/services/data.service';
 
 	export default {
-		name: 'main-sec',
+		name: 'road-map',
 		data: () => ({
 			dataService: new DataService(),
 			roadMapData: []
@@ -130,6 +43,11 @@
 	}
 </script>
 <style scoped>
+.contained {
+  max-width: 1400px;
+  margin: auto !important;
+}
+
 .main-container {
 	margin: 0px;
 	height: 100%;
@@ -181,6 +99,12 @@
 	background-color: white;
 	left: calc(50% - 1px);
 	z-index: 3;
+}
+
+.info-icon img {
+    width: 75%;
+    margin: auto;
+    padding: 14px 0;
 }
 
 .text-top .info-icon::before {

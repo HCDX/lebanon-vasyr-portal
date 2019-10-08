@@ -5,7 +5,7 @@
       <h3> CHAPTERS </h3>
       <hr style="margin: 1px 0; border-top-color: rgba(255, 255, 255, 0.35)">
     </div>
-    <div class="row chapters-container" style="margin: 0;" flex>
+    <div class="row chapters-container contained" style="margin: 0;" flex>
       <div v-for="(chapter, index) in chapters" v-bind:key="index" class="col col-md-4 col-12 chapter">
         <div class="chapter-image top" v-if="(index % 2)">
           <img alt="Chapter Image" :src="require('@/assets/' + chapter.image_url)"/>
@@ -33,7 +33,7 @@
 import DataService from '@/services/data.service';
 
 export default {
-  name: 'main-sec',
+  name: 'chapters',
   data: () => ({
     dataService: new DataService(),
     chapters: []
@@ -48,6 +48,11 @@ export default {
   background-color: #273b56;
   color: white;
   /* height: 100%; */
+}
+
+.contained {
+  max-width: 1400px;
+  margin: auto !important;
 }
 
 .page-title {
