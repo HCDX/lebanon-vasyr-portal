@@ -1,6 +1,6 @@
 <template style="background-color: #273b56;">
 	<div id="road-map" style="background-color: #273b56;">
-		<div class="row main-container contained">
+		<div class="row roadmap-main-container contained">
 			<div v-for="(group, index) in roadMapData" v-bind:key="index" class="col col-md-2 col-12" style="color: white;">
 				<div class="info-container" :class="{'text-top' : group.top, 'text-bottom' : !group.top}">
 					<!-- remove the v-id from both text containers to have them both present if the original design is needed -->
@@ -48,7 +48,7 @@
   margin: auto !important;
 }
 
-.main-container {
+.roadmap-main-container {
 	margin: 0px;
 	height: 100%;
 	padding: 0 40px;
@@ -102,9 +102,9 @@
 }
 
 .info-icon img {
-    width: 75%;
-    margin: auto;
-    padding: 14px 0;
+	width: 75%;
+	margin: auto;
+	padding: 14px 0;
 }
 
 .text-top .info-icon::before {
@@ -117,14 +117,14 @@
 
 .info-icon::after {
 	content: '';
-    display: block;
-    height: 8px;
-    width: 8px;
-    position: absolute;
-    z-index: 4;
-    border-radius: 200px;
-    background-color: white;
-    left: calc(50% - 4px);
+	display: block;
+	height: 8px;
+	width: 8px;
+	position: absolute;
+	z-index: 4;
+	border-radius: 200px;
+	background-color: white;
+	left: calc(50% - 4px);
 }
 
 .text-top .info-icon::after {
@@ -157,8 +157,8 @@
 	.info-container {
 		margin: 0;
 		padding: 10px;
-	    border: 1px solid #bbb;
-	    margin: 10px;
+		border: 1px solid #bbb;
+		margin: 10px;
 	}
 
 	.info-text {
@@ -171,13 +171,13 @@
 		min-height: 0;
 	}
 
-  	.text-top  .info-text:last-child {
-  		display: none;
-  	}
+	.text-top  .info-text:last-child {
+		display: none;
+	}
 
-  	.text-bottom  .info-text:first-child {
-  		display: none;
-  	}
+	.text-bottom  .info-text:first-child {
+		display: none;
+	}
 }
 
 

@@ -5,8 +5,8 @@
       <h3> MAPS </h3>
       <hr style="margin: 1px 0; border-top-color: rgba(255, 255, 255, 0.35)">
     </div>
-    <div class="row main-container contained" style="margin: 0;" flex>
-      <div v-for="(map, index) in maps" v-bind:key="index" class="col col-md-3 col-12" style="color: white;">
+    <div class="row maps-main-container contained" style="margin: 0;" flex>
+      <div v-for="(map, index) in maps" v-bind:key="index" class="col col-md-4 col-lg-3 col-12" style="color: white;">
         <div class="map-container">
           <div class="map-image" data-toggle="tooltip" data-html="true" v-tooltip:top="map.description">
             <a href="#" target="_blank"><img alt="Map Image" :src="require('@/assets' + map.image)"/></a>
@@ -54,8 +54,8 @@
   border: 1px solid white;
   border-radius: 100%;
   margin: auto;
-  width: 286px;
-  height: 286px;
+  width: 250px;
+  height: 250px;
 }
 
 .map-image img {
@@ -74,7 +74,7 @@
   cursor: pointer;
 }
 
-.main-container {
+.maps-main-container {
   padding: 60px 0;
 }
 
@@ -84,12 +84,5 @@
 
 .map-title {
   padding: 10px 0;
-}
-@media screen and (max-width: 804px)  {
-	/* .map-container {
-		padding: 10px;
-    border: 1px solid #bbb;
-    margin: 10px;
-	} */
 }
 </style>
