@@ -10,9 +10,9 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="menu-items col">
       <li v-for="item in menuItems" v-bind:key="item.item" class="menu-item" :class="{'is-active' : item.url === currentActive}">
-        <a href="#" v-if="item.isScrollable && currentActive === '/'" v-on:click="scrollTo(item.url)">{{item.item}}</a>
-        <router-link v-if="item.isScrollable && currentActive !== '/'" to="/" v-on:click.native="scrollTo(item.url)">{{item.item}}</router-link>
-        <router-link v-if="!item.isScrollable" :to="item.url" v-on:click.native="setCurrentActive(item.url)">{{item.item}}</router-link>
+        <a href="#" v-on:click="scrollTo(item.url)">{{item.item}}</a>
+        <!-- <router-link v-if="item.isScrollable && currentActive !== '/'" to="/" v-on:click.native="scrollTo(item.url)">{{item.item}}</router-link> -->
+        <!-- <router-link v-if="!item.isScrollable" :to="item.url" v-on:click.native="setCurrentActive(item.url)">{{item.item}}</router-link> -->
       </li>
     </ul>
   </div>
@@ -22,6 +22,7 @@
 
 <script>
 import DataService from '@/services/data.service';
+import helper from '@/helpers/helpers';
 
 export default {
   name: 'TopMenu',
@@ -40,90 +41,100 @@ export default {
     
     if(window.location.hash === '#/') {
       this.currentActive = window.location.hash.slice(1, window.location.hash.length);
+      setTimeout(() => {
+        
+        this.chaptersPosition = this.$parent.$el.querySelector('#chapters').offsetTop - 75;
+        this.mapsPosition = this.$parent.$el.querySelector('#maps').offsetTop - 75;
+        this.reportPosition = this.$parent.$el.querySelector('#reports').offsetTop - 75;
+        this.toolsPosition = this.$parent.$el.querySelector('#tools').offsetTop - 75;
+        this.vaultPosition = this.$parent.$el.querySelector('#vault').offsetTop - 75;
+        this.scrollPosition();
+        
+      }, 1000);
+      window.addEventListener('scroll', this.scrollPosition);
     } else {
       this.currentActive = window.location.hash.slice(2, window.location.hash.length);
     }
 
     this.mainPosition = 0;
-    this.chaptersPosition = this.$parent.$el.querySelector('#chapters').offsetTop - 75;
-    this.mapsPosition = this.$parent.$el.querySelector('#maps').offsetTop - 75;
-    this.reportPosition = this.$parent.$el.querySelector('#reports').offsetTop + 75;
-    
-    window.addEventListener('scroll', this.scrollPosition);
   },
   methods: {
     scrollTo(url) {
       this.clickedLink = true;
       this.currentActive = url;
-      let container = this.$parent.$el.querySelector('#' + url);
-      this.scrollToSmoothly(container.offsetTop - 75, 1, this.afterScroll);
+      let parent = this;
+
+      if(url === '/') {
+        helper.scrollTo('#main', 1500).then(function(response) {
+          if(response) {
+            parent.afterScroll();
+          }
+        });
+      } else {
+        helper.scrollTo('#' + url, 1500).then(function(response) {
+          if(response) {
+            parent.afterScroll();
+          }
+        });
+      }
     },
     setCurrentActive(url) {
       this.clickedLink = true;
       this.currentActive = url;
-      this.scrollToSmoothly(0, 1, this.afterScroll);
+      let parent = this;
+
+      if(url === '/') {
+        helper.scrollTo('#main', 1500).then(function(response) {
+          if(response) {
+            parent.afterScroll();
+          }
+        });
+      }
     },
     scrollPosition() {
-      if(!this.clickedLink){
+      if(!this.clickedLink && this.mapsPosition){
+        let chaptersEndPosition = this.elementEndPosition('chapters');
+        let mapsEndPosition = this.elementEndPosition('maps');
+        let reportEndPosition = this.elementEndPosition('reports');
+        let toolsEndPosition = this.elementEndPosition('tools');
+        let vaultEndPosition = this.elementEndPosition('vault');
+
         switch(true) {
-          case (window.scrollY > this.chaptersPosition - 75 && window.scrollY < this.mapsPosition - 75):
+          case (window.scrollY >= this.chaptersPosition && window.scrollY < chaptersEndPosition):
             this.currentActive = 'chapters';
             break;
   
-          case (window.scrollY > this.mapsPosition - 75 && window.scrollY < this.reportPosition - 200):
+          case (window.scrollY >= this.mapsPosition && window.scrollY < mapsEndPosition):
             this.currentActive = 'maps';
             break;
   
-          case (window.scrollY >= this.reportPosition - 200):
+          case (window.scrollY >= this.reportPosition && window.scrollY < reportEndPosition):
             this.currentActive = 'reports';
+            break;
+
+          case (window.scrollY >= this.toolsPosition && window.scrollY < toolsEndPosition):
+            this.currentActive = 'tools';
+            break;
+
+          case (window.scrollY >= this.vaultPosition && window.scrollY < vaultEndPosition):
+            this.currentActive = 'vault';
             break;
   
           default:
             this.currentActive = '/';
+            break;
         }
-      }
-    },
-    scrollToSmoothly(pos, time, callBack){
-      if(isNaN(pos)){
-        throw "Position must be a number";
-      }
-
-      if(pos < 0){
-        throw "Position can not be negative";
-      }
-
-      let currentPos = window.scrollY || window.screenTop;
-
-      if(currentPos < pos){
-        time = time || 2;
-        let x;
-        let i = currentPos;
-
-        x = setInterval(function(){
-          window.scrollTo(0, i);
-          if(i >= pos) {
-            clearInterval(x);
-            callBack();
-          }
-          i += 20;
-        }, time);
-      } else {
-        time = time || 2;
-        let i = currentPos;
-        let x;
-        x = setInterval(function(){
-          window.scrollTo(0, i);
-          if(i <= pos){
-            clearInterval(x);
-            callBack();
-          }
-
-          i -= 20;
-        }, time);
       }
     },
     afterScroll() {
       this.clickedLink = false;
+    },
+    elementEndPosition(element) {
+      let elementStartPosition = document.getElementById(element).offsetTop - 75;
+      let elementHeight = document.getElementById(element).offsetHeight;
+      let elementEndPosition = elementStartPosition + elementHeight;
+
+      return elementEndPosition;
     }
   }
 }

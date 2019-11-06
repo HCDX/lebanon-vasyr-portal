@@ -5,6 +5,8 @@
     <Chapters />
     <Maps />
     <Reports />
+    <Tools />
+    <Vault />
   </div>
 </template>
 
@@ -15,6 +17,8 @@ import RoadMap from '@/components/RoadMap.vue'
 import Chapters from '@/components/Chapters.vue'
 import Maps from '@/components/Maps.vue'
 import Reports from '@/components/Reports.vue'
+import Tools from '@/components/Tools.vue'
+import Vault from '@/components/Vault.vue'
 
 export default {
   name: 'home',
@@ -23,7 +27,9 @@ export default {
     RoadMap,
     Chapters,
     Maps,
-    Reports
+    Reports,
+    Tools,
+    Vault
   }
 }
 </script>

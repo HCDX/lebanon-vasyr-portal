@@ -1,7 +1,7 @@
 <template>
-  <div id="home">
+  <div id="main" class="main-transition">
     <div class="image-overlay"></div>
-    <div class="main-container">
+    <div class="home-main-container">
       <div class="logos-container">
         <div class="logos-row">
           <div class="organization-logo">
@@ -33,6 +33,7 @@
 </template>
 <script>
 import DataService from '@/services/data.service';
+import helpers from '@/helpers/helpers';
 
 export default {
   name: 'main-sec',
@@ -43,26 +44,60 @@ export default {
     vasyrDownloadLink2019: ''
   }),
   mounted() {
+
     this.introduction = this.dataService.getHomeIntro();
     this.vasyrDownloadLink2019 = this.dataService.getVasyrDownloadLink('2019');
+    let main = document.getElementById("main");
+
+    if(!helpers.isMobile.any()) {
+      main.addEventListener("mousemove", this.mouseMove);
+      main.addEventListener("mouseenter", this.mouseEnter);
+      main.addEventListener("mouseleave", this.mouseLeave);
+    }
   },
   methods: {
     getImgUrl(img) {
       return require(img);
+    },
+    mouseMove(element) {
+      var home = document.getElementById("main"),
+      w = window.innerWidth,
+      h = window.innerHeight,
+      mouseX = element.clientX,
+      mouseY = element.clientY,
+      imageX = (mouseX/w)*10,
+      imageY = 75 + (mouseY/h)*10;
+      home.style["background-position"] = imageX + "% " + imageY + "%";
+    },
+    mouseEnter(element) {
+      setTimeout(function() {
+        this.main.classList.remove('main-transition');
+      }, 150);
+    },
+    mouseLeave(element) {
+      setTimeout(function() {
+        this.main.classList.add('main-transition');
+      }, 150);
     }
   }
 }
 </script>
 <style scoped>
-#home {
+#main {
   position: relative;
-  height: 100%;
+  min-height: 100%;
   background: url('../assets/images/home-background.jpg');
-  background-size: cover;
   background-position-y: 75%;
+  background-color: #273b56;
+  background-repeat: no-repeat;
+  background-size: 110%;
 }
 
-.main-container {
+.main-transition {
+  transition: background-position 0.15s;
+}
+
+.home-main-container {
   position:relative;
   height: 100%;
   padding: 200px;
@@ -122,6 +157,16 @@ export default {
 }
 
 @media screen and (max-width: 804px)  {
+  #main {
+    background-size: cover;
+  }
+
+  .home-main-container {
+    position:relative;
+    height: 100%;
+    padding: 0;
+  }
+
   .organization-logo{
     display: block;
     margin: 15px auto;
