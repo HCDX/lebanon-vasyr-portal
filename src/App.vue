@@ -33,7 +33,6 @@ export default {
     imagesLoaded
   },
   mounted() {
-    console.log('Mounted App');
     document.onreadystatechange = () => { 
       if (document.readyState == "complete") { 
         // run code here
@@ -46,7 +45,6 @@ export default {
   },
   methods: {
     loaded(instance) {
-      console.log(instance);
       this.allLoaded = true;
       this.noScroll = false;
       if(this.mounted) {
