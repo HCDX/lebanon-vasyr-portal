@@ -11,7 +11,7 @@
           <div class="download-overlay">
             <div class="download-section">
               <div style="font-size: 40px; font-weight: bold;">{{report.year}}</div>
-              <a :href="report.download_url" class="btn btn-info">Download</a>
+              <a :href="report.download_url" target="_blank" class="btn btn-info" download>Download</a>
             </div>
           </div>
           <div class="report-image">

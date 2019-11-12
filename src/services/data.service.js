@@ -234,25 +234,37 @@ export default class DataService {
             title: 'VASyR 2018',
             year: '2018',
             image_url: '/images/reports/vasyr-2018.jpg',
-            download_url: 'link'
+            download_url: '/files/previous_vasyr_reports/vasyr-2018.pdf'
         },
         {
             title: 'VASyR 2017',
             year: '2017',
             image_url: '/images/reports/vasyr-2017.jpg',
-            download_url: 'link'
+            download_url: '/files/previous_vasyr_reports/vasyr-2017.pdf'
         },
         {
             title: 'VASyR 2016',
             year: '2016',
             image_url: '/images/reports/vasyr-2016.jpg',
-            download_url: 'link'
+            download_url: '/files/previous_vasyr_reports/vasyr-2016.pdf'
         },
         {
             title: 'VASyR 2015',
             year: '2015',
             image_url: '/images/reports/vasyr-2015.jpg',
-            download_url: 'link'
+            download_url: '/files/previous_vasyr_reports/vasyr-2015.pdf'
+        },
+        {
+            title: 'VASyR 2014',
+            year: '2014',
+            image_url: '/images/reports/vasyr-2014.jpg',
+            download_url: '/files/previous_vasyr_reports/vasyr-2014.pdf'
+        },
+        {
+            title: 'VASyR 2013',
+            year: '2013',
+            image_url: '/images/reports/vasyr-2013.jpg',
+            download_url: '/files/previous_vasyr_reports/vasyr-2013.pdf'
         },
     ];
 
