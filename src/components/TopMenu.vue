@@ -37,6 +37,7 @@ export default {
     clickedLink: false
   }),
   mounted() {
+    console.log('Mounted Top Menu');
     this.menuItems = this.dataService.getTopMenuData();
     
     if(window.location.hash === '#/') {

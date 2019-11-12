@@ -39,6 +39,7 @@ export default {
     chapters: []
   }),
   mounted() {
+    console.log('Mounted Chapters');
     this.chapters = this.dataService.getChaptersData();
   }
 }

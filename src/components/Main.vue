@@ -44,7 +44,7 @@ export default {
     vasyrDownloadLink2019: ''
   }),
   mounted() {
-
+    console.log('Mounted Main');
     this.introduction = this.dataService.getHomeIntro();
     this.vasyrDownloadLink2019 = this.dataService.getVasyrDownloadLink('2019');
     let main = document.getElementById("main");
