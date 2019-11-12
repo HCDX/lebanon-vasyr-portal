@@ -33,6 +33,7 @@ export default {
     imagesLoaded
   },
   mounted() {
+    console.log('Mounted App');
     this.mounted = true;
 
     if(this.allLoaded) {

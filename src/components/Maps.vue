@@ -29,6 +29,7 @@
 			maps: []
 		}),
 		mounted() {
+      console.log('Mounted Maps');
       this.maps = this.dataService.getMapsData();
       setTimeout(() => {
         $(function () {

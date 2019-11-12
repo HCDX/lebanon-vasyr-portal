@@ -43,6 +43,7 @@
       sortDirection: 'asc'
 		}),
 		mounted() {
+      console.log('Mounted Vault');
       this.vaultData = this.dataService.getVaultData();
     },
     methods: {
