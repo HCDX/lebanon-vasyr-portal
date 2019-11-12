@@ -7,7 +7,7 @@
     </div>
     <div class="vault-main-container contained d-flex">
       <div class="row align-self-center" style="margin: auto; padding: 50px 0; width: 100%;">
-        <div class="table-container">
+        <div class="table-container table-responsive">
           <table class="table table-striped">
             <thead>
               <tr>
