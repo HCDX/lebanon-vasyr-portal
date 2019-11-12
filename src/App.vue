@@ -1,6 +1,6 @@
 <template>
   <div id="app" v-bind:class="{ 'no-scroll': noScroll }">
-    <div id="loading-view" v-if="!allLoaded">
+    <div id="loading-view" v-if="loading">
       <div class="loading-icon">
         <div class="lds-facebook"><div></div><div></div><div></div></div>
       </div>
@@ -25,15 +25,27 @@ export default {
   },
   data: () => ({
     allLoaded: false,
-    noScroll: true
+    noScroll: true,
+    loading: true,
+    mounted: false
   }),
   directives: {
     imagesLoaded
+  },
+  mounted() {
+    this.mounted = true;
+
+    if(this.allLoaded) {
+      this.loading = false;
+    }
   },
   methods: {
     loaded(instance) {
       this.allLoaded = true;
       this.noScroll = false;
+      if(this.mounted) {
+        this.loading = false;
+      }
     }
   }
 }
