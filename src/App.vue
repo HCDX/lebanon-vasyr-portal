@@ -34,14 +34,19 @@ export default {
   },
   mounted() {
     console.log('Mounted App');
-    this.mounted = true;
-
-    if(this.allLoaded) {
-      this.loading = false;
+    document.onreadystatechange = () => { 
+      if (document.readyState == "complete") { 
+        // run code here
+        this.mounted = true;
+        if(this.allLoaded) {
+          this.loading = false;
+        }
+      } 
     }
   },
   methods: {
     loaded(instance) {
+      console.log(instance);
       this.allLoaded = true;
       this.noScroll = false;
       if(this.mounted) {
