@@ -38,21 +38,21 @@ export default {
       if (document.readyState == "complete") {
         this.mounted = true;
 
-        // if document is ready and controllers mounted then stop loading
-        if(this.allLoaded) {
+        // if document is ready and controllers mounted and all images loaded then stop loading
+        // if(this.allLoaded) {
           this.loading = false;
           this.noScroll = false;
-        }
+        // }
       } 
     }
   },
   methods: {
     loaded(instance) {
       this.allLoaded = true;
-      // if document is ready and controllers mounted then stop loading
+      // if document is ready and controllers mounted and all images loaded then stop loading
       if(this.mounted) {
-        this.noScroll = false;
-        this.loading = false;
+        // this.noScroll = false;
+        // this.loading = false;
       }
     }
   }
