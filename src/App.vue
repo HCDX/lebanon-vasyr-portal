@@ -39,10 +39,10 @@ export default {
         this.mounted = true;
 
         // if document is ready and controllers mounted then stop loading
-        // if(this.allLoaded) {
+        if(this.allLoaded) {
           this.loading = false;
           this.noScroll = false;
-        // }
+        }
       } 
     }
   },
