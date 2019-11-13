@@ -39,10 +39,10 @@ export default {
         this.mounted = true;
 
         // if document is ready and controllers mounted and all images loaded then stop loading
-        // if(this.allLoaded) {
+        if(this.allLoaded) {
           this.loading = false;
           this.noScroll = false;
-        // }
+        }
       } 
     }
   },
@@ -51,8 +51,8 @@ export default {
       this.allLoaded = true;
       // if document is ready and controllers mounted and all images loaded then stop loading
       if(this.mounted) {
-        // this.noScroll = false;
-        // this.loading = false;
+        this.noScroll = false;
+        this.loading = false;
       }
     }
   }
