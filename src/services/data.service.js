@@ -42,49 +42,49 @@ export default class DataService {
     chaptersData = [
         {
             title: 'ASSISTANCE',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Convallis posuere morbi leo urna. Adipiscing diam donec adipiscing tristique risus nec feugiat.',
+            description: `The Assistance chapter examines whether families are recipients of cash assistance and studies their access to household assets. Vulnerable Syrian refugees in Lebanon can receive two main types of assistance: cash assistance and in-kind support, both of which are aimed at covering their basic needs.`,
             image_url: 'images/chapters/ch-assistance.jpg',
             download_url: '',
             knowledge_hub_url: ''
         },
         {
             title: 'COPING STRATEGIES',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pretium vulputate sapien nec sagittis aliquam malesuada bibendum arcu. Blandit aliquam etiam erat velit scelerisque in dictum non. Purus semper eget duis at tellus at urna condimentum.',
+            description: `This chapter studies the range of strategies households employ in order to cope with a lack of food and/or the means to buy it. It also examines coping mechanisms related to the household’s capacity to earn a sustainable income.`,
             image_url: 'images/chapters/ch-coping-strategies.jpg',
             download_url: '',
             knowledge_hub_url: ''
         },
         {
             title: 'DEMOGRAPHICS',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et malesuada fames ac turpis egestas maecenas pharetra convallis posuere. Et odio pellentesque diam volutpat commodo. Tortor aliquam nulla facilisi cras fermentum. Habitasse platea dictumst quisque sagittis purus sit.',
+            description: `This chapter contains the key demographic characteristics of the Syrian refugee population in Lebanon, including household composition, profile of the head of household, dependency and prevalence of certain specific needs.`,
             image_url: 'images/chapters/ch-demographics.jpg',
             download_url: '',
             knowledge_hub_url: ''
         },
         {
             title: 'VULNERABILITY',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisi scelerisque eu ultrices vitae auctor eu augue. Neque vitae tempus quam pellentesque nec nam. Donec enim diam vulputate ut. Congue nisi vitae suscipit tellus mauris a diam maecenas sed. Auctor augue mauris augue neque gravida in fermentum et sollicitudin.',
+            description: `This chapter provides an insight into the economic vulnerability of Syrian refugee households in Lebanon, studied on the dimensions of the composition and amount of expenditures, Survival and Minimum Expenditures Basket (S)MEB, and debt.`,
             image_url: 'images/chapters/ch-eco-vulnerability.jpg',
             download_url: '',
             knowledge_hub_url: ''
         },
         {
             title: 'EDUCATION',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac turpis egestas sed. Integer eget aliquet nibh praesent tristique.',
+            description: `The Education chapter studies the school enrolment rates of Syrian refugee girls and boys aged 3 to 24 years old. It also analyses the reasons why children and youth were not enrolled in schools and examines the share of youth who were neither employed nor attending a training.`,
             image_url: 'images/chapters/ch-education.jpg',
             download_url: '',
             knowledge_hub_url: ''
         },
         {
             title: 'FOOD CONSUMPTION',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Est ante in nibh mauris cursus mattis molestie a. Nisi lacus sed viverra tellus in hac habitasse platea dictumst. Nam aliquam sem et tortor consequat id porta nibh. Accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu. Vitae suscipit tellus mauris a diam maecenas sed. Semper feugiat nibh sed pulvinar.',
+            description: `This chapter examines food consumption indicators, which are essential for studying food security and classifying households according to their food security status. The dimensions considered in this chapter include food quantity, as well as food quality and diversity.`,
             image_url: 'images/chapters/ch-food-consumption.jpg',
             download_url: '',
             knowledge_hub_url: ''
         },
         {
             title: 'FOOD SECURITY',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa ultricies mi quis hendrerit dolor magna. Congue nisi vitae suscipit tellus mauris a diam maecenas sed. Risus viverra adipiscing at in tellus integer feugiat scelerisque varius. Fermentum leo vel orci porta.',
+            description: `This chapter analyses the food security trends among Syrian refugee households in Lebanon, including the characteristics of food insecure households.  It also looks at differences in food security levels among districts and governorates.`,
             image_url: 'images/chapters/ch-food-security.jpg',
             download_url: '',
             knowledge_hub_url: ''
@@ -98,35 +98,35 @@ export default class DataService {
         },
         {
             title: 'HEALTH',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa ultricies mi quis hendrerit dolor magna. Congue nisi vitae suscipit tellus mauris a diam maecenas sed. Risus viverra adipiscing at in tellus integer feugiat scelerisque varius. Fermentum leo vel orci porta.',
+            description: `The Health chapter studies access of Syrian refugee households to needed health care, which is available to refugees through primary health care outlets, hospitals and mobile medical units. It also examines barriers to healthcare access.`,
             image_url: 'images/chapters/ch-health.jpg',
             download_url: '',
             knowledge_hub_url: ''
         },
         {
             title: 'LIVELIHOODS',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa ultricies mi quis hendrerit dolor magna. Congue nisi vitae suscipit tellus mauris a diam maecenas sed. Risus viverra adipiscing at in tellus integer feugiat scelerisque varius. Fermentum leo vel orci porta.',
+            description: `This chapter provides an insight into income-generating activities, including the type of work and wages earned, as well as employment and unemployment levels and number of days worked, all measured at an individual level. Questions asked at a household level include those addressing main income sources and what households relied on as the main income source.`,
             image_url: 'images/chapters/ch-livelihoods.jpg',
             download_url: '',
             knowledge_hub_url: ''
         },
         {
             title: 'PROTECTION',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa ultricies mi quis hendrerit dolor magna. Congue nisi vitae suscipit tellus mauris a diam maecenas sed. Risus viverra adipiscing at in tellus integer feugiat scelerisque varius. Fermentum leo vel orci porta.',
+            description: `The Protection chapter offers an analysis of the protection space for Syrian refugees in Lebanon through key indicators, including legal residency and birth- and marriage registration. Protection indicators also include  those related to safety and security, as well as community relations. The child protection space is studied through child labour and child marriage indicators.`,
             image_url: 'images/chapters/ch-protection.jpg',
             download_url: '',
             knowledge_hub_url: ''
         },
         {
             title: 'SHELTER',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa ultricies mi quis hendrerit dolor magna. Congue nisi vitae suscipit tellus mauris a diam maecenas sed. Risus viverra adipiscing at in tellus integer feugiat scelerisque varius. Fermentum leo vel orci porta.',
+            description: `While the majority of Syrian refugees live in cities and villages, the remaining percentage live in spontaneously set-up tented settlements throughout the country. The Shelter chapter summarizes the physical conditions of all types of refugee settlements, as well as occupancy agreements and rental costs. It also studies the mobility of households between places of residence, including for reasons of eviction.`,
             image_url: 'images/chapters/ch-shelter.jpg',
             download_url: '',
             knowledge_hub_url: ''
         },
         {
             title: 'WASH',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa ultricies mi quis hendrerit dolor magna. Congue nisi vitae suscipit tellus mauris a diam maecenas sed. Risus viverra adipiscing at in tellus integer feugiat scelerisque varius. Fermentum leo vel orci porta.',
+            description: `The WASH chapter examines access to drinking water and other water sources, as well as the sanitation and hygiene situation of Syrian refugee households in Lebanon.`,
             image_url: 'images/chapters/ch-wash.jpg',
             download_url: '',
             knowledge_hub_url: ''
@@ -2693,7 +2693,10 @@ export default class DataService {
         }
     ];
 
-    homeIntro = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum';
+    homeIntro = `The Vulnerability Assessment of Syrian Refugees in Lebanon (VASyR 2019) provides an insight into the evolving situation of Syrian refugees in Lebanon. As per Government of Lebanon estimates, Lebanon is currently hosting 1.5 million of the 6.7 million Syrian refugees displaced globally1. 
+    Now in its seventh year, the VASyR assesses a representative sample of Syrian refugee households, providing an overview of the geographical variations in vulnerabilities at a district and governorate levels. The VASyR is the only annual assessment in Lebanon covering all sectors and allows for the identification of changes and trends. 
+    The report, issued jointly by the United Nations High Commissioner for Refugees (UNHCR), the United Nations Children’s Fund (UNICEF) and the World Food Programme (WFP) is an essential resource for planning, decision-making and needs-based programme design. 
+    `;
 
     getTopMenuData() {
         return this.topMenu;
