@@ -2,6 +2,7 @@
   <div id="app" v-bind:class="{ 'no-scroll': noScroll }">
     <div id="loading-view" v-if="loading">
       <div class="loading-icon">
+        <div class="loading-text">Loading VASyR</div>
         <div class="lds-facebook"><div></div><div></div><div></div></div>
       </div>
     </div>
@@ -33,12 +34,14 @@ export default {
     imagesLoaded
   },
   mounted() {
-    document.onreadystatechange = () => { 
-      if (document.readyState == "complete") { 
-        // run code here
+    document.onreadystatechange = () => {
+      if (document.readyState == "complete") {
         this.mounted = true;
+
+        // if document is ready and controllers mounted and all images loaded then stop loading
         if(this.allLoaded) {
           this.loading = false;
+          this.noScroll = false;
         }
       } 
     }
@@ -46,8 +49,9 @@ export default {
   methods: {
     loaded(instance) {
       this.allLoaded = true;
-      this.noScroll = false;
+      // if document is ready and controllers mounted and all images loaded then stop loading
       if(this.mounted) {
+        this.noScroll = false;
         this.loading = false;
       }
     }
@@ -101,8 +105,12 @@ body, html {
 #loading-view .loading-icon {
   color: white;
   position: absolute;
-  top: 49%;
-  left: 49%;
+  top: 45%;
+  left: 45%;
+}
+
+.loading-text {
+  font-size: 18px;
 }
 
 .lds-facebook {
@@ -111,6 +119,7 @@ body, html {
   width: 64px;
   height: 64px;
 }
+
 .lds-facebook div {
   display: inline-block;
   position: absolute;
@@ -119,6 +128,7 @@ body, html {
   background: #fff;
   animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
 }
+
 .lds-facebook div:nth-child(1) {
   left: 6px;
   animation-delay: -0.24s;
@@ -127,10 +137,12 @@ body, html {
   left: 26px;
   animation-delay: -0.12s;
 }
+
 .lds-facebook div:nth-child(3) {
   left: 45px;
   animation-delay: 0;
 }
+
 @keyframes lds-facebook {
   0% {
     top: 6px;
