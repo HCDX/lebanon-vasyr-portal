@@ -130,7 +130,7 @@ export default class DataService {
             image_url: 'images/chapters/ch-wash.jpg',
             download_url: '',
             knowledge_hub_url: ''
-        },
+        }
     ]
 
     roadMapData = [
@@ -169,7 +169,7 @@ export default class DataService {
             description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate',
             icon: '/icons/icon-requests.png',
             top: false
-        },
+        }
     ];
     
     maps = [
@@ -220,7 +220,7 @@ export default class DataService {
             url: 'link',
             image: '/images/maps/lebanon-admin.png',
             description: 'This is the map description if needed to be added'
-        },
+        }
     ];
 
     reportsData = [
@@ -265,7 +265,7 @@ export default class DataService {
             year: '2013',
             image_url: '/images/reports/vasyr-2013.jpg',
             download_url: '/files/previous_vasyr_reports/vasyr-2013.pdf'
-        },
+        }
     ];
 
     toolsData = [

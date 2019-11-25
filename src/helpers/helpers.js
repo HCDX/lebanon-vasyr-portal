@@ -71,7 +71,7 @@ export default {
                 pagesToShow.push(i);
             }
             pagesToShow.reverse();
-        } else if(total_pages - page <= 5) {
+        } else if(total_pages - page <= 4) {
             for(let i = total_pages; i > total_pages - 5; i--) {
                 pagesToShow.push(i);
             }

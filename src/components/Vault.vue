@@ -39,6 +39,9 @@
           <nav aria-label="Page navigation example">
             <ul class="pagination justify-content-end">
               <li class="page-item">
+                <a class="page-link" v-on:click="goToPage(1)">First</a>
+              </li>
+              <li class="page-item">
                 <a class="page-link" v-on:click="goToPreviousPage()">Previous</a>
               </li>
               <li class="page-item page-number" v-for="(p, index) in pagesToShow" v-bind:key="index" v-bind:class="{ active: p === page }">
@@ -46,6 +49,9 @@
               </li>
               <li class="page-item">
                 <a class="page-link"  v-on:click="goToNexPage()">Next</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link"  v-on:click="goToPage(numberOfPages)">Last</a>
               </li>
             </ul>
           </nav>
