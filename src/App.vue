@@ -61,13 +61,39 @@ export default {
 
 <style>
 @import url('https://fonts.googleapis.com/css?family=Roboto:300i,400,500,500i,700,700i&display=swap');
+@font-face {
+  font-family: 'Montserrat';
+  src: url('assets/fonts/montserrat/Montserrat-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Montserrat-Black';
+  src: url('assets/fonts/montserrat/Montserrat-Black.ttf');
+}
+
+@font-face {
+  font-family: 'Montserrat-Light';
+  src: url('assets/fonts/montserrat/Montserrat-Light.ttf');
+}
+
+@font-face {
+  font-family: 'Montserra-Medium';
+  src: url('assets/fonts/montserrat/Montserrat-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url('assets/fonts/montserrat/Montserrat-Bold.ttf');
+}
+
 body, html {
   height: 100%;
+  font-family: 'Montserrat-Bold' !important;
 }
 
 #app {
   height: 100%;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat-Bold' !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

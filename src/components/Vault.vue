@@ -1,5 +1,5 @@
 <template>
-  <div id="vault" class="dark">
+  <div id="vault" class="light">
     <div class="page-title">
       <hr class="horizental-ruler">
       <h3> VAULT </h3>

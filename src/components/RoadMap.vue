@@ -1,7 +1,7 @@
 <template style="background-color: #273b56;">
 	<div id="road-map" style="background-color: #273b56;">
 		<div class="row roadmap-main-container contained">
-			<div v-for="(group, index) in roadMapData" v-bind:key="index" class="col col-md-2 col-12" style="color: white;">
+			<div v-for="(group, index) in roadMapData" v-bind:key="index" class="col col-12 col-sm-6 col-md-4 col-lg-2" style="color: white;">
 				<div class="info-container" :class="{'text-top' : group.top, 'text-bottom' : !group.top}">
 					<!-- remove the v-id from both text containers to have them both present if the original design is needed -->
 					<div class="info-text" v-if="group.top">

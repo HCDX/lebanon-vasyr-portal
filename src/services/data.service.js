@@ -16,7 +16,7 @@ export default class DataService {
             isScrollable: true
         },
         {
-            item: 'FULL REPORT',
+            item: 'REPORTS',
             url: 'reports',
             isScrollable: true
         },
@@ -45,91 +45,104 @@ export default class DataService {
             description: `The Assistance chapter examines whether families are recipients of cash assistance and studies their access to household assets. Vulnerable Syrian refugees in Lebanon can receive two main types of assistance: cash assistance and in-kind support, both of which are aimed at covering their basic needs.`,
             image_url: 'images/chapters/ch-assistance.jpg',
             download_url: '',
-            knowledge_hub_url: ''
+            knowledge_hub_url: '',
+            textPosition: 'top'
         },
         {
             title: 'COPING STRATEGIES',
             description: `This chapter studies the range of strategies households employ in order to cope with a lack of food and/or the means to buy it. It also examines coping mechanisms related to the household’s capacity to earn a sustainable income.`,
             image_url: 'images/chapters/ch-coping-strategies.jpg',
             download_url: '',
-            knowledge_hub_url: ''
+            knowledge_hub_url: '',
+            textPosition: 'bottom'
         },
         {
             title: 'DEMOGRAPHICS',
             description: `This chapter contains the key demographic characteristics of the Syrian refugee population in Lebanon, including household composition, profile of the head of household, dependency and prevalence of certain specific needs.`,
             image_url: 'images/chapters/ch-demographics.jpg',
             download_url: '',
-            knowledge_hub_url: ''
+            knowledge_hub_url: '',
+            textPosition: 'top'
         },
         {
             title: 'VULNERABILITY',
             description: `This chapter provides an insight into the economic vulnerability of Syrian refugee households in Lebanon, studied on the dimensions of the composition and amount of expenditures, Survival and Minimum Expenditures Basket (S)MEB, and debt.`,
             image_url: 'images/chapters/ch-eco-vulnerability.jpg',
             download_url: '',
-            knowledge_hub_url: ''
+            knowledge_hub_url: '',
+            textPosition: 'top'
         },
         {
             title: 'EDUCATION',
             description: `The Education chapter studies the school enrolment rates of Syrian refugee girls and boys aged 3 to 24 years old. It also analyses the reasons why children and youth were not enrolled in schools and examines the share of youth who were neither employed nor attending a training.`,
             image_url: 'images/chapters/ch-education.jpg',
             download_url: '',
-            knowledge_hub_url: ''
+            knowledge_hub_url: '',
+            textPosition: 'bottom'
         },
         {
             title: 'FOOD CONSUMPTION',
             description: `This chapter examines food consumption indicators, which are essential for studying food security and classifying households according to their food security status. The dimensions considered in this chapter include food quantity, as well as food quality and diversity.`,
             image_url: 'images/chapters/ch-food-consumption.jpg',
             download_url: '',
-            knowledge_hub_url: ''
+            knowledge_hub_url: '',
+            textPosition: 'top'
         },
         {
             title: 'FOOD SECURITY',
             description: `This chapter analyses the food security trends among Syrian refugee households in Lebanon, including the characteristics of food insecure households.  It also looks at differences in food security levels among districts and governorates.`,
             image_url: 'images/chapters/ch-food-security.jpg',
             download_url: '',
-            knowledge_hub_url: ''
+            knowledge_hub_url: '',
+            textPosition: 'top'
         },
         {
             title: 'GENDER',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa ultricies mi quis hendrerit dolor magna. Congue nisi vitae suscipit tellus mauris a diam maecenas sed. Risus viverra adipiscing at in tellus integer feugiat scelerisque varius. Fermentum leo vel orci porta.',
             image_url: 'images/chapters/ch-gender.jpg',
             download_url: '',
-            knowledge_hub_url: ''
+            knowledge_hub_url: '',
+            textPosition: 'bottom'
         },
         {
             title: 'HEALTH',
             description: `The Health chapter studies access of Syrian refugee households to needed health care, which is available to refugees through primary health care outlets, hospitals and mobile medical units. It also examines barriers to healthcare access.`,
             image_url: 'images/chapters/ch-health.jpg',
             download_url: '',
-            knowledge_hub_url: ''
+            knowledge_hub_url: '',
+            textPosition: 'top'
         },
         {
             title: 'LIVELIHOODS',
             description: `This chapter provides an insight into income-generating activities, including the type of work and wages earned, as well as employment and unemployment levels and number of days worked, all measured at an individual level. Questions asked at a household level include those addressing main income sources and what households relied on as the main income source.`,
             image_url: 'images/chapters/ch-livelihoods.jpg',
             download_url: '',
-            knowledge_hub_url: ''
+            knowledge_hub_url: '',
+            textPosition: 'top'
         },
         {
             title: 'PROTECTION',
             description: `The Protection chapter offers an analysis of the protection space for Syrian refugees in Lebanon through key indicators, including legal residency and birth- and marriage registration. Protection indicators also include  those related to safety and security, as well as community relations. The child protection space is studied through child labour and child marriage indicators.`,
             image_url: 'images/chapters/ch-protection.jpg',
             download_url: '',
-            knowledge_hub_url: ''
+            knowledge_hub_url: '',
+            textPosition: 'bottom'
         },
         {
             title: 'SHELTER',
             description: `While the majority of Syrian refugees live in cities and villages, the remaining percentage live in spontaneously set-up tented settlements throughout the country. The Shelter chapter summarizes the physical conditions of all types of refugee settlements, as well as occupancy agreements and rental costs. It also studies the mobility of households between places of residence, including for reasons of eviction.`,
             image_url: 'images/chapters/ch-shelter.jpg',
             download_url: '',
-            knowledge_hub_url: ''
+            knowledge_hub_url: '',
+            textPosition: 'top'
         },
         {
             title: 'WASH',
             description: `The WASH chapter examines access to drinking water and other water sources, as well as the sanitation and hygiene situation of Syrian refugee households in Lebanon.`,
             image_url: 'images/chapters/ch-wash.jpg',
             download_url: '',
-            knowledge_hub_url: ''
+            knowledge_hub_url: '',
+            textPosition: 'top'
         }
     ]
 
@@ -2693,10 +2706,11 @@ export default class DataService {
         }
     ];
 
-    homeIntro = `The Vulnerability Assessment of Syrian Refugees in Lebanon (VASyR 2019) provides an insight into the evolving situation of Syrian refugees in Lebanon. As per Government of Lebanon estimates, Lebanon is currently hosting 1.5 million of the 6.7 million Syrian refugees displaced globally1. 
-    Now in its seventh year, the VASyR assesses a representative sample of Syrian refugee households, providing an overview of the geographical variations in vulnerabilities at a district and governorate levels. The VASyR is the only annual assessment in Lebanon covering all sectors and allows for the identification of changes and trends. 
-    The report, issued jointly by the United Nations High Commissioner for Refugees (UNHCR), the United Nations Children’s Fund (UNICEF) and the World Food Programme (WFP) is an essential resource for planning, decision-making and needs-based programme design. 
-    `;
+    homeIntro = {
+        'part_1': `The Vulnerability Assessment of Syrian Refugees in Lebanon (VASyR 2019) provides an insight into the evolving situation of Syrian refugees in Lebanon. As per Government of Lebanon estimates, Lebanon is currently hosting 1.5 million of the 6.7 million Syrian refugees displaced globally.`,
+        'part_2': `Now in its seventh year, the VASyR assesses a representative sample of Syrian refugee households, providing an overview of the geographical variations in vulnerabilities at a district and governorate levels. The VASyR is the only annual assessment in Lebanon covering all sectors and allows for the identification of changes and trends.`,
+        'part_3': `The report, issued jointly by the United Nations High Commissioner for Refugees (UNHCR), the United Nations Children’s Fund (UNICEF) and the World Food Programme (WFP) is an essential resource for planning, decision-making and needs-based programme design.`
+    };
 
     getTopMenuData() {
         return this.topMenu;
