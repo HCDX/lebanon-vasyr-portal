@@ -160,6 +160,7 @@ export default {
   margin: 0;
   height: 75px;
   background-color: #273b56;
+  font-family: 'Montserrat-Bold' !important;
 }
 
 .menu-container li a {

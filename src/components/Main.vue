@@ -21,8 +21,14 @@
         </div>
       </div>
       <div class="intro-container">
-        <div class="intro-text">
-          {{introduction}}
+        <div class="intro-text part">
+          {{introduction.part_1}}
+        </div>
+        <div class="intro-text part">
+          {{introduction.part_2}}
+        </div>
+        <div class="intro-text part">
+          {{introduction.part_3}}
         </div>
       </div>
       <div class="download-button">
@@ -91,6 +97,7 @@ export default {
   background-color: #273b56;
   background-repeat: no-repeat;
   background-size: 110%;
+  font-family: 'Montserrat-Bold' !important;
 }
 
 .main-transition {
@@ -100,7 +107,7 @@ export default {
 .home-main-container {
   position:relative;
   height: 100%;
-  padding: 200px;
+  padding: 180px;
 }
 
 .image-overlay {
@@ -135,12 +142,15 @@ export default {
   display: inline-block;
 }
 
-.intro-text {
-  margin-top: 40px;
-  color: white;
-  padding: 45px 20%;
+.intro-container {
+  margin-bottom: 30px;
 }
 
+.intro-text {
+  margin-top: 15px;
+  color: white;
+  padding: 0px 20%;
+}
 
 @media screen and (min-width: 817px) and (max-width: 1218px) {
   .main-container {
@@ -150,21 +160,70 @@ export default {
   }
 
   .intro-text {
-    margin-top: 40px;
     color: white;
-    padding: 45px 110px;
+    padding: 5px;
+  }
+
+  .home-main-container {
+    position:relative;
+    height: 100%;
+    padding: 125px;
   }
 }
 
 @media screen and (max-width: 804px)  {
   #main {
     background-size: cover;
+    background-position-x: 50%;
   }
 
   .home-main-container {
     position:relative;
     height: 100%;
-    padding: 0;
+    padding: 25px;
+  }
+
+  .organization-logo{
+    display: block;
+    margin: 15px auto;
+    width: 115px;
+    text-align: center;
+  }
+
+  .main-container {
+    position:relative;
+    height: 100%;
+    padding: 30px 10px;
+  }
+
+  .intro-text {
+    margin-top: 20px;
+    color: white;
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  .logos-container {
+    display: block;
+    text-align: center;
+  }
+
+  .logos-row {
+    display: inline-block;
+    padding: 10px;
+  }
+}
+
+@media (min-width: 1024px) and (min-height: 1200px)  {
+  #main {
+    background-size: cover;
+    background-position-x: 50%;
+  }
+
+  .home-main-container {
+    position:relative;
+    height: 100%;
+    padding: 470px 200px 300px;
   }
 
   .organization-logo{
