@@ -159,7 +159,6 @@ export default {
   padding: 0px 20%;
 }
 
-
 @media screen and (min-width: 817px) and (max-width: 1218px) {
   .main-container {
     position:relative;
@@ -176,6 +175,26 @@ export default {
     position:relative;
     height: 100%;
     padding: 125px;
+  }
+}
+
+@media screen and (min-width: 1218px) and (max-width: 1600px) {
+  .main-container {
+    position:relative;
+    height: 100%;
+    padding: 120px 0;
+  }
+
+  .intro-text {
+    color: white;
+    padding: 5px;
+    padding: 0px 200px;
+  }
+
+  .home-main-container {
+    position:relative;
+    height: 100%;
+    padding: 160px 120px;
   }
 }
 
