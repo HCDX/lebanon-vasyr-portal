@@ -50,7 +50,7 @@ export default class DataService {
         },
         {
             title: 'COPING STRATEGIES',
-            description: `This chapter studies the range of strategies households employ in order to cope with a lack of food and/or the means to buy it. It also examines coping mechanisms related to the household’s capacity to earn a sustainable income.`,
+            description: `This chapter studies the range of strategies households employ in order to cope with a lack of food and/or the means to buy it. Coping mechanisms related to the household’s capacity to earn a sustainable income, are also examined.`,
             image_url: 'images/chapters/ch-coping-strategies.jpg',
             download_url: '',
             knowledge_hub_url: '',
@@ -66,11 +66,19 @@ export default class DataService {
         },
         {
             title: 'VULNERABILITY',
-            description: `This chapter provides an insight into the economic vulnerability of Syrian refugee households in Lebanon, studied on the dimensions of the composition and amount of expenditures, Survival and Minimum Expenditures Basket (S)MEB, and debt.`,
+            description: `This chapter provides insight into the economic vulnerability of Syrian refugee households in Lebanon, studied on the dimensions of the composition and amount of expenditures, Survival and Minimum Expenditures Basket (S)MEB, and debt.`,
             image_url: 'images/chapters/ch-eco-vulnerability.jpg',
             download_url: '',
             knowledge_hub_url: '',
             textPosition: 'top'
+        },
+        {
+            title: 'ENERGY',
+            description: `The Energy chapter analyses the access to electricity by Syrian refugee households in Lebanon. It also studies the hours of electricity supplied by the national grid versus private diesel generators, expenditure on electricity and bill collection, as well as the sources of energy used for heating and cooking.`,
+            image_url: 'images/chapters/ch-energy.jpg',
+            download_url: '',
+            knowledge_hub_url: '',
+            textPosition: 'bottom'
         },
         {
             title: 'EDUCATION',
@@ -78,7 +86,7 @@ export default class DataService {
             image_url: 'images/chapters/ch-education.jpg',
             download_url: '',
             knowledge_hub_url: '',
-            textPosition: 'bottom'
+            textPosition: 'top'
         },
         {
             title: 'FOOD CONSUMPTION',
@@ -94,19 +102,19 @@ export default class DataService {
             image_url: 'images/chapters/ch-food-security.jpg',
             download_url: '',
             knowledge_hub_url: '',
-            textPosition: 'top'
-        },
-        {
-            title: 'GENDER',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa ultricies mi quis hendrerit dolor magna. Congue nisi vitae suscipit tellus mauris a diam maecenas sed. Risus viverra adipiscing at in tellus integer feugiat scelerisque varius. Fermentum leo vel orci porta.',
-            image_url: 'images/chapters/ch-gender.jpg',
-            download_url: '',
-            knowledge_hub_url: '',
             textPosition: 'bottom'
         },
         {
+            title: 'GENDER',
+            description: `This section explores the gender dimensions of vulnerabilities faced by Syrian refugees in Lebanon and identifies gender-based differences and inequalities.`,
+            image_url: 'images/chapters/ch-gender.jpg',
+            download_url: '',
+            knowledge_hub_url: '',
+            textPosition: 'top'
+        },
+        {
             title: 'HEALTH',
-            description: `The Health chapter studies access of Syrian refugee households to needed health care, which is available to refugees through primary health care outlets, hospitals and mobile medical units. It also examines barriers to healthcare access.`,
+            description: `The Health chapter studies access of Syrian refugee households to needed health care, which is available to refugees through primary health care outlets, hospitals and mobile medical units. Barriers to healthcare access are also examined.`,
             image_url: 'images/chapters/ch-health.jpg',
             download_url: '',
             knowledge_hub_url: '',
@@ -114,23 +122,23 @@ export default class DataService {
         },
         {
             title: 'LIVELIHOODS',
-            description: `This chapter provides an insight into income-generating activities, including the type of work and wages earned, as well as employment and unemployment levels and number of days worked, all measured at an individual level. Questions asked at a household level include those addressing main income sources and what households relied on as the main income source.`,
+            description: `This chapter provides  insight into income-generating activities, including the type of work and wages earned, as well as employment and unemployment levels and number of days worked, all measured at an individual level. Questions were asked at a household level to assess the main reliance of income sources for each household.`,
             image_url: 'images/chapters/ch-livelihoods.jpg',
-            download_url: '',
-            knowledge_hub_url: '',
-            textPosition: 'top'
-        },
-        {
-            title: 'PROTECTION',
-            description: `The Protection chapter offers an analysis of the protection space for Syrian refugees in Lebanon through key indicators, including legal residency and birth- and marriage registration. Protection indicators also include  those related to safety and security, as well as community relations. The child protection space is studied through child labour and child marriage indicators.`,
-            image_url: 'images/chapters/ch-protection.jpg',
             download_url: '',
             knowledge_hub_url: '',
             textPosition: 'bottom'
         },
         {
+            title: 'PROTECTION',
+            description: `The Protection chapter offers an analysis of the protection space for Syrian refugees in Lebanon through key indicators, including legal residency and birth- and marriage registration. Protection indicators also include those related to safety and security, as well as community relations. The child protection space is studied through child labour and child marriage indicators.`,
+            image_url: 'images/chapters/ch-protection.jpg',
+            download_url: '',
+            knowledge_hub_url: '',
+            textPosition: 'top'
+        },
+        {
             title: 'SHELTER',
-            description: `While the majority of Syrian refugees live in cities and villages, the remaining percentage live in spontaneously set-up tented settlements throughout the country. The Shelter chapter summarizes the physical conditions of all types of refugee settlements, as well as occupancy agreements and rental costs. It also studies the mobility of households between places of residence, including for reasons of eviction.`,
+            description: `While the majority of Syrian refugees live in cities and villages, the remaining percentage live in spontaneously set-up tented settlements throughout the country. The Shelter chapter summarizes the physical conditions of all types of refugee settlements, as well as occupancy agreements and rental costs. It also studies the mobility of households between places of residence, which includes the reasons of eviction.`,
             image_url: 'images/chapters/ch-shelter.jpg',
             download_url: '',
             knowledge_hub_url: '',
@@ -142,44 +150,44 @@ export default class DataService {
             image_url: 'images/chapters/ch-wash.jpg',
             download_url: '',
             knowledge_hub_url: '',
-            textPosition: 'top'
+            textPosition: 'bottom'
         }
     ]
 
     roadMapData = [
         {
             title: 'CHAPTERS',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate',
+            description: `Here is where you can download individual VASyR thematic chapters in pdf.`,
             icon: '/icons/icon-chapters.png',
             top: true
         },
         {
             title: 'MAPS',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate',
+            description: `The Dynamic Maps are an interactive tool to help you visualize VASyR data. You will find maps here visualizing VASyR data from the past three years, allowing for geographical comparison.`,
             icon: '/icons/icon-maps.png',
             top: false
         },
         {
-            title: 'FULL REPORT',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate',
+            title: 'REPORTS',
+            description: `Download the full publication in pdf here.`,
             icon: '/icons/icon-report.png',
             top: true
         },
         {
             title: 'VAULT',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate',
+            description: `The VAULT is where you can find data tabulations for each chapter and theme, with information disaggregated per governorate, district, gender and other aspects. The VAULT can be of particular help for those wanting to have a more detailed look at VASyR data.`,
             icon: '/icons/icon-vault.png',
             top: false
         },
         {
             title: 'TOOLS',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate',
+            description: `If you are an NGO designing an assessment, you can find a variety of resources in the Tools section, including the VASyR questionnaire, quality assurance & monitoring documents and enumerator training materials.`,
             icon: '/icons/icon-tools.png',
             top: true
         },
         {
             title: 'REQUEST',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate',
+            description: `If you would like to access the full- or part of the VASyR dataset, please submit your request here. This section is particularly relevant for researchers or anyone willing to develop their own analysis using VASyR data.`,
             icon: '/icons/icon-requests.png',
             top: false
         }

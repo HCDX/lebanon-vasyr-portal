@@ -60,19 +60,26 @@ export default {
       main.addEventListener("mouseenter", this.mouseEnter);
       main.addEventListener("mouseleave", this.mouseLeave);
     }
+    
   },
   methods: {
     getImgUrl(img) {
       return require(img);
     },
     mouseMove(element) {
-      var home = document.getElementById("main"),
-      w = window.innerWidth,
-      h = window.innerHeight,
-      mouseX = element.clientX,
-      mouseY = element.clientY,
-      imageX = (mouseX/w)*10,
-      imageY = 75 + (mouseY/h)*10;
+      var home = document.getElementById("main");
+      let w = window.innerWidth;
+      let h = window.innerHeight;
+      let mouseX = element.clientX;
+      let mouseY = element.clientY;
+      let startImgPosition = 75;
+      
+      if(w >= 1900 && w <= 2518) {
+         startImgPosition = 30;
+      }
+
+      let imageX = (mouseX/w)*10;
+      let imageY = startImgPosition + (mouseY/h)*10;
       home.style["background-position"] = imageX + "% " + imageY + "%";
     },
     mouseEnter(element) {
@@ -151,6 +158,7 @@ export default {
   color: white;
   padding: 0px 20%;
 }
+
 
 @media screen and (min-width: 817px) and (max-width: 1218px) {
   .main-container {
@@ -254,6 +262,19 @@ export default {
   .logos-row {
     display: inline-block;
     padding: 10px;
+  }
+}
+
+@media screen and (min-width: 1900px) and (max-width: 2518px) {
+  #main {
+    position: relative;
+    min-height: 100%;
+    background: url('../assets/images/home-background.jpg');
+    background-position-y: 30%;
+    background-color: #273b56;
+    background-repeat: no-repeat;
+    background-size: 120% !important;
+    font-family: 'Montserrat-Bold' !important;
   }
 }
 
