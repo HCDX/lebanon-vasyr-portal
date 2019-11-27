@@ -6,7 +6,7 @@
       <hr style="margin: 1px 0; border-top-color: rgba(255, 255, 255, 0.35)">
     </div>
     <div class="row reports-main-container contained" style="margin: 0;" flex>
-      <div v-for="(report, index) in reports" v-bind:key="index" class="col col-md-4 col-lg-3 col-12 no-padding" style="color: white; overflow: hidden;">
+      <div v-for="(report, index) in reports" v-bind:key="index" class="col col-md-3 col-lg-2 col-12 no-padding" style="color: white; overflow: hidden;">
         <div class="report-container">
           <div class="download-overlay">
             <div class="download-section">
@@ -47,11 +47,11 @@
 
 .report-container {
   position: relative;
-  height: 376px;
+  height: 290px;
 }
 
 .report-image img {
-  height: 376px;
+  height: 290px;
 }
 
 .no-padding {
@@ -75,7 +75,21 @@
 .download-section {
   padding: 139px 20px;
 }
-@media screen and (max-width: 1124px)  {
+@media screen and (max-width: 991px)  {
+  .report-container {
+    height: 250px;
+  }
+
+  .report-image img {
+    height: 250px;
+  }
+
+  .download-section {
+    padding: 86px 20px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1300px)  {
   .report-container {
     height: 270px;
   }
@@ -88,4 +102,5 @@
     padding: 86px 20px;
   }
 }
+
 </style>
