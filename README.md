@@ -1,7 +1,21 @@
 # lebanon-vasyr
+## System Requirements
+```
+Install NodeJS
+```
+See [Installing NodeJS](https://nodejs.org/en/download/)
+
+```
+type npm -v in your terminal to make sure Node Package Manager is installed on your system
+
+Install vue CLI on your system which is a command line helper for generating and managing VueJS applications (OPTIONAL)
+npm install -g @vue/cli
+```
 
 ## Project setup
 ```
+Install required packages by running:
+
 npm install
 ```
 
@@ -13,11 +27,6 @@ npm run serve
 ### Compiles and minifies for production
 ```
 npm run build
-```
-
-### Run your tests
-```
-npm run test
 ```
 
 ### Lints and fixes files
