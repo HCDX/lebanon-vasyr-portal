@@ -1,3 +1,7 @@
+/* The data service acts as a data provider for all components and pages
+* the static data in this class can be later replaced by an API and connected through this service so minimum changes
+* would need to happen in all the different components
+*/
 export default class DataService {
     topMenu = [
         {

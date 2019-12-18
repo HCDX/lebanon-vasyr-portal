@@ -1,3 +1,8 @@
+/*
+    This helper contains code that can be reused in different components, like the scroppling between sections
+    the easing out on the scroll
+    pagination and checking the device types
+*/
 export default {
     scrollTo: function(selector, duration) {
         let vm = this;
