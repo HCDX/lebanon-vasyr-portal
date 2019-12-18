@@ -63,8 +63,9 @@
 <script>
 	import DataService from '@/services/data.service';
   import helper from '@/helpers/helpers';
-
-	export default {
+  import _ from 'lodash';
+  
+  export default {
 		name: 'vault',
 		data: () => ({
 			dataService: new DataService(),
@@ -94,43 +95,55 @@
       });
     },
     computed: {
-      filteredVaultData() {
-        let searchTextDecapitalized = this.searchText.toLowerCase();
-        let searchingFor = searchTextDecapitalized.split(' ');
-        if(searchingFor.length > 1) {
-          searchingFor = searchingFor.filter(function(item) {
-            return item !== "";
-          })
-        }
+      filteredVaultData: {
+        get() {
 
-        if(this.searchText != this.previousSearch) {
-          this.page = 1;
-          this.previousSearch = this.searchText;
-        }
-        if (searchingFor.length) {
-          var list = this.vaultData.filter(function(p) {
-            // return p.searchable.indexOf(searchingFor) > -1;
-            let data = p;
-            let list = searchingFor.filter(function(searchTerm) {
-              return data.searchable.indexOf(searchTerm) > -1;
+          let searchTextDecapitalized = this.searchText.toLowerCase();
+          let searchingFor = searchTextDecapitalized.split(' ');
+          if(searchingFor.length > 1) {
+            searchingFor = searchingFor.filter(function(item) {
+              return item !== "";
             })
+          }
+  
+          if(this.searchText != this.previousSearch) {
+            this.page = 1;
+            this.previousSearch = this.searchText;
+          }
+          if (searchingFor.length) {
+            var list = this.vaultData.filter(function(p) {
+              // return p.searchable.indexOf(searchingFor) > -1;
+              let data = p;
 
-            if(list.length > 0) {
-              return list;
-            }
+              let allFound = true;
 
-          });
-          let paginatedData = helper.paginate(list, this.page);
-          this.numberOfPages = paginatedData.total_pages;
-          this.pagesToShow = paginatedData.pages_to_show;
-          return paginatedData.data;
-        } else {
-          var list = this.vaultData
-          let paginatedData = helper.paginate(list, this.page);
-          this.numberOfPages = paginatedData.total_pages;
-          this.pagesToShow = paginatedData.pages_to_show;
-          return paginatedData.data;
-        }
+              let list = searchingFor.filter(function(searchTerm) {
+                if(data.searchable.indexOf(searchTerm) == -1 ) {
+                  allFound = false;
+                }
+
+                return data.searchable.indexOf(searchTerm) > -1;
+              })
+  
+              if(list.length > 0 && allFound) {
+                return list;
+              }
+            });
+            let paginatedData = helper.paginate(list, this.page);
+            this.numberOfPages = paginatedData.total_pages;
+            this.pagesToShow = paginatedData.pages_to_show;
+            return paginatedData.data;
+          } else {
+            var list = this.vaultData
+            let paginatedData = helper.paginate(list, this.page);
+            this.numberOfPages = paginatedData.total_pages;
+            this.pagesToShow = paginatedData.pages_to_show;
+            return paginatedData.data;
+          }
+        },
+        set: _.debounce(function(newVal) {
+          this.searchText = newVal;
+        }, 500)
       },
     },
     methods: {
@@ -162,7 +175,7 @@
         if(this.page > 1) {
           this.page -= 1;
         }
-      }
+      },
     }
 	}
 </script>
