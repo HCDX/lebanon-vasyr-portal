@@ -12,13 +12,13 @@
 
 <script>
 // @ is an alias to /src
-import Main from '@/components/Main.vue'
-import RoadMap from '@/components/RoadMap.vue'
-import Chapters from '@/components/Chapters.vue'
-import Maps from '@/components/Maps.vue'
-import Reports from '@/components/Reports.vue'
-import Tools from '@/components/Tools.vue'
-import Vault from '@/components/Vault.vue'
+import Main from '@/views/Main.vue'
+import RoadMap from '@/views/RoadMap.vue'
+import Chapters from '@/views/Chapters.vue'
+import Maps from '@/views/Maps.vue'
+import Reports from '@/views/Reports.vue'
+import Tools from '@/views/Tools.vue'
+import Vault from '@/views/Vault.vue'
 
 export default {
   name: 'home',

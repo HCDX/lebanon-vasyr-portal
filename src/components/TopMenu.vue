@@ -9,10 +9,26 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="menu-items col">
-      <li v-for="item in menuItems" v-bind:key="item.item" class="menu-item" :class="{'is-active' : item.url === currentActive}">
-        <a href="#" v-on:click="scrollTo(item.url)">{{item.item}}</a>
-        <!-- <router-link v-if="item.isScrollable && currentActive !== '/'" to="/" v-on:click.native="scrollTo(item.url)">{{item.item}}</router-link> -->
-        <!-- <router-link v-if="!item.isScrollable" :to="item.url" v-on:click.native="setCurrentActive(item.url)">{{item.item}}</router-link> -->
+      <li class="menu-item" :class="{'is-active' : currentActive === '/'}">
+        <a href="#" v-on:click="scrollTo('/')">HOME</a>
+      </li>
+      <li class="menu-item" :class="{'is-active' : currentActive === 'chapters'}">
+        <a href="#" v-on:click="scrollTo('chapters')">CHAPTERS</a>
+      </li>
+      <li class="menu-item" :class="{'is-active' : currentActive === 'maps'}">
+        <a href="#" v-on:click="scrollTo('maps')">MAPS</a>
+      </li>
+      <li class="menu-item" :class="{'is-active' : currentActive === 'reports'}">
+        <a href="#" v-on:click="scrollTo('reports')">REPORTS</a>
+      </li>
+      <li class="menu-item" :class="{'is-active' : currentActive === 'tools'}">
+        <a href="#" v-on:click="scrollTo('tools')">TOOLS</a>
+      </li>
+      <li class="menu-item" :class="{'is-active' : currentActive === 'vault'}">
+        <a href="#" v-on:click="scrollTo('vault')">VAULT</a>
+      </li>
+      <li class="menu-item">
+        <a href="http://ialebanon.unhcr.org/DataHub/" target="_blank">REQUEST</a>
       </li>
     </ul>
   </div>
@@ -37,7 +53,6 @@ export default {
     clickedLink: false
   }),
   mounted() {
-    console.log('Mounted Top Menu');
     this.menuItems = this.dataService.getTopMenuData();
     
     if(window.location.hash === '#/') {

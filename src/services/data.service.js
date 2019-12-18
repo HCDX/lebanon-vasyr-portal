@@ -159,89 +159,101 @@ export default class DataService {
             title: 'CHAPTERS',
             description: `Here is where you can download individual VASyR thematic chapters in pdf.`,
             icon: '/icons/icon-chapters.png',
-            top: true
+            top: true,
+            scrollLocation: 'chapters'
         },
         {
             title: 'MAPS',
             description: `The Dynamic Maps are an interactive tool to help you visualize VASyR data. You will find maps here visualizing VASyR data from the past three years, allowing for geographical comparison.`,
             icon: '/icons/icon-maps.png',
-            top: false
+            top: false,
+            scrollLocation: 'maps'
         },
         {
             title: 'REPORTS',
             description: `Download the full publication in pdf here.`,
             icon: '/icons/icon-report.png',
-            top: true
+            top: true,
+            scrollLocation: 'reports'
         },
         {
             title: 'VAULT',
             description: `The VAULT is where you can find data tabulations for each chapter and theme, with information disaggregated per governorate, district, gender and other aspects. The VAULT can be of particular help for those wanting to have a more detailed look at VASyR data.`,
             icon: '/icons/icon-vault.png',
-            top: false
+            top: false,
+            scrollLocation: 'vault'
         },
         {
             title: 'TOOLS',
             description: `If you are an NGO designing an assessment, you can find a variety of resources in the Tools section, including the VASyR questionnaire, quality assurance & monitoring documents and enumerator training materials.`,
             icon: '/icons/icon-tools.png',
-            top: true
+            top: true,
+            scrollLocation: 'tools'
         },
         {
             title: 'REQUEST',
             description: `If you would like to access the full- or part of the VASyR dataset, please submit your request here. This section is particularly relevant for researchers or anyone willing to develop their own analysis using VASyR data.`,
             icon: '/icons/icon-requests.png',
-            top: false
+            top: false,
+            url: 'http://ialebanon.unhcr.org/DataHub/'
         }
     ];
     
     maps = [
         {
-            title: 'Health Getaways',
-            url: 'link',
+            title: 'Maps Gateway',
+            url: 'https://app.powerbi.com/view?r=eyJrIjoiYjAwOGE4NjYtY2QxNy00YmIxLWFmNzEtZTUxZGJiMDE5YWJiIiwidCI6ImU1YzM3OTgxLTY2NjQtNDEzNC04YTBjLTY1NDNkMmFmODBiZSIsImMiOjh9',
             image: '/images/maps/health-getaways.png',
-            description: 'This is the map description if needed to be added'
+            description: 'This will take you to the maps page'
         },
-        {
-            title: 'Informal Setlements - Flood Risks and Snow Accumulation',
-            url: 'link',
-            image: '/images/maps/informal-settlements.png',
-            description: 'This is the map description if needed to be added'
-        },
-        {
-            title: 'Shelter Upgraded 2015-2018',
-            url: 'link',
-            image: '/images/maps/shelter-upgraded.png',
-            description: 'This is the map description if needed to be added'
-        },
-        {
-            title: 'Shelter National Gap Analysis 2018',
-            url: 'link',
-            image: '/images/maps/shelter-national-gap.png',
-            description: 'This is the map description if needed to be added'
-        },
-        {
-            title: 'Informal Settlements (IAMP 57)',
-            url: 'link',
-            image: '/images/maps/informal-settlements-iamp57.png',
-            description: 'This is the map description if needed to be added'
-        },
-        {
-            title: 'Out of School Children - June 2016',
-            url: 'link',
-            image: '/images/maps/out-of-school-children.png',
-            description: 'This is the map description if needed to be added'
-        },
-        {
-            title: 'Social Development Center',
-            url: 'link',
-            image: '/images/maps/social-development.png',
-            description: 'This is the map description if needed to be added'
-        },
-        {
-            title: 'Lebanon Admin',
-            url: 'link',
-            image: '/images/maps/lebanon-admin.png',
-            description: 'This is the map description if needed to be added'
-        }
+        // {
+        //     title: 'Health Getaways',
+        //     url: 'link',
+        //     image: '/images/maps/health-getaways.png',
+        //     description: 'This is the map description if needed to be added'
+        // },
+        // {
+        //     title: 'Informal Setlements - Flood Risks and Snow Accumulation',
+        //     url: 'link',
+        //     image: '/images/maps/informal-settlements.png',
+        //     description: 'This is the map description if needed to be added'
+        // },
+        // {
+        //     title: 'Shelter Upgraded 2015-2018',
+        //     url: 'link',
+        //     image: '/images/maps/shelter-upgraded.png',
+        //     description: 'This is the map description if needed to be added'
+        // },
+        // {
+        //     title: 'Shelter National Gap Analysis 2018',
+        //     url: 'link',
+        //     image: '/images/maps/shelter-national-gap.png',
+        //     description: 'This is the map description if needed to be added'
+        // },
+        // {
+        //     title: 'Informal Settlements (IAMP 57)',
+        //     url: 'link',
+        //     image: '/images/maps/informal-settlements-iamp57.png',
+        //     description: 'This is the map description if needed to be added'
+        // },
+        // {
+        //     title: 'Out of School Children - June 2016',
+        //     url: 'link',
+        //     image: '/images/maps/out-of-school-children.png',
+        //     description: 'This is the map description if needed to be added'
+        // },
+        // {
+        //     title: 'Social Development Center',
+        //     url: 'link',
+        //     image: '/images/maps/social-development.png',
+        //     description: 'This is the map description if needed to be added'
+        // },
+        // {
+        //     title: 'Lebanon Admin',
+        //     url: 'link',
+        //     image: '/images/maps/lebanon-admin.png',
+        //     description: 'This is the map description if needed to be added'
+        // }
     ];
 
     reportsData = [
@@ -293,20 +305,20 @@ export default class DataService {
         {
             title: 'VASyR Questionnaire',
             icon: '/icons/tools-question.png',
-            download_url: '',
-            description: 'This is the tool short description if needed'
+            url: 'https://data2.unhcr.org/en/documents/details/71337',
+            description: 'This will take you to the questionnaire page'
         },
         {
             title: 'VASyR Data Quality Assurance',
             icon: '/icons/tools-data-quality.png',
-            download_url: '',
-            description: 'This is the tool short description if needed'
+            download_url: '/files/vasyr_tools/VASyR_for_Web.zip',
+            description: 'This downloads the vasyr data quality assurance tools'
         },
         {
             title: 'Training Material',
             icon: '/icons/tools-training-material.png',
-            download_url: '',
-            description: 'This is the tool short description if needed'
+            download_url: '/files/vasyr_tools/VASyR_TRAININGS.zip',
+            description: 'This downloads the vasyr training tools'
         }
     ];
 
@@ -2753,6 +2765,10 @@ export default class DataService {
     }
 
     getVaultData() {
+        return this.vaultData;
+    }
+
+    getTrainingData() {
         return this.vaultData;
     }
 }
