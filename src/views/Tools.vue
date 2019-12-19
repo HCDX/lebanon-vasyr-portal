@@ -7,7 +7,7 @@
     </div>
     <div class="tools-main-container contained d-flex">
       <div class="row align-self-center" style="margin: auto; padding: 50px 0; width: 100%;">
-        <div v-for="(tool, index) in tools" v-bind:key="index" class="col col-md-4 col-12">
+        <div v-for="(tool, index) in tools" v-bind:key="index" class="col col-md-3 col-12">
           <div class="tool-container">
             <div class="tool-icon" data-toggle="tooltip" data-html="true" v-tooltip:top="tool.description">
               <a v-if="tool.url" :href="tool.url" target="_blank"><img alt="Tool Icon" :src="require('@/assets' + tool.icon)"/></a>
