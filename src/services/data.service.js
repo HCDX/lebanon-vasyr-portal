@@ -48,7 +48,7 @@ export default class DataService {
             title: 'ASSISTANCE',
             description: `The Assistance chapter examines whether families are recipients of cash assistance and studies their access to household assets. Vulnerable Syrian refugees in Lebanon can receive two main types of assistance: cash assistance and in-kind support, both of which are aimed at covering their basic needs.`,
             image_url: 'images/chapters/ch-assistance.jpg',
-            download_url: '',
+            download_url: '/files/vasyr_chapters/1 VASyR 2019 Assistance & HH assets.pdf',
             knowledge_hub_url: '',
             textPosition: 'top'
         },
@@ -56,7 +56,7 @@ export default class DataService {
             title: 'COPING STRATEGIES',
             description: `This chapter studies the range of strategies households employ in order to cope with a lack of food and/or the means to buy it. Coping mechanisms related to the household’s capacity to earn a sustainable income, are also examined.`,
             image_url: 'images/chapters/ch-coping-strategies.jpg',
-            download_url: '',
+            download_url: '/files/vasyr_chapters/2 VASyR 2019 Coping Strategies.pdf',
             knowledge_hub_url: '',
             textPosition: 'bottom'
         },
@@ -64,7 +64,7 @@ export default class DataService {
             title: 'DEMOGRAPHICS',
             description: `This chapter contains the key demographic characteristics of the Syrian refugee population in Lebanon, including household composition, profile of the head of household, dependency and prevalence of certain specific needs.`,
             image_url: 'images/chapters/ch-demographics.jpg',
-            download_url: '',
+            download_url: '/files/vasyr_chapters/3 VASyR 2019 Demographics.pdf',
             knowledge_hub_url: '',
             textPosition: 'top'
         },
@@ -72,7 +72,7 @@ export default class DataService {
             title: 'VULNERABILITY',
             description: `This chapter provides insight into the economic vulnerability of Syrian refugee households in Lebanon, studied on the dimensions of the composition and amount of expenditures, Survival and Minimum Expenditures Basket (S)MEB, and debt.`,
             image_url: 'images/chapters/ch-eco-vulnerability.jpg',
-            download_url: '',
+            download_url: '/files/vasyr_chapters/4 VASyR 2019 Economic Vulnerability.pdf',
             knowledge_hub_url: '',
             textPosition: 'top'
         },
@@ -80,7 +80,7 @@ export default class DataService {
             title: 'ENERGY',
             description: `The Energy chapter analyses the access to electricity by Syrian refugee households in Lebanon. It also studies the hours of electricity supplied by the national grid versus private diesel generators, expenditure on electricity and bill collection, as well as the sources of energy used for heating and cooking.`,
             image_url: 'images/chapters/ch-energy.jpg',
-            download_url: '',
+            download_url: '/files/vasyr_chapters/5 VASyR 2019 Energy.pdf',
             knowledge_hub_url: '',
             textPosition: 'bottom'
         },
@@ -88,7 +88,7 @@ export default class DataService {
             title: 'EDUCATION',
             description: `The Education chapter studies the school enrolment rates of Syrian refugee girls and boys aged 3 to 24 years old. It also analyses the reasons why children and youth were not enrolled in schools and examines the share of youth who were neither employed nor attending a training.`,
             image_url: 'images/chapters/ch-education.jpg',
-            download_url: '',
+            download_url: '/files/vasyr_chapters/6 VASyR 2019 Education.pdf',
             knowledge_hub_url: '',
             textPosition: 'top'
         },
@@ -96,7 +96,7 @@ export default class DataService {
             title: 'FOOD CONSUMPTION',
             description: `This chapter examines food consumption indicators, which are essential for studying food security and classifying households according to their food security status. The dimensions considered in this chapter include food quantity, as well as food quality and diversity.`,
             image_url: 'images/chapters/ch-food-consumption.jpg',
-            download_url: '',
+            download_url: '/files/vasyr_chapters/7 VASyR 2019 Food Consumption.pdf',
             knowledge_hub_url: '',
             textPosition: 'top'
         },
@@ -104,7 +104,7 @@ export default class DataService {
             title: 'FOOD SECURITY',
             description: `This chapter analyses the food security trends among Syrian refugee households in Lebanon, including the characteristics of food insecure households.  It also looks at differences in food security levels among districts and governorates.`,
             image_url: 'images/chapters/ch-food-security.jpg',
-            download_url: '',
+            download_url: '/files/vasyr_chapters/8 VASyR 2019 Food Security.pdf',
             knowledge_hub_url: '',
             textPosition: 'bottom'
         },
@@ -112,7 +112,7 @@ export default class DataService {
             title: 'GENDER',
             description: `This section explores the gender dimensions of vulnerabilities faced by Syrian refugees in Lebanon and identifies gender-based differences and inequalities.`,
             image_url: 'images/chapters/ch-gender.jpg',
-            download_url: '',
+            download_url: '/files/vasyr_chapters/1 VASyR 2019 Assistance & HH assets.pdf',
             knowledge_hub_url: '',
             textPosition: 'top'
         },
@@ -120,7 +120,7 @@ export default class DataService {
             title: 'HEALTH',
             description: `The Health chapter studies access of Syrian refugee households to needed health care, which is available to refugees through primary health care outlets, hospitals and mobile medical units. Barriers to healthcare access are also examined.`,
             image_url: 'images/chapters/ch-health.jpg',
-            download_url: '',
+            download_url: '/files/vasyr_chapters/9 VASyR 2019 Health.pdf',
             knowledge_hub_url: '',
             textPosition: 'top'
         },
@@ -128,7 +128,7 @@ export default class DataService {
             title: 'LIVELIHOODS',
             description: `This chapter provides  insight into income-generating activities, including the type of work and wages earned, as well as employment and unemployment levels and number of days worked, all measured at an individual level. Questions were asked at a household level to assess the main reliance of income sources for each household.`,
             image_url: 'images/chapters/ch-livelihoods.jpg',
-            download_url: '',
+            download_url: '/files/vasyr_chapters/10 VASyR 2019 Livelihoods and Income.pdf',
             knowledge_hub_url: '',
             textPosition: 'bottom'
         },
@@ -136,7 +136,7 @@ export default class DataService {
             title: 'PROTECTION',
             description: `The Protection chapter offers an analysis of the protection space for Syrian refugees in Lebanon through key indicators, including legal residency and birth- and marriage registration. Protection indicators also include those related to safety and security, as well as community relations. The child protection space is studied through child labour and child marriage indicators.`,
             image_url: 'images/chapters/ch-protection.jpg',
-            download_url: '',
+            download_url: '/files/vasyr_chapters/11 VASyR 2019 Protection.pdf',
             knowledge_hub_url: '',
             textPosition: 'top'
         },
@@ -144,7 +144,7 @@ export default class DataService {
             title: 'SHELTER',
             description: `While the majority of Syrian refugees live in cities and villages, the remaining percentage live in spontaneously set-up tented settlements throughout the country. The Shelter chapter summarizes the physical conditions of all types of refugee settlements, as well as occupancy agreements and rental costs. It also studies the mobility of households between places of residence, which includes the reasons of eviction.`,
             image_url: 'images/chapters/ch-shelter.jpg',
-            download_url: '',
+            download_url: '/files/vasyr_chapters/12 VASyR 2019 Shelter.pdf',
             knowledge_hub_url: '',
             textPosition: 'top'
         },
@@ -152,7 +152,7 @@ export default class DataService {
             title: 'WASH',
             description: `The WASH chapter examines access to drinking water and other water sources, as well as the sanitation and hygiene situation of Syrian refugee households in Lebanon.`,
             image_url: 'images/chapters/ch-wash.jpg',
-            download_url: '',
+            download_url: '/files/vasyr_chapters/13 VASyR 2019 WASH.pdf',
             knowledge_hub_url: '',
             textPosition: 'bottom'
         }
@@ -207,7 +207,7 @@ export default class DataService {
         {
             title: 'Maps Gateway',
             url: 'https://app.powerbi.com/view?r=eyJrIjoiYjAwOGE4NjYtY2QxNy00YmIxLWFmNzEtZTUxZGJiMDE5YWJiIiwidCI6ImU1YzM3OTgxLTY2NjQtNDEzNC04YTBjLTY1NDNkMmFmODBiZSIsImMiOjh9',
-            image: '/images/maps/health-getaways.png',
+            image: '/images/maps/maps-dashboard.png',
             description: 'This will take you to the maps page'
         },
         // {
@@ -323,6 +323,12 @@ export default class DataService {
             icon: '/icons/tools-training-material.png',
             download_url: '/files/vasyr_tools/VASyR_TRAININGS.zip',
             description: 'This downloads the vasyr training tools'
+        },
+        {
+            title: 'Site Code',
+            icon: '/icons/tools-code.png',
+            url: 'https://github.com/HCDX/lebanon-vasyr-portal',
+            description: 'This takes you to the github repository'
         }
     ];
 

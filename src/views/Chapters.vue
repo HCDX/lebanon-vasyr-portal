@@ -18,7 +18,7 @@
             {{chapter.description}}
           </div>
           <div class="buttons">
-            <button type="button" class="btn btn-info">DOWNLOAD CHAPTER</button>
+            <a class="btn btn-info" :href="chapter.download_url" target="_blank" download>DOWNLOAD CHAPTER</a>
           </div>
         </div>
         <div class="chapter-image bottom" v-if="(chapter.textPosition === 'top')">
@@ -120,6 +120,7 @@ export default {
   height: 140px;
   padding: 0px 20px 10px 20px;
   font-size: 12px;
+  font-family: 'Montserrat';
 }
 
 .chapter-info .buttons {
@@ -127,7 +128,7 @@ export default {
   padding: 5px;
 }
 
-.chapter-info .buttons button {
+.chapter-info .buttons a {
   margin: 0 10px;
   font-size: 11px;
 }
