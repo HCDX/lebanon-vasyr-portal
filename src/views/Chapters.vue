@@ -18,7 +18,8 @@
             {{chapter.description}}
           </div>
           <div class="buttons">
-            <a class="btn btn-info" :href="chapter.download_url" target="_blank" download>DOWNLOAD CHAPTER</a>
+            <a class="btn btn-info" v-if="chapter.download_url" :href="chapter.download_url" target="_blank" download>DOWNLOAD CHAPTER</a>
+            <a class="btn btn-info pointer-cursor" v-if="!chapter.download_url" v-on:click="openDialog">DOWNLOAD CHAPTER</a>
           </div>
         </div>
         <div class="chapter-image bottom" v-if="(chapter.textPosition === 'top')">
@@ -40,6 +41,12 @@ export default {
   mounted() {
     console.log('Mounted Chapters');
     this.chapters = this.dataService.getChaptersData();
+  },
+  methods: {
+    openDialog() {
+      console.log('test');
+      this.$modal.show('download-modal');
+    }
   }
 }
 </script>
@@ -132,4 +139,9 @@ export default {
   margin: 0 10px;
   font-size: 11px;
 }
+
+.pointer-cursor {
+  cursor: pointer;
+}
+
 </style>
