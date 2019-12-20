@@ -166,6 +166,16 @@
 	top: 25px;
 }
 
+.text-top .text {
+	position: absolute;
+	bottom: 5px;
+}
+
+.text-bottom .text {
+	position: absolute;
+	top: 5px;
+}
+
 .info-icon {
 	width: 86px;
 	height: 86px;
@@ -225,6 +235,8 @@
 	font-size: 13px;
 	width: 130%;
 	margin-left: -15%;
+	height: 145px;
+	position: relative;
 }
 
 .text-top  .info-text:last-child {

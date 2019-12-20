@@ -32,7 +32,7 @@
         </div>
       </div>
       <div class="download-button">
-        <a :href="this.vasyrDownloadLink2019" v-bind:year="this.vasyrDownloadLink2019" target="_blank" class="btn btn-info">DOWNLOAD VASyR 2019</a>
+        <a :href="this.vasyrDownloadLink2019" v-bind:year="this.vasyrDownloadLink2019" target="_blank" class="btn btn-info" download>DOWNLOAD VASyR 2019</a>
       </div>
     </div>
   </div>
@@ -115,6 +115,8 @@ export default {
   position:relative;
   height: 100%;
   padding: 180px;
+  max-width: 1400px;
+  margin: auto;
 }
 
 .image-overlay {
