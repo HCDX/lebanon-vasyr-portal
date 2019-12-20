@@ -37,10 +37,10 @@ export default class DataService {
     ];
 
     vasyrDownloadLinks = {
-        '2019': 'link',
-        '2018': 'link',
-        '2017': 'link',
-        '2016': 'link'
+        '2019': '/files/vasyr_2019/VASyR 2019 18 DEC digital version.pdf',
+        // '2018': 'link',
+        // '2017': 'link',
+        // '2016': 'link'
     };
 
     chaptersData = [
@@ -112,7 +112,7 @@ export default class DataService {
             title: 'GENDER',
             description: `This section explores the gender dimensions of vulnerabilities faced by Syrian refugees in Lebanon and identifies gender-based differences and inequalities.`,
             image_url: 'images/chapters/ch-gender.jpg',
-            download_url: '/files/vasyr_chapters/1 VASyR 2019 Assistance & HH assets.pdf',
+            // download_url: '/files/vasyr_chapters/1 VASyR 2019 Assistance & HH assets.pdf',
             knowledge_hub_url: '',
             textPosition: 'top'
         },
@@ -265,7 +265,7 @@ export default class DataService {
             title: 'VASyR 2019',
             year: '2019',
             image_url: '/images/reports/vasyr-2019.jpg',
-            download_url: 'link'
+            download_url: '/files/vasyr_2019/VASyR 2019 18 DEC digital version.pdf'
         },
         {
             title: 'VASyR 2018',

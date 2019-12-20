@@ -11,6 +11,19 @@
     </div>
     <div id="main-container" v-images-loaded="loaded">
       <router-view/>
+      <modal :height="200" name="download-modal">
+        <div class="header">
+          <div class="header-text">
+            File Not Available
+          </div>
+          <div class="close-button" v-on:click="closeModal">x</div>
+        </div>
+        <div class="content">
+          <div class="content-text">
+            This File is Currently Not Available, Coming Soon
+          </div>
+        </div>
+      </modal>
     </div>
   </div>
 </template>
@@ -54,6 +67,9 @@ export default {
         this.noScroll = false;
         this.loading = false;
       }
+    },
+    closeModal() {
+      this.$modal.hide('download-modal');
     }
   }
 }
@@ -167,6 +183,38 @@ body, html {
 .lds-facebook div:nth-child(3) {
   left: 45px;
   animation-delay: 0;
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 80px;
+  background-color: #273b56;
+}
+
+.header .header-text {
+  font-family: 'Monteserrat';
+  padding: 28px 0px 28px 20px;
+  color: white;
+}
+
+.content {
+  width: 100%;
+  height: calc(100% - 80px);
+}
+
+.content .content-text {
+  padding: 48px 0 48px 35px;
+}
+
+.close-button {
+  font-family: 'Monteserrat';
+  font-size: 24px;
+  color: white;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  cursor: pointer;
 }
 
 @keyframes lds-facebook {
