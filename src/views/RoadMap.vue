@@ -276,6 +276,16 @@
 	.text-bottom  .info-text:first-child {
 		display: none;
 	}
+
+	.text-top .text {
+		position: relative;
+		bottom: 5px;
+	}
+
+	.text-bottom .text {
+		position: relative;
+		top: 5px;
+	}
 }
 
 
