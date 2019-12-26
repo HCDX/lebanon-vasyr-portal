@@ -118,4 +118,14 @@
 .dark .tool-container .tool-title {
   padding: 10px;
 }
+
+@media screen and (max-width: 804px)  {
+  .light#tools {
+    height: auto;
+  }
+
+  .dark#tools {
+    height: auto;
+  }
+}
 </style>
