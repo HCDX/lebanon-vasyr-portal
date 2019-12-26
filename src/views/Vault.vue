@@ -111,6 +111,9 @@
             this.previousSearch = this.searchText;
           }
           if (searchingFor.length) {
+            this.sortCategory('year');
+            this.sortData('year');
+
             var list = this.vaultData.filter(function(p) {
               // return p.searchable.indexOf(searchingFor) > -1;
               let data = p;
@@ -134,6 +137,9 @@
             this.pagesToShow = paginatedData.pages_to_show;
             return paginatedData.data;
           } else {
+            this.sortCategory('year');
+            this.sortData('year');
+
             var list = this.vaultData
             let paginatedData = helper.paginate(list, this.page);
             this.numberOfPages = paginatedData.total_pages;
