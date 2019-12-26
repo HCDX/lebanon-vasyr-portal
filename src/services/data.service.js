@@ -37,7 +37,7 @@ export default class DataService {
     ];
 
     vasyrDownloadLinks = {
-        '2019': '/vasyr/files/vasyr_2019/VASyR 2019 18 DEC digital version.pdf',
+        '2019': '/vasyr/files/vasyr_2019/VASyR 2019 digital version.pdf',
         // '2018': 'link',
         // '2017': 'link',
         // '2016': 'link'
@@ -45,12 +45,20 @@ export default class DataService {
 
     chaptersData = [
         {
+            title: 'EXECUTIVE SUMMARY',
+            description: `Executive summary and recommendations of the 2019 vulnerability assessment.`,
+            image_url: 'images/chapters/ch-executive-summary.jpg',
+            download_url: '/vasyr/files/vasyr_chapters/0 VASyR 2019 Executive Summary.pdf',
+            knowledge_hub_url: '',
+            textPosition: 'top'
+        },
+        {
             title: 'ASSISTANCE',
             description: `The Assistance chapter examines whether families are recipients of cash assistance and studies their access to household assets. Vulnerable Syrian refugees in Lebanon can receive two main types of assistance: cash assistance and in-kind support, both of which are aimed at covering their basic needs.`,
             image_url: 'images/chapters/ch-assistance.jpg',
             download_url: '/vasyr/files/vasyr_chapters/1 VASyR 2019 Assistance & HH assets.pdf',
             knowledge_hub_url: '',
-            textPosition: 'top'
+            textPosition: 'bottom'
         },
         {
             title: 'COPING STRATEGIES',
@@ -58,7 +66,7 @@ export default class DataService {
             image_url: 'images/chapters/ch-coping-strategies.jpg',
             download_url: '/vasyr/files/vasyr_chapters/2 VASyR 2019 Coping Strategies.pdf',
             knowledge_hub_url: '',
-            textPosition: 'bottom'
+            textPosition: 'top'
         },
         {
             title: 'DEMOGRAPHICS',
@@ -74,7 +82,7 @@ export default class DataService {
             image_url: 'images/chapters/ch-eco-vulnerability.jpg',
             download_url: '/vasyr/files/vasyr_chapters/4 VASyR 2019 Economic Vulnerability.pdf',
             knowledge_hub_url: '',
-            textPosition: 'top'
+            textPosition: 'bottom'
         },
         {
             title: 'ENERGY',
@@ -82,7 +90,7 @@ export default class DataService {
             image_url: 'images/chapters/ch-energy.jpg',
             download_url: '/vasyr/files/vasyr_chapters/5 VASyR 2019 Energy.pdf',
             knowledge_hub_url: '',
-            textPosition: 'bottom'
+            textPosition: 'top'
         },
         {
             title: 'EDUCATION',
@@ -98,7 +106,7 @@ export default class DataService {
             image_url: 'images/chapters/ch-food-consumption.jpg',
             download_url: '/vasyr/files/vasyr_chapters/7 VASyR 2019 Food Consumption.pdf',
             knowledge_hub_url: '',
-            textPosition: 'top'
+            textPosition: 'bottom'
         },
         {
             title: 'FOOD SECURITY',
@@ -106,7 +114,7 @@ export default class DataService {
             image_url: 'images/chapters/ch-food-security.jpg',
             download_url: '/vasyr/files/vasyr_chapters/8 VASyR 2019 Food Security.pdf',
             knowledge_hub_url: '',
-            textPosition: 'bottom'
+            textPosition: 'top'
         },
         {
             title: 'GENDER',
@@ -122,7 +130,7 @@ export default class DataService {
             image_url: 'images/chapters/ch-health.jpg',
             download_url: '/vasyr/files/vasyr_chapters/9 VASyR 2019 Health.pdf',
             knowledge_hub_url: '',
-            textPosition: 'top'
+            textPosition: 'bottom'
         },
         {
             title: 'LIVELIHOODS',
@@ -130,7 +138,7 @@ export default class DataService {
             image_url: 'images/chapters/ch-livelihoods.jpg',
             download_url: '/vasyr/files/vasyr_chapters/10 VASyR 2019 Livelihoods and Income.pdf',
             knowledge_hub_url: '',
-            textPosition: 'bottom'
+            textPosition: 'top'
         },
         {
             title: 'PROTECTION',
@@ -146,7 +154,7 @@ export default class DataService {
             image_url: 'images/chapters/ch-shelter.jpg',
             download_url: '/vasyr/files/vasyr_chapters/12 VASyR 2019 Shelter.pdf',
             knowledge_hub_url: '',
-            textPosition: 'top'
+            textPosition: 'bottom'
         },
         {
             title: 'WASH',
@@ -154,7 +162,7 @@ export default class DataService {
             image_url: 'images/chapters/ch-wash.jpg',
             download_url: '/vasyr/files/vasyr_chapters/13 VASyR 2019 WASH.pdf',
             knowledge_hub_url: '',
-            textPosition: 'bottom'
+            textPosition: 'top'
         }
     ]
 
@@ -265,7 +273,7 @@ export default class DataService {
             title: 'VASyR 2019',
             year: '2019',
             image_url: '/images/reports/vasyr-2019.jpg',
-            download_url: '/vasyr/files/vasyr_2019/VASyR 2019 18 DEC digital version.pdf'
+            download_url: '/vasyr/files/vasyr_2019/VASyR 2019 digital version.pdf'
         },
         {
             title: 'VASyR 2018',
