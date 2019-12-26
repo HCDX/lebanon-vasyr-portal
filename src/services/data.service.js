@@ -37,7 +37,7 @@ export default class DataService {
     ];
 
     vasyrDownloadLinks = {
-        '2019': '/vasyr/files/vasyr_2019/VASyR 2019 18 DEC digital version.pdf',
+        '2019': '/vasyr/files/vasyr_2019/VASyR 2019 digital version.pdf',
         // '2018': 'link',
         // '2017': 'link',
         // '2016': 'link'
@@ -265,7 +265,7 @@ export default class DataService {
             title: 'VASyR 2019',
             year: '2019',
             image_url: '/images/reports/vasyr-2019.jpg',
-            download_url: '/vasyr/files/vasyr_2019/VASyR 2019 18 DEC digital version.pdf'
+            download_url: '/vasyr/files/vasyr_2019/VASyR 2019 digital version.pdf'
         },
         {
             title: 'VASyR 2018',
