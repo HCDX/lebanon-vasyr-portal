@@ -193,7 +193,7 @@
 }
 
 .dark#vault {
-  background-color: #273b56;
+  background-color: var(--var-theme-background);
   color: white;
   height: 1045px;
 }

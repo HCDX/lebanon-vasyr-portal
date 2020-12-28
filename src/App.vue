@@ -76,6 +76,11 @@ export default {
 </script>
 
 <style>
+:root {
+  --var-theme-background: #155e65;
+  --var-theme-text-dark: #155e65;
+}
+
 @import url('https://fonts.googleapis.com/css?family=Roboto:300i,400,500,500i,700,700i&display=swap');
 @font-face {
   font-family: 'Montserrat';
@@ -138,7 +143,7 @@ body, html {
 #loading-view {
   position: fixed;
   z-index: 20;
-  background: rgba(39, 59, 86, 0.97);
+  background: var(--var-theme-background);
   height: 100%;
   width: 100%;
   top: 0;
@@ -189,7 +194,7 @@ body, html {
   position: relative;
   width: 100%;
   height: 80px;
-  background-color: #273b56;
+  background-color: var(--var-theme-background);
 }
 
 .header .header-text {

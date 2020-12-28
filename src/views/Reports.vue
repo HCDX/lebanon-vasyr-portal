@@ -40,7 +40,7 @@
 </script>
 <style scoped>
 #reports {
-  background-color: #273b56;
+  background-color: var(--var-theme-background);
   color: white;
   min-height: 100%;
 }

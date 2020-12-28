@@ -99,9 +99,9 @@ export default {
 #main {
   position: relative;
   min-height: 100%;
-  background: url('../assets/images/home-background.jpg');
+  background: url('../assets/images/home-background.png');
   background-position-y: 75%;
-  background-color: #273b56;
+  background-color: var(--var-theme-text-dark);
   background-repeat: no-repeat;
   background-size: 110%;
   font-family: 'Montserrat-Bold' !important;
@@ -126,7 +126,7 @@ export default {
   height: 100%;
   width: 100%;
   /* background-color: #273b56; */
-  background: linear-gradient(0deg, #f1f1f1, #273b56 50%) no-repeat;
+  background: linear-gradient(0deg, #f1f1f1, var(--var-theme-background) 50%) no-repeat;
   opacity: 0.5;
 }
 
@@ -162,6 +162,17 @@ export default {
 }
 
 @media screen and (min-width: 817px) and (max-width: 1218px) {
+  #main {
+    background-size: cover;
+    background-position-x: 50%;
+  }
+
+  .home-main-container {
+    position:relative;
+    height: 100%;
+    padding: 70px 200px 183px;
+  }
+
   .main-container {
     position:relative;
     height: 100%;
@@ -290,9 +301,9 @@ export default {
   #main {
     position: relative;
     min-height: 100%;
-    background: url('../assets/images/home-background.jpg');
+    background: url('../assets/images/home-background.png');
     background-position-y: 30%;
-    background-color: #273b56;
+    background-color: var(--var-theme-background);
     background-repeat: no-repeat;
     background-size: 120% !important;
     font-family: 'Montserrat-Bold' !important;
