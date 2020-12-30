@@ -79,6 +79,8 @@ export default {
 :root {
   --var-theme-background: #155e65;
   --var-theme-text-dark: #155e65;
+  --var-theme-button-info: #6cc498;
+  --var-theme-button-info-hover: #1ba99a;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:300i,400,500,500i,700,700i&display=swap');
@@ -134,6 +136,16 @@ body, html {
 #main-container {
   margin-top: 75px;
   height: calc(100% - 74px);
+}
+
+.btn-info {
+  background-color: var(--var-theme-button-info) !important;
+  border-color: var(--var-theme-button-info) !important;
+}
+
+.btn-info:hover {
+  background-color: var(--var-theme-button-info-hover) !important;
+  border-color: var(--var-theme-button-info-hover) !important;
 }
 
 .no-scroll {

@@ -16,7 +16,7 @@
             <img alt="vasyr logo" :src="require('@/assets/logos/wfp-logo.png')">
           </div>
           <div class="organization-logo">
-            <img alt="vasyr logo" :src="require('@/assets/logos/unicef-logo.png')">
+            <img alt="vasyr logo" class="smaller" :src="require('@/assets/logos/unicef-logo.png')">
           </div>
         </div>
       </div>
@@ -104,7 +104,7 @@ export default {
   background-color: var(--var-theme-text-dark);
   background-repeat: no-repeat;
   background-size: 110%;
-  font-family: 'Montserrat-Bold' !important;
+  font-family: 'Montserrat' !important;
 }
 
 .main-transition {
@@ -126,8 +126,7 @@ export default {
   height: 100%;
   width: 100%;
   /* background-color: #273b56; */
-  background: linear-gradient(0deg, #f1f1f1, var(--var-theme-background) 50%) no-repeat;
-  opacity: 0.5;
+  background: linear-gradient(0deg, rgba(134,244,255,0.577468487394958) 11%, rgba(41,138,154,0.48783263305322133) 51%, rgba(74,137,143,0.835171568627451) 76%, rgba(21,94,101,1) 100%);
 }
 
 .organization-logo{
@@ -140,6 +139,11 @@ export default {
 .organization-logo img {
   height: 100%;
   width: 100%;
+}
+
+.organization-logo img.smaller {
+  height: 90%;
+  width: 90%;
 }
 
 .logos-container {
@@ -306,7 +310,7 @@ export default {
     background-color: var(--var-theme-background);
     background-repeat: no-repeat;
     background-size: 120% !important;
-    font-family: 'Montserrat-Bold' !important;
+    font-family: 'Montserrat' !important;
   }
 }
 
