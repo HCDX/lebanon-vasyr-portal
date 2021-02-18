@@ -100,6 +100,8 @@
 
           let searchTextDecapitalized = this.searchText.toLowerCase();
           let searchingFor = searchTextDecapitalized.split(' ');
+          var list = null;
+
           if(searchingFor.length > 1) {
             searchingFor = searchingFor.filter(function(item) {
               return item !== "";
@@ -107,14 +109,16 @@
           }
   
           if(this.searchText != this.previousSearch) {
-            this.page = 1;
+            let x = this.page;
+            x = 1;
             this.previousSearch = this.searchText;
           }
+
           if (searchingFor.length) {
             this.sortCategory('year');
             this.sortData('year');
 
-            var list = this.vaultData.filter(function(p) {
+            list = this.vaultData.filter(function(p) {
               // return p.searchable.indexOf(searchingFor) > -1;
               let data = p;
 
@@ -132,6 +136,7 @@
                 return list;
               }
             });
+
             let paginatedData = helper.paginate(list, this.page);
             this.numberOfPages = paginatedData.total_pages;
             this.pagesToShow = paginatedData.pages_to_show;
@@ -140,7 +145,7 @@
             this.sortCategory('year');
             this.sortData('year');
 
-            var list = this.vaultData
+            list = this.vaultData;
             let paginatedData = helper.paginate(list, this.page);
             this.numberOfPages = paginatedData.total_pages;
             this.pagesToShow = paginatedData.pages_to_show;
