@@ -55,8 +55,8 @@ export default class DataService {
                     'knowledge_hub_url': ''
                 }
             ],
-            download_url: '/vasyr/files/vasyr_chapters/0 VASyR 2019 Executive Summary.pdf',
-            knowledge_hub_url: '',
+            // download_url: '/vasyr/files/vasyr_chapters/0 VASyR 2019 Executive Summary.pdf',
+            // knowledge_hub_url: '',
             textPosition: 'top'
         },
         {
@@ -75,8 +75,6 @@ export default class DataService {
                     'knowledge_hub_url': ''
                 }
             ],
-            download_url: '/vasyr/files/vasyr_chapters/1 VASyR 2019 Assistance & HH assets.pdf',
-            knowledge_hub_url: '',
             textPosition: 'bottom'
         },
         {
@@ -90,8 +88,6 @@ export default class DataService {
                     'knowledge_hub_url': ''
                 }
             ],
-            download_url: '/vasyr/files/vasyr_chapters/2 VASyR 2019 Coping Strategies.pdf',
-            knowledge_hub_url: '',
             textPosition: 'top'
         },
         {
@@ -110,8 +106,6 @@ export default class DataService {
                     'knowledge_hub_url': ''
                 }
             ],
-            download_url: '/vasyr/files/vasyr_chapters/3 VASyR 2019 Demographics.pdf',
-            knowledge_hub_url: '',
             textPosition: 'top'
         },
         {
@@ -125,8 +119,6 @@ export default class DataService {
                     'knowledge_hub_url': ''
                 }
             ],
-            download_url: '/vasyr/files/vasyr_chapters/4 VASyR 2019 Economic Vulnerability.pdf',
-            knowledge_hub_url: '',
             textPosition: 'bottom'
         },
         {
@@ -140,8 +132,6 @@ export default class DataService {
                     'knowledge_hub_url': ''
                 }
             ],
-            download_url: '/vasyr/files/vasyr_chapters/5 VASyR 2019 Energy.pdf',
-            knowledge_hub_url: '',
             textPosition: 'top'
         },
         {
@@ -155,8 +145,6 @@ export default class DataService {
                     'knowledge_hub_url': ''
                 }
             ],
-            download_url: '/vasyr/files/vasyr_chapters/6 VASyR 2019 Education.pdf',
-            knowledge_hub_url: '',
             textPosition: 'top'
         },
         {
@@ -170,8 +158,6 @@ export default class DataService {
                     'knowledge_hub_url': ''
                 }
             ],
-            download_url: '/vasyr/files/vasyr_chapters/7 VASyR 2019 Food Consumption.pdf',
-            knowledge_hub_url: '',
             textPosition: 'bottom'
         },
         {
@@ -185,8 +171,6 @@ export default class DataService {
                     'knowledge_hub_url': ''
                 }
             ],
-            download_url: '/vasyr/files/vasyr_chapters/8 VASyR 2019 Food Security.pdf',
-            knowledge_hub_url: '',
             textPosition: 'top'
         },
         {
@@ -196,12 +180,10 @@ export default class DataService {
             versions: [
                 {
                     'year': '2019',
-                    'download_url': '',
+                    'download_url': '/vasyr/files/vasyr_chapters/1 VASyR 2019 Assistance & HH assets.pdf',
                     'knowledge_hub_url': ''
                 }
             ],
-            // download_url: '/vasyr/files/vasyr_chapters/1 VASyR 2019 Assistance & HH assets.pdf',
-            knowledge_hub_url: '',
             textPosition: 'top'
         },
         {
@@ -215,8 +197,6 @@ export default class DataService {
                     'knowledge_hub_url': ''
                 }
             ],
-            download_url: '/vasyr/files/vasyr_chapters/9 VASyR 2019 Health.pdf',
-            knowledge_hub_url: '',
             textPosition: 'bottom'
         },
         {
@@ -230,8 +210,6 @@ export default class DataService {
                     'knowledge_hub_url': ''
                 }
             ],
-            download_url: '/vasyr/files/vasyr_chapters/10 VASyR 2019 Livelihoods and Income.pdf',
-            knowledge_hub_url: '',
             textPosition: 'top'
         },
         {
@@ -245,8 +223,6 @@ export default class DataService {
                     'knowledge_hub_url': ''
                 }
             ],
-            download_url: '/vasyr/files/vasyr_chapters/11 VASyR 2019 Protection.pdf',
-            knowledge_hub_url: '',
             textPosition: 'top'
         },
         {
@@ -260,8 +236,6 @@ export default class DataService {
                     'knowledge_hub_url': ''
                 }
             ],
-            download_url: '/vasyr/files/vasyr_chapters/12 VASyR 2019 Shelter.pdf',
-            knowledge_hub_url: '',
             textPosition: 'bottom'
         },
         {
@@ -275,8 +249,6 @@ export default class DataService {
                     'knowledge_hub_url': ''
                 }
             ],
-            download_url: '/vasyr/files/vasyr_chapters/13 VASyR 2019 WASH.pdf',
-            knowledge_hub_url: '',
             textPosition: 'top'
         }
     ]
