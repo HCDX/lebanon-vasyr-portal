@@ -25,11 +25,15 @@
 
 
             <div class="dropdown">
-              <button class="btn btn-info dropdown-toggle" type="button" id="chaptersDropDown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <button class="btn btn-info dropdown-toggle" type="button" id="chaptersDropDown" data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 DOWNLOAD CHAPTER
               </button>
               <div class="dropdown-menu" aria-labelledby="chaptersDropDown">
-                <a v-for="(version, index) in chapter.versions" v-bind:key="index" class="dropdown-item" :href="version.download_url" target="_blank" download>{{version.year}}</a>
+                <div class="row" style="margin: 0; width: 100%;">
+                  <div class="col col-6" style="padding: 1px;" v-for="(version, index) in chapter.versions" v-bind:key="index">
+                    <a class="dropdown-item" :href="version.download_url" target="_blank" download>{{version.year}}</a>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -84,9 +88,18 @@ export default {
   border-color: var(--var-theme-button-info-hover) !important;
 }
 
+.dropdown {
+  padding: 0 90px;
+}
+
+.dropdown-toggle {
+  width: 100%;
+}
 
 .dropdown-menu {
     position: absolute;
+    padding: 2px 90px !important;
+    width: 100%;
     top: 100%;
     left: 0;
     z-index: 1000;
