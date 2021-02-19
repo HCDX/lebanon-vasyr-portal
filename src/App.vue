@@ -76,6 +76,13 @@ export default {
 </script>
 
 <style>
+:root {
+  --var-theme-background: #155e65;
+  --var-theme-text-dark: #155e65;
+  --var-theme-button-info: #6cc498;
+  --var-theme-button-info-hover: #1ba99a;
+}
+
 @import url('https://fonts.googleapis.com/css?family=Roboto:300i,400,500,500i,700,700i&display=swap');
 @font-face {
   font-family: 'Montserrat';
@@ -131,6 +138,16 @@ body, html {
   height: calc(100% - 74px);
 }
 
+.btn-info {
+  background-color: var(--var-theme-button-info) !important;
+  border-color: var(--var-theme-button-info) !important;
+}
+
+.btn-info:hover {
+  background-color: var(--var-theme-button-info-hover) !important;
+  border-color: var(--var-theme-button-info-hover) !important;
+}
+
 .no-scroll {
   overflow-y: hidden;
 }
@@ -138,7 +155,7 @@ body, html {
 #loading-view {
   position: fixed;
   z-index: 20;
-  background: rgba(39, 59, 86, 0.97);
+  background: var(--var-theme-background);
   height: 100%;
   width: 100%;
   top: 0;
@@ -189,7 +206,7 @@ body, html {
   position: relative;
   width: 100%;
   height: 80px;
-  background-color: #273b56;
+  background-color: var(--var-theme-background);
 }
 
 .header .header-text {

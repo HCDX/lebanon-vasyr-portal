@@ -174,7 +174,7 @@ export default {
 .menu-container {
   margin: 0;
   height: 75px;
-  background-color: #273b56;
+  background-color: var(--var-theme-background);
   font-family: 'Montserrat-Bold' !important;
 }
 
@@ -218,7 +218,7 @@ li.is-active {
 @media screen and (max-width: 804px)  {
   .menu-container {
     height: fit-content;
-    background-color: #273b56;
+    background-color: var(--var-theme-background);
   }
 
   .menu-items {

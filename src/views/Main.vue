@@ -16,7 +16,7 @@
             <img alt="vasyr logo" :src="require('@/assets/logos/wfp-logo.png')">
           </div>
           <div class="organization-logo">
-            <img alt="vasyr logo" :src="require('@/assets/logos/unicef-logo.png')">
+            <img alt="vasyr logo" class="smaller" :src="require('@/assets/logos/unicef-logo.png')">
           </div>
         </div>
       </div>
@@ -32,7 +32,7 @@
         </div>
       </div>
       <div class="download-button">
-        <a :href="this.vasyrDownloadLink2019" v-bind:year="this.vasyrDownloadLink2019" target="_blank" class="btn btn-info" download>DOWNLOAD VASyR 2019</a>
+        <a :href="this.vasyrDownloadLink2020" v-bind:year="this.vasyrDownloadLink2020" target="_blank" class="btn btn-info" download>DOWNLOAD VASyR 2020</a>
       </div>
     </div>
   </div>
@@ -47,12 +47,13 @@ export default {
     dataService: new DataService(),
     logos: [],
     introduction: '',
-    vasyrDownloadLink2019: ''
+    vasyrDownloadLink2020: ''
   }),
   mounted() {
     console.log('Mounted Main');
     this.introduction = this.dataService.getHomeIntro();
-    this.vasyrDownloadLink2019 = this.dataService.getVasyrDownloadLink('2019');
+    // this.vasyrDownloadLink2019 = this.dataService.getVasyrDownloadLink('2019');
+    this.vasyrDownloadLink2020 = this.dataService.getVasyrDownloadLink('2020');
     let main = document.getElementById("main");
 
     if(!helpers.isMobile.any()) {
@@ -99,12 +100,12 @@ export default {
 #main {
   position: relative;
   min-height: 100%;
-  background: url('../assets/images/home-background.jpg');
+  background: url('../assets/images/home-background.png');
   background-position-y: 75%;
-  background-color: #273b56;
+  background-color: var(--var-theme-text-dark);
   background-repeat: no-repeat;
   background-size: 110%;
-  font-family: 'Montserrat-Bold' !important;
+  font-family: 'Montserrat' !important;
 }
 
 .main-transition {
@@ -126,8 +127,7 @@ export default {
   height: 100%;
   width: 100%;
   /* background-color: #273b56; */
-  background: linear-gradient(0deg, #f1f1f1, #273b56 50%) no-repeat;
-  opacity: 0.5;
+  background: linear-gradient(0deg, rgba(134,244,255,0.577468487394958) 11%, rgba(41,138,154,0.48783263305322133) 51%, rgba(74,137,143,0.835171568627451) 76%, rgba(21,94,101,1) 100%);
 }
 
 .organization-logo{
@@ -140,6 +140,11 @@ export default {
 .organization-logo img {
   height: 100%;
   width: 100%;
+}
+
+.organization-logo img.smaller {
+  height: 90%;
+  width: 90%;
 }
 
 .logos-container {
@@ -162,6 +167,17 @@ export default {
 }
 
 @media screen and (min-width: 817px) and (max-width: 1218px) {
+  #main {
+    background-size: cover;
+    background-position-x: 50%;
+  }
+
+  .home-main-container {
+    position:relative;
+    height: 100%;
+    padding: 70px 200px 183px;
+  }
+
   .main-container {
     position:relative;
     height: 100%;
@@ -290,12 +306,12 @@ export default {
   #main {
     position: relative;
     min-height: 100%;
-    background: url('../assets/images/home-background.jpg');
+    background: url('../assets/images/home-background.png');
     background-position-y: 30%;
-    background-color: #273b56;
+    background-color: var(--var-theme-background);
     background-repeat: no-repeat;
     background-size: 120% !important;
-    font-family: 'Montserrat-Bold' !important;
+    font-family: 'Montserrat' !important;
   }
 }
 

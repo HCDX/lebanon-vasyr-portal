@@ -45,13 +45,13 @@
 .light#tools {
   position: relative;
   background-color: white;
-  color: #273b56;
+  color: var(--var-theme-text-dark);
   height: 100%;
 }
 
 .dark#tools {
   position: relative;
-  background-color: #273b56;
+  background-color: var(--var-theme-background);
   color: white;
   height: 100%;
 }

@@ -38,6 +38,7 @@ export default class DataService {
 
     vasyrDownloadLinks = {
         '2019': '/vasyr/files/vasyr_2019/VASyR 2019 digital version.pdf',
+        '2020': '/vasyr/files/vasyr_2020/VASyR 2020.pdf',
         // '2018': 'link',
         // '2017': 'link',
         // '2016': 'link'
@@ -48,120 +49,267 @@ export default class DataService {
             title: 'EXECUTIVE SUMMARY',
             description: `Executive summary and recommendations of the 2019 vulnerability assessment.`,
             image_url: 'images/chapters/ch-executive-summary.jpg',
-            download_url: '/vasyr/files/vasyr_chapters/0 VASyR 2019 Executive Summary.pdf',
-            knowledge_hub_url: '',
+            versions: [
+                {
+                    'year': '2019',
+                    'download_url': '/vasyr/files/vasyr_chapters/0 VASyR 2019 Executive Summary.pdf',
+                    'knowledge_hub_url': ''
+                },
+                {
+                    'year': '2020',
+                    'download_url': '/vasyr/files/vasyr_chapters/2020/VASyR 2020 - Executive Summary.pdf',
+                    'knowledge_hub_url': ''
+                }
+            ],
+            // download_url: '/vasyr/files/vasyr_chapters/0 VASyR 2019 Executive Summary.pdf',
+            // knowledge_hub_url: '',
             textPosition: 'top'
         },
         {
             title: 'ASSISTANCE',
             description: `The Assistance chapter examines whether families are recipients of cash assistance and studies their access to household assets. Vulnerable Syrian refugees in Lebanon can receive two main types of assistance: cash assistance and in-kind support, both of which are aimed at covering their basic needs.`,
             image_url: 'images/chapters/ch-assistance.jpg',
-            download_url: '/vasyr/files/vasyr_chapters/1 VASyR 2019 Assistance & HH assets.pdf',
-            knowledge_hub_url: '',
+            versions: [
+                {
+                    'year': '2019',
+                    'download_url': '/vasyr/files/vasyr_chapters/1 VASyR 2019 Assistance & HH assets.pdf',
+                    'knowledge_hub_url': ''
+                }
+            ],
             textPosition: 'bottom'
         },
         {
             title: 'COPING STRATEGIES',
             description: `This chapter studies the range of strategies households employ in order to cope with a lack of food and/or the means to buy it. Coping mechanisms related to the household’s capacity to earn a sustainable income, are also examined.`,
             image_url: 'images/chapters/ch-coping-strategies.jpg',
-            download_url: '/vasyr/files/vasyr_chapters/2 VASyR 2019 Coping Strategies.pdf',
-            knowledge_hub_url: '',
+            versions: [
+                {
+                    'year': '2019',
+                    'download_url': '/vasyr/files/vasyr_chapters/2 VASyR 2019 Coping Strategies.pdf',
+                    'knowledge_hub_url': ''
+                },
+                {
+                    'year': '2020',
+                    'download_url': '/vasyr/files/vasyr_chapters/2020/VASyR 2020 - Coping Strategies.pdf',
+                    'knowledge_hub_url': ''
+                }
+            ],
             textPosition: 'top'
         },
         {
             title: 'DEMOGRAPHICS',
             description: `This chapter contains the key demographic characteristics of the Syrian refugee population in Lebanon, including household composition, profile of the head of household, dependency and prevalence of certain specific needs.`,
             image_url: 'images/chapters/ch-demographics.jpg',
-            download_url: '/vasyr/files/vasyr_chapters/3 VASyR 2019 Demographics.pdf',
-            knowledge_hub_url: '',
+            versions: [
+                {
+                    'year': '2019',
+                    'download_url': '/vasyr/files/vasyr_chapters/3 VASyR 2019 Demographics.pdf',
+                    'knowledge_hub_url': ''
+                },
+                {
+                    'year': '2020',
+                    'download_url': '/vasyr/files/vasyr_chapters/2020/VASyR 2020 - Demographics.pdf',
+                    'knowledge_hub_url': ''
+                }
+            ],
             textPosition: 'top'
         },
         {
             title: 'VULNERABILITY',
             description: `This chapter provides insight into the economic vulnerability of Syrian refugee households in Lebanon, studied on the dimensions of the composition and amount of expenditures, Survival and Minimum Expenditures Basket (S)MEB, and debt.`,
             image_url: 'images/chapters/ch-eco-vulnerability.jpg',
-            download_url: '/vasyr/files/vasyr_chapters/4 VASyR 2019 Economic Vulnerability.pdf',
-            knowledge_hub_url: '',
+            versions: [
+                {
+                    'year': '2019',
+                    'download_url': '/vasyr/files/vasyr_chapters/4 VASyR 2019 Economic Vulnerability.pdf',
+                    'knowledge_hub_url': ''
+                },
+                {
+                    'year': '2019',
+                    'download_url': '/vasyr/files/vasyr_chapters/2020/VASyR 2020 - Economic Vulnerability.pdf',
+                    'knowledge_hub_url': ''
+                }
+            ],
             textPosition: 'bottom'
         },
         {
             title: 'ENERGY',
             description: `The Energy chapter analyses the access to electricity by Syrian refugee households in Lebanon. It also studies the hours of electricity supplied by the national grid versus private diesel generators, expenditure on electricity and bill collection, as well as the sources of energy used for heating and cooking.`,
             image_url: 'images/chapters/ch-energy.jpg',
-            download_url: '/vasyr/files/vasyr_chapters/5 VASyR 2019 Energy.pdf',
-            knowledge_hub_url: '',
+            versions: [
+                {
+                    'year': '2019',
+                    'download_url': '/vasyr/files/vasyr_chapters/5 VASyR 2019 Energy.pdf',
+                    'knowledge_hub_url': ''
+                },
+                {
+                    'year': '2020',
+                    'download_url': '/vasyr/files/vasyr_chapters/2020/VASyR 2020 - Energy.pdf',
+                    'knowledge_hub_url': ''
+                }
+            ],
             textPosition: 'top'
         },
         {
             title: 'EDUCATION',
             description: `The Education chapter studies the school enrolment rates of Syrian refugee girls and boys aged 3 to 24 years old. It also analyses the reasons why children and youth were not enrolled in schools and examines the share of youth who were neither employed nor attending a training.`,
             image_url: 'images/chapters/ch-education.jpg',
-            download_url: '/vasyr/files/vasyr_chapters/6 VASyR 2019 Education.pdf',
-            knowledge_hub_url: '',
+            versions: [
+                {
+                    'year': '2019',
+                    'download_url': '/vasyr/files/vasyr_chapters/6 VASyR 2019 Education.pdf',
+                    'knowledge_hub_url': ''
+                },
+                {
+                    'year': '2020',
+                    'download_url': '/vasyr/files/vasyr_chapters/VASyR 2020 - Education.pdf',
+                    'knowledge_hub_url': ''
+                }
+            ],
             textPosition: 'top'
         },
         {
             title: 'FOOD CONSUMPTION',
             description: `This chapter examines food consumption indicators, which are essential for studying food security and classifying households according to their food security status. The dimensions considered in this chapter include food quantity, as well as food quality and diversity.`,
             image_url: 'images/chapters/ch-food-consumption.jpg',
-            download_url: '/vasyr/files/vasyr_chapters/7 VASyR 2019 Food Consumption.pdf',
-            knowledge_hub_url: '',
+            versions: [
+                {
+                    'year': '2019',
+                    'download_url': '/vasyr/files/vasyr_chapters/7 VASyR 2019 Food Consumption.pdf',
+                    'knowledge_hub_url': ''
+                },
+                {
+                    'year': '2020',
+                    'download_url': '/vasyr/files/vasyr_chapters/2020/VASyR 2020 - Food Consumption.pdf',
+                    'knowledge_hub_url': ''
+                }
+            ],
             textPosition: 'bottom'
         },
         {
             title: 'FOOD SECURITY',
             description: `This chapter analyses the food security trends among Syrian refugee households in Lebanon, including the characteristics of food insecure households.  It also looks at differences in food security levels among districts and governorates.`,
             image_url: 'images/chapters/ch-food-security.jpg',
-            download_url: '/vasyr/files/vasyr_chapters/8 VASyR 2019 Food Security.pdf',
-            knowledge_hub_url: '',
+            versions: [
+                {
+                    'year': '2019',
+                    'download_url': '/vasyr/files/vasyr_chapters/8 VASyR 2019 Food Security.pdf',
+                    'knowledge_hub_url': ''
+                },
+                {
+                    'year': '2020',
+                    'download_url': '/vasyr/files/vasyr_chapters/2020/VASyR 2020 - Food Security.pdf',
+                    'knowledge_hub_url': ''
+                }
+            ],
             textPosition: 'top'
         },
         {
             title: 'GENDER',
             description: `This section explores the gender dimensions of vulnerabilities faced by Syrian refugees in Lebanon and identifies gender-based differences and inequalities.`,
             image_url: 'images/chapters/ch-gender.jpg',
-            // download_url: '/vasyr/files/vasyr_chapters/1 VASyR 2019 Assistance & HH assets.pdf',
-            knowledge_hub_url: '',
+            versions: [
+                {
+                    'year': '2019',
+                    'download_url': '/vasyr/files/vasyr_chapters/1 VASyR 2019 Assistance & HH assets.pdf',
+                    'knowledge_hub_url': ''
+                },
+                {
+                    'year': '2020',
+                    'download_url': '/vasyr/files/vasyr_chapters/2020/VASyR 2020 - Gender Analysis.pdf',
+                    'knowledge_hub_url': ''
+                }
+            ],
             textPosition: 'top'
         },
         {
             title: 'HEALTH',
             description: `The Health chapter studies access of Syrian refugee households to needed health care, which is available to refugees through primary health care outlets, hospitals and mobile medical units. Barriers to healthcare access are also examined.`,
             image_url: 'images/chapters/ch-health.jpg',
-            download_url: '/vasyr/files/vasyr_chapters/9 VASyR 2019 Health.pdf',
-            knowledge_hub_url: '',
+            versions: [
+                {
+                    'year': '2019',
+                    'download_url': '/vasyr/files/vasyr_chapters/9 VASyR 2019 Health.pdf',
+                    'knowledge_hub_url': ''
+                },
+                {
+                    'year': '2020',
+                    'download_url': '/vasyr/files/vasyr_chapters/2020/VASyR 2020 - Health.pdf',
+                    'knowledge_hub_url': ''
+                }
+            ],
             textPosition: 'bottom'
         },
         {
             title: 'LIVELIHOODS',
             description: `This chapter provides  insight into income-generating activities, including the type of work and wages earned, as well as employment and unemployment levels and number of days worked, all measured at an individual level. Questions were asked at a household level to assess the main reliance of income sources for each household.`,
             image_url: 'images/chapters/ch-livelihoods.jpg',
-            download_url: '/vasyr/files/vasyr_chapters/10 VASyR 2019 Livelihoods and Income.pdf',
-            knowledge_hub_url: '',
+            versions: [
+                {
+                    'year': '2019',
+                    'download_url': '/vasyr/files/vasyr_chapters/10 VASyR 2019 Livelihoods and Income.pdf',
+                    'knowledge_hub_url': ''
+                },
+                {
+                    'year': '2020',
+                    'download_url': '/vasyr/files/vasyr_chapters/2020/VASyR 2020 - Livelihoods and Income.pdf',
+                    'knowledge_hub_url': ''
+                }
+            ],
             textPosition: 'top'
         },
         {
             title: 'PROTECTION',
             description: `The Protection chapter offers an analysis of the protection space for Syrian refugees in Lebanon through key indicators, including legal residency and birth- and marriage registration. Protection indicators also include those related to safety and security, as well as community relations. The child protection space is studied through child labour and child marriage indicators.`,
             image_url: 'images/chapters/ch-protection.jpg',
-            download_url: '/vasyr/files/vasyr_chapters/11 VASyR 2019 Protection.pdf',
-            knowledge_hub_url: '',
+            versions: [
+                {
+                    'year': '2019',
+                    'download_url': '/vasyr/files/vasyr_chapters/11 VASyR 2019 Protection.pdf',
+                    'knowledge_hub_url': ''
+                },
+                {
+                    'year': '2020',
+                    'download_url': '/vasyr/files/vasyr_chapters/2020/VASyR 2020 - Protection.pdf',
+                    'knowledge_hub_url': ''
+                }
+            ],
             textPosition: 'top'
         },
         {
             title: 'SHELTER',
             description: `While the majority of Syrian refugees live in cities and villages, the remaining percentage live in spontaneously set-up tented settlements throughout the country. The Shelter chapter summarizes the physical conditions of all types of refugee settlements, as well as occupancy agreements and rental costs. It also studies the mobility of households between places of residence, which includes the reasons of eviction.`,
             image_url: 'images/chapters/ch-shelter.jpg',
-            download_url: '/vasyr/files/vasyr_chapters/12 VASyR 2019 Shelter.pdf',
-            knowledge_hub_url: '',
+            versions: [
+                {
+                    'year': '2019',
+                    'download_url': '/vasyr/files/vasyr_chapters/12 VASyR 2019 Shelter.pdf',
+                    'knowledge_hub_url': ''
+                },
+                {
+                    'year': '2020',
+                    'download_url': '/vasyr/files/vasyr_chapters/2020/VASyR 2020 - Shelter.pdf',
+                    'knowledge_hub_url': ''
+                }
+            ],
             textPosition: 'bottom'
         },
         {
             title: 'WASH',
             description: `The WASH chapter examines access to drinking water and other water sources, as well as the sanitation and hygiene situation of Syrian refugee households in Lebanon.`,
             image_url: 'images/chapters/ch-wash.jpg',
-            download_url: '/vasyr/files/vasyr_chapters/13 VASyR 2019 WASH.pdf',
-            knowledge_hub_url: '',
+            versions: [
+                {
+                    'year': '2019',
+                    'download_url': '/vasyr/files/vasyr_chapters/13 VASyR 2019 WASH.pdf',
+                    'knowledge_hub_url': ''
+                },
+                {
+                    'year': '2020',
+                    'download_url': '/vasyr/files/vasyr_chapters/2020/VASyR 2020 - WASH.pdf',
+                    'knowledge_hub_url': ''
+                }
+            ],
             textPosition: 'top'
         }
     ]
@@ -5542,9 +5690,2464 @@ export default class DataService {
             indicator: "% Syrian youth aged 15-24 who are not employed, not in education, and not attending any training (NEET)",
             year: "2019",
             download_link: "/vasyr/files/wash/Vault_NEET.xlsx"
+        },
+        {
+            id: "WA2020001",
+            sector: "WASH & Sanitation",
+            indicator: "Types of improved water sources",
+            year: "2020",
+            download_link: "/vasyr/files/wash/VASyR_2020_Vault_WASH_Sanitation.xlsx"
+        },
+        {
+            id: "WA2020002",
+            sector: "WASH & Sanitation",
+            indicator: "Types of unimproved water sources",
+            year: "2020",
+            download_link: "/vasyr/files/wash/VASyR_2020_Vault_WASH_Sanitation.xlsx"
+        },
+        {
+            id: "WA2020003",
+            sector: "WASH & Sanitation",
+            indicator: "Use of improved drinking water sources",
+            year: "2020",
+            download_link: "/vasyr/files/wash/VASyR_2020_Vault_WASH_Sanitation.xlsx"
+        },
+        {
+            id: "WA2020004",
+            sector: "WASH & Sanitation",
+            indicator: "Availability of drinking water",
+            year: "2020",
+            download_link: "/vasyr/files/wash/VASyR_2020_Vault_WASH_Sanitation.xlsx"
+        },
+        {
+            id: "WA2020005",
+            sector: "WASH & Sanitation",
+            indicator: "Use of basic drinking water service",
+            year: "2020",
+            download_link: "/vasyr/files/wash/VASyR_2020_Vault_WASH_Sanitation.xlsx"
+        },
+        {
+            id: "WA2020006",
+            sector: "WASH & Sanitation",
+            indicator: "Types of sanitation facilities",
+            year: "2020",
+            download_link: "/vasyr/files/wash/VASyR_2020_Vault_WASH_Sanitation.xlsx"
+        },
+        {
+            id: "WA2020007",
+            sector: "WASH & Sanitation",
+            indicator: "Use of improved sanitation facilities",
+            year: "2020",
+            download_link: "/vasyr/files/wash/VASyR_2020_Vault_WASH_Sanitation.xlsx"
+        },
+        {
+            id: "WA2020008",
+            sector: "WASH & Sanitation",
+            indicator: "Use of basic sanitation service",
+            year: "2020",
+            download_link: "/vasyr/files/wash/VASyR_2020_Vault_WASH_Sanitation.xlsx"
+        },
+        {
+            id: "WA2020009",
+            sector: "WASH & Sanitation",
+            indicator: "Use of disability-adjusted sanitation facilities",
+            year: "2020",
+            download_link: "/vasyr/files/wash/VASyR_2020_Vault_WASH_Sanitation.xlsx"
+        },
+        {
+            id: "De2020001",
+            sector: "Demographics",
+            indicator: "Average Household Size",
+            year: "2020",
+            download_link: "Demographics VASyR 2020 VAULT.xlsx"
+        },
+        {
+            id: "De2020002",
+            sector: "Demographics",
+            indicator: "Household Composition",
+            year: "2020",
+            download_link: "Demographics VASyR 2020 VAULT.xlsx"
+        },
+        {
+            id: "De2020003",
+            sector: "Demographics",
+            indicator: "Household Size By Category",
+            year: "2020",
+            download_link: "Demographics VASyR 2020 VAULT.xlsx"
+        },
+        {
+            id: "De2020004",
+            sector: "Demographics",
+            indicator: "Average number of HH members 5 years old or less",
+            year: "2020",
+            download_link: "Demographics VASyR 2020 VAULT.xlsx"
+        },
+        {
+            id: "De2020005",
+            sector: "Demographics",
+            indicator: "Average number of HH members between 6 and 17 years old",
+            year: "2020",
+            download_link: "Demographics VASyR 2020 VAULT.xlsx"
+        },
+        {
+            id: "De2020006",
+            sector: "Demographics",
+            indicator: "Average number of HH members between 18 and 65 years old",
+            year: "2020",
+            download_link: "Demographics VASyR 2020 VAULT.xlsx"
+        },
+        {
+            id: "De2020007",
+            sector: "Demographics",
+            indicator: "Gender ratio",
+            year: "2020",
+            download_link: "Demographics VASyR 2020 VAULT.xlsx"
+        },
+        {
+            id: "De2020008",
+            sector: "Demographics",
+            indicator: "Average number of registered case numbers within a household",
+            year: "2020",
+            download_link: "Demographics VASyR 2020 VAULT.xlsx"
+        },
+        {
+            id: "De2020009",
+            sector: "Demographics",
+            indicator: "Population pyramid",
+            year: "2020",
+            download_link: "Demographics VASyR 2020 VAULT.xlsx"
+        },
+        {
+            id: "De2020010",
+            sector: "Demographics",
+            indicator: "Gender breakdown - Individuals",
+            year: "2020",
+            download_link: "Demographics VASyR 2020 VAULT.xlsx"
+        },
+        {
+            id: "De2020011",
+            sector: "Demographics",
+            indicator: "Population Age categories",
+            year: "2020",
+            download_link: "Demographics VASyR 2020 VAULT.xlsx"
+        },
+        {
+            id: "De2020012",
+            sector: "Demographics",
+            indicator: "Percentage of households with child head of household (<18 years old)",
+            year: "2020",
+            download_link: "Demographics VASyR 2020 VAULT.xlsx"
+        },
+        {
+            id: "De2020013",
+            sector: "Demographics",
+            indicator: "Percentage of child headed households with head of household <15 years old",
+            year: "2020",
+            download_link: "Demographics VASyR 2020 VAULT.xlsx"
+        },
+        {
+            id: "De2020014",
+            sector: "Demographics",
+            indicator: "Percentage of child headed households with head of household between 15 and 18 years old",
+            year: "2020",
+            download_link: "Demographics VASyR 2020 VAULT.xlsx"
+        },
+        {
+            id: "De2020015",
+            sector: "Demographics",
+            indicator: "Percentage of households with female head of household",
+            year: "2020",
+            download_link: "Demographics VASyR 2020 VAULT.xlsx"
+        },
+        {
+            id: "De2020016",
+            sector: "Demographics",
+            indicator: "Percentage of households with elderly head of household",
+            year: "2020",
+            download_link: "Demographics VASyR 2020 VAULT.xlsx"
+        },
+        {
+            id: "De2020017",
+            sector: "Demographics",
+            indicator: "Percentage single individuals <18 years old",
+            year: "2020",
+            download_link: "Demographics VASyR 2020 VAULT.xlsx"
+        },
+        {
+            id: "De2020018",
+            sector: "Demographics",
+            indicator: "Percentage individuals married",
+            year: "2020",
+            download_link: "Demographics VASyR 2020 VAULT.xlsx"
+        },
+        {
+            id: "De2020019",
+            sector: "Demographics",
+            indicator: "Percentage adult individuals (>18 years) married",
+            year: "2020",
+            download_link: "Demographics VASyR 2020 VAULT.xlsx"
+        },
+        {
+            id: "De2020020",
+            sector: "Demographics",
+            indicator: "Percentage children married, by age category",
+            year: "2020",
+            download_link: "Demographics VASyR 2020 VAULT.xlsx"
+        },
+        {
+            id: "De2020021",
+            sector: "Demographics",
+            indicator: "Civil Status of all individuals",
+            year: "2020",
+            download_link: "Demographics VASyR 2020 VAULT.xlsx"
+        },
+        {
+            id: "De2020022",
+            sector: "Demographics",
+            indicator: "Commom law married",
+            year: "2020",
+            download_link: "Demographics VASyR 2020 VAULT.xlsx"
+        },
+        {
+            id: "De2020023",
+            sector: "Demographics",
+            indicator: "Average dependency ratio",
+            year: "2020",
+            download_link: "Demographics VASyR 2020 VAULT.xlsx"
+        },
+        {
+            id: "De2020024",
+            sector: "Demographics",
+            indicator: "Number of dependents per household, by category",
+            year: "2020",
+            download_link: "Demographics VASyR 2020 VAULT.xlsx"
+        },
+        {
+            id: "De2020025",
+            sector: "Demographics",
+            indicator: "Percentage of households with 100% dependents",
+            year: "2020",
+            download_link: "Demographics VASyR 2020 VAULT.xlsx"
+        },
+        {
+            id: "De2020026",
+            sector: "Demographics",
+            indicator: "Percentage of child headed households with dependents",
+            year: "2020",
+            download_link: "Demographics VASyR 2020 VAULT.xlsx"
+        },
+        {
+            id: "De2020027",
+            sector: "Demographics",
+            indicator: "Percentage of female headed households with dependents",
+            year: "2020",
+            download_link: "Demographics VASyR 2020 VAULT.xlsx"
+        },
+        {
+            id: "De2020028",
+            sector: "Demographics",
+            indicator: "Percentage of individuals with a specific need (pregnant/lactating, chronic illness, older person unable to care for self, older person with minor,  single parent)",
+            year: "2020",
+            download_link: "Demographics VASyR 2020 VAULT.xlsx"
+        },
+        {
+            id: "De2020029",
+            sector: "Demographics",
+            indicator: "At least one household member has a specific need by (pregnant/lactating, chronic illness, older person unable to care for self, older person with minor,  single parent)",
+            year: "2020",
+            download_link: "Demographics VASyR 2020 VAULT.xlsx"
+        },
+        {
+            id: "Di2020001",
+            sector: "Disablities",
+            indicator: "Washington Group Questions: Percent individuals with difficulty seeing, even when wearing glasse",
+            year: "2020",
+            download_link: "vasyr/files/disabilities/Disability_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Di2020002",
+            sector: "Disablities",
+            indicator: "Washington Group Questions: Percent individuals with difficulty hearing, even when using a hearing aid",
+            year: "2020",
+            download_link: "vasyr/files/disabilities/Disability_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Di2020003",
+            sector: "Disablities",
+            indicator: "Washington Group Questions: Percent individuals with difficulty walking or climbing steps",
+            year: "2020",
+            download_link: "vasyr/files/disabilities/Disability_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Di2020004",
+            sector: "Disablities",
+            indicator: "Washington Group Questions: Pecent of children with difficulty walking",
+            year: "2020",
+            download_link: "vasyr/files/disabilities/Disability_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Di2020005",
+            sector: "Disablities",
+            indicator: "Washington Group Questions: Pecent of children with difficulty understanding",
+            year: "2020",
+            download_link: "vasyr/files/disabilities/Disability_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Di2020006",
+            sector: "Disablities",
+            indicator: "Washington Group Questions: Pecent of children with difficulty communicating",
+            year: "2020",
+            download_link: "vasyr/files/disabilities/Disability_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Di2020007",
+            sector: "Disablities",
+            indicator: "Washington Group Questions: Pecent of children with difficulty speaking",
+            year: "2020",
+            download_link: "vasyr/files/disabilities/Disability_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Di2020008",
+            sector: "Disablities",
+            indicator: "Washington Group Questions: Pecent of children with difficulty learning",
+            year: "2020",
+            download_link: "vasyr/files/disabilities/Disability_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Di2020009",
+            sector: "Disablities",
+            indicator: "Washington Group Questions: Percent individuals with difficulty remembering or concentrating",
+            year: "2020",
+            download_link: "vasyr/files/disabilities/Disability_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Di2020010",
+            sector: "Disablities",
+            indicator: "Washington Group Questions: Percent individuals with difficulty with self care",
+            year: "2020",
+            download_link: "vasyr/files/disabilities/Disability_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Di2020011",
+            sector: "Disablities",
+            indicator: "Washington Group Questions: Percent individuals with difficulty raising a 2 litre jug of water from waist to eye level",
+            year: "2020",
+            download_link: "vasyr/files/disabilities/Disability_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Di2020012",
+            sector: "Disablities",
+            indicator: "Washington Group Questions: Pecent of children with difficulty picking up small objects with his/her hand",
+            year: "2020",
+            download_link: "vasyr/files/disabilities/Disability_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Di2020013",
+            sector: "Disablities",
+            indicator: "Washington Group Questions: Percent individuals with difficulty using their hands and fingers",
+            year: "2020",
+            download_link: "vasyr/files/disabilities/Disability_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Di2020014",
+            sector: "Disablities",
+            indicator: "Washington Group Questions:Percent individuals feeling worried, nervous, or anxious",
+            year: "2020",
+            download_link: "vasyr/files/disabilities/Disability_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Di2020015",
+            sector: "Disablities",
+            indicator: "Washington Group Questions:Level of feeling worried, nervous, or anxious (for those who felt this way)",
+            year: "2020",
+            download_link: "vasyr/files/disabilities/Disability_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Di2020016",
+            sector: "Disablities",
+            indicator: "Washington Group Questions:Percent individuals of feeling depressed",
+            year: "2020",
+            download_link: "vasyr/files/disabilities/Disability_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Di2020017",
+            sector: "Disablities",
+            indicator: "Washington Group Questions:Level of feeling worried, nervous, or anxious (for those who felt this way)",
+            year: "2020",
+            download_link: "vasyr/files/disabilities/Disability_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "En2020001",
+            sector: "Energy",
+            indicator: "% households that have access to electricity",
+            year: "2020",
+            download_link: "/vasyr/files/energy/Energy_VASYR2020.xlsx"
+        },
+        {
+            id: "En2020002",
+            sector: "Energy",
+            indicator: "Sources of electricity",
+            year: "2020",
+            download_link: "/vasyr/files/energy/Energy_VASYR2020.xlsx"
+        },
+        {
+            id: "En2020003",
+            sector: "Energy",
+            indicator: "Average hours (per day) of electricity supply",
+            year: "2020",
+            download_link: "/vasyr/files/energy/Energy_VASYR2020.xlsx"
+        },
+        {
+            id: "En2020004",
+            sector: "Energy",
+            indicator: "Electricity bill collection",
+            year: "2020",
+            download_link: "/vasyr/files/energy/Energy_VASYR2020.xlsx"
+        },
+        {
+            id: "En2020005",
+            sector: "Energy",
+            indicator: "Frequency of electricity bills collection by EDL",
+            year: "2020",
+            download_link: "/vasyr/files/energy/Energy_VASYR2020.xlsx"
+        },
+        {
+            id: "En2020006",
+            sector: "Energy",
+            indicator: "Frequency of electricity bills collection by private generator",
+            year: "2020",
+            download_link: "/vasyr/files/energy/Energy_VASYR2020.xlsx"
+        },
+        {
+            id: "En2020007",
+            sector: "Energy",
+            indicator: "% households with exepnditure on EDL vs % households with expenditure on private generators",
+            year: "2020",
+            download_link: "/vasyr/files/energy/Energy_VASYR2020.xlsx"
+        },
+        {
+            id: "En2020008",
+            sector: "Energy",
+            indicator: "Average household exependiture on EDL and on private generators (out of all households)",
+            year: "2020",
+            download_link: "/vasyr/files/energy/Energy_VASYR2020.xlsx"
+        },
+        {
+            id: "En2020009",
+            sector: "Energy",
+            indicator: "Average household exependiture on EDL  (out of households who had expenditure on electricty)",
+            year: "2020",
+            download_link: "/vasyr/files/energy/Energy_VASYR2020.xlsx"
+        },
+        {
+            id: "En2020010",
+            sector: "Energy",
+            indicator: "Average household exependiture on private generators  (out of households who had expenditure on generators)",
+            year: "2020",
+            download_link: "/vasyr/files/energy/Energy_VASYR2020.xlsx"
+        },
+        {
+            id: "He2020001",
+            sector: "Health",
+            indicator: "Percent of households that required primary health care in the last 6 months",
+            year: "2020",
+            download_link: "/vasyr/files/health/Health VASyR 2020 Vault.xlsx"
+        },
+        {
+            id: "He2020002",
+            sector: "Health",
+            indicator: "Percent of households received the required primary health care in the last 6 months",
+            year: "2020",
+            download_link: "/vasyr/files/health/Health VASyR 2020 Vault.xlsx"
+        },
+        {
+            id: "He2020003",
+            sector: "Health",
+            indicator: "Primary Health Care services that were not accessed",
+            year: "2020",
+            download_link: "/vasyr/files/health/Health VASyR 2020 Vault.xlsx"
+        },
+        {
+            id: "He2020004",
+            sector: "Health",
+            indicator: "Barriers to accessing Primay Health Care Services",
+            year: "2020",
+            download_link: "/vasyr/files/health/Health VASyR 2020 Vault.xlsx"
+        },
+        {
+            id: "He2020005",
+            sector: "Health",
+            indicator: "Country where Primary health care was accessed.",
+            year: "2020",
+            download_link: "/vasyr/files/health/Health VASyR 2020 Vault.xlsx"
+        },
+        {
+            id: "He2020006",
+            sector: "Health",
+            indicator: "Places where Primay Health Care Services were accessed in Lebanon",
+            year: "2020",
+            download_link: "/vasyr/files/health/Health VASyR 2020 Vault.xlsx"
+        },
+        {
+            id: "He2020007",
+            sector: "Health",
+            indicator: "Reasons for accessing Primay Health Care Services at a private doctor clinic or pharmacy",
+            year: "2020",
+            download_link: "/vasyr/files/health/Health VASyR 2020 Vault.xlsx"
+        },
+        {
+            id: "He2020008",
+            sector: "Health",
+            indicator: "Payment of Primary health care services",
+            year: "2020",
+            download_link: "/vasyr/files/health/Health VASyR 2020 Vault.xlsx"
+        },
+        {
+            id: "He2020009",
+            sector: "Health",
+            indicator: "Percent of households that required hospital care in the last 6 months",
+            year: "2020",
+            download_link: "/vasyr/files/health/Health VASyR 2020 Vault.xlsx"
+        },
+        {
+            id: "He2020010",
+            sector: "Health",
+            indicator: "Percent of households received the required hospital care in the last 6 months",
+            year: "2020",
+            download_link: "/vasyr/files/health/Health VASyR 2020 Vault.xlsx"
+        },
+        {
+            id: "He2020011",
+            sector: "Health",
+            indicator: "Types of hospital care that were not accessed",
+            year: "2020",
+            download_link: "/vasyr/files/health/Health VASyR 2020 Vault.xlsx"
+        },
+        {
+            id: "He2020012",
+            sector: "Health",
+            indicator: "Method of payment for hospital care",
+            year: "2020",
+            download_link: "/vasyr/files/health/Health VASyR 2020 Vault.xlsx"
+        },
+        {
+            id: "He2020013",
+            sector: "Health",
+            indicator: "Country hospital care was receieved in",
+            year: "2020",
+            download_link: "/vasyr/files/health/Health VASyR 2020 Vault.xlsx"
+        },
+        {
+            id: "He2020014",
+            sector: "Health",
+            indicator: "Barriers to accessing hospital care",
+            year: "2020",
+            download_link: "/vasyr/files/health/Health VASyR 2020 Vault.xlsx"
+        },
+        {
+            id: "He2020015",
+            sector: "Health",
+            indicator: "Knowledge on where to access emergency medical services",
+            year: "2020",
+            download_link: "/vasyr/files/health/Health VASyR 2020 Vault.xlsx"
+        },
+        {
+            id: "He2020016",
+            sector: "Health",
+            indicator: "Percentage of households that have private medical insurance",
+            year: "2020",
+            download_link: "/vasyr/files/health/Health VASyR 2020 Vault.xlsx"
+        },
+        {
+            id: "He2020017",
+            sector: "Health",
+            indicator: "Percentage of households that have recieved information related to COVID19",
+            year: "2020",
+            download_link: "/vasyr/files/health/Health VASyR 2020 Vault.xlsx"
+        },
+        {
+            id: "He2020018",
+            sector: "Health",
+            indicator: "Type of information recieved related to COVID19",
+            year: "2020",
+            download_link: "/vasyr/files/health/Health VASyR 2020 Vault.xlsx"
+        },
+        {
+            id: "He2020019",
+            sector: "Health",
+            indicator: "Knowledge on where to access services if someone in the household is suspected to have COVID19",
+            year: "2020",
+            download_link: "/vasyr/files/health/Health VASyR 2020 Vault.xlsx"
+        },
+        {
+            id: "He2020020",
+            sector: "Health",
+            indicator: "Place of birth for those born in Lebanon",
+            year: "2020",
+            download_link: "/vasyr/files/health/Health VASyR 2020 Vault.xlsx"
+        },
+        {
+            id: "Pr2020001",
+            sector: "Protection",
+            indicator: "Safety and Security Issues Reported",
+            year: "2020",
+            download_link: "/vasyr/files/protection/Protection_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Pr2020002",
+            sector: "Protection",
+            indicator: "Percentage of households that worry that Family member will be exploited while accessing housing",
+            year: "2020",
+            download_link: "/vasyr/files/protection/Protection_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Pr2020003",
+            sector: "Protection",
+            indicator: "Percentage of households that worry that Family member will be exploited while accessing food",
+            year: "2020",
+            download_link: "/vasyr/files/protection/Protection_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Pr2020004",
+            sector: "Protection",
+            indicator: "Percentage of households that worry that Family member will be exploited while accessing other commodities",
+            year: "2020",
+            download_link: "/vasyr/files/protection/Protection_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Pr2020005",
+            sector: "Protection",
+            indicator: "Percentage of households that worry that Family member will be exploited while accessing health services",
+            year: "2020",
+            download_link: "/vasyr/files/protection/Protection_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Pr2020006",
+            sector: "Protection",
+            indicator: "Percentage of households that worry that Family member will be exploited while accessing jobs",
+            year: "2020",
+            download_link: "/vasyr/files/protection/Protection_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Pr2020007",
+            sector: "Protection",
+            indicator: "Percentage of households that worry that Family member will be exploited while accessing legal services",
+            year: "2020",
+            download_link: "/vasyr/files/protection/Protection_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Pr2020008",
+            sector: "Protection",
+            indicator: "Percentage of households that worry that Family member will be exploited while accessing other services",
+            year: "2020",
+            download_link: "/vasyr/files/protection/Protection_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Pr2020009",
+            sector: "Protection",
+            indicator: "Percentage of households that heard of a refugee being exploited while accessing housing",
+            year: "2020",
+            download_link: "/vasyr/files/protection/Protection_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Pr2020010",
+            sector: "Protection",
+            indicator: "Percentage of households that heard of a refugee being  exploited while accessing food",
+            year: "2020",
+            download_link: "/vasyr/files/protection/Protection_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Pr2020011",
+            sector: "Protection",
+            indicator: "Percentage of households that heard of a refugee being  exploited while accessing other commodities",
+            year: "2020",
+            download_link: "/vasyr/files/protection/Protection_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Pr2020012",
+            sector: "Protection",
+            indicator: "Percentage of households that heard of a refugee being  exploited while accessing health services",
+            year: "2020",
+            download_link: "/vasyr/files/protection/Protection_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Pr2020013",
+            sector: "Protection",
+            indicator: "Percentage of households that heard of a refugee being  exploited while accessing jobs",
+            year: "2020",
+            download_link: "/vasyr/files/protection/Protection_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Pr2020014",
+            sector: "Protection",
+            indicator: "Percentage of households that heard of a refugee being  exploited while accessing legal services",
+            year: "2020",
+            download_link: "/vasyr/files/protection/Protection_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Pr2020015",
+            sector: "Protection",
+            indicator: "Percentage of households tthat heard of a refugee being  exploited while accessing other services",
+            year: "2020",
+            download_link: "/vasyr/files/protection/Protection_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Pr2020016",
+            sector: "Protection",
+            indicator: "Households that reported lack of safety limiting their freedom of movement",
+            year: "2020",
+            download_link: "/vasyr/files/protection/Protection_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Pr2020017",
+            sector: "Protection",
+            indicator: "Households that reported lack of safety compelling their movement",
+            year: "2020",
+            download_link: "/vasyr/files/protection/Protection_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Pr2020018",
+            sector: "Protection",
+            indicator: "Households that reporwitnessed a physical confrontation in their area involving at least one Refugee",
+            year: "2020",
+            download_link: "/vasyr/files/protection/Protection_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Pr2020019",
+            sector: "Protection",
+            indicator: "Percentage of households that report having a curfew imposed on them in the area they are living",
+            year: "2020",
+            download_link: "/vasyr/files/protection/Protection_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Pr2020020",
+            sector: "Protection",
+            indicator: "Frequency of curfew being implemented",
+            year: "2020",
+            download_link: "/vasyr/files/protection/Protection_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Pr2020021",
+            sector: "Protection",
+            indicator: "Period of curfew being implemented",
+            year: "2020",
+            download_link: "/vasyr/files/protection/Protection_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Pr2020022",
+            sector: "Protection",
+            indicator: "Source of curfew",
+            year: "2020",
+            download_link: "/vasyr/files/protection/Protection_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Pr2020023",
+            sector: "Protection",
+            indicator: "Sanctions of breaching curfews",
+            year: "2020",
+            download_link: "/vasyr/files/protection/Protection_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Pr2020024",
+            sector: "Protection",
+            indicator: "Frequency of interactions with other Syrians at work",
+            year: "2020",
+            download_link: "/vasyr/files/protection/Protection_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Pr2020025",
+            sector: "Protection",
+            indicator: "Frequency of interactions with other Syrians in social circles",
+            year: "2020",
+            download_link: "/vasyr/files/protection/Protection_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Pr2020026",
+            sector: "Protection",
+            indicator: "Frequency of interactions with other Syrians when paying rent",
+            year: "2020",
+            download_link: "/vasyr/files/protection/Protection_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Pr2020027",
+            sector: "Protection",
+            indicator: "Frequency of interactions with other Syrians in the street",
+            year: "2020",
+            download_link: "/vasyr/files/protection/Protection_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Pr2020028",
+            sector: "Protection",
+            indicator: "Frequency of interactions with other Syrians in the shop",
+            year: "2020",
+            download_link: "/vasyr/files/protection/Protection_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Pr2020029",
+            sector: "Protection",
+            indicator: "Frequency of interactions with other Syrians at religious events",
+            year: "2020",
+            download_link: "/vasyr/files/protection/Protection_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Pr2020030",
+            sector: "Protection",
+            indicator: "Frequency of interactions with other Syrians  at activities organized by NGOs or local organizations",
+            year: "2020",
+            download_link: "/vasyr/files/protection/Protection_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Pr2020031",
+            sector: "Protection",
+            indicator: "Quality of interactions with the refugee community and host community",
+            year: "2020",
+            download_link: "/vasyr/files/protection/Protection_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Pr2020032",
+            sector: "Protection",
+            indicator: "Quality of interactions between refugees in this town/village",
+            year: "2020",
+            download_link: "/vasyr/files/protection/Protection_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Pr2020033",
+            sector: "Protection",
+            indicator: "Reported factors driving community tensions",
+            year: "2020",
+            download_link: "/vasyr/files/protection/Protection_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Pr2020034",
+            sector: "Protection",
+            indicator: "Reported factors  that would improve community relationships",
+            year: "2020",
+            download_link: "/vasyr/files/protection/Protection_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Pr2020035",
+            sector: "Protection",
+            indicator: "Households feelings about the situation and future",
+            year: "2020",
+            download_link: "/vasyr/files/protection/Protection_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Pr2020036",
+            sector: "Protection",
+            indicator: "Place of Marriage",
+            year: "2020",
+            download_link: "/vasyr/files/protection/Protection_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Pr2020037",
+            sector: "Protection",
+            indicator: "Level of Marriage Registration - Cummilitive (for those married in Lebanon)",
+            year: "2020",
+            download_link: "/vasyr/files/protection/Protection_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Pr2020038",
+            sector: "Protection",
+            indicator: "Level of Marriage Registration - for those married in Syria",
+            year: "2020",
+            download_link: "/vasyr/files/protection/Protection_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Pr2020039",
+            sector: "Protection",
+            indicator: "Place of divorce",
+            year: "2020",
+            download_link: "/vasyr/files/protection/Protection_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Pr2020040",
+            sector: "Protection",
+            indicator: "Level of divorce documentation for those divorced in Lebanon",
+            year: "2020",
+            download_link: "/vasyr/files/protection/Protection_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Pr2020041",
+            sector: "Protection",
+            indicator: "Level of divorce documentation for those divorced in Syria",
+            year: "2020",
+            download_link: "/vasyr/files/protection/Protection_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Pr2020042",
+            sector: "Protection",
+            indicator: "Place of birth",
+            year: "2020",
+            download_link: "/vasyr/files/protection/Protection_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Pr2020043",
+            sector: "Protection",
+            indicator: "Births registered at the Foreigns Registry and Beyond",
+            year: "2020",
+            download_link: "/vasyr/files/protection/Protection_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Pr2020044",
+            sector: "Protection",
+            indicator: "Levels of birth registration- cummilitive",
+            year: "2020",
+            download_link: "/vasyr/files/protection/Protection_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Pr2020045",
+            sector: "Protection",
+            indicator: "Reasons for Children only reaching the level of Mukhtar birth registration and not beyond (amoung those that only reached Mukhtar level",
+            year: "2020",
+            download_link: "/vasyr/files/protection/Protection_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Pr2020046",
+            sector: "Protection",
+            indicator: "Reasons for Children only reaching the level of Noufous birth registration and not beyond (amoung those that only reached Noufous Level",
+            year: "2020",
+            download_link: "/vasyr/files/protection/Protection_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Pr2020047",
+            sector: "Protection",
+            indicator: "Level of birth registration for births in Syria",
+            year: "2020",
+            download_link: "/vasyr/files/protection/Protection_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Pr2020048",
+            sector: "Protection",
+            indicator: "Legal residency of Syrian individuals above 15 years old",
+            year: "2020",
+            download_link: "/vasyr/files/protection/Protection_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Pr2020049",
+            sector: "Protection",
+            indicator: "Percentage of Individuals that had legal residency at some point in 2020- amoung those with no legal residency currently",
+            year: "2020",
+            download_link: "/vasyr/files/protection/Protection_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Pr2020050",
+            sector: "Protection",
+            indicator: "Legal residency of Syrian individuals by age groups (MALES)",
+            year: "2020",
+            download_link: "/vasyr/files/protection/Protection_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Pr2020051",
+            sector: "Protection",
+            indicator: "Legal residency of Syrian individuals by age groups (FEMALES)",
+            year: "2020",
+            download_link: "/vasyr/files/protection/Protection_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Pr2020052",
+            sector: "Protection",
+            indicator: "Percentage of households that have all household members above 15 with legal residency",
+            year: "2020",
+            download_link: "/vasyr/files/protection/Protection_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Pr2020053",
+            sector: "Protection",
+            indicator: "Percentage of households that have at least one household membrs above 15 with legal residency",
+            year: "2020",
+            download_link: "/vasyr/files/protection/Protection_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Pr2020054",
+            sector: "Protection",
+            indicator: "Reasons for not having legal residency",
+            year: "2020",
+            download_link: "/vasyr/files/protection/Protection_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Pr2020055",
+            sector: "Protection",
+            indicator: "Residency categories, for those with legal residency",
+            year: "2020",
+            download_link: "/vasyr/files/protection/Protection_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Pr2020056",
+            sector: "Protection",
+            indicator: " Percentage of individuals that had a past residency based on sponsorship, tourism, lease agreement, property owner, courtesy (among those with no legal residency)",
+            year: "2020",
+            download_link: "/vasyr/files/protection/Protection_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Pr2020057",
+            sector: "Protection",
+            indicator: "Percentage of Individuals in the past that exited and re-entered regularly to Lebanon after 2015 for those with no legal residency",
+            year: "2020",
+            download_link: "/vasyr/files/protection/Protection_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Pr2020058",
+            sector: "Protection",
+            indicator: "Last time the individual approached GSO to renew residency, for those with no legal residency",
+            year: "2020",
+            download_link: "/vasyr/files/protection/Protection_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Pr2020059",
+            sector: "Protection",
+            indicator: "Sources used to recieve information related to refugee services",
+            year: "2020",
+            download_link: "/vasyr/files/protection/Protection_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Pr2020060",
+            sector: "Protection",
+            indicator: "Percentage of households that reported that the information received through each channel was helpful in accessing services",
+            year: "2020",
+            download_link: "/vasyr/files/protection/Protection_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Pr2020061",
+            sector: "Protection",
+            indicator: "Percentage of households that have internet on phone",
+            year: "2020",
+            download_link: "/vasyr/files/protection/Protection_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Pr2020062",
+            sector: "Protection",
+            indicator: "Percentage of households that have internet at home",
+            year: "2020",
+            download_link: "/vasyr/files/protection/Protection_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Pr2020063",
+            sector: "Protection",
+            indicator: "Frequency of social media usage",
+            year: "2020",
+            download_link: "/vasyr/files/protection/Protection_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Pr2020064",
+            sector: "Protection",
+            indicator: " Type of social media usage",
+            year: "2020",
+            download_link: "/vasyr/files/protection/Protection_VASyR_2020_VAULT.xlsx"
+        },
+        {
+            id: "Sh2020001",
+            sector: "Shelter",
+            indicator: "Monthly average and median Rent in LBP",
+            year: "2020",
+            download_link: "/vasyr/files/shelter/Shelter_VASYR2020.xlsx"
+        },
+        {
+            id: "Sh2020002",
+            sector: "Shelter",
+            indicator: "% of households in different monthly rent categories",
+            year: "2020",
+            download_link: "/vasyr/files/shelter/Shelter_VASYR2020.xlsx"
+        },
+        {
+            id: "Sh2020003",
+            sector: "Shelter",
+            indicator: "Types of rental agreements",
+            year: "2020",
+            download_link: "/vasyr/files/shelter/Shelter_VASYR2020.xlsx"
+        },
+        {
+            id: "Sh2020004",
+            sector: "Shelter",
+            indicator: "Lease agreement registered with the municipality",
+            year: "2020",
+            download_link: "/vasyr/files/shelter/Shelter_VASYR2020.xlsx"
+        },
+        {
+            id: "Sh2020005",
+            sector: "Shelter",
+            indicator: "Payment of municipal taxes",
+            year: "2020",
+            download_link: "/vasyr/files/shelter/Shelter_VASYR2020.xlsx"
+        },
+        {
+            id: "Sh2020006",
+            sector: "Shelter",
+            indicator: "Period of rental agreement",
+            year: "2020",
+            download_link: "/vasyr/files/shelter/Shelter_VASYR2020.xlsx"
+        },
+        {
+            id: "Sh2020007",
+            sector: "Shelter",
+            indicator: "% HH that reported increase/decrease / change  in rent over the past three months",
+            year: "2020",
+            download_link: "/vasyr/files/shelter/Shelter_VASYR2020.xlsx"
+        },
+        {
+            id: "Sh2020008",
+            sector: "Shelter",
+            indicator: "% HH that reported increase/decrease  in rent over the past three months",
+            year: "2020",
+            download_link: "/vasyr/files/shelter/Shelter_VASYR2020.xlsx"
+        },
+        {
+            id: "Sh2020009",
+            sector: "Shelter",
+            indicator: "average and median increase in rent in LBP our of households who reported an increase",
+            year: "2020",
+            download_link: "/vasyr/files/shelter/Shelter_VASYR2020.xlsx"
+        },
+        {
+            id: "Sh2020010",
+            sector: "Shelter",
+            indicator: "average and median decrease in rent in LBP our of households who reported a decrease",
+            year: "2020",
+            download_link: "/vasyr/files/shelter/Shelter_VASYR2020.xlsx"
+        },
+        {
+            id: "Sh2020011",
+            sector: "Shelter",
+            indicator: "% of households by type of shelter",
+            year: "2020",
+            download_link: "/vasyr/files/shelter/Shelter_VASYR2020.xlsx"
+        },
+        {
+            id: "Sh2020012",
+            sector: "Shelter",
+            indicator: "% of households by shelter ( categories ) ",
+            year: "2020",
+            download_link: "/vasyr/files/shelter/Shelter_VASYR2020.xlsx"
+        },
+        {
+            id: "Sh2020013",
+            sector: "Shelter",
+            indicator: "% of households by Type of occupancy",
+            year: "2020",
+            download_link: "/vasyr/files/shelter/Shelter_VASYR2020.xlsx"
+        },
+        {
+            id: "Sh2020014",
+            sector: "Shelter",
+            indicator: "Crosstabulation between types of housing and types of occupancy",
+            year: "2020",
+            download_link: "/vasyr/files/shelter/Shelter_VASYR2020.xlsx"
+        },
+        {
+            id: "Sh2020015",
+            sector: "Shelter",
+            indicator: "Most important factor for selecting place of residence",
+            year: "2020",
+            download_link: "/vasyr/files/shelter/Shelter_VASYR2020.xlsx"
+        },
+        {
+            id: "Sh2020016",
+            sector: "Shelter",
+            indicator: "Average m2 per person ",
+            year: "2020",
+            download_link: "/vasyr/files/shelter/Shelter_VASYR2020.xlsx"
+        },
+        {
+            id: "Sh2020017",
+            sector: "Shelter",
+            indicator: "% HH with more than 4.5m2 per person overcrowding",
+            year: "2020",
+            download_link: "/vasyr/files/shelter/Shelter_VASYR2020.xlsx"
+        },
+        {
+            id: "Sh2020018",
+            sector: "Shelter",
+            indicator: "% HH living in dangerous conditions",
+            year: "2020",
+            download_link: "/vasyr/files/shelter/Shelter_VASYR2020.xlsx"
+        },
+        {
+            id: "Sh2020019",
+            sector: "Shelter",
+            indicator: "Detailed Shelter Conditions",
+            year: "2020",
+            download_link: "/vasyr/files/shelter/Shelter_VASYR2020.xlsx"
+        },
+        {
+            id: "Sh2020020",
+            sector: "Shelter",
+            indicator: "Detailed Shelter Conditions by Shelter Type and governorate ",
+            year: "2020",
+            download_link: "/vasyr/files/shelter/Shelter_VASYR2020.xlsx"
+        },
+        {
+            id: "Sh2020021",
+            sector: "Shelter",
+            indicator: "Households living in dangerous, substandard or overcrowded conditions",
+            year: "2020",
+            download_link: "/vasyr/files/shelter/Shelter_VASYR2020.xlsx"
+        },
+        {
+            id: "Sh2020022",
+            sector: "Shelter",
+            indicator: "Percentage of households sharing toilets and mean number of people sharing toilets",
+            year: "2020",
+            download_link: "/vasyr/files/shelter/Shelter_VASYR2020.xlsx"
+        },
+        {
+            id: "Ex2020001",
+            sector: "Expenditure",
+            indicator: "Total Expenditures per Month per Capita in LBP",
+            year: "2020",
+            download_link: "/vasyr/files/expenditure/Vault_Econ_Vuln1_2020.xlsx"
+        },
+        {
+            id: "Ex2020002",
+            sector: "Expenditure",
+            indicator: "Food Expenditure Share Category",
+            year: "2020",
+            download_link: "/vasyr/files/expenditure/Vault_Econ_Vuln1_2020.xlsx"
+        },
+        {
+            id: "Ex2020003",
+            sector: "Expenditure",
+            indicator: "Monthly Expenditure share on: Food",
+            year: "2020",
+            download_link: "/vasyr/files/expenditure/Vault_Econ_Vuln1_2020.xlsx"
+        },
+        {
+            id: "Ex2020004",
+            sector: "Expenditure",
+            indicator: "Monthly Expenditure share on: Health",
+            year: "2020",
+            download_link: "/vasyr/files/expenditure/Vault_Econ_Vuln1_2020.xlsx"
+        },
+        {
+            id: "Ex2020005",
+            sector: "Expenditure",
+            indicator: "Monthly Expenditure share on: Education",
+            year: "2020",
+            download_link: "/vasyr/files/expenditure/Vault_Econ_Vuln1_2020.xlsx"
+        },
+        {
+            id: "Ex2020006",
+            sector: "Expenditure",
+            indicator: "Monthly Expenditure share on: Rent",
+            year: "2020",
+            download_link: "/vasyr/files/expenditure/Vault_Econ_Vuln1_2020.xlsx"
+        },
+        {
+            id: "Ex2020007",
+            sector: "Expenditure",
+            indicator: "Monthly Expenditure share on: Water",
+            year: "2020",
+            download_link: "/vasyr/files/expenditure/Vault_Econ_Vuln1_2020.xlsx"
+        },
+        {
+            id: "Ex2020008",
+            sector: "Expenditure",
+            indicator: "Monthly Expenditure share on: Alcohol / Tobacco",
+            year: "2020",
+            download_link: "/vasyr/files/expenditure/Vault_Econ_Vuln1_2020.xlsx"
+        },
+        {
+            id: "Ex2020009",
+            sector: "Expenditure",
+            indicator: "Monthly Expenditure share on: Soap and Hygiene",
+            year: "2020",
+            download_link: "/vasyr/files/expenditure/Vault_Econ_Vuln1_2020.xlsx"
+        },
+        {
+            id: "Ex2020010",
+            sector: "Expenditure",
+            indicator: "Monthly Expenditure share on: Fuel",
+            year: "2020",
+            download_link: "/vasyr/files/expenditure/Vault_Econ_Vuln1_2020.xlsx"
+        },
+        {
+            id: "Ex2020011",
+            sector: "Expenditure",
+            indicator: "Monthly Expenditure share on: Transportation",
+            year: "2020",
+            download_link: "/vasyr/files/expenditure/Vault_Econ_Vuln1_2020.xlsx"
+        },
+        {
+            id: "Ex2020012",
+            sector: "Expenditure",
+            indicator: "Monthly Expenditure share on: Clothing",
+            year: "2020",
+            download_link: "/vasyr/files/expenditure/Vault_Econ_Vuln1_2020.xlsx"
+        },
+        {
+            id: "Ex2020013",
+            sector: "Expenditure",
+            indicator: "Monthly Expenditure share on: Telecome",
+            year: "2020",
+            download_link: "/vasyr/files/expenditure/Vault_Econ_Vuln1_2020.xlsx"
+        },
+        {
+            id: "Ex2020014",
+            sector: "Expenditure",
+            indicator: "Monthly Expenditure share on: Electricity: Electricite du Liban (EDL)",
+            year: "2020",
+            download_link: "/vasyr/files/expenditure/Vault_Econ_Vuln1_2020.xlsx"
+        },
+        {
+            id: "Ex2020015",
+            sector: "Expenditure",
+            indicator: "Monthly Expenditure share on: Electricity: Private Generators",
+            year: "2020",
+            download_link: "/vasyr/files/expenditure/Vault_Econ_Vuln1_2020.xlsx"
+        },
+        {
+            id: "Ex2020016",
+            sector: "Expenditure",
+            indicator: "Monthly Expenditure share on: Assets",
+            year: "2020",
+            download_link: "/vasyr/files/expenditure/Vault_Econ_Vuln1_2020.xlsx"
+        },
+        {
+            id: "Ex2020017",
+            sector: "Expenditure",
+            indicator: "Monthly Expenditure share on: Other",
+            year: "2020",
+            download_link: "/vasyr/files/expenditure/Vault_Econ_Vuln1_2020.xlsx"
+        },
+        {
+            id: "Ex2020018",
+            sector: "Expenditure",
+            indicator: "Monthly Expenditure share on: Shelter",
+            year: "2020",
+            download_link: "/vasyr/files/expenditure/Vault_Econ_Vuln1_2020.xlsx"
+        },
+        {
+            id: "Ex2020019",
+            sector: "Expenditure",
+            indicator: "Monthly Expenditure share on: Gas",
+            year: "2020",
+            download_link: "/vasyr/files/expenditure/Vault_Econ_Vuln1_2020.xlsx"
+        },
+        {
+            id: "Ex2020020",
+            sector: "Expenditure",
+            indicator: "Monthly Expenditure share on: Registration",
+            year: "2020",
+            download_link: "/vasyr/files/expenditure/Vault_Econ_Vuln1_2020.xlsx"
+        },
+        {
+            id: "Ex2020021",
+            sector: "Expenditure",
+            indicator: "Monthly Expenditure share on: Entertainment",
+            year: "2020",
+            download_link: "/vasyr/files/expenditure/Vault_Econ_Vuln1_2020.xlsx"
+        },
+        {
+            id: "Ex2020022",
+            sector: "Expenditure",
+            indicator: "Monthly Expenditure share on: Debt Repayment",
+            year: "2020",
+            download_link: "/vasyr/files/expenditure/Vault_Econ_Vuln1_2020.xlsx"
+        },
+        {
+            id: "Ex2020023",
+            sector: "Expenditure",
+            indicator: "Single Food Item Expenditure Share- Monthly average: Bread & Pasta",
+            year: "2020",
+            download_link: "/vasyr/files/expenditure/Vault_Econ_Vuln1_2020.xlsx"
+        },
+        {
+            id: "Ex2020024",
+            sector: "Expenditure",
+            indicator: "Single Food Item Expenditure Share- Monthly average: Cereal",
+            year: "2020",
+            download_link: "/vasyr/files/expenditure/Vault_Econ_Vuln1_2020.xlsx"
+        },
+        {
+            id: "Ex2020025",
+            sector: "Expenditure",
+            indicator: "Single Food Item Expenditure Share- Monthly average: Tubers",
+            year: "2020",
+            download_link: "/vasyr/files/expenditure/Vault_Econ_Vuln1_2020.xlsx"
+        },
+        {
+            id: "Ex2020026",
+            sector: "Expenditure",
+            indicator: "Single Food Item Expenditure Share- Monthly average: Dairy Products",
+            year: "2020",
+            download_link: "/vasyr/files/expenditure/Vault_Econ_Vuln1_2020.xlsx"
+        },
+        {
+            id: "Ex2020027",
+            sector: "Expenditure",
+            indicator: "Single Food Item Expenditure Share- Monthly average: Oil",
+            year: "2020",
+            download_link: "/vasyr/files/expenditure/Vault_Econ_Vuln1_2020.xlsx"
+        },
+        {
+            id: "Ex2020028",
+            sector: "Expenditure",
+            indicator: "Single Food Item Expenditure Share- Monthly average: Sugar",
+            year: "2020",
+            download_link: "/vasyr/files/expenditure/Vault_Econ_Vuln1_2020.xlsx"
+        },
+        {
+            id: "Ex2020029",
+            sector: "Expenditure",
+            indicator: "Single Food Item Expenditure Share- Monthly average: Canned Food",
+            year: "2020",
+            download_link: "/vasyr/files/expenditure/Vault_Econ_Vuln1_2020.xlsx"
+        },
+        {
+            id: "Ex2020030",
+            sector: "Expenditure",
+            indicator: "Single Food Item Expenditure Share- Monthly average: Beans & nuts",
+            year: "2020",
+            download_link: "/vasyr/files/expenditure/Vault_Econ_Vuln1_2020.xlsx"
+        },
+        {
+            id: "Ex2020031",
+            sector: "Expenditure",
+            indicator: "Single Food Item Expenditure Share- Monthly average: Fresh Meat",
+            year: "2020",
+            download_link: "/vasyr/files/expenditure/Vault_Econ_Vuln1_2020.xlsx"
+        },
+        {
+            id: "Ex2020032",
+            sector: "Expenditure",
+            indicator: "Single Food Item Expenditure Share- Monthly average: Fruits & Vegetables",
+            year: "2020",
+            download_link: "/vasyr/files/expenditure/Vault_Econ_Vuln1_2020.xlsx"
+        },
+        {
+            id: "Ex2020033",
+            sector: "Expenditure",
+            indicator: "Single Food Item Expenditure Share- Monthly average: Cooked Food",
+            year: "2020",
+            download_link: "/vasyr/files/expenditure/Vault_Econ_Vuln1_2020.xlsx"
+        },
+        {
+            id: "Ex2020034",
+            sector: "Expenditure",
+            indicator: "Single Food Item Expenditure Share- Monthly average: Condiments",
+            year: "2020",
+            download_link: "/vasyr/files/expenditure/Vault_Econ_Vuln1_2020.xlsx"
+        },
+        {
+            id: "Ec2020001",
+            sector: "Economic Vulnerability",
+            indicator: "Percentage of Household living under Minimum Expenditure Basket (MEB) and Survival Minimum Expenditure Basket (SMEB) Categories",
+            year: "2020",
+            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xls"
+        },
+        {
+            id: "Ec2020002",
+            sector: "Economic Vulnerability",
+            indicator: "Percentage of households by Debt Categories",
+            year: "2020",
+            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xls"
+        },
+        {
+            id: "Ec2020003",
+            sector: "Economic Vulnerability",
+            indicator: "Debt per Household & per capita ",
+            year: "2020",
+            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xls"
+        },
+        {
+            id: "Ec2020004",
+            sector: "Economic Vulnerability",
+            indicator: "Average Debt per Household (all Households) ",
+            year: "2020",
+            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xls"
+        },
+        {
+            id: "Ec2020005",
+            sector: "Economic Vulnerability",
+            indicator: "Average Debt per Capita (all Households) ",
+            year: "2020",
+            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xls"
+        },
+        {
+            id: "Ec2020006",
+            sector: "Economic Vulnerability",
+            indicator: "Average Debt per Household (only Households with Debt) 	",
+            year: "2020",
+            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xls"
+        },
+        {
+            id: "Ec2020007",
+            sector: "Economic Vulnerability",
+            indicator: "Average Debt per Capita (only Households with Debt) 	",
+            year: "2020",
+            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xls"
+        },
+        {
+            id: "Ec2020008",
+            sector: "Economic Vulnerability",
+            indicator: "Percentage of Households who Borrowed Money in the past 3 Months",
+            year: "2020",
+            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xls"
+        },
+        {
+            id: "Ec2020009",
+            sector: "Economic Vulnerability",
+            indicator: "Reason for Borrowing: Debt Repayment",
+            year: "2020",
+            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xls"
+        },
+        {
+            id: "Ec2020010",
+            sector: "Economic Vulnerability",
+            indicator: "Reason for Borrowing: Procure Sponsorship",
+            year: "2020",
+            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xls"
+        },
+        {
+            id: "Ec2020011",
+            sector: "Economic Vulnerability",
+            indicator: "Reason for Borrowing: Business Development",
+            year: "2020",
+            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xls"
+        },
+        {
+            id: "Ec2020012",
+            sector: "Economic Vulnerability",
+            indicator: "Reason for Borrowing: Assets Procurement",
+            year: "2020",
+            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xls"
+        },
+        {
+            id: "Ec2020013",
+            sector: "Economic Vulnerability",
+            indicator: "Reason for Borrowing: Pay Documentation fees",
+            year: "2020",
+            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xls"
+        },
+        {
+            id: "Ec2020014",
+            sector: "Economic Vulnerability",
+            indicator: "Reason for Borrowing: Other reasons",
+            year: "2020",
+            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xls"
+        },
+        {
+            id: "Ec2020015",
+            sector: "Economic Vulnerability",
+            indicator: "Reason for Borrowing: Buy Food",
+            year: "2020",
+            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xls"
+        },
+        {
+            id: "Ec2020016",
+            sector: "Economic Vulnerability",
+            indicator: "Reason for Borrowing: Pay Rent",
+            year: "2020",
+            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xls"
+        },
+        {
+            id: "Ec2020017",
+            sector: "Economic Vulnerability",
+            indicator: "Reason for Borrowing: Buy Shelter Material",
+            year: "2020",
+            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xls"
+        },
+        {
+            id: "Ec2020018",
+            sector: "Economic Vulnerability",
+            indicator: "Reason for Borrowing: Buy House",
+            year: "2020",
+            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xls"
+        },
+        {
+            id: "Ec2020019",
+            sector: "Economic Vulnerability",
+            indicator: "Reason for Borrowing: Pay Health",
+            year: "2020",
+            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xls"
+        },
+        {
+            id: "Ec2020020",
+            sector: "Economic Vulnerability",
+            indicator: "Reason for Borrowing: Buy Medicine",
+            year: "2020",
+            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xls"
+        },
+        {
+            id: "Ec2020021",
+            sector: "Economic Vulnerability",
+            indicator: "Reason for Borrowing: Buy Water",
+            year: "2020",
+            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xls"
+        },
+        {
+            id: "Ec2020022",
+            sector: "Economic Vulnerability",
+            indicator: "Reason for Borrowing: Pay Transportation",
+            year: "2020",
+            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xls"
+        },
+        {
+            id: "Ec2020023",
+            sector: "Economic Vulnerability",
+            indicator: "Source of Borrowing: Friends in Lebanon",
+            year: "2020",
+            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xls"
+        },
+        {
+            id: "Ec2020024",
+            sector: "Economic Vulnerability",
+            indicator: "Source of Borrowing: Friends not in Lebanon",
+            year: "2020",
+            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xls"
+        },
+        {
+            id: "Ec2020025",
+            sector: "Economic Vulnerability",
+            indicator: "Source of Borrowing: Money Lender",
+            year: "2020",
+            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xls"
+        },
+        {
+            id: "Ec2020026",
+            sector: "Economic Vulnerability",
+            indicator: "Source of Borrowing:  Local Charity",
+            year: "2020",
+            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xls"
+        },
+        {
+            id: "Ec2020027",
+            sector: "Economic Vulnerability",
+            indicator: "Source of Borrowing: Landlord",
+            year: "2020",
+            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xls"
+        },
+        {
+            id: "Ec2020028",
+            sector: "Economic Vulnerability",
+            indicator: "Source of Borrowing: Supermarket",
+            year: "2020",
+            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xls"
+        },
+        {
+            id: "Ec2020029",
+            sector: "Economic Vulnerability",
+            indicator: "Source of Borrowing: Shawish",
+            year: "2020",
+            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xls"
+        },
+        {
+            id: "Ec2020030",
+            sector: "Economic Vulnerability",
+            indicator: "Source of Borrowing: Other",
+            year: "2020",
+            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xls"
+        },
+        {
+            id: "Fo2020001",
+            sector: "Food Security",
+            indicator: "Vitamin A Consumption: Never Consumed",
+            year: "2020",
+            download_link: "/vasyr/files/food_security/Vault_FC+N_2020.xlsx"
+        },
+        {
+            id: "Fo2020002",
+            sector: "Food Security",
+            indicator: "Vitamin A Consumption: 1 to 6 Times a Week",
+            year: "2020",
+            download_link: "/vasyr/files/food_security/Vault_FC+N_2020.xlsx"
+        },
+        {
+            id: "Fo2020003",
+            sector: "Food Security",
+            indicator: "Vitamin A Consumption: at Least Daily",
+            year: "2020",
+            download_link: "/vasyr/files/food_security/Vault_FC+N_2020.xlsx"
+        },
+        {
+            id: "Fo2020004",
+            sector: "Food Security",
+            indicator: "Protein Consumption: Never Consumed",
+            year: "2020",
+            download_link: "/vasyr/files/food_security/Vault_FC+N_2020.xlsx"
+        },
+        {
+            id: "Fo2020005",
+            sector: "Food Security",
+            indicator: "Protein Consumption: 1 to 6 Times a Week",
+            year: "2020",
+            download_link: "/vasyr/files/food_security/Vault_FC+N_2020.xlsx"
+        },
+        {
+            id: "Fo2020006",
+            sector: "Food Security",
+            indicator: "Protein Consumption: at Least Daily",
+            year: "2020",
+            download_link: "/vasyr/files/food_security/Vault_FC+N_2020.xlsx"
+        },
+        {
+            id: "Fo2020007",
+            sector: "Food Security",
+            indicator: "Iron Consumption: Never Consumed",
+            year: "2020",
+            download_link: "/vasyr/files/food_security/Vault_FC+N_2020.xlsx"
+        },
+        {
+            id: "Fo2020008",
+            sector: "Food Security",
+            indicator: "Iron Consumption: 1 to 6 Times a Week",
+            year: "2020",
+            download_link: "/vasyr/files/food_security/Vault_FC+N_2020.xlsx"
+        },
+        {
+            id: "Fo2020009",
+            sector: "Food Security",
+            indicator: "Iron Consumption: at Least Daily",
+            year: "2020",
+            download_link: "/vasyr/files/food_security/Vault_FC+N_2020.xlsx"
+        },
+        {
+            id: "Fo2020010",
+            sector: "Food Security",
+            indicator: "Number of meals consumed by adults",
+            year: "2020",
+            download_link: "/vasyr/files/food_security/Vault_Food_Consumption_2020.xlsx"
+        },
+        {
+            id: "Fo2020011",
+            sector: "Food Security",
+            indicator: "Number of Meals Consumed by Chidren under 5",
+            year: "2020",
+            download_link: "/vasyr/files/food_security/Vault_Food_Consumption_2020.xlsx"
+        },
+        {
+            id: "Fo2020012",
+            sector: "Food Security",
+            indicator: "Food Consumption Score",
+            year: "2020",
+            download_link: "/vasyr/files/food_security/Vault_Food_Consumption_2020.xlsx"
+        },
+        {
+            id: "Fo2020013",
+            sector: "Food Security",
+            indicator: "Percentage of households with Poor food consumption",
+            year: "2020",
+            download_link: "/vasyr/files/food_security/Vault_Food_Consumption_2020.xlsx"
+        },
+        {
+            id: "Fo2020014",
+            sector: "Food Security",
+            indicator: "Percentage of households with Borderline food consumption",
+            year: "2020",
+            download_link: "/vasyr/files/food_security/Vault_Food_Consumption_2020.xlsx"
+        },
+        {
+            id: "Fo2020015",
+            sector: "Food Security",
+            indicator: "Percentage of households with Acceptable food consumption",
+            year: "2020",
+            download_link: "/vasyr/files/food_security/Vault_Food_Consumption_2020.xlsx"
+        },
+        {
+            id: "Fo2020016",
+            sector: "Food Security",
+            indicator: "Household Daily Average Diet Diversity (HDADD)",
+            year: "2020",
+            download_link: "/vasyr/files/food_security/Vault_Food_Consumption_2020.xlsx"
+        },
+        {
+            id: "Fo2020017",
+            sector: "Food Security",
+            indicator: "HDADD Category: <4.5 food groups",
+            year: "2020",
+            download_link: "/vasyr/files/food_security/Vault_Food_Consumption_2020.xlsx"
+        },
+        {
+            id: "Fo2020018",
+            sector: "Food Security",
+            indicator: "HDADD Category: 4.5-6.4 food groups",
+            year: "2020",
+            download_link: "/vasyr/files/food_security/Vault_Food_Consumption_2020.xlsx"
+        },
+        {
+            id: "Fo2020019",
+            sector: "Food Security",
+            indicator: "HDADD Category: >=6.5 food groups",
+            year: "2020",
+            download_link: "/vasyr/files/food_security/Vault_Food_Consumption_2020.xlsx"
+        },
+        {
+            id: "Fo2020020",
+            sector: "Food Security",
+            indicator: "Household Weekly Diet Diversity (HWDD)",
+            year: "2020",
+            download_link: "/vasyr/files/food_security/Vault_Food_Consumption_2020.xlsx"
+        },
+        {
+            id: "Fo2020021",
+            sector: "Food Security",
+            indicator: "HWDD <= 6 food groups",
+            year: "2020",
+            download_link: "/vasyr/files/food_security/Vault_Food_Consumption_2020.xlsx"
+        },
+        {
+            id: "Fo2020022",
+            sector: "Food Security",
+            indicator: "HWDD 7-8 food groups",
+            year: "2020",
+            download_link: "/vasyr/files/food_security/Vault_Food_Consumption_2020.xlsx"
+        },
+        {
+            id: "Fo2020023",
+            sector: "Food Security",
+            indicator: "HWDD >= 9 food groups",
+            year: "2020",
+            download_link: "/vasyr/files/food_security/Vault_Food_Consumption_2020.xlsx"
+        },
+        {
+            id: "Fo2020024",
+            sector: "Food Security",
+            indicator: "Weekly Food Consumption: Cereal/ Tubers",
+            year: "2020",
+            download_link: "/vasyr/files/food_security/Vault_Food_Consumption_2020.xlsx"
+        },
+        {
+            id: "Fo2020025",
+            sector: "Food Security",
+            indicator: "Weekly Food Consumption: Roots",
+            year: "2020",
+            download_link: "/vasyr/files/food_security/Vault_Food_Consumption_2020.xlsx"
+        },
+        {
+            id: "Fo2020026",
+            sector: "Food Security",
+            indicator: "Weekly Food Consumption: Dairy Products",
+            year: "2020",
+            download_link: "/vasyr/files/food_security/Vault_Food_Consumption_2020.xlsx"
+        },
+        {
+            id: "Fo2020027",
+            sector: "Food Security",
+            indicator: "Weekly Food Consumption: Meat/ Fish/ Eggs",
+            year: "2020",
+            download_link: "/vasyr/files/food_security/Vault_Food_Consumption_2020.xlsx"
+        },
+        {
+            id: "Fo2020028",
+            sector: "Food Security",
+            indicator: "Weekly Food Consumption: Vegetable/ Leaves",
+            year: "2020",
+            download_link: "/vasyr/files/food_security/Vault_Food_Consumption_2020.xlsx"
+        },
+        {
+            id: "Fo2020029",
+            sector: "Food Security",
+            indicator: "Weekly Food Consumption: Fruits",
+            year: "2020",
+            download_link: "/vasyr/files/food_security/Vault_Food_Consumption_2020.xlsx"
+        },
+        {
+            id: "Fo2020030",
+            sector: "Food Security",
+            indicator: "Weekly Food Consumption: Oils",
+            year: "2020",
+            download_link: "/vasyr/files/food_security/Vault_Food_Consumption_2020.xlsx"
+        },
+        {
+            id: "Fo2020031",
+            sector: "Food Security",
+            indicator: "Weekly Food Consumption: Sugar",
+            year: "2020",
+            download_link: "/vasyr/files/food_security/Vault_Food_Consumption_2020.xlsx"
+        },
+        {
+            id: "Fo2020032",
+            sector: "Food Security",
+            indicator: "Percent of households who are Food Secure",
+            year: "2020",
+            download_link: "/vasyr/files/food_security/Vault_Food_Security_2020.xls"
+        },
+        {
+            id: "Fo2020033",
+            sector: "Food Security",
+            indicator: "Percent of households who are Marginally Food Insecure",
+            year: "2020",
+            download_link: "/vasyr/files/food_security/Vault_Food_Security_2020.xls"
+        },
+        {
+            id: "Fo2020034",
+            sector: "Food Security",
+            indicator: "Percent of households who are Moderately Food Insecure",
+            year: "2020",
+            download_link: "/vasyr/files/food_security/Vault_Food_Security_2020.xls"
+        },
+        {
+            id: "Fo2020035",
+            sector: "Food Security",
+            indicator: "Percent of households who are Severely Food Insecure",
+            year: "2020",
+            download_link: "/vasyr/files/food_security/Vault_Food_Security_2020.xls"
+        },
+        {
+            id: "Li2020001",
+            sector: "Livelihoods",
+            indicator: "Employment Status",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods1_2020.xlsx"
+        },
+        {
+            id: "Li2020002",
+            sector: "Livelihoods",
+            indicator: "Individual above 18 Years",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods1_2020.xlsx"
+        },
+        {
+            id: "Li2020003",
+            sector: "Livelihoods",
+            indicator: "Employment to Polulation Ratio (Employed/Total Person 18+)",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods1_2020.xlsx"
+        },
+        {
+            id: "Li2020004",
+            sector: "Livelihoods",
+            indicator: "Labor Force Participation Rate ((Employed+Unemployed)/total persons >18)",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods1_2020.xlsx"
+        },
+        {
+            id: "Li2020005",
+            sector: "Livelihoods",
+            indicator: "Unemployment Rate (Unemployed over Labor Force)",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods1_2020.xlsx"
+        },
+        {
+            id: "Li2020006",
+            sector: "Livelihoods",
+            indicator: "Sector of employment - Individual level",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods2_2020.xlsx"
+        },
+        {
+            id: "Li2020007",
+            sector: "Livelihoods",
+            indicator: "Percent of working age individuals employed in Agriculture",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods2_2020.xlsx"
+        },
+        {
+            id: "Li2020008",
+            sector: "Livelihoods",
+            indicator: "Percent of working age individuals employed in Construction",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods2_2020.xlsx"
+        },
+        {
+            id: "Li2020009",
+            sector: "Livelihoods",
+            indicator: "Percent of working age individuals employed in Concierge",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods2_2020.xlsx"
+        },
+        {
+            id: "Li2020010",
+            sector: "Livelihoods",
+            indicator: "Percent of working age individuals employed in Manufacturing",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods2_2020.xlsx"
+        },
+        {
+            id: "Li2020011",
+            sector: "Livelihoods",
+            indicator: "Percent of working age individuals employed in Wholesale and retail trade",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods2_2020.xlsx"
+        },
+        {
+            id: "Li2020012",
+            sector: "Livelihoods",
+            indicator: "Percent of working age individuals employed in Begging",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods2_2020.xlsx"
+        },
+        {
+            id: "Li2020013",
+            sector: "Livelihoods",
+            indicator: "Percent of working age individuals employed in Professional Services",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods2_2020.xlsx"
+        },
+        {
+            id: "Li2020014",
+            sector: "Livelihoods",
+            indicator: "Percent of working age individuals employed in Occasional Work",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods2_2020.xlsx"
+        },
+        {
+            id: "Li2020015",
+            sector: "Livelihoods",
+            indicator: "Percent of working age individuals employed in Selling (tissues, water, etc.) on the street",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods2_2020.xlsx"
+        },
+        {
+            id: "Li2020016",
+            sector: "Livelihoods",
+            indicator: "Percent of working age individuals employed in Forestry",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods2_2020.xlsx"
+        },
+        {
+            id: "Li2020017",
+            sector: "Livelihoods",
+            indicator: "Percent of working age individuals employed in Waste collection / management",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods2_2020.xlsx"
+        },
+        {
+            id: "Li2020018",
+            sector: "Livelihoods",
+            indicator: "Percent of working age individuals employed in Other Services: hotel, restaurant, transport, personal services",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods2_2020.xlsx"
+        },
+        {
+            id: "Li2020019",
+            sector: "Livelihoods",
+            indicator: "Percent of working age individuals employed in Other",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods2_2020.xlsx"
+        },
+        {
+            id: "Li2020020",
+            sector: "Livelihoods",
+            indicator: "Percentage of households with members working in the past 7 days",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods3_2020.xlsx"
+        },
+        {
+            id: "Li2020021",
+            sector: "Livelihoods",
+            indicator: "Per capita Income (LBP) (All Households)",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods3_2020.xlsx"
+        },
+        {
+            id: "Li2020022",
+            sector: "Livelihoods",
+            indicator: "Per capita Income (LBP) (Households with working members)",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods3_2020.xlsx"
+        },
+        {
+            id: "Li2020023",
+            sector: "Livelihoods",
+            indicator: "Main household source of income: Agriculture",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods3_2020.xlsx"
+        },
+        {
+            id: "Li2020024",
+            sector: "Livelihoods",
+            indicator: "Main household source of income: Adult Begging",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods3_2020.xlsx"
+        },
+        {
+            id: "Li2020025",
+            sector: "Livelihoods",
+            indicator: "Main household source of income: Cash from charitable organizations",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods3_2020.xlsx"
+        },
+        {
+            id: "Li2020026",
+            sector: "Livelihoods",
+            indicator: "Main household source of income: ATM cards used in ATM machines from UN or humanitarian organizations",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods3_2020.xlsx"
+        },
+        {
+            id: "Li2020027",
+            sector: "Livelihoods",
+            indicator: "Main household source of income: Child Begging",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods3_2020.xlsx"
+        },
+        {
+            id: "Li2020028",
+            sector: "Livelihoods",
+            indicator: "Main household source of income: Concierge",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods3_2020.xlsx"
+        },
+        {
+            id: "Li2020029",
+            sector: "Livelihoods",
+            indicator: "Main household source of income: Construction",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods3_2020.xlsx"
+        },
+        {
+            id: "Li2020030",
+            sector: "Livelihoods",
+            indicator: "Main household source of income: Concierge",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods3_2020.xlsx"
+        },
+        {
+            id: "Li2020031",
+            sector: "Livelihoods",
+            indicator: "Main household source of income: Credit/debts (formal  banks)",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods3_2020.xlsx"
+        },
+        {
+            id: "Li2020032",
+            sector: "Livelihoods",
+            indicator: "Main household source of income: Credit/debts (informal)shops, friends hosts)",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods3_2020.xlsx"
+        },
+        {
+            id: "Li2020033",
+            sector: "Livelihoods",
+            indicator: "Main household source of income: E-cards WFP FOOD",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods3_2020.xlsx"
+        },
+        {
+            id: "Li2020034",
+            sector: "Livelihoods",
+            indicator: "Main household source of income: Gifts from family/relatives",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods3_2020.xlsx"
+        },
+        {
+            id: "Li2020035",
+            sector: "Livelihoods",
+            indicator: "Main household source of income: Home based work / skill",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods3_2020.xlsx"
+        },
+        {
+            id: "Li2020036",
+            sector: "Livelihoods",
+            indicator: "Main household source of income: Manufacturing",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods3_2020.xlsx"
+        },
+        {
+            id: "Li2020037",
+            sector: "Livelihoods",
+            indicator: "Main household source of income: Other (specify)",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods3_2020.xlsx"
+        },
+        {
+            id: "Li2020038",
+            sector: "Livelihoods",
+            indicator: "Main household source of income: Other services: hotel, restaurant, transport, personal services",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods3_2020.xlsx"
+        },
+        {
+            id: "Li2020039",
+            sector: "Livelihoods",
+            indicator: "Main household source of income: Other types of sales",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods3_2020.xlsx"
+        },
+        {
+            id: "Li2020040",
+            sector: "Livelihoods",
+            indicator: "Main household source of income: Professional Services",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods3_2020.xlsx"
+        },
+        {
+            id: "Li2020041",
+            sector: "Livelihoods",
+            indicator: "Main household source of income: Remittances",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods3_2020.xlsx"
+        },
+        {
+            id: "Li2020042",
+            sector: "Livelihoods",
+            indicator: "Main household source of income: Sale of assets (car, bicycle, refrigerator, TV, jewelry)",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods3_2020.xlsx"
+        },
+        {
+            id: "Li2020043",
+            sector: "Livelihoods",
+            indicator: "Main household source of income: Sale of crops ",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods3_2020.xlsx"
+        },
+        {
+            id: "Li2020044",
+            sector: "Livelihoods",
+            indicator: "Main household source of income: Sale of livestock and animal produce    ",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods3_2020.xlsx"
+        },
+        {
+            id: "Li2020045",
+            sector: "Livelihoods",
+            indicator: "Main household source of income: Sale of food assistance",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods3_2020.xlsx"
+        },
+        {
+            id: "Li2020046",
+            sector: "Livelihoods",
+            indicator: "Main household source of income: Savings",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods3_2020.xlsx"
+        },
+        {
+            id: "Li2020047",
+            sector: "Livelihoods",
+            indicator: "Main household source of income: Wholesale and retail trade",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods3_2020.xlsx"
+        },
+        {
+            id: "Li2020048",
+            sector: "Livelihoods",
+            indicator: "Cash and income sources reported by household (three main sources): Credit, debts, informal shops, friends",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods3_2020.xlsx"
+        },
+        {
+            id: "Li2020049",
+            sector: "Livelihoods",
+            indicator: "Cash and income sources reported by household (three main sources): ATM cards used, ATM UN humanitarian organizations",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods3_2020.xlsx"
+        },
+        {
+            id: "Li2020050",
+            sector: "Livelihoods",
+            indicator: "Cash and income sources reported by household (three main sources): Agriculture",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods3_2020.xlsx"
+        },
+        {
+            id: "Li2020051",
+            sector: "Livelihoods",
+            indicator: "Cash and income sources reported by household (three main sources): Construction ",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods3_2020.xlsx"
+        },
+        {
+            id: "Li2020052",
+            sector: "Livelihoods",
+            indicator: "Cash and income sources reported by household (three main sources): Professional Services",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods3_2020.xlsx"
+        },
+        {
+            id: "Li2020053",
+            sector: "Livelihoods",
+            indicator: "Cash and income sources reported by household (three main sources): Other",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods3_2020.xlsx"
+        },
+        {
+            id: "Li2020054",
+            sector: "Livelihoods",
+            indicator: "Cash and income sources reported by household (three main sources): Other services",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods3_2020.xlsx"
+        },
+        {
+            id: "Li2020055",
+            sector: "Livelihoods",
+            indicator: "Cash and income sources reported by household (three main sources): Gifts, family relatives",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods3_2020.xlsx"
+        },
+        {
+            id: "Li2020056",
+            sector: "Livelihoods",
+            indicator: "Cash and income sources reported by household (three main sources): Home based work skill",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods3_2020.xlsx"
+        },
+        {
+            id: "Li2020057",
+            sector: "Livelihoods",
+            indicator: "Cash and income sources reported by household (three main sources): Concierge",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods3_2020.xlsx"
+        },
+        {
+            id: "Li2020058",
+            sector: "Livelihoods",
+            indicator: "Cash and income sources reported by household (three main sources): Manufacturing",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods3_2020.xlsx"
+        },
+        {
+            id: "Li2020059",
+            sector: "Livelihoods",
+            indicator: "Cash and income sources reported by household (three main sources): Sale assets",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods3_2020.xlsx"
+        },
+        {
+            id: "Li2020060",
+            sector: "Livelihoods",
+            indicator: "Cash and income sources reported by household (three main sources): Remittances",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods3_2020.xlsx"
+        },
+        {
+            id: "Li2020061",
+            sector: "Livelihoods",
+            indicator: "Cash and income sources reported by household (three main sources): Wholesale, retail trade",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods3_2020.xlsx"
+        },
+        {
+            id: "Li2020062",
+            sector: "Livelihoods",
+            indicator: "Cash and income sources reported by household (three main sources): Cash charitable organizations ",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods3_2020.xlsx"
+        },
+        {
+            id: "Li2020063",
+            sector: "Livelihoods",
+            indicator: "Cash and income sources reported by household (three main sources): Child begging",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods3_2020.xlsx"
+        },
+        {
+            id: "Li2020064",
+            sector: "Livelihoods",
+            indicator: "Cash and income sources reported by household (three main sources): Credit, debts formal banks ",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods3_2020.xlsx"
+        },
+        {
+            id: "Li2020065",
+            sector: "Livelihoods",
+            indicator: "Cash and income sources reported by household (three main sources): Adult begging",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods3_2020.xlsx"
+        },
+        {
+            id: "Li2020066",
+            sector: "Livelihoods",
+            indicator: "Cash and income sources reported by household (three main sources): Sale food aid",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods3_2020.xlsx"
+        },
+        {
+            id: "Li2020067",
+            sector: "Livelihoods",
+            indicator: "Cash and income sources reported by household (three main sources): Sale livestock animal produce",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods3_2020.xlsx"
+        },
+        {
+            id: "Li2020068",
+            sector: "Livelihoods",
+            indicator: "Cash and income sources reported by household (three main sources): Sale of crops",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods3_2020.xlsx"
+        },
+        {
+            id: "Li2020069",
+            sector: "Livelihoods",
+            indicator: "Reason for unemployment",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods4_2020.xlsx"
+        },
+        {
+            id: "Li2020070",
+            sector: "Livelihoods",
+            indicator: "Percent of working age that stated Injury or Medical Condition as a reason for unemployment",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods4_2020.xlsx"
+        },
+        {
+            id: "Li2020071",
+            sector: "Livelihoods",
+            indicator: "Percent of working age that stated No Work in the Area where I live as a reason for unemployment",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods4_2020.xlsx"
+        },
+        {
+            id: "Li2020072",
+            sector: "Livelihoods",
+            indicator: "Percent of working age that stated  Seasonal Work as a reason for unemployment",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods4_2020.xlsx"
+        },
+        {
+            id: "Li2020073",
+            sector: "Livelihoods",
+            indicator: "Percent of working age that stated Dependent Children at Home as a reason for unemployment",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods4_2020.xlsx"
+        },
+        {
+            id: "Li2020074",
+            sector: "Livelihoods",
+            indicator: "Percent of working age that stated Dependent Family Member(s) as a reason for unemployment",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods4_2020.xlsx"
+        },
+        {
+            id: "Li2020075",
+            sector: "Livelihoods",
+            indicator: "Percent of working age that stated Has been subject to serious abuse/exploitation in previous work as a reason for unemployment",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods4_2020.xlsx"
+        },
+        {
+            id: "Li2020076",
+            sector: "Livelihoods",
+            indicator: "Percent of working age that stated  Lack of Skills as a reason for unemployment",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods4_2020.xlsx"
+        },
+        {
+            id: "Li2020077",
+            sector: "Livelihoods",
+            indicator: "Percent of working age that stated Education Continuation as a reason for unemployment",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods4_2020.xlsx"
+        },
+        {
+            id: "Li2020078",
+            sector: "Livelihoods",
+            indicator: "Percent of working age that stated Elderly as a reason for unemployment",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods4_2020.xlsx"
+        },
+        {
+            id: "Li2020079",
+            sector: "Livelihoods",
+            indicator: "Percent of working age that stated Education Continuation as a reason for unemployment",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods4_2020.xlsx"
+        },
+        {
+            id: "Li2020080",
+            sector: "Livelihoods",
+            indicator: "Percent of working age that stated Lack of Legal Residency as a reason for unemployment",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods4_2020.xlsx"
+        },
+        {
+            id: "Li2020081",
+            sector: "Livelihoods",
+            indicator: "Percent of working age that stated Other as a reason for unemployment",
+            year: "2020",
+            download_link: "/vasyr/files/livelihoods/Vault_Livelihoods4_2020.xlsx"
         }
-
-
     ];
 
     homeIntro = {

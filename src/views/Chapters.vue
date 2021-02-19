@@ -18,8 +18,29 @@
             {{chapter.description}}
           </div>
           <div class="buttons">
-            <a class="btn btn-info" v-if="chapter.download_url" :href="chapter.download_url" target="_blank" download>DOWNLOAD CHAPTER</a>
-            <a class="btn btn-info pointer-cursor" v-if="!chapter.download_url" v-on:click="openDialog">DOWNLOAD CHAPTER</a>
+            <!-- <a class="btn btn-info" v-if="chapter.download_url" :href="chapter.download_url" target="_blank" download>DOWNLOAD CHAPTER</a>
+            <a class="btn btn-info pointer-cursor" v-if="!chapter.download_url" v-on:click="openDialog">DOWNLOAD CHAPTER</a> -->
+
+
+
+
+            <div class="dropdown">
+              <button class="btn btn-info dropdown-toggle" type="button" id="chaptersDropDown" data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                DOWNLOAD CHAPTER
+              </button>
+              <div class="dropdown-menu" aria-labelledby="chaptersDropDown">
+                <div class="row" style="margin: 0; width: 100%;">
+                  <div class="col col-6" style="padding: 1px;" v-for="(version, index) in chapter.versions" v-bind:key="index">
+                    <a class="dropdown-item" :href="version.download_url" target="_blank" download>{{version.year}}</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+            
           </div>
         </div>
         <div class="chapter-image bottom" v-if="(chapter.textPosition === 'top')">
@@ -52,9 +73,67 @@ export default {
 </script>
 <style scoped>
 #chapters {
-  background-color: #273b56;
+  background-color: var(--var-theme-background);
   color: white;
   /* height: 100%; */
+}
+
+.btn-info {
+  background-color: transparent !important;
+  border-color: white !important;
+}
+
+.btn-info:hover {
+  background-color: transparent !important;
+  border-color: var(--var-theme-button-info-hover) !important;
+}
+
+.dropdown {
+  padding: 0 90px;
+}
+
+.dropdown-toggle {
+  width: 100%;
+}
+
+.dropdown-menu {
+    position: absolute;
+    padding: 2px 90px !important;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 10rem;
+    padding: .5rem 0;
+    margin: .125rem 0 0;
+    font-size: 1rem;
+    color: white;
+    text-align: left;
+    list-style: none;
+    background-color: transparent;
+    background-clip: padding-box;
+    border: none;
+}
+
+.dropdown-item {
+    width: 100%;
+    padding: .25rem 1.5rem;
+    margin: 1px !important;
+    clear: both;
+    font-weight: 400;
+    color: white;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: var(--var-theme-button-info);
+    border-radius: 5px;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+    color: white;
+    text-decoration: none;
+    background-color:var(--var-theme-button-info-hover);
 }
 
 .contained {

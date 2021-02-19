@@ -1,11 +1,11 @@
-<template style="background-color: #273b56;">
-	<div id="road-map" style="background-color: #273b56;">
+<template class="road-map">
+	<div id="road-map" class="road-map">
 		<div class="row roadmap-main-container contained">
 			<div v-for="(group, index) in roadMapData" v-bind:key="index" class="col col-12 col-sm-6 col-md-4 col-lg-2" style="color: white;">
 				<div class="info-container" :class="{'text-top' : group.top, 'text-bottom' : !group.top}">
 					<!-- remove the v-id from both text containers to have them both present if the original design is needed -->
-					<div class="info-text" v-if="group.top">
-						<div class="text">
+					<div class="info-text">
+						<div class="text" v-if="group.top">
 							{{group.description}}
 						</div>
 					</div>
@@ -14,17 +14,17 @@
 							<img alt="Icon" :src="require('@/assets' + group.icon)"/>
 						</div>
 						<div class="info-icon" v-if="group.url" >
-              <a :href="group.url" target="_blank">
-							  <img alt="Icon" :src="require('@/assets' + group.icon)"/>
-              </a>
+							<a :href="group.url" target="_blank">
+								<img alt="Icon" :src="require('@/assets' + group.icon)"/>
+							</a>
 						</div>
 						<div class="title">
 							{{group.title}}
 						</div>
 					</div>
 					<!-- remove the v-id from both text containers to have them both present if the original design is needed -->
-					<div class="info-text" v-if="!group.top">
-						<div class="text">
+					<div class="info-text">
+						<div class="text" v-if="!group.top">
 							{{group.description}}
 						</div>
 					</div>
@@ -128,6 +128,11 @@
 	}
 </script>
 <style scoped>
+
+.road-map {
+	background-color: var(--var-theme-background);
+}
+
 .contained {
   max-width: 1400px;
   margin: auto !important;
@@ -169,11 +174,15 @@
 .text-top .text {
 	position: absolute;
 	bottom: 5px;
+	left: 0;
+	right: 0;
 }
 
 .text-bottom .text {
 	position: absolute;
 	top: 5px;
+	left: 0;
+	right: 0;
 }
 
 .info-icon {
@@ -183,7 +192,7 @@
 	background-color: white;
 	border-radius: 50px;
 	position: relative;
-  cursor: pointer;
+	cursor: pointer;
 }
 
 .info-icon::before {
@@ -235,7 +244,7 @@
 	font-size: 13px;
 	width: 130%;
 	margin-left: -15%;
-	height: 145px;
+	height: 135px;
 	position: relative;
 }
 
@@ -245,6 +254,36 @@
 
 .text-bottom  .info-text:first-child {
 	visibility: hidden;
+}
+
+@media screen and (max-width: 1250px){
+	.info-text {
+		font-size: 13px;
+		width: 150%;
+		margin-left: -25%;
+		height: 155px;
+		position: relative;
+	}
+}
+
+@media screen and (max-width: 1024px){
+	.info-text {
+		font-size: 13px;
+		width: 150%;
+		margin-left: -25%;
+		height: 200px;
+		position: relative;
+	}
+}
+
+@media screen and (max-width: 991px){
+	.info-text {
+		font-size: 13px;
+		width: 130%;
+		margin-left: -15%;
+		height: 95px;
+		position: relative;
+	}
 }
 
 @media screen and (max-width: 804px)  {
@@ -257,6 +296,7 @@
 		padding: 10px;
 		border: 1px solid #bbb;
 		margin: 10px;
+		height: 95%;
 	}
 
 	.info-text {
