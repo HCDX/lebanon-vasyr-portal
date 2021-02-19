@@ -370,6 +370,12 @@ export default class DataService {
 
     reportsData = [
         {
+            title: 'VASyR 2020',
+            year: '2020',
+            image_url: '/images/reports/vasyr-2020.jpg',
+            download_url: '/vasyr/files/vasyr_2020/VASyR 2020.pdf'
+        },
+        {
             title: 'VASyR 2019',
             year: '2019',
             image_url: '/images/reports/vasyr-2019.jpg',
