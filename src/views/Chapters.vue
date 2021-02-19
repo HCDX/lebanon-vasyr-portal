@@ -117,6 +117,10 @@ export default {
     border: none;
 }
 
+.dropdown-menu.show {
+    display: block !important;
+}
+
 .dropdown-item {
     width: 100%;
     padding: .25rem 1.5rem;
