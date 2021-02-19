@@ -109,8 +109,7 @@
           }
   
           if(this.searchText != this.previousSearch) {
-            let x = this.page;
-            x = 1;
+            this.page = 1;
             this.previousSearch = this.searchText;
           }
 
