@@ -47,7 +47,7 @@ export default {
     dataService: new DataService(),
     logos: [],
     introduction: '',
-    vasyrDownloadLink2019: ''
+    vasyrDownloadLink2020: ''
   }),
   mounted() {
     console.log('Mounted Main');
