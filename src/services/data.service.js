@@ -8157,9 +8157,9 @@ export default class DataService {
     ];
 
     homeIntro = {
-        'part_1': `The Vulnerability Assessment of Syrian Refugees in Lebanon (VASyR 2019) provides an insight into the evolving situation of Syrian refugees in Lebanon. As per Government of Lebanon estimates, Lebanon is currently hosting 1.5 million of the 6.7 million Syrian refugees displaced globally.`,
-        'part_2': `Now in its seventh year, the VASyR assesses a representative sample of Syrian refugee households, providing an overview of the geographical variations in vulnerabilities at a district and governorate levels. The VASyR is the only annual assessment in Lebanon covering all sectors and allows for the identification of changes and trends.`,
-        'part_3': `The report, issued jointly by the United Nations High Commissioner for Refugees (UNHCR), the United Nations Children’s Fund (UNICEF) and the World Food Programme (WFP) is an essential resource for planning, decision-making and needs-based programme design.`
+        'part_1': `The Vulnerability Assessment of Syrian Refugees in Lebanon (VASyR) analyses a representative sample of Syrian refugee families in Lebanon to provide a multi-sectoral update of the situation of this population. Conducted annually, 2020 marks the eighth year of this assessment. The contents of this report, jointly issued by the United Nations High Commissioner for Refugees (UNHCR), the United Nations Children’s Fund (UNICEF) and the World Food Programme (WFP), show that the economic downturn, steep inflation, COVID-19 and finally the Beirut blast have pushed vulnerable communities in Lebanon - including Syrian refugees - to the brink, with thousands of families sinking further into poverty and vulnerability`,
+        'part_2': ``,
+        'part_3': ``
     };
 
     getTopMenuData() {
