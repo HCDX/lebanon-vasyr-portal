@@ -46,6 +46,26 @@ export default class DataService {
 
     chaptersData = [
         {
+            title: 'Introduction',
+            description: `Introduction.`,
+            image_url: 'images/chapters/ch-introduction.jpg',
+            versions: [
+                {
+                    'year': '2019',
+                    'download_url': '/vasyr/files/vasyr_chapters/VASyR 2019 Introduction.pdf',
+                    'knowledge_hub_url': ''
+                },
+                {
+                    'year': '2020',
+                    'download_url': '/vasyr/files/vasyr_chapters/2020/VASyR 2020 - Introduction.pdf',
+                    'knowledge_hub_url': ''
+                }
+            ],
+            // download_url: '/vasyr/files/vasyr_chapters/0 VASyR 2019 Executive Summary.pdf',
+            // knowledge_hub_url: '',
+            textPosition: 'top'
+        },
+        {
             title: 'EXECUTIVE SUMMARY',
             description: `Executive summary and recommendations of the 2019 vulnerability assessment.`,
             image_url: 'images/chapters/ch-executive-summary.jpg',
@@ -63,7 +83,7 @@ export default class DataService {
             ],
             // download_url: '/vasyr/files/vasyr_chapters/0 VASyR 2019 Executive Summary.pdf',
             // knowledge_hub_url: '',
-            textPosition: 'top'
+            textPosition: 'bottom'
         },
         {
             title: 'ASSISTANCE',
@@ -76,7 +96,7 @@ export default class DataService {
                     'knowledge_hub_url': ''
                 }
             ],
-            textPosition: 'bottom'
+            textPosition: 'top'
         },
         {
             title: 'COPING STRATEGIES',
@@ -94,7 +114,7 @@ export default class DataService {
                     'knowledge_hub_url': ''
                 }
             ],
-            textPosition: 'top'
+            textPosition: 'bottom'
         },
         {
             title: 'DEMOGRAPHICS',
@@ -166,7 +186,7 @@ export default class DataService {
                     'knowledge_hub_url': ''
                 }
             ],
-            textPosition: 'top'
+            textPosition: 'bottom'
         },
         {
             title: 'FOOD CONSUMPTION',
@@ -184,7 +204,7 @@ export default class DataService {
                     'knowledge_hub_url': ''
                 }
             ],
-            textPosition: 'bottom'
+            textPosition: 'top'
         },
         {
             title: 'FOOD SECURITY',
@@ -202,7 +222,7 @@ export default class DataService {
                     'knowledge_hub_url': ''
                 }
             ],
-            textPosition: 'top'
+            textPosition: 'bottom'
         },
         {
             title: 'GENDER',
@@ -274,7 +294,7 @@ export default class DataService {
                     'knowledge_hub_url': ''
                 }
             ],
-            textPosition: 'top'
+            textPosition: 'bottom'
         },
         {
             title: 'SHELTER',
@@ -292,7 +312,7 @@ export default class DataService {
                     'knowledge_hub_url': ''
                 }
             ],
-            textPosition: 'bottom'
+            textPosition: 'top'
         },
         {
             title: 'WASH',
@@ -307,6 +327,24 @@ export default class DataService {
                 {
                     'year': '2020',
                     'download_url': '/vasyr/files/vasyr_chapters/2020/VASyR 2020 - WASH.pdf',
+                    'knowledge_hub_url': ''
+                }
+            ],
+            textPosition: 'bottom'
+        },
+        {
+            title: 'METHODOLOGY',
+            description: `Methodology`,
+            image_url: 'images/chapters/ch-methodology.jpg',
+            versions: [
+                {
+                    'year': '2019',
+                    'download_url': '/vasyr/files/vasyr_chapters/VASyR 2019 Methodology.pdf',
+                    'knowledge_hub_url': ''
+                },
+                {
+                    'year': '2020',
+                    'download_url': '/vasyr/files/vasyr_chapters/2020/VASyR 2020 - Methodology.pdf',
                     'knowledge_hub_url': ''
                 }
             ],
@@ -7137,210 +7175,210 @@ export default class DataService {
             sector: "Economic Vulnerability",
             indicator: "Percentage of Household living under Minimum Expenditure Basket (MEB) and Survival Minimum Expenditure Basket (SMEB) Categories",
             year: "2020",
-            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xls"
+            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xlsx"
         },
         {
             id: "Ec2020002",
             sector: "Economic Vulnerability",
             indicator: "Percentage of households by Debt Categories",
             year: "2020",
-            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xls"
+            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xlsx"
         },
         {
             id: "Ec2020003",
             sector: "Economic Vulnerability",
             indicator: "Debt per Household & per capita ",
             year: "2020",
-            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xls"
+            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xlsx"
         },
         {
             id: "Ec2020004",
             sector: "Economic Vulnerability",
             indicator: "Average Debt per Household (all Households) ",
             year: "2020",
-            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xls"
+            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xlsx"
         },
         {
             id: "Ec2020005",
             sector: "Economic Vulnerability",
             indicator: "Average Debt per Capita (all Households) ",
             year: "2020",
-            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xls"
+            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xlsx"
         },
         {
             id: "Ec2020006",
             sector: "Economic Vulnerability",
             indicator: "Average Debt per Household (only Households with Debt) 	",
             year: "2020",
-            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xls"
+            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xlsx"
         },
         {
             id: "Ec2020007",
             sector: "Economic Vulnerability",
             indicator: "Average Debt per Capita (only Households with Debt) 	",
             year: "2020",
-            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xls"
+            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xlsx"
         },
         {
             id: "Ec2020008",
             sector: "Economic Vulnerability",
             indicator: "Percentage of Households who Borrowed Money in the past 3 Months",
             year: "2020",
-            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xls"
+            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xlsx"
         },
         {
             id: "Ec2020009",
             sector: "Economic Vulnerability",
             indicator: "Reason for Borrowing: Debt Repayment",
             year: "2020",
-            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xls"
+            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xlsx"
         },
         {
             id: "Ec2020010",
             sector: "Economic Vulnerability",
             indicator: "Reason for Borrowing: Procure Sponsorship",
             year: "2020",
-            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xls"
+            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xlsx"
         },
         {
             id: "Ec2020011",
             sector: "Economic Vulnerability",
             indicator: "Reason for Borrowing: Business Development",
             year: "2020",
-            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xls"
+            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xlsx"
         },
         {
             id: "Ec2020012",
             sector: "Economic Vulnerability",
             indicator: "Reason for Borrowing: Assets Procurement",
             year: "2020",
-            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xls"
+            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xlsx"
         },
         {
             id: "Ec2020013",
             sector: "Economic Vulnerability",
             indicator: "Reason for Borrowing: Pay Documentation fees",
             year: "2020",
-            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xls"
+            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xlsx"
         },
         {
             id: "Ec2020014",
             sector: "Economic Vulnerability",
             indicator: "Reason for Borrowing: Other reasons",
             year: "2020",
-            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xls"
+            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xlsx"
         },
         {
             id: "Ec2020015",
             sector: "Economic Vulnerability",
             indicator: "Reason for Borrowing: Buy Food",
             year: "2020",
-            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xls"
+            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xlsx"
         },
         {
             id: "Ec2020016",
             sector: "Economic Vulnerability",
             indicator: "Reason for Borrowing: Pay Rent",
             year: "2020",
-            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xls"
+            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xlsx"
         },
         {
             id: "Ec2020017",
             sector: "Economic Vulnerability",
             indicator: "Reason for Borrowing: Buy Shelter Material",
             year: "2020",
-            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xls"
+            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xlsx"
         },
         {
             id: "Ec2020018",
             sector: "Economic Vulnerability",
             indicator: "Reason for Borrowing: Buy House",
             year: "2020",
-            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xls"
+            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xlsx"
         },
         {
             id: "Ec2020019",
             sector: "Economic Vulnerability",
             indicator: "Reason for Borrowing: Pay Health",
             year: "2020",
-            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xls"
+            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xlsx"
         },
         {
             id: "Ec2020020",
             sector: "Economic Vulnerability",
             indicator: "Reason for Borrowing: Buy Medicine",
             year: "2020",
-            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xls"
+            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xlsx"
         },
         {
             id: "Ec2020021",
             sector: "Economic Vulnerability",
             indicator: "Reason for Borrowing: Buy Water",
             year: "2020",
-            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xls"
+            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xlsx"
         },
         {
             id: "Ec2020022",
             sector: "Economic Vulnerability",
             indicator: "Reason for Borrowing: Pay Transportation",
             year: "2020",
-            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xls"
+            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xlsx"
         },
         {
             id: "Ec2020023",
             sector: "Economic Vulnerability",
             indicator: "Source of Borrowing: Friends in Lebanon",
             year: "2020",
-            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xls"
+            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xlsx"
         },
         {
             id: "Ec2020024",
             sector: "Economic Vulnerability",
             indicator: "Source of Borrowing: Friends not in Lebanon",
             year: "2020",
-            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xls"
+            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xlsx"
         },
         {
             id: "Ec2020025",
             sector: "Economic Vulnerability",
             indicator: "Source of Borrowing: Money Lender",
             year: "2020",
-            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xls"
+            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xlsx"
         },
         {
             id: "Ec2020026",
             sector: "Economic Vulnerability",
             indicator: "Source of Borrowing:  Local Charity",
             year: "2020",
-            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xls"
+            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xlsx"
         },
         {
             id: "Ec2020027",
             sector: "Economic Vulnerability",
             indicator: "Source of Borrowing: Landlord",
             year: "2020",
-            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xls"
+            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xlsx"
         },
         {
             id: "Ec2020028",
             sector: "Economic Vulnerability",
             indicator: "Source of Borrowing: Supermarket",
             year: "2020",
-            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xls"
+            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xlsx"
         },
         {
             id: "Ec2020029",
             sector: "Economic Vulnerability",
             indicator: "Source of Borrowing: Shawish",
             year: "2020",
-            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xls"
+            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xlsx"
         },
         {
             id: "Ec2020030",
             sector: "Economic Vulnerability",
             indicator: "Source of Borrowing: Other",
             year: "2020",
-            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xls"
+            download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xlsx"
         },
         {
             id: "Fo2020001",
@@ -7564,28 +7602,287 @@ export default class DataService {
             sector: "Food Security",
             indicator: "Percent of households who are Food Secure",
             year: "2020",
-            download_link: "/vasyr/files/food_security/Vault_Food_Security_2020.xls"
+            download_link: "/vasyr/files/food_security/Vault_Food_Security_2020.xlsx"
         },
         {
             id: "Fo2020033",
             sector: "Food Security",
             indicator: "Percent of households who are Marginally Food Insecure",
             year: "2020",
-            download_link: "/vasyr/files/food_security/Vault_Food_Security_2020.xls"
+            download_link: "/vasyr/files/food_security/Vault_Food_Security_2020.xlsx"
         },
         {
             id: "Fo2020034",
             sector: "Food Security",
             indicator: "Percent of households who are Moderately Food Insecure",
             year: "2020",
-            download_link: "/vasyr/files/food_security/Vault_Food_Security_2020.xls"
+            download_link: "/vasyr/files/food_security/Vault_Food_Security_2020.xlsx"
         },
         {
             id: "Fo2020035",
             sector: "Food Security",
             indicator: "Percent of households who are Severely Food Insecure",
             year: "2020",
-            download_link: "/vasyr/files/food_security/Vault_Food_Security_2020.xls"
+            download_link: "/vasyr/files/food_security/Vault_Food_Security_2020.xlsx"
+        },
+        {
+            id: "co2020037",
+            sector: "Food Security",
+            indicator: "Reduced Coping Strategy Index",
+            year: "2020",
+            download_link: "/vasyr/files/food_security/Vault_rCSI_2020.xlsx"
+        },
+        {
+            id: "co2020001",
+            sector: "Food Security",
+            indicator: "Food related coping strategies: Restricted Food Consumption of Female members of Households",
+            year: "2020",
+            download_link: "/vasyr/files/food_security/Vault_Coping_2020.xlsx"
+        },
+        {
+            id: "co2020002",
+            sector: "Food Security",
+            indicator: "Food related coping strategies: Relied on Less Preferred/Less Expensive Food",
+            year: "2020",
+            download_link: "/vasyr/files/food_security/Vault_Coping_2020.xlsx"
+        },
+        {
+            id: "co2020003",
+            sector: "Food Security",
+            indicator: "Food related coping strategies: Borrowed Food or Relied on Help from Friends or Relatives",
+            year: "2020",
+            download_link: "/vasyr/files/food_security/Vault_Coping_2020.xlsx"
+        },
+        {
+            id: "co2020004",
+            sector: "Food Security",
+            indicator: "Food related coping strategies: Reduced the Number of Meals Eaten per Day",
+            year: "2020",
+            download_link: "/vasyr/files/food_security/Vault_Coping_2020.xlsx"
+        },
+        {
+            id: "co2020005",
+            sector: "Food Security",
+            indicator: "Food related coping strategies: Reduced portion size of meals",
+            year: "2020",
+            download_link: "/vasyr/files/food_security/Vault_Coping_2020.xlsx"
+        },
+        {
+            id: "co2020006",
+            sector: "Food Security",
+            indicator: "Food related coping strategies: Spent Days without Eating",
+            year: "2020",
+            download_link: "/vasyr/files/food_security/Vault_Coping_2020.xlsx"
+        },
+        {
+            id: "co2020007",
+            sector: "Food Security",
+            indicator: "Food related coping strategies:  Restricted Consumption by Adults in order of Children Can Eat",
+            year: "2020",
+            download_link: "/vasyr/files/food_security/Vault_Coping_2020.xlsx"
+        },
+        {
+            id: "co2020008",
+            sector: "Food Security",
+            indicator: "Food related coping strategies: Sent Household Members to Eat Elsewhere",
+            year: "2020",
+            download_link: "/vasyr/files/food_security/Vault_Coping_2020.xlsx"
+        },
+        {
+            id: "co2020009",
+            sector: "Food Security",
+            indicator: "Number of days food related copings were applied: Less Expensive Food",
+            year: "2020",
+            download_link: "/vasyr/files/food_security/Vault_Coping_2020.xlsx"
+        },
+        {
+            id: "co2020010",
+            sector: "Food Security",
+            indicator: "Number of days food related copings were applied: Borrowed Food",
+            year: "2020",
+            download_link: "/vasyr/files/food_security/Vault_Coping_2020.xlsx"
+        },
+        {
+            id: "co2020011",
+            sector: "Food Security",
+            indicator: "Number of days food related copings were applied: Reduced Meals",
+            year: "2020",
+            download_link: "/vasyr/files/food_security/Vault_Coping_2020.xlsx"
+        },
+        {
+            id: "co2020012",
+            sector: "Food Security",
+            indicator: "Number of days food related copings were applied: Reduced Portions",
+            year: "2020",
+            download_link: "/vasyr/files/food_security/Vault_Coping_2020.xlsx"
+        },
+        {
+            id: "co2020013",
+            sector: "Food Security",
+            indicator: "Number of days food related copings were applied: Spent Days without Food",
+            year: "2020",
+            download_link: "/vasyr/files/food_security/Vault_Coping_2020.xlsx"
+        },
+        {
+            id: "co2020014",
+            sector: "Food Security",
+            indicator: "Number of days food related copings were applied: Restricted Consumption by Adults",
+            year: "2020",
+            download_link: "/vasyr/files/food_security/Vault_Coping_2020.xlsx"
+        },
+        {
+            id: "co2020015",
+            sector: "Food Security",
+            indicator: "Number of days food related copings were applied: Sent HH members eat Elsewhere",
+            year: "2020",
+            download_link: "/vasyr/files/food_security/Vault_Coping_2020.xlsx"
+        },
+        {
+            id: "co2020016",
+            sector: "Food Security",
+            indicator: "Number of days food related copings were applied: Restricted Food Consumption of Female HH Members",
+            year: "2020",
+            download_link: "/vasyr/files/food_security/Vault_Coping_2020.xlsx"
+        },
+        {
+            id: "co2020017",
+            sector: "Food Security",
+            indicator: "Livelihood-related Coping Strategies in the Last 30 Days: Sold Household Goods (radio, furniture, television, jewelry etc..)",
+            year: "2020",
+            download_link: "/vasyr/files/food_security/Vault_Coping_2020.xlsx"
+        },
+        {
+            id: "co2020018",
+            sector: "Food Security",
+            indicator: "Livelihood-related Coping Strategies in the Last 30 Days: Sold Productive assets or means of transport (sewing machine, wheelbarrow, bicycle, car, livestock..)",
+            year: "2020",
+            download_link: "/vasyr/files/food_security/Vault_Coping_2020.xlsx"
+        },
+        {
+            id: "co2020019",
+            sector: "Food Security",
+            indicator: "Livelihood-related Coping Strategies in the Last 30 Days: Reduced essential non-food: Education",
+            year: "2020",
+            download_link: "/vasyr/files/food_security/Vault_Coping_2020.xlsx"
+        },
+        {
+            id: "co2020020",
+            sector: "Food Security",
+            indicator: "Livelihood-related Coping Strategies in the Last 30 Days: Reduced essential non-food expenditures: Health",
+            year: "2020",
+            download_link: "/vasyr/files/food_security/Vault_Coping_2020.xlsx"
+        },
+        {
+            id: "co2020021",
+            sector: "Food Security",
+            indicator: "Livelihood-related Coping Strategies in the Last 30 Days: Spent savings ",
+            year: "2020",
+            download_link: "/vasyr/files/food_security/Vault_Coping_2020.xlsx"
+        },
+        {
+            id: "co2020022",
+            sector: "Food Security",
+            indicator: "Livelihood-related Coping Strategies in the Last 30 Days: Bought food on credit or borrowed money to purchase food",
+            year: "2020",
+            download_link: "/vasyr/files/food_security/Vault_Coping_2020.xlsx"
+        },
+        {
+            id: "co2020023",
+            sector: "Food Security",
+            indicator: "Livelihood-related Coping Strategies in the Last 30 Days: Sold house or land",
+            year: "2020",
+            download_link: "/vasyr/files/food_security/Vault_Coping_2020.xlsx"
+        },
+        {
+            id: "co2020024",
+            sector: "Food Security",
+            indicator: "Livelihood-related Coping Strategies in the Last 30 Days: Withdrew children from school ",
+            year: "2020",
+            download_link: "/vasyr/files/food_security/Vault_Coping_2020.xlsx"
+        },
+        {
+            id: "co2020025",
+            sector: "Food Security",
+            indicator: "Livelihood-related Coping Strategies in the Last 30 Days: Begged",
+            year: "2020",
+            download_link: "/vasyr/files/food_security/Vault_Coping_2020.xlsx"
+        },
+        {
+            id: "co2020026",
+            sector: "Food Security",
+            indicator: "Livelihood-related Coping Strategies in the Last 30 Days: Marriage of children under 18",
+            year: "2020",
+            download_link: "/vasyr/files/food_security/Vault_Coping_2020.xlsx"
+        },
+        {
+            id: "co2020027",
+            sector: "Food Security",
+            indicator: "Livelihood-related Coping Strategies in the Last 30 Days: Accepted High Risk, Illegal, Socially Degrading Activities",
+            year: "2020",
+            download_link: "/vasyr/files/food_security/Vault_Coping_2020.xlsx"
+        },
+        {
+            id: "co2020028",
+            sector: "Food Security",
+            indicator: "Livelihood-related Coping Strategies in the Last 30 Days: Had School Children (6 -15 years old) Involved in Income Generation",
+            year: "2020",
+            download_link: "/vasyr/files/food_security/Vault_Coping_2020.xlsx"
+        },
+        {
+            id: "co2020029",
+            sector: "Food Security",
+            indicator: "Livelihood-related Coping Strategies in the Last 30 Days: Reduce expense on food",
+            year: "2020",
+            download_link: "/vasyr/files/food_security/Vault_Coping_2020.xlsx"
+        },
+        {
+            id: "co2020030",
+            sector: "Food Security",
+            indicator: "Livelihood-related Coping Strategies in the Last 30 Days: Moved to a cheaper rental place/live on the street",
+            year: "2020",
+            download_link: "/vasyr/files/food_security/Vault_Coping_2020.xlsx"
+        },
+        {
+            id: "co2020031",
+            sector: "Food Security",
+            indicator: "Livelihood-related Coping Strategies in the Last 30 Days: Household members 18 years and over accepting high risk, dangerous, or exploitative work",
+            year: "2020",
+            download_link: "/vasyr/files/food_security/Vault_Coping_2020.xlsx"
+        },
+        {
+            id: "co2020032",
+            sector: "Food Security",
+            indicator: "Livelihood-related Coping Strategies in the Last 30 Days: Adult work elsewhere",
+            year: "2020",
+            download_link: "/vasyr/files/food_security/Vault_Coping_2020.xlsx"
+        },
+        {
+            id: "co2020033",
+            sector: "Food Security",
+            indicator: "Livelihood-related Coping Strategies in the Last 30 Days: Child work elsewhere",
+            year: "2020",
+            download_link: "/vasyr/files/food_security/Vault_Coping_2020.xlsx"
+        },
+        {
+            id: "co2020034",
+            sector: "Food Security",
+            indicator: "Livelihood-related Coping Strategies in the Last 30 Days:  Other forms of exploitation",
+            year: "2020",
+            download_link: "/vasyr/files/food_security/Vault_Coping_2020.xlsx"
+        },
+        {
+            id: "co2020035",
+            sector: "Food Security",
+            indicator: "Livelihood-related Coping Strategies in the Last 30 Days: Sent household member sought work elsewhere (regardless of the usual seasonal migration)",
+            year: "2020",
+            download_link: "/vasyr/files/food_security/Vault_Coping_2020.xlsx"
+        },
+        {
+            id: "co2020036",
+            sector: "Food Security",
+            indicator: "Summary of asset depletion coping strategies",
+            year: "2020",
+            download_link: "/vasyr/files/food_security/Vault_Coping_2020.xlsx"
         },
         {
             id: "Li2020001",
