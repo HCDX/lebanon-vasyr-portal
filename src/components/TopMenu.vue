@@ -28,7 +28,7 @@
         <a href="#" v-on:click="scrollTo('vault')">VAULT</a>
       </li>
       <li class="menu-item">
-        <a href="http://ialebanon.unhcr.org/DataHub/" target="_blank">REQUEST</a>
+        <a href="https://microdata.unhcr.org/index.php/auth/login/?destination=catalog/136/get-microdata" target="_blank">REQUEST</a>
       </li>
     </ul>
   </div>

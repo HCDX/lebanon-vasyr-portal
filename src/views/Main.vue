@@ -75,7 +75,7 @@ export default {
       let mouseY = element.clientY;
       let startImgPosition = 75;
       
-      if(w >= 1900 && w <= 2518) {
+      if(w >= 1900 && w <= 3500) {
          startImgPosition = 30;
       }
 
@@ -104,7 +104,7 @@ export default {
   background-position-y: 75%;
   background-color: var(--var-theme-text-dark);
   background-repeat: no-repeat;
-  background-size: 110%;
+  background-size: 105%;
   font-family: 'Montserrat' !important;
 }
 
