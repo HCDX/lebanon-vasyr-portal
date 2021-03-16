@@ -135,7 +135,7 @@ export default class DataService {
             textPosition: 'top'
         },
         {
-            title: 'VULNERABILITY',
+            title: 'ECONOMIC VULNERABILITY',
             description: `This chapter provides insight into the economic vulnerability of Syrian refugee households in Lebanon, studied on the dimensions of the composition and amount of expenditures, Survival and Minimum Expenditures Basket (S)MEB, and debt.`,
             image_url: 'images/chapters/ch-eco-vulnerability.jpg',
             versions: [
@@ -145,7 +145,7 @@ export default class DataService {
                     'knowledge_hub_url': ''
                 },
                 {
-                    'year': '2019',
+                    'year': '2020',
                     'download_url': '/vasyr/files/vasyr_chapters/2020/VASyR 2020 - Economic Vulnerability.pdf',
                     'knowledge_hub_url': ''
                 }
