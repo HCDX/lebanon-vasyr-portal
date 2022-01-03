@@ -32,7 +32,7 @@
         </div>
       </div>
       <div class="download-button">
-        <a :href="this.vasyrDownloadLink2020" v-bind:year="this.vasyrDownloadLink2020" target="_blank" class="btn btn-info" download>DOWNLOAD VASyR 2020</a>
+        <a :href="this.vasyrDownloadLink2020" v-bind:year="this.vasyrDownloadLink2020" target="_blank" class="btn btn-info-main" download>DOWNLOAD VASyR 2020</a>
       </div>
     </div>
   </div>
@@ -115,7 +115,7 @@ export default {
 .home-main-container {
   position:relative;
   height: 100%;
-  padding: 180px;
+  padding: 15% 180px;
   max-width: 1400px;
   margin: auto;
 }
@@ -127,7 +127,7 @@ export default {
   height: 100%;
   width: 100%;
   /* background-color: #273b56; */
-  background: linear-gradient(0deg, rgba(134,244,255,0.577468487394958) 11%, rgba(41,138,154,0.48783263305322133) 51%, rgba(74,137,143,0.835171568627451) 76%, rgba(21,94,101,1) 100%);
+  /*background: linear-gradient(0deg, rgba(134,244,255,0.577468487394958) 11%, rgba(41,138,154,0.48783263305322133) 51%, rgba(74,137,143,0.835171568627451) 76%, rgba(21,94,101,1) 100%);*/
 }
 
 .organization-logo{

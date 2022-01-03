@@ -18,29 +18,13 @@
             {{chapter.description}}
           </div>
           <div class="buttons">
-            <!-- <a class="btn btn-info" v-if="chapter.download_url" :href="chapter.download_url" target="_blank" download>DOWNLOAD CHAPTER</a>
-            <a class="btn btn-info pointer-cursor" v-if="!chapter.download_url" v-on:click="openDialog">DOWNLOAD CHAPTER</a> -->
-
-
-
-
             <div class="dropdown">
-              <button class="btn btn-info dropdown-toggle" type="button" id="chaptersDropDown" data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                DOWNLOAD CHAPTER
-              </button>
-              <div class="dropdown-menu" aria-labelledby="chaptersDropDown">
                 <div class="row" style="margin: 0; width: 100%;">
-                  <div class="col col-6" style="padding: 1px;" v-for="(version, index) in chapter.versions" v-bind:key="index">
+                  <div class="col col-4" style="padding: 1px;" v-for="(version, index) in chapter.versions" v-bind:key="index">
                     <a class="dropdown-item" :href="version.download_url" target="_blank" download>{{version.year}}</a>
                   </div>
                 </div>
-              </div>
             </div>
-
-
-
-
-            
           </div>
         </div>
         <div class="chapter-image bottom" v-if="(chapter.textPosition === 'top')">

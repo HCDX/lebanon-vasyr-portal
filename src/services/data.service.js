@@ -59,6 +59,11 @@ export default class DataService {
                     'year': '2020',
                     'download_url': '/vasyr/files/vasyr_chapters/2020/VASyR 2020 - Introduction.pdf',
                     'knowledge_hub_url': ''
+                },
+                {
+                    'year': '2021',
+                    'download_url': '/vasyr/files/vasyr_chapters/2020/VASyR 2020 - Introduction.pdf',
+                    'knowledge_hub_url': ''
                 }
             ],
             // download_url: '/vasyr/files/vasyr_chapters/0 VASyR 2019 Executive Summary.pdf',

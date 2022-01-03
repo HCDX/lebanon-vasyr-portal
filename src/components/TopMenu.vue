@@ -1,5 +1,5 @@
 <template>
-<nav class="navbar navbar-expand-lg navbar-dark menu-container">
+<nav class="navbar navbar-expand-lg navbar-dark menu-container" :class="{darken_menu: currentScrollPosition > 75}">
   <a class="navbar-brand logo-container" href="#">
     <img alt="vasyr logo" src="@/assets/logo.png">
   </a>
@@ -50,20 +50,24 @@ export default {
     chaptersPosition: 0,
     mapsPosition: 0,
     reportPosition: 0,
-    clickedLink: false
+    clickedLink: false,
+    currentScrollPosition: null
   }),
   mounted() {
     this.menuItems = this.dataService.getTopMenuData();
     
+    window.addEventListener('scroll', this.updateScroll);
+    console.log(this.currentScrollPosition);
+
     if(window.location.hash === '#/') {
       this.currentActive = window.location.hash.slice(1, window.location.hash.length);
       setTimeout(() => {
         
-        this.chaptersPosition = this.$parent.$el.querySelector('#chapters').offsetTop - 75;
-        this.mapsPosition = this.$parent.$el.querySelector('#maps').offsetTop - 75;
-        this.reportPosition = this.$parent.$el.querySelector('#reports').offsetTop - 75;
-        this.toolsPosition = this.$parent.$el.querySelector('#tools').offsetTop - 75;
-        this.vaultPosition = this.$parent.$el.querySelector('#vault').offsetTop - 75;
+        this.chaptersPosition = this.$parent.$el.querySelector('#chapters').offsetTop;
+        this.mapsPosition = this.$parent.$el.querySelector('#maps').offsetTop;
+        this.reportPosition = this.$parent.$el.querySelector('#reports').offsetTop;
+        this.toolsPosition = this.$parent.$el.querySelector('#tools').offsetTop;
+        this.vaultPosition = this.$parent.$el.querySelector('#vault').offsetTop;
         this.scrollPosition();
         
       }, 1000);
@@ -151,7 +155,10 @@ export default {
       let elementEndPosition = elementStartPosition + elementHeight;
 
       return elementEndPosition;
-    }
+    },
+	updateScroll() {
+		this.currentScrollPosition = window.scrollY;
+	}
   }
 }
 </script>
@@ -174,7 +181,7 @@ export default {
 .menu-container {
   margin: 0;
   height: 75px;
-  background-color: var(--var-theme-background);
+  /*background-color: var(--var-theme-background);*/
   font-family: 'Montserrat-Bold' !important;
 }
 
@@ -213,6 +220,9 @@ li.is-active {
   display: inline-block;
   margin: 25px 20px;
   padding: 0px;
+}
+.darken_menu {
+	background-color: black;
 }
 
 @media screen and (max-width: 804px)  {
