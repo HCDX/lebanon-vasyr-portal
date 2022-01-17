@@ -52,7 +52,7 @@ export default class DataService {
             versions: [
                 {
                     'year': '2019',
-                    'download_url': '/vasyr/files/vasyr_chapters/VASyR 2019 Introduction.pdf',
+                    'download_url': '/vasyr/files/vasyr_chapters/2019/VASyR 2019 Introduction.pdf',
                     'knowledge_hub_url': ''
                 },
                 {
@@ -62,7 +62,7 @@ export default class DataService {
                 },
                 {
                     'year': '2021',
-                    'download_url': '/vasyr/files/vasyr_chapters/2020/VASyR 2020 - Introduction.pdf',
+                    'download_url': '/vasyr/files/vasyr_chapters/2021/VASyR 2021 - Introduction.pdf',
                     'knowledge_hub_url': ''
                 }
             ],
@@ -77,14 +77,19 @@ export default class DataService {
             versions: [
                 {
                     'year': '2019',
-                    'download_url': '/vasyr/files/vasyr_chapters/0 VASyR 2019 Executive Summary.pdf',
+                    'download_url': '/vasyr/files/vasyr_chapters/2019/0 VASyR 2019 Executive Summary.pdf',
                     'knowledge_hub_url': ''
                 },
                 {
                     'year': '2020',
                     'download_url': '/vasyr/files/vasyr_chapters/2020/VASyR 2020 - Executive Summary.pdf',
                     'knowledge_hub_url': ''
-                }
+                },
+                // {
+                //     'year': '2021',
+                //     'download_url': '/vasyr/files/vasyr_chapters/2021/VASyR 2020 - Executive Summary.pdf',
+                //     'knowledge_hub_url': ''
+                // }
             ],
             // download_url: '/vasyr/files/vasyr_chapters/0 VASyR 2019 Executive Summary.pdf',
             // knowledge_hub_url: '',
@@ -97,7 +102,7 @@ export default class DataService {
             versions: [
                 {
                     'year': '2019',
-                    'download_url': '/vasyr/files/vasyr_chapters/1 VASyR 2019 Assistance & HH assets.pdf',
+                    'download_url': '/vasyr/files/vasyr_chapters/2019/1 VASyR 2019 Assistance & HH assets.pdf',
                     'knowledge_hub_url': ''
                 }
             ],
@@ -110,12 +115,17 @@ export default class DataService {
             versions: [
                 {
                     'year': '2019',
-                    'download_url': '/vasyr/files/vasyr_chapters/2 VASyR 2019 Coping Strategies.pdf',
+                    'download_url': '/vasyr/files/vasyr_chapters/2019/2 VASyR 2019 Coping Strategies.pdf',
                     'knowledge_hub_url': ''
                 },
                 {
                     'year': '2020',
                     'download_url': '/vasyr/files/vasyr_chapters/2020/VASyR 2020 - Coping Strategies.pdf',
+                    'knowledge_hub_url': ''
+                },
+                {
+                    'year': '2021',
+                    'download_url': '/vasyr/files/vasyr_chapters/2021/VASyR 2021 - Coping Strategies.pdf',
                     'knowledge_hub_url': ''
                 }
             ],
@@ -128,12 +138,17 @@ export default class DataService {
             versions: [
                 {
                     'year': '2019',
-                    'download_url': '/vasyr/files/vasyr_chapters/3 VASyR 2019 Demographics.pdf',
+                    'download_url': '/vasyr/files/vasyr_chapters/2019/3 VASyR 2019 Demographics.pdf',
                     'knowledge_hub_url': ''
                 },
                 {
                     'year': '2020',
                     'download_url': '/vasyr/files/vasyr_chapters/2020/VASyR 2020 - Demographics.pdf',
+                    'knowledge_hub_url': ''
+                },
+                {
+                    'year': '2021',
+                    'download_url': '/vasyr/files/vasyr_chapters/2021/VASyR 2021 - Demographics.pdf',
                     'knowledge_hub_url': ''
                 }
             ],
@@ -146,12 +161,17 @@ export default class DataService {
             versions: [
                 {
                     'year': '2019',
-                    'download_url': '/vasyr/files/vasyr_chapters/4 VASyR 2019 Economic Vulnerability.pdf',
+                    'download_url': '/vasyr/files/vasyr_chapters/2019/4 VASyR 2019 Economic Vulnerability.pdf',
                     'knowledge_hub_url': ''
                 },
                 {
                     'year': '2020',
                     'download_url': '/vasyr/files/vasyr_chapters/2020/VASyR 2020 - Economic Vulnerability.pdf',
+                    'knowledge_hub_url': ''
+                },
+                {
+                    'year': '2021',
+                    'download_url': '/vasyr/files/vasyr_chapters/2021/VASyR 2021 - Economic Vulnerability.pdf',
                     'knowledge_hub_url': ''
                 }
             ],
@@ -164,7 +184,7 @@ export default class DataService {
             versions: [
                 {
                     'year': '2019',
-                    'download_url': '/vasyr/files/vasyr_chapters/5 VASyR 2019 Energy.pdf',
+                    'download_url': '/vasyr/files/vasyr_chapters/2019/5 VASyR 2019 Energy.pdf',
                     'knowledge_hub_url': ''
                 },
                 {
@@ -182,12 +202,17 @@ export default class DataService {
             versions: [
                 {
                     'year': '2019',
-                    'download_url': '/vasyr/files/vasyr_chapters/6 VASyR 2019 Education.pdf',
+                    'download_url': '/vasyr/files/vasyr_chapters/2019/6 VASyR 2019 Education.pdf',
                     'knowledge_hub_url': ''
                 },
                 {
                     'year': '2020',
-                    'download_url': '/vasyr/files/vasyr_chapters/VASyR 2020 - Education.pdf',
+                    'download_url': '/vasyr/files/vasyr_chapters/2020/VASyR 2020 - Education.pdf',
+                    'knowledge_hub_url': ''
+                },
+                {
+                    'year': '2021',
+                    'download_url': '/vasyr/files/vasyr_chapters/2021/VASyR 2021 - EDUCATION.pdf',
                     'knowledge_hub_url': ''
                 }
             ],
@@ -200,12 +225,17 @@ export default class DataService {
             versions: [
                 {
                     'year': '2019',
-                    'download_url': '/vasyr/files/vasyr_chapters/7 VASyR 2019 Food Consumption.pdf',
+                    'download_url': '/vasyr/files/vasyr_chapters/2019/7 VASyR 2019 Food Consumption.pdf',
                     'knowledge_hub_url': ''
                 },
                 {
                     'year': '2020',
                     'download_url': '/vasyr/files/vasyr_chapters/2020/VASyR 2020 - Food Consumption.pdf',
+                    'knowledge_hub_url': ''
+                },
+                {
+                    'year': '2021',
+                    'download_url': '/vasyr/files/vasyr_chapters/2021/VASyR 2021 - Food Consumption.pdf',
                     'knowledge_hub_url': ''
                 }
             ],
@@ -218,12 +248,17 @@ export default class DataService {
             versions: [
                 {
                     'year': '2019',
-                    'download_url': '/vasyr/files/vasyr_chapters/8 VASyR 2019 Food Security.pdf',
+                    'download_url': '/vasyr/files/vasyr_chapters/2019/8 VASyR 2019 Food Security.pdf',
                     'knowledge_hub_url': ''
                 },
                 {
                     'year': '2020',
                     'download_url': '/vasyr/files/vasyr_chapters/2020/VASyR 2020 - Food Security.pdf',
+                    'knowledge_hub_url': ''
+                },
+                {
+                    'year': '2021',
+                    'download_url': '/vasyr/files/vasyr_chapters/2021/VASyR 2021 - Food Security.pdf',
                     'knowledge_hub_url': ''
                 }
             ],
@@ -236,14 +271,19 @@ export default class DataService {
             versions: [
                 {
                     'year': '2019',
-                    'download_url': '/vasyr/files/vasyr_chapters/1 VASyR 2019 Assistance & HH assets.pdf',
+                    'download_url': '/vasyr/files/vasyr_chapters/2019/1 VASyR 2019 Assistance & HH assets.pdf',
                     'knowledge_hub_url': ''
                 },
                 {
                     'year': '2020',
                     'download_url': '/vasyr/files/vasyr_chapters/2020/VASyR 2020 - Gender Analysis.pdf',
                     'knowledge_hub_url': ''
-                }
+                },
+                // {
+                //     'year': '2021',
+                //     'download_url': '/vasyr/files/vasyr_chapters/2021/VASyR 2020 - Gender Analysis.pdf',
+                //     'knowledge_hub_url': ''
+                // }
             ],
             textPosition: 'top'
         },
@@ -254,12 +294,17 @@ export default class DataService {
             versions: [
                 {
                     'year': '2019',
-                    'download_url': '/vasyr/files/vasyr_chapters/9 VASyR 2019 Health.pdf',
+                    'download_url': '/vasyr/files/vasyr_chapters/2019/9 VASyR 2019 Health.pdf',
                     'knowledge_hub_url': ''
                 },
                 {
                     'year': '2020',
                     'download_url': '/vasyr/files/vasyr_chapters/2020/VASyR 2020 - Health.pdf',
+                    'knowledge_hub_url': ''
+                },
+                {
+                    'year': '2021',
+                    'download_url': '/vasyr/files/vasyr_chapters/2021/VASyR 2021 - Health with IYCF.pdf',
                     'knowledge_hub_url': ''
                 }
             ],
@@ -272,12 +317,17 @@ export default class DataService {
             versions: [
                 {
                     'year': '2019',
-                    'download_url': '/vasyr/files/vasyr_chapters/10 VASyR 2019 Livelihoods and Income.pdf',
+                    'download_url': '/vasyr/files/vasyr_chapters/2019/10 VASyR 2019 Livelihoods and Income.pdf',
                     'knowledge_hub_url': ''
                 },
                 {
                     'year': '2020',
                     'download_url': '/vasyr/files/vasyr_chapters/2020/VASyR 2020 - Livelihoods and Income.pdf',
+                    'knowledge_hub_url': ''
+                },
+                {
+                    'year': '2021',
+                    'download_url': '/vasyr/files/vasyr_chapters/2021/VASyR 2021 - Livelihoods.pdf',
                     'knowledge_hub_url': ''
                 }
             ],
@@ -290,12 +340,17 @@ export default class DataService {
             versions: [
                 {
                     'year': '2019',
-                    'download_url': '/vasyr/files/vasyr_chapters/11 VASyR 2019 Protection.pdf',
+                    'download_url': '/vasyr/files/vasyr_chapters/2019/11 VASyR 2019 Protection.pdf',
                     'knowledge_hub_url': ''
                 },
                 {
                     'year': '2020',
                     'download_url': '/vasyr/files/vasyr_chapters/2020/VASyR 2020 - Protection.pdf',
+                    'knowledge_hub_url': ''
+                },
+                {
+                    'year': '2021',
+                    'download_url': '/vasyr/files/vasyr_chapters/2021/VASyR 2021 - Protection.pdf',
                     'knowledge_hub_url': ''
                 }
             ],
@@ -308,12 +363,17 @@ export default class DataService {
             versions: [
                 {
                     'year': '2019',
-                    'download_url': '/vasyr/files/vasyr_chapters/12 VASyR 2019 Shelter.pdf',
+                    'download_url': '/vasyr/files/vasyr_chapters/2019/12 VASyR 2019 Shelter.pdf',
                     'knowledge_hub_url': ''
                 },
                 {
                     'year': '2020',
                     'download_url': '/vasyr/files/vasyr_chapters/2020/VASyR 2020 - Shelter.pdf',
+                    'knowledge_hub_url': ''
+                },
+                {
+                    'year': '2021',
+                    'download_url': '/vasyr/files/vasyr_chapters/2021/VASyR 2021 - Shelter.pdf',
                     'knowledge_hub_url': ''
                 }
             ],
@@ -326,12 +386,17 @@ export default class DataService {
             versions: [
                 {
                     'year': '2019',
-                    'download_url': '/vasyr/files/vasyr_chapters/13 VASyR 2019 WASH.pdf',
+                    'download_url': '/vasyr/files/vasyr_chapters/2019/13 VASyR 2019 WASH.pdf',
                     'knowledge_hub_url': ''
                 },
                 {
                     'year': '2020',
                     'download_url': '/vasyr/files/vasyr_chapters/2020/VASyR 2020 - WASH.pdf',
+                    'knowledge_hub_url': ''
+                },
+                {
+                    'year': '2021',
+                    'download_url': '/vasyr/files/vasyr_chapters/2021/VASyR 2021 - WASH.pdf',
                     'knowledge_hub_url': ''
                 }
             ],
@@ -344,12 +409,17 @@ export default class DataService {
             versions: [
                 {
                     'year': '2019',
-                    'download_url': '/vasyr/files/vasyr_chapters/VASyR 2019 Methodology.pdf',
+                    'download_url': '/vasyr/files/vasyr_chapters/2019/VASyR 2019 Methodology.pdf',
                     'knowledge_hub_url': ''
                 },
                 {
                     'year': '2020',
                     'download_url': '/vasyr/files/vasyr_chapters/2020/VASyR 2020 - Methodology.pdf',
+                    'knowledge_hub_url': ''
+                },
+                {
+                    'year': '2021',
+                    'download_url': '/vasyr/files/vasyr_chapters/2021/VASyR 2021 - Methodology.pdf',
                     'knowledge_hub_url': ''
                 }
             ],
