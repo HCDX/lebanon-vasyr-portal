@@ -51,7 +51,7 @@ export default {
     mapsPosition: 0,
     reportPosition: 0,
     clickedLink: false,
-    currentScrollPosition: null
+    currentScrollPosition: 0
   }),
   mounted() {
     this.menuItems = this.dataService.getTopMenuData();
@@ -123,31 +123,25 @@ export default {
         switch(true) {
           case (window.scrollY >= this.mainPosition && window.scrollY < mainEndPosition):
             this.currentActive = '/';
-            console.log('main', window.scrollY, this.mainPosition, mainEndPosition);
             break
           case (window.scrollY >= this.chaptersPosition && window.scrollY < chaptersEndPosition):
             this.currentActive = 'chapters';
-            console.log('chapters', window.scrollY, this.chaptersPosition, chaptersEndPosition);
             break;
   
           case (window.scrollY >= this.mapsPosition && window.scrollY < mapsEndPosition):
             this.currentActive = 'maps';
-            console.log('maps', window.scrollY, this.mapsPosition, mapsEndPosition);
             break;
   
           case (window.scrollY >= this.reportPosition && window.scrollY < reportEndPosition):
             this.currentActive = 'reports';
-            console.log('reports', window.scrollY, this.reportPosition, reportEndPosition);
             break;
 
           case (window.scrollY >= this.toolsPosition && window.scrollY < toolsEndPosition):
             this.currentActive = 'tools';
-            console.log('tools', window.scrollY, this.toolsPosition, toolsEndPosition);
             break;
 
           case (window.scrollY >= this.vaultPosition && window.scrollY < vaultEndPosition):
             this.currentActive = 'vault';
-            console.log('vault', window.scrollY, this.vaultPosition, vaultEndPosition);
             break;
   
           // default:
@@ -168,9 +162,10 @@ export default {
 
       return elementEndPosition;
     },
-	updateScroll() {
-		this.currentScrollPosition = window.scrollY;
-	}
+  	updateScroll() {
+      if(window.scrollY > 0)
+  		this.currentScrollPosition = window.scrollY;
+  	}
   }
 }
 </script>
