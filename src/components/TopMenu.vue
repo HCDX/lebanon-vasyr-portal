@@ -63,11 +63,11 @@ export default {
       this.currentActive = window.location.hash.slice(1, window.location.hash.length);
       setTimeout(() => {
         
-        this.chaptersPosition = this.$parent.$el.querySelector('#chapters').offsetTop;
-        this.mapsPosition = this.$parent.$el.querySelector('#maps').offsetTop;
-        this.reportPosition = this.$parent.$el.querySelector('#reports').offsetTop;
-        this.toolsPosition = this.$parent.$el.querySelector('#tools').offsetTop;
-        this.vaultPosition = this.$parent.$el.querySelector('#vault').offsetTop;
+        this.chaptersPosition = this.$parent.$el.querySelector('#chapters').offsetTop - 75;
+        this.mapsPosition = this.$parent.$el.querySelector('#maps').offsetTop - 75;
+        this.reportPosition = this.$parent.$el.querySelector('#reports').offsetTop - 75;
+        this.toolsPosition = this.$parent.$el.querySelector('#tools').offsetTop - 75;
+        this.vaultPosition = this.$parent.$el.querySelector('#vault').offsetTop - 75;
         this.scrollPosition();
         
       }, 1000);
@@ -113,6 +113,7 @@ export default {
     },
     scrollPosition() {
       if(!this.clickedLink && this.mapsPosition){
+        let mainEndPosition = this.elementEndPosition('road-map');
         let chaptersEndPosition = this.elementEndPosition('chapters');
         let mapsEndPosition = this.elementEndPosition('maps');
         let reportEndPosition = this.elementEndPosition('reports');
@@ -120,29 +121,40 @@ export default {
         let vaultEndPosition = this.elementEndPosition('vault');
 
         switch(true) {
+          case (window.scrollY >= this.mainPosition && window.scrollY < mainEndPosition):
+            this.currentActive = '/';
+            console.log('main', window.scrollY, this.mainPosition, mainEndPosition);
+            break
           case (window.scrollY >= this.chaptersPosition && window.scrollY < chaptersEndPosition):
             this.currentActive = 'chapters';
+            console.log('chapters', window.scrollY, this.chaptersPosition, chaptersEndPosition);
             break;
   
           case (window.scrollY >= this.mapsPosition && window.scrollY < mapsEndPosition):
             this.currentActive = 'maps';
+            console.log('maps', window.scrollY, this.mapsPosition, mapsEndPosition);
             break;
   
           case (window.scrollY >= this.reportPosition && window.scrollY < reportEndPosition):
             this.currentActive = 'reports';
+            console.log('reports', window.scrollY, this.reportPosition, reportEndPosition);
             break;
 
           case (window.scrollY >= this.toolsPosition && window.scrollY < toolsEndPosition):
             this.currentActive = 'tools';
+            console.log('tools', window.scrollY, this.toolsPosition, toolsEndPosition);
             break;
 
           case (window.scrollY >= this.vaultPosition && window.scrollY < vaultEndPosition):
             this.currentActive = 'vault';
+            console.log('vault', window.scrollY, this.vaultPosition, vaultEndPosition);
             break;
   
-          default:
-            this.currentActive = '/';
-            break;
+          // default:
+          //   this.currentActive = '/';
+          //   console.log('/ ', window.scrollY, this.chaptersPosition, chaptersEndPosition);
+
+          //   break;
         }
       }
     },
