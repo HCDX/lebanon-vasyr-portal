@@ -100,7 +100,7 @@ export default {
 #main {
   position: relative;
   min-height: 100%;
-  background: url('../assets/images/home-background.png');
+  background: url('../assets/images/home-background.jpg');
   background-position-y: 75%;
   background-color: var(--var-theme-text-dark);
   background-repeat: no-repeat;
@@ -306,7 +306,7 @@ export default {
   #main {
     position: relative;
     min-height: 100%;
-    background: url('../assets/images/home-background.png');
+    background: url('../assets/images/home-background.jpg');
     background-position-y: 30%;
     background-color: var(--var-theme-background);
     background-repeat: no-repeat;

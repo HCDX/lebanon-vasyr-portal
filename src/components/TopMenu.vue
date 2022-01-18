@@ -221,8 +221,9 @@ li.is-active {
   margin: 25px 20px;
   padding: 0px;
 }
+
 .darken_menu {
-	background-color: black;
+  background-color: #0c0a0a;
 }
 
 @media screen and (max-width: 804px)  {
