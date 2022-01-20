@@ -1,5 +1,5 @@
 <template>
-<nav class="navbar navbar-expand-lg navbar-dark menu-container">
+<nav class="navbar navbar-expand-lg navbar-dark menu-container" :class="{darken_menu: currentScrollPosition > 75}">
   <a class="navbar-brand logo-container" href="#">
     <img alt="vasyr logo" src="@/assets/logo.png">
   </a>
@@ -50,11 +50,15 @@ export default {
     chaptersPosition: 0,
     mapsPosition: 0,
     reportPosition: 0,
-    clickedLink: false
+    clickedLink: false,
+    currentScrollPosition: 0
   }),
   mounted() {
     this.menuItems = this.dataService.getTopMenuData();
     
+    window.addEventListener('scroll', this.updateScroll);
+    console.log(this.currentScrollPosition);
+
     if(window.location.hash === '#/') {
       this.currentActive = window.location.hash.slice(1, window.location.hash.length);
       setTimeout(() => {
@@ -109,6 +113,7 @@ export default {
     },
     scrollPosition() {
       if(!this.clickedLink && this.mapsPosition){
+        let mainEndPosition = this.elementEndPosition('road-map');
         let chaptersEndPosition = this.elementEndPosition('chapters');
         let mapsEndPosition = this.elementEndPosition('maps');
         let reportEndPosition = this.elementEndPosition('reports');
@@ -116,6 +121,9 @@ export default {
         let vaultEndPosition = this.elementEndPosition('vault');
 
         switch(true) {
+          case (window.scrollY >= this.mainPosition && window.scrollY < mainEndPosition):
+            this.currentActive = '/';
+            break
           case (window.scrollY >= this.chaptersPosition && window.scrollY < chaptersEndPosition):
             this.currentActive = 'chapters';
             break;
@@ -136,9 +144,11 @@ export default {
             this.currentActive = 'vault';
             break;
   
-          default:
-            this.currentActive = '/';
-            break;
+          // default:
+          //   this.currentActive = '/';
+          //   console.log('/ ', window.scrollY, this.chaptersPosition, chaptersEndPosition);
+
+          //   break;
         }
       }
     },
@@ -151,7 +161,11 @@ export default {
       let elementEndPosition = elementStartPosition + elementHeight;
 
       return elementEndPosition;
-    }
+    },
+  	updateScroll() {
+      if(window.scrollY > 0)
+  		this.currentScrollPosition = window.scrollY;
+  	}
   }
 }
 </script>
@@ -174,7 +188,7 @@ export default {
 .menu-container {
   margin: 0;
   height: 75px;
-  background-color: var(--var-theme-background);
+  /*background-color: var(--var-theme-background);*/
   font-family: 'Montserrat-Bold' !important;
 }
 
@@ -213,6 +227,10 @@ li.is-active {
   display: inline-block;
   margin: 25px 20px;
   padding: 0px;
+}
+
+.darken_menu {
+  background-color: #0c0a0a;
 }
 
 @media screen and (max-width: 804px)  {

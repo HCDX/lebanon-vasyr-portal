@@ -6,10 +6,10 @@
         <div class="lds-facebook"><div></div><div></div><div></div></div>
       </div>
     </div>
-    <div id="nav">
-      <TopMenu />
-    </div>
     <div id="main-container" v-images-loaded="loaded">
+	  <div id="nav">
+	    <TopMenu />
+	  </div>
       <router-view/>
       <modal :height="200" name="download-modal">
         <div class="header">
@@ -77,10 +77,12 @@ export default {
 
 <style>
 :root {
-  --var-theme-background: #155e65;
-  --var-theme-text-dark: #155e65;
-  --var-theme-button-info: #6cc498;
-  --var-theme-button-info-hover: #1ba99a;
+  --var-theme-background: #883348;
+  --var-theme-text-dark: #883348;
+  --var-theme-button-info-main: #883348;
+  --var-theme-button-info-main-hover: #472d30;
+  --var-theme-button-info: #f59d5e;
+  --var-theme-button-info-hover: #fece7c;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:300i,400,500,500i,700,700i&display=swap');
@@ -134,8 +136,19 @@ body, html {
 }
 
 #main-container {
-  margin-top: 75px;
-  height: calc(100% - 74px);
+  height: 100%;
+}
+
+.btn-info-main {
+  background-color: var(--var-theme-button-info-main) !important;
+  border-color: var(--var-theme-button-info-main) !important;
+  color: white !important;
+}
+
+.btn-info-main:hover {
+  background-color: var(--var-theme-button-info-main-hover) !important;
+  border-color: var(--var-theme-button-info-main-hover) !important;
+  color: white !important;
 }
 
 .btn-info {
