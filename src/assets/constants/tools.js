@@ -2,7 +2,7 @@ const TOOLS = [
     {
         title: 'VASyR Questionnaire',
         icon: '/icons/tools-question.png',
-        url: 'https://data2.unhcr.org/en/documents/details/71337',
+        url: 'https://data2.unhcr.org/en/documents/details/88944',
         description: 'This will take you to the questionnaire page'
     },
     {

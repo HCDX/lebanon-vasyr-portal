@@ -191,7 +191,7 @@ export default {
 }
 
 .chapter-info .description {
-  height: 140px;
+  height: 150px;
   padding: 0px 20px 10px 20px;
   font-size: 12px;
   font-family: 'Montserrat';
