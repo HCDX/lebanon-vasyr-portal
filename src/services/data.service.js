@@ -13,8 +13,9 @@ export default class DataService {
     topMenu = TopMenuItems.TOPMENUITEMS;
 
     vasyrDownloadLinks = {
-        '2019': '/vasyr/files/vasyr_2019/VASyR 2019 digital version.pdf',
-        '2020': '/vasyr/files/vasyr_2020/VASyR 2020.pdf',
+        '2019': '/vasyr/files/vasyr_reports/VASyR 2019 digital version.pdf',
+        '2020': '/vasyr/files/vasyr_reports/VASyR 2020.pdf',
+        '2021': '/vasyr/files/vasyr_reports/VASyR 2021.pdf',
         // '2018': 'link',
         // '2017': 'link',
         // '2016': 'link'
@@ -40,7 +41,15 @@ export default class DataService {
     vaultData = Vault.VAULT;
 
     homeIntro = {
-        'part_1': `The Vulnerability Assessment of Syrian Refugees in Lebanon (VASyR) analyses a representative sample of Syrian refugee families in Lebanon to provide a multi-sectoral update of the situation of this population. Conducted annually, 2020 marks the eighth year of this assessment. The contents of this report, jointly issued by the United Nations High Commissioner for Refugees (UNHCR), the United Nations Children’s Fund (UNICEF) and the World Food Programme (WFP), show that the economic downturn, steep inflation, COVID-19 and finally the Beirut blast have pushed vulnerable communities in Lebanon - including Syrian refugees - to the brink, with thousands of families sinking further into poverty and vulnerability`,
+        'part_1': `The Vulnerability Assessment of Syrian Refugees in Lebanon (VASyR) analyzes a representative sample 
+                   of Syrian refugee households in Lebanon to provide a multi-sectoral update of the situation of this 
+                   population. Conducted annually, 2021 marks the ninth year of this assessment. The contents of this 
+                   report, jointly issued by the United Nations High Commissioner for Refugees (UNHCR), 
+                   the United Nations Children’s Fund (UNICEF), and the United Nations World Food Programme (WFP), 
+                   show that the situation of Syrian refugees continues to worsen as Lebanon faces a compounded 
+                   socio-economic and health crisis. With the currency depreciation, price spikes, and subsidy removals, 
+                   nine out of 10 Syrian refugee households were not able to afford essential goods and services that ensure 
+                   minimum living standards, despite increasing humanitarian support`,
         'part_2': ``,
         'part_3': ``
     };

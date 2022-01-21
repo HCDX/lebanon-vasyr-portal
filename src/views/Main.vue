@@ -32,7 +32,7 @@
         </div>
       </div>
       <div class="download-button">
-        <a :href="this.vasyrDownloadLink2020" v-bind:year="this.vasyrDownloadLink2020" target="_blank" class="btn btn-info-main" download>DOWNLOAD VASyR 2020</a>
+        <a :href="this.vasyrDownloadLink2021" v-bind:year="this.vasyrDownloadLink2021" target="_blank" class="btn btn-info-main" download>DOWNLOAD VASyR 2021</a>
       </div>
     </div>
   </div>
@@ -47,13 +47,12 @@ export default {
     dataService: new DataService(),
     logos: [],
     introduction: '',
-    vasyrDownloadLink2020: ''
+    vasyrDownloadLink2021: ''
   }),
   mounted() {
     console.log('Mounted Main');
     this.introduction = this.dataService.getHomeIntro();
-    // this.vasyrDownloadLink2019 = this.dataService.getVasyrDownloadLink('2019');
-    this.vasyrDownloadLink2020 = this.dataService.getVasyrDownloadLink('2020');
+    this.vasyrDownloadLink2021 = this.dataService.getVasyrDownloadLink('2021');
     let main = document.getElementById("main");
 
     if(!helpers.isMobile.any()) {

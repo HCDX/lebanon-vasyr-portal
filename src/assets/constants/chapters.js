@@ -1,7 +1,10 @@
 const CHAPTERS = [
 	        {
             title: 'Introduction',
-            description: `Introduction.`,
+            description: `Ten years into the Syria conflict, Lebanon remains at the forefront of one of the worst humanitarian crises. 
+            The Government of Lebanon (GoL) estimates that the country hosts 1.5 million of the 6.6 million Syrians who have fled the 
+            conflict since 2011 (including 855,172 registered with UNHCR as of end of March 2021). The Syrian refugee population in 
+            Lebanon remains one of the largest concentrations of refugees per capita in the world`,
             image_url: 'images/chapters/ch-introduction.jpg',
             versions: [
                 {
@@ -49,14 +52,40 @@ const CHAPTERS = [
             // knowledge_hub_url: '',
             textPosition: 'bottom'
         },
+        // {
+        //     title: 'ASSISTANCE',
+        //     description: `The Assistance chapter examines whether families are recipients of cash assistance and studies their access to household assets. Vulnerable Syrian refugees in Lebanon can receive two main types of assistance: cash assistance and in-kind support, both of which are aimed at covering their basic needs.`,
+        //     image_url: 'images/chapters/ch-assistance.jpg',
+        //     versions: [
+        //         {
+        //             'year': '2019',
+        //             'download_url': '/vasyr/files/vasyr_chapters/2019/1 VASyR 2019 Assistance & HH assets.pdf',
+        //             'knowledge_hub_url': ''
+        //         }
+        //     ],
+        //     textPosition: 'top'
+        // },
         {
-            title: 'ASSISTANCE',
-            description: `The Assistance chapter examines whether families are recipients of cash assistance and studies their access to household assets. Vulnerable Syrian refugees in Lebanon can receive two main types of assistance: cash assistance and in-kind support, both of which are aimed at covering their basic needs.`,
-            image_url: 'images/chapters/ch-assistance.jpg',
+            title: 'METHODOLOGY',
+            description: `Between June 7 and July 7, 2021, survey teams visited 5,035 randomly selected Syrian refugee households, 
+            covering all districts across Lebanon. The household questionnaire was designed based on that of the previous year to ensure 
+            comparability, and face-to-face interviews took between 45 and 60 minutes to complete. The analysis plan was developed with 
+            inputs from the sector working groups and with reference to global indicators`,
+            image_url: 'images/chapters/ch-methodology.jpg',
             versions: [
                 {
                     'year': '2019',
-                    'download_url': '/vasyr/files/vasyr_chapters/2019/1 VASyR 2019 Assistance & HH assets.pdf',
+                    'download_url': '/vasyr/files/vasyr_chapters/2019/VASyR 2019 Methodology.pdf',
+                    'knowledge_hub_url': ''
+                },
+                {
+                    'year': '2020',
+                    'download_url': '/vasyr/files/vasyr_chapters/2020/VASyR 2020 - Methodology.pdf',
+                    'knowledge_hub_url': ''
+                },
+                {
+                    'year': '2021',
+                    'download_url': '/vasyr/files/vasyr_chapters/2021/VASyR 2021 - Methodology.pdf',
                     'knowledge_hub_url': ''
                 }
             ],
@@ -220,24 +249,25 @@ const CHAPTERS = [
         },
         {
             title: 'GENDER',
-            description: `This section explores the gender dimensions of vulnerabilities faced by Syrian refugees in Lebanon and identifies gender-based differences and inequalities.`,
+            description: `This section explores the gender dimensions of vulnerabilities faced by Syrian refugees in Lebanon 
+            and identifies gender-based differences and inequalities. The chapter has been developed in collaboration with UNWOMEN`,
             image_url: 'images/chapters/ch-gender.jpg',
             versions: [
-                {
-                    'year': '2019',
-                    'download_url': '/vasyr/files/vasyr_chapters/2019/1 VASyR 2019 Assistance & HH assets.pdf',
-                    'knowledge_hub_url': ''
-                },
+                // {
+                //     'year': '2019',
+                //     'download_url': '/vasyr/files/vasyr_chapters/2019/1 VASyR 2019 Assistance & HH assets.pdf',
+                //     'knowledge_hub_url': ''
+                // },
                 {
                     'year': '2020',
                     'download_url': '/vasyr/files/vasyr_chapters/2020/VASyR 2020 - Gender Analysis.pdf',
                     'knowledge_hub_url': ''
                 },
-                // {
-                //     'year': '2021',
-                //     'download_url': '/vasyr/files/vasyr_chapters/2021/VASyR 2020 - Gender Analysis.pdf',
-                //     'knowledge_hub_url': ''
-                // }
+                {
+                    'year': '2021',
+                    'download_url': '/vasyr/files/vasyr_chapters/2021/VASyR 2021 - Gender.pdf',
+                    'knowledge_hub_url': ''
+                }
             ],
             textPosition: 'top'
         },
@@ -258,7 +288,7 @@ const CHAPTERS = [
                 },
                 {
                     'year': '2021',
-                    'download_url': '/vasyr/files/vasyr_chapters/2021/VASyR 2021 - Health with IYCF.pdf',
+                    'download_url': '/vasyr/files/vasyr_chapters/2021/VASyR 2021 - Health.pdf',
                     'knowledge_hub_url': ''
                 }
             ],
@@ -355,29 +385,6 @@ const CHAPTERS = [
                 }
             ],
             textPosition: 'bottom'
-        },
-        {
-            title: 'METHODOLOGY',
-            description: `Methodology`,
-            image_url: 'images/chapters/ch-methodology.jpg',
-            versions: [
-                {
-                    'year': '2019',
-                    'download_url': '/vasyr/files/vasyr_chapters/2019/VASyR 2019 Methodology.pdf',
-                    'knowledge_hub_url': ''
-                },
-                {
-                    'year': '2020',
-                    'download_url': '/vasyr/files/vasyr_chapters/2020/VASyR 2020 - Methodology.pdf',
-                    'knowledge_hub_url': ''
-                },
-                {
-                    'year': '2021',
-                    'download_url': '/vasyr/files/vasyr_chapters/2021/VASyR 2021 - Methodology.pdf',
-                    'knowledge_hub_url': ''
-                }
-            ],
-            textPosition: 'top'
         }
 ];
 
