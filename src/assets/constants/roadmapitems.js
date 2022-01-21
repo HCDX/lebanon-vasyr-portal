@@ -39,7 +39,7 @@ const ROADMAPITEMS = [
         description: `If you would like to access the full- or part of the VASyR dataset, please submit your request here. This section is particularly relevant for researchers or anyone willing to develop their own analysis using VASyR data.`,
         icon: '/icons/icon-requests.png',
         top: false,
-        url: 'http://ialebanon.unhcr.org/DataHub/'
+        url: 'https://microdata.unhcr.org/index.php/catalog?sk=Lebanon&search='
     }
 ];
 
