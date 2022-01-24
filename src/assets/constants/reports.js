@@ -3,7 +3,7 @@ const REPORTS = [
         title: 'VASyR 2021',
         year: '2021',
         image_url: '/images/reports/vasyr-2021.jpg',
-        download_url: '/vasyr/files/vasyr_reports/VASyR 2021 - Low Res.pdf'
+        download_url: '/vasyr/files/vasyr_reports/VASyR 2021.pdf'
     },
     {
         title: 'VASyR 2020',
