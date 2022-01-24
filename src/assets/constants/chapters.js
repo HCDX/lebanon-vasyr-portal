@@ -42,11 +42,11 @@ const CHAPTERS = [
                     'download_url': '/vasyr/files/vasyr_chapters/2020/VASyR 2020 - Executive Summary.pdf',
                     'knowledge_hub_url': ''
                 },
-                // {
-                //     'year': '2021',
-                //     'download_url': '/vasyr/files/vasyr_chapters/2021/VASyR 2020 - Executive Summary.pdf',
-                //     'knowledge_hub_url': ''
-                // }
+                {
+                    'year': '2021',
+                    'download_url': '/vasyr/files/vasyr_chapters/2021/VASyR 2021 - Executive Summary.pdf',
+                    'knowledge_hub_url': ''
+                }
             ],
             // download_url: '/vasyr/files/vasyr_chapters/0 VASyR 2019 Executive Summary.pdf',
             // knowledge_hub_url: '',
