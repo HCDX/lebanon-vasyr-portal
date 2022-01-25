@@ -32,7 +32,7 @@
         </div>
       </div>
       <div class="download-button">
-        <a v-on:click="trackDownload()" :href="this.vasyrDownloadLink2021" v-bind:year="this.vasyrDownloadLink2021" target="_blank" class="btn btn-info-main" download>DOWNLOAD VASyR 2021</a>
+        <a v-on:click="trackDownload()" :href="this.vasyrDownloadLink2021" v-bind:year="this.vasyrDownloadLink2021" target="_blank" class="btn btn-info-main" style="font-weight: bold;" download>DOWNLOAD VASyR 2021</a>
       </div>
     </div>
   </div>
