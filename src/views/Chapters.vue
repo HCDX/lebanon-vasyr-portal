@@ -48,11 +48,12 @@ export default {
   },
   methods: {
     openDialog() {
-      console.log('test');
       this.$modal.show('download-modal');
     },
     trackDownload(chapter, versionYear) {
-      this.$ua.trackEvent(chapter.title + versionYear, 'clicked', 'Downloaded Chapter')
+      this.$gtag.event('file_download_clicked', {
+        file_name: chapter.title + '-' + versionYear
+      });
     }
   }
 }
