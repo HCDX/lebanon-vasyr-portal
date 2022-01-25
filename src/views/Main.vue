@@ -50,7 +50,7 @@ export default {
     vasyrDownloadLink2021: ''
   }),
   mounted() {
-    this.$ua.trackView('Main');
+    this.$gtag.event('site_visit');
     this.introduction = this.dataService.getHomeIntro();
     this.vasyrDownloadLink2021 = this.dataService.getVasyrDownloadLink('2021');
     let main = document.getElementById("main");
@@ -64,7 +64,9 @@ export default {
   },
   methods: {
     trackDownload() {
-      this.$ua.trackEvent('Vasyr Report 2021', 'clicked', 'Downloaded')
+      this.$gtag.event('file_download_clicked', {
+        file_name: 'Vasyr Full Report 2021'
+      });
     },
     getImgUrl(img) {
       return require(img);
