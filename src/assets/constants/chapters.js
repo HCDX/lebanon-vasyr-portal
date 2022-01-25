@@ -174,6 +174,11 @@ const CHAPTERS = [
                     'year': '2020',
                     'download_url': '/vasyr/files/vasyr_chapters/2020/VASyR 2020 - Energy.pdf',
                     'knowledge_hub_url': ''
+                },
+                {
+                    'year': '2021',
+                    'download_url': '/vasyr/files/vasyr_chapters/2021/VASyR 2021 - Energy.pdf',
+                    'knowledge_hub_url': ''
                 }
             ],
             textPosition: 'top'
