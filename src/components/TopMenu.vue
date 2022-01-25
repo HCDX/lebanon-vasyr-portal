@@ -57,7 +57,6 @@ export default {
     this.menuItems = this.dataService.getTopMenuData();
     
     window.addEventListener('scroll', this.updateScroll);
-    console.log(this.currentScrollPosition);
 
     if(window.location.hash === '#/') {
       this.currentActive = window.location.hash.slice(1, window.location.hash.length);

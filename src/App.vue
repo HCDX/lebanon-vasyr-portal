@@ -7,9 +7,9 @@
       </div>
     </div>
     <div id="main-container" v-images-loaded="loaded">
-	  <div id="nav">
-	    <TopMenu />
-	  </div>
+  	  <div id="nav">
+  	    <TopMenu />
+  	  </div>
       <router-view/>
       <modal :height="200" name="download-modal">
         <div class="header">

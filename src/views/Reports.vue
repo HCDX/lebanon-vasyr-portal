@@ -33,7 +33,6 @@
 			reports: []
 		}),
 		mounted() {
-      console.log('Mounted Reports');
       this.reports = this.dataService.getReportsData();
 		}
 	}
