@@ -21,18 +21,18 @@
         </div>
       </div>
       <div class="intro-container">
-        <div class="intro-text part">
+        <div class="intro-text part1">
           {{introduction.part_1}}
         </div>
-        <div class="intro-text part">
+        <div class="intro-text part2">
           {{introduction.part_2}}
         </div>
-        <div class="intro-text part">
+        <div class="intro-text part3">
           {{introduction.part_3}}
         </div>
       </div>
       <div class="download-button">
-        <a :href="this.vasyrDownloadLink2021" v-bind:year="this.vasyrDownloadLink2021" target="_blank" class="btn btn-info-main" download>DOWNLOAD VASyR 2021</a>
+        <a v-on:click="trackDownload()" :href="this.vasyrDownloadLink2021" v-bind:year="this.vasyrDownloadLink2021" target="_blank" class="btn btn-info-main" download>DOWNLOAD VASyR 2021</a>
       </div>
     </div>
   </div>
@@ -50,7 +50,7 @@ export default {
     vasyrDownloadLink2021: ''
   }),
   mounted() {
-    console.log('Mounted Main');
+    this.$ua.trackView('Main');
     this.introduction = this.dataService.getHomeIntro();
     this.vasyrDownloadLink2021 = this.dataService.getVasyrDownloadLink('2021');
     let main = document.getElementById("main");
@@ -63,6 +63,9 @@ export default {
     
   },
   methods: {
+    trackDownload() {
+      this.$ua.trackEvent('Vasyr Report 2021', 'clicked', 'Downloaded')
+    },
     getImgUrl(img) {
       return require(img);
     },
@@ -168,7 +171,7 @@ export default {
 @media screen and (min-width: 817px) and (max-width: 1218px) {
   #main {
     background-size: cover;
-    background-position-x: 50%;
+    background-position-x: 10%;
   }
 
   .home-main-container {
@@ -225,6 +228,8 @@ export default {
     position:relative;
     height: 100%;
     padding: 25px;
+    padding-top: 90px;
+    padding-bottom: 10px;
   }
 
   .organization-logo{
@@ -241,10 +246,14 @@ export default {
   }
 
   .intro-text {
-    margin-top: 20px;
+    /*margin-top: 20px;*/
     color: white;
     padding: 10px;
     font-size: 13px;
+  }
+
+  .intro-text.part2, .intro-text.part3 {
+    display: none;
   }
 
   .logos-container {

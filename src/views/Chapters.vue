@@ -21,7 +21,7 @@
             <div class="dropdown">
                 <div class="row" style="margin: 0; width: 100%;">
                   <div class="col col-4" style="padding: 1px;" v-for="(version, index) in chapter.versions" v-bind:key="index">
-                    <a class="dropdown-item" :href="version.download_url" target="_blank" download>{{version.year}}</a>
+                    <a v-on:click="trackDownload(chapter, version.year)" class="dropdown-item button-custom" :href="version.download_url" target="_blank" download>{{version.year}}</a>
                   </div>
                 </div>
             </div>
@@ -44,13 +44,15 @@ export default {
     chapters: []
   }),
   mounted() {
-    console.log('Mounted Chapters');
     this.chapters = this.dataService.getChaptersData();
   },
   methods: {
     openDialog() {
       console.log('test');
       this.$modal.show('download-modal');
+    },
+    trackDownload(chapter, versionYear) {
+      this.$ua.trackEvent(chapter.title + versionYear, 'clicked', 'Downloaded Chapter')
     }
   }
 }
@@ -198,8 +200,8 @@ export default {
 }
 
 .chapter-info .buttons {
-  height: 90px;
-  padding: 5px;
+  height: 70px;
+  padding: 15px 5px;
 }
 
 .chapter-info .buttons a {
@@ -210,5 +212,10 @@ export default {
 .pointer-cursor {
   cursor: pointer;
 }
+
+.button-custom {
+  padding: 0.25rem 0.5rem;
+}
+  
 
 </style>
