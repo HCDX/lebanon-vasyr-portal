@@ -77,12 +77,12 @@ export default {
 
 <style>
 :root {
-  --var-theme-background: #883348;
-  --var-theme-text-dark: #883348;
-  --var-theme-button-info-main: #883348;
-  --var-theme-button-info-main-hover: #472d30;
-  --var-theme-button-info: #f59d5e;
-  --var-theme-button-info-hover: #fece7c;
+  --var-theme-background: #353966;
+  --var-theme-text-dark: #353966;
+  --var-theme-button-info-main: #65c3be;
+  --var-theme-button-info-main-hover: #6388c5;
+  --var-theme-button-info: #65c3be;
+  --var-theme-button-info-hover: #6388c5;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:300i,400,500,500i,700,700i&display=swap');

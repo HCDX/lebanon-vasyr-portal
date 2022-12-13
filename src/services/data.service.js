@@ -15,10 +15,11 @@ export default class DataService {
     vasyrDownloadLinks = {
         '2019': '/vasyr/files/vasyr_reports/VASyR 2019 digital version.pdf',
         '2020': '/vasyr/files/vasyr_reports/VASyR 2020.pdf',
-        '2021': '/vasyr/files/vasyr_reports/VASyR 2021.pdf',
-        // '2018': 'link',
-        // '2017': 'link',
-        // '2016': 'link'
+        '2021': '/vasyr/files/vasyr_reports/VASyR 2021.pdf'
+    };
+
+    vasyrPresentationsDownloadLinks = {
+        '2022': '/vasyr/files/vasyr_presentations/VASyR_presentation_2022.pptx'
     };
 
     chaptersData = Chapters.CHAPTERS;
@@ -64,6 +65,10 @@ export default class DataService {
 
     getVasyrDownloadLink(year) {
         return this.vasyrDownloadLinks[year];
+    }
+
+    getVasyrPresentationLink(year) {
+        return this.vasyrPresentationsDownloadLinks[year];
     }
 
     getRoadMapData() {
