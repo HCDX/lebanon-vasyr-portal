@@ -32,7 +32,9 @@
         </div>
       </div>
       <div class="download-button">
-        <a v-on:click="trackDownload()" :href="this.vasyrDownloadLink2021" v-bind:year="this.vasyrDownloadLink2021" target="_blank" class="btn btn-info-main" style="font-weight: bold;" download>DOWNLOAD VASyR 2021</a>
+        <a v-on:click="trackDownload()" :href="this.vasyrPresentationDownloadLink2022" v-bind:year="this.vasyrPresentationDownloadLink2022" target="_blank" class="btn btn-info-main" style="font-weight: bold;" download>
+          DOWNLOAD VASyR Presentation 2022
+        </a>
       </div>
     </div>
   </div>
@@ -47,12 +49,14 @@ export default {
     dataService: new DataService(),
     logos: [],
     introduction: '',
-    vasyrDownloadLink2021: ''
+    vasyrDownloadLink2021: '',
+    vasyrPresentationDownloadLink2022: ''
   }),
   mounted() {
     this.$gtag.event('site_visit');
     this.introduction = this.dataService.getHomeIntro();
-    this.vasyrDownloadLink2021 = this.dataService.getVasyrDownloadLink('2021');
+    // this.vasyrDownloadLink2021 = this.dataService.getVasyrDownloadLink('2021');
+    this.vasyrPresentationDownloadLink2022 = this.dataService.getVasyrPresentationLink('2022');
     let main = document.getElementById("main");
 
     if(!helpers.isMobile.any()) {
