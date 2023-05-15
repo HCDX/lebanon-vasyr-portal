@@ -202,7 +202,7 @@ export default {
 
 .chapter-info .buttons {
   height: 70px;
-  padding: 15px 5px;
+  padding: 35px 5px 0px;
 }
 
 .chapter-info .buttons a {
