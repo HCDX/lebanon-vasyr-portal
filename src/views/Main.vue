@@ -134,7 +134,8 @@ export default {
   left: 0;
   height: 100%;
   width: 100%;
-  /* background-color: #273b56; */
+  background-color: #273b56;
+  opacity: 0.5;
   /*background: linear-gradient(0deg, rgba(134,244,255,0.577468487394958) 11%, rgba(41,138,154,0.48783263305322133) 51%, rgba(74,137,143,0.835171568627451) 76%, rgba(21,94,101,1) 100%);*/
 }
 
