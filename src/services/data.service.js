@@ -15,7 +15,8 @@ export default class DataService {
     vasyrDownloadLinks = {
         '2019': '/vasyr/files/vasyr_reports/VASyR 2019 digital version.pdf',
         '2020': '/vasyr/files/vasyr_reports/VASyR 2020.pdf',
-        '2021': '/vasyr/files/vasyr_reports/VASyR 2021.pdf'
+        '2021': '/vasyr/files/vasyr_reports/VASyR 2021.pdf',
+        '2022': '/vasyr/files/vasyr_reports/VASyR 2022.pdf'
     };
 
     vasyrPresentationsDownloadLinks = {
