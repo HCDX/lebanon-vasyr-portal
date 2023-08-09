@@ -1,5 +1,11 @@
 const REPORTS = [
     {
+        title: 'VASyR 2022',
+        year: '2022',
+        image_url: '/images/reports/vasyr-2022.jpg',
+        download_url: '/vasyr/files/vasyr_reports/VASyR 2022.pdf'
+    },
+    {
         title: 'VASyR 2021',
         year: '2021',
         image_url: '/images/reports/vasyr-2021.jpg',
