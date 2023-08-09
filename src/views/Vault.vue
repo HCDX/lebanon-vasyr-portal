@@ -5,9 +5,6 @@
       <h3> VAULT </h3>
       <hr class="horizental-ruler">
     </div>
-    <div>
-      <h6>The 2021 data tabulations will be added very soon</h6>
-    </div>
     <div class="vault-main-container contained d-flex">
       <div class="row align-self-start" style="margin: 0px auto; padding: 50px 0; width: 100%;">
         <div class="table-search-container row">
