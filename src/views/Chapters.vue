@@ -66,13 +66,15 @@ export default {
 }
 
 .btn-info {
-  background-color: transparent !important;
-  border-color: white !important;
+  background-color: var(--var-theme-button-info) !important;
+  border-color: var(--var-theme-button-info) !important;
+  color: var(--var-theme-button-info-text) !important;
 }
 
 .btn-info:hover {
-  background-color: transparent !important;
+  background-color: var(--var-theme-button-info-hover) !important;
   border-color: var(--var-theme-button-info-hover) !important;
+  color: var(--var-theme-button-info-hover-text) !important;
 }
 
 .dropdown {
@@ -114,7 +116,7 @@ export default {
     margin: 1px !important;
     clear: both;
     font-weight: 400;
-    color: white;
+    color: var(--var-theme-button-info-text) !important;
     text-align: inherit;
     white-space: nowrap;
     background-color: var(--var-theme-button-info);
@@ -122,7 +124,7 @@ export default {
 }
 
 .dropdown-item:focus, .dropdown-item:hover {
-    color: white;
+    color: var(--var-theme-button-info-hover-text) !important;
     text-decoration: none;
     background-color:var(--var-theme-button-info-hover);
 }

@@ -7,9 +7,9 @@
       </div>
     </div>
     <div id="main-container" v-images-loaded="loaded">
-  	  <div id="nav">
-  	    <TopMenu />
-  	  </div>
+      <div id="nav">
+        <TopMenu />
+      </div>
       <router-view/>
       <modal :height="200" name="download-modal">
         <div class="header">
@@ -60,7 +60,7 @@ export default {
     }
   },
   methods: {
-    loaded(instance) {
+    loaded() {
       this.allLoaded = true;
       // if document is ready and controllers mounted and all images loaded then stop loading
       if(this.mounted) {
@@ -77,12 +77,16 @@ export default {
 
 <style>
 :root {
-  --var-theme-background: #353966;
+  --var-theme-background: #8cc4c1;
   --var-theme-text-dark: #353966;
-  --var-theme-button-info-main: #65c3be;
-  --var-theme-button-info-main-hover: #6388c5;
-  --var-theme-button-info: #65c3be;
-  --var-theme-button-info-hover: #6388c5;
+  --var-theme-button-info-main: #51918c;
+  --var-theme-button-info-main-hover: #66bbb5;
+  --var-theme-button-info: #51918c;
+  --var-theme-button-info-text: #aae7e3;
+  --var-theme-button-info-hover: #66bbb5;
+  --var-theme-button-info-hover-text: #4f8682;
+  --var-theme-button-info-main-text: #aae7e3;
+  --var-theme-button-info-main-hover-text: #4f8682;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:300i,400,500,500i,700,700i&display=swap');
@@ -142,23 +146,25 @@ body, html {
 .btn-info-main {
   background-color: var(--var-theme-button-info-main) !important;
   border-color: var(--var-theme-button-info-main) !important;
-  color: white !important;
+  color: var(--var-theme-button-info-main-text) !important;
 }
 
 .btn-info-main:hover {
   background-color: var(--var-theme-button-info-main-hover) !important;
   border-color: var(--var-theme-button-info-main-hover) !important;
-  color: white !important;
+  color: var(--var-theme-button-info-main-hover-text) !important;
 }
 
 .btn-info {
   background-color: var(--var-theme-button-info) !important;
   border-color: var(--var-theme-button-info) !important;
+  color: var(--var-theme-button-info-text) !important;
 }
 
 .btn-info:hover {
   background-color: var(--var-theme-button-info-hover) !important;
   border-color: var(--var-theme-button-info-hover) !important;
+  color: var(--var-theme-button-info-hover-text) !important;
 }
 
 .no-scroll {
