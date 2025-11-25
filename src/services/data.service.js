@@ -16,7 +16,9 @@ export default class DataService {
         '2019': '/vasyr/files/vasyr_reports/VASyR 2019 digital version.pdf',
         '2020': '/vasyr/files/vasyr_reports/VASyR 2020.pdf',
         '2021': '/vasyr/files/vasyr_reports/VASyR 2021.pdf',
-        '2022': '/vasyr/files/vasyr_reports/VASyR 2022.pdf'
+        '2022': '/vasyr/files/vasyr_reports/VASyR 2022.pdf',
+        '2024-dashboard': '/vasyr/files/vasyr_reports/vasyr-2024-dashboard.pdf',
+        '2024-summary': '/vasyr/files/vasyr_reports/vasyr-2024-executive-summary.pdf'
     };
 
     vasyrPresentationsDownloadLinks = {

@@ -85,8 +85,8 @@ export default {
   --var-theme-button-info-text: #aae7e3;
   --var-theme-button-info-hover: #66bbb5;
   --var-theme-button-info-hover-text: #4f8682;
-  --var-theme-button-info-main-text: #aae7e3;
-  --var-theme-button-info-main-hover-text: #4f8682;
+  --var-theme-button-info-main-text: #ffffff;
+  --var-theme-button-info-main-hover-text: #ffffff;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:300i,400,500,500i,700,700i&display=swap');
@@ -147,6 +147,7 @@ body, html {
   background-color: var(--var-theme-button-info-main) !important;
   border-color: var(--var-theme-button-info-main) !important;
   color: var(--var-theme-button-info-main-text) !important;
+  margin: 5px ;
 }
 
 .btn-info-main:hover {

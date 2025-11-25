@@ -32,8 +32,11 @@
         </div>
       </div>
       <div class="download-button">
-        <a v-on:click="trackDownload()" :href="this.vasyrDownloadLink2022" v-bind:year="this.vasyrDownloadLink2022" target="_blank" class="btn btn-info-main" style="font-weight: bold;" download>
-          DOWNLOAD VASyR 2022
+        <a v-on:click="trackDownload()" :href="this.vasyrDownloadDashboard2024" v-bind:year="this.vasyrDownloadDashboard2024" target="_blank" class="btn btn-info-main" style="font-weight: bold;" download>
+          VASyR 2024 Dashboard
+        </a>
+        <a v-on:click="trackDownload()" :href="this.vasyrDownloadSummary2024" v-bind:year="this.vasyrDownloadSummary2024" target="_blank" class="btn btn-info-main" style="font-weight: bold;" download>
+          Executive Summary 2024
         </a>
       </div>
     </div>
@@ -49,13 +52,15 @@ export default {
     dataService: new DataService(),
     logos: [],
     introduction: '',
-    vasyrDownloadLink2022: '',
+    vasyrDownloadDashboard2024: '',
+    vasyrDownloadSummary2024: '',
     vasyrPresentationDownloadLink2022: ''
   }),
   mounted() {
     this.$gtag.event('site_visit');
     this.introduction = this.dataService.getHomeIntro();
-    this.vasyrDownloadLink2022 = this.dataService.getVasyrDownloadLink('2022');
+    this.vasyrDownloadDashboard2024 = this.dataService.getVasyrDownloadLink('2024-dashboard');
+    this.vasyrDownloadSummary2024 = this.dataService.getVasyrDownloadLink('2024-summary');
     // this.vasyrPresentationDownloadLink2022 = this.dataService.getVasyrPresentationLink('2022');
     let main = document.getElementById("main");
 
@@ -69,7 +74,7 @@ export default {
   methods: {
     trackDownload() {
       this.$gtag.event('file_download_clicked', {
-        file_name: 'Vasyr Full Report 2021'
+        file_name: 'VASyR 2024 Dashboard.pdf',
       });
     },
     getImgUrl(img) {
@@ -91,12 +96,12 @@ export default {
       let imageY = startImgPosition + (mouseY/h)*10;
       home.style["background-position"] = imageX + "% " + imageY + "%";
     },
-    mouseEnter(element) {
+    mouseEnter() {
       setTimeout(function() {
         this.main.classList.remove('main-transition');
       }, 150);
     },
-    mouseLeave(element) {
+    mouseLeave() {
       setTimeout(function() {
         this.main.classList.add('main-transition');
       }, 150);
