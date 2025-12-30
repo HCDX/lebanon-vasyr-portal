@@ -1,9 +1,12 @@
-import Vue from 'vue'
-
-Vue.directive('tooltip', function(el, binding){
-    $(el).tooltip({
-        title: binding.value,
-        placement: binding.arg,
-        trigger: 'hover'             
+export const tooltip = {
+  mounted(el, binding) {
+    window.$(el).tooltip({
+      title: binding.value,
+      placement: binding.arg,
+      trigger: 'hover'
     })
-})
+  },
+  unmounted(el) {
+    window.$(el).tooltip('dispose')
+  }
+}

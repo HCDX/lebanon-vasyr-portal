@@ -8,7 +8,7 @@
     <div class="row chapters-main-container contained" style="margin: 0;" flex>
       <div v-for="(chapter, index) in chapters" v-bind:key="index" class="col col-md-6 col-lg-4 col-12 chapter">
         <div class="chapter-image top" v-if="(chapter.textPosition === 'bottom')">
-          <img alt="Chapter Image" :src="require('@/assets/' + chapter.image_url)"/>
+          <img alt="Chapter Image" :src="getImageUrl(chapter.image_url)"/>
         </div>
         <div class="chapter-info">
           <div class="title">
@@ -28,7 +28,7 @@
           </div>
         </div>
         <div class="chapter-image bottom" v-if="(chapter.textPosition === 'top')">
-          <img alt="Chapter Image" :src="require('@/assets/' + chapter.image_url)"/>
+          <img alt="Chapter Image" :src="getImageUrl(chapter.image_url)"/>
         </div>
       </div>
     </div>
@@ -36,9 +36,14 @@
 </template>
 <script>
 import DataService from '@/services/data.service';
+import { useAssets } from '@/composables/useAssets';
 
 export default {
   name: 'chapters',
+  setup() {
+    const { getImageUrl } = useAssets();
+    return { getImageUrl };
+  },
   data: () => ({
     dataService: new DataService(),
     chapters: []

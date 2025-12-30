@@ -6,24 +6,12 @@
         <div class="lds-facebook"><div></div><div></div><div></div></div>
       </div>
     </div>
-    <div id="main-container" v-images-loaded="loaded">
+    <div id="main-container" ref="mainContainer">
       <div id="nav">
         <TopMenu />
       </div>
       <router-view/>
-      <modal :height="200" name="download-modal">
-        <div class="header">
-          <div class="header-text">
-            File Not Available
-          </div>
-          <div class="close-button" v-on:click="closeModal">x</div>
-        </div>
-        <div class="content">
-          <div class="content-text">
-            This File is Currently Not Available, Coming Soon
-          </div>
-        </div>
-      </modal>
+      <ModalsContainer />
     </div>
   </div>
 </template>
@@ -31,51 +19,80 @@
 <script>
 // @ is an alias to /src
 import TopMenu from '@/components/TopMenu.vue'
-import imagesLoaded from 'vue-images-loaded'
+import { ModalsContainer } from 'vue-final-modal'
+import { ref, onMounted, nextTick } from 'vue'
+import { useEventListener } from '@vueuse/core'
 
 export default {
   components: {
-    TopMenu
+    TopMenu,
+    ModalsContainer
   },
-  data: () => ({
-    allLoaded: false,
-    noScroll: true,
-    loading: true,
-    mounted: false
-  }),
-  directives: {
-    imagesLoaded
-  },
-  mounted() {
-    document.onreadystatechange = () => {
-      if (document.readyState == "complete") {
-        this.mounted = true;
+  setup() {
+    const allLoaded = ref(false)
+    const noScroll = ref(true)
+    const loading = ref(true)
+    const mounted = ref(false)
+    const mainContainer = ref(null)
 
-        // if document is ready and controllers mounted and all images loaded then stop loading
-        if(this.allLoaded) {
-          this.loading = false;
-          this.noScroll = false;
+    const checkImagesLoaded = () => {
+      if (!mainContainer.value) return
+
+      const images = mainContainer.value.querySelectorAll('img')
+      const imagePromises = Array.from(images).map(img => {
+        if (img.complete) return Promise.resolve()
+        return new Promise((resolve) => {
+          img.onload = resolve
+          img.onerror = resolve
+        })
+      })
+
+      Promise.all(imagePromises).then(() => {
+        allLoaded.value = true
+        if (mounted.value) {
+          noScroll.value = false
+          loading.value = false
         }
-      } 
+      })
     }
-  },
-  methods: {
-    loaded() {
-      this.allLoaded = true;
-      // if document is ready and controllers mounted and all images loaded then stop loading
-      if(this.mounted) {
-        this.noScroll = false;
-        this.loading = false;
+
+    onMounted(() => {
+      const checkReady = () => {
+        if (document.readyState === "complete") {
+          mounted.value = true
+
+          nextTick(() => {
+            checkImagesLoaded()
+          })
+
+          if (allLoaded.value) {
+            loading.value = false
+            noScroll.value = false
+          }
+        }
       }
-    },
-    closeModal() {
-      this.$modal.hide('download-modal');
+
+      if (document.readyState === "complete") {
+        checkReady()
+      } else {
+        useEventListener(document, 'readystatechange', checkReady)
+      }
+    })
+
+    return {
+      allLoaded,
+      noScroll,
+      loading,
+      mounted,
+      mainContainer
     }
   }
 }
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css?family=Roboto:300i,400,500,500i,700,700i&display=swap');
+
 :root {
   --var-theme-background: #8cc4c1;
   --var-theme-text-dark: #353966;
@@ -88,8 +105,6 @@ export default {
   --var-theme-button-info-main-text: #ffffff;
   --var-theme-button-info-main-hover-text: #ffffff;
 }
-
-@import url('https://fonts.googleapis.com/css?family=Roboto:300i,400,500,500i,700,700i&display=swap');
 @font-face {
   font-family: 'Montserrat';
   src: url('assets/fonts/montserrat/Montserrat-Regular.ttf');

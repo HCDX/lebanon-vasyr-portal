@@ -5,18 +5,18 @@
       <div class="logos-container">
         <div class="logos-row">
           <div class="organization-logo">
-            <img alt="vasyr logo" :src="require('@/assets/logos/Interagency-logo.png')">
+            <img alt="vasyr logo" :src="interagencyLogo">
           </div>
           <div class="organization-logo">
-            <img alt="vasyr logo" :src="require('@/assets/logos/unhcr-logo.png')">
+            <img alt="vasyr logo" :src="unhcrLogo">
           </div>
         </div>
         <div class="logos-row">
           <div class="organization-logo">
-            <img alt="vasyr logo" :src="require('@/assets/logos/wfp-logo.png')">
+            <img alt="vasyr logo" :src="wfpLogo">
           </div>
           <div class="organization-logo">
-            <img alt="vasyr logo" class="smaller" :src="require('@/assets/logos/unicef-logo.png')">
+            <img alt="vasyr logo" class="smaller" :src="unicefLogo">
           </div>
         </div>
       </div>
@@ -45,6 +45,10 @@
 <script>
 import DataService from '@/services/data.service';
 import helpers from '@/helpers/helpers';
+import interagencyLogo from '@/assets/logos/Interagency-logo.png';
+import unhcrLogo from '@/assets/logos/unhcr-logo.png';
+import wfpLogo from '@/assets/logos/wfp-logo.png';
+import unicefLogo from '@/assets/logos/unicef-logo.png';
 
 export default {
   name: 'main-sec',
@@ -54,7 +58,11 @@ export default {
     introduction: '',
     vasyrDownloadDashboard2024: '',
     vasyrDownloadSummary2024: '',
-    vasyrPresentationDownloadLink2022: ''
+    vasyrPresentationDownloadLink2022: '',
+    interagencyLogo,
+    unhcrLogo,
+    wfpLogo,
+    unicefLogo
   }),
   mounted() {
     this.$gtag.event('site_visit');
@@ -76,9 +84,6 @@ export default {
       this.$gtag.event('file_download_clicked', {
         file_name: 'VASyR 2024 Dashboard.pdf',
       });
-    },
-    getImgUrl(img) {
-      return require(img);
     },
     mouseMove(element) {
       var home = document.getElementById("main");
