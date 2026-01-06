@@ -19,8 +19,8 @@
           </div>
           <div class="buttons">
             <div class="dropdown">
-                <div class="row" style="margin: 0; width: 100%;">
-                  <div class="col col-4" style="padding: 1px;" v-for="(version, index) in chapter.versions" v-bind:key="index">
+                <div class="row justify-content-center" style="margin: 0; width: 100%;">
+                  <div class="col-auto" style="padding: 1px;" v-for="(version, index) in chapter.versions" v-bind:key="index">
                     <a v-on:click="trackDownload(chapter, version.year)" class="dropdown-item button-custom" :href="version.download_url" target="_blank" download>{{version.year}}</a>
                   </div>
                 </div>
