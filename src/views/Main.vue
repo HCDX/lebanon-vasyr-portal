@@ -32,11 +32,11 @@
         </div>
       </div>
       <div class="download-button">
-        <a v-on:click="trackDownload()" :href="this.vasyrDownloadDashboard2024" v-bind:year="this.vasyrDownloadDashboard2024" target="_blank" class="btn btn-info-main" style="font-weight: bold;" download>
-          VASyR 2024 Dashboard
+        <a v-on:click="trackDownload()" :href="this.vasyrDownloadDashboard" v-bind:year="this.vasyrDownloadDashboard" target="_blank" class="btn btn-info-main" style="font-weight: bold;" download>
+          VASyR {{currentYear}} Dashboard
         </a>
-        <a v-on:click="trackDownload()" :href="this.vasyrDownloadSummary2024" v-bind:year="this.vasyrDownloadSummary2024" target="_blank" class="btn btn-info-main" style="font-weight: bold;" download>
-          Executive Summary 2024
+        <a v-on:click="trackDownload()" :href="this.vasyrDownloadSummary" v-bind:year="this.vasyrDownloadSummary" target="_blank" class="btn btn-info-main" style="font-weight: bold;" download>
+          Executive Summary {{currentYear}}
         </a>
       </div>
     </div>
@@ -56,20 +56,21 @@ export default {
     dataService: new DataService(),
     logos: [],
     introduction: '',
-    vasyrDownloadDashboard2024: '',
-    vasyrDownloadSummary2024: '',
+    vasyrDownloadDashboard: '',
+    vasyrDownloadSummary: '',
     vasyrPresentationDownloadLink2022: '',
     interagencyLogo,
     unhcrLogo,
     wfpLogo,
-    unicefLogo
+    unicefLogo,
+    currentYear: '2025'
   }),
   mounted() {
     this.$gtag.event('site_visit');
     this.introduction = this.dataService.getHomeIntro();
-    this.vasyrDownloadDashboard2024 = this.dataService.getVasyrDownloadLink('2024-dashboard');
-    this.vasyrDownloadSummary2024 = this.dataService.getVasyrDownloadLink('2024-summary');
-    // this.vasyrPresentationDownloadLink2022 = this.dataService.getVasyrPresentationLink('2022');
+    this.vasyrDownloadDashboard = this.dataService.getVasyrDownloadLink('2025', 'dashboard');
+    this.vasyrDownloadSummary = this.dataService.getVasyrDownloadLink('2025', 'summary');
+
     let main = document.getElementById("main");
 
     if(!helpers.isMobile.any()) {
