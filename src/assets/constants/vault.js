@@ -126,6 +126,13 @@ const VAULT = [
         download_link: '/vasyr/files/demographics/De18.xlsx'
     },
     {
+        id: 'Demographics-2023',
+        sector: 'Demographics',
+        indicator: 'demographics overall dataset 2023',
+        year: '2023',
+        download_link: '/vasyr/files/demographics/Demographics 2023.xlsx'
+    },
+    {
         id: 'EC1',
         sector: 'Economic Vulnerability',
         indicator: '% of HHs who borrowed money in the past three months along with reason for borrowing and source',
@@ -1034,6 +1041,48 @@ const VAULT = [
         indicator: "School attendance rate of children with disabilities by age (15-17 years old) and gender",
         year: "2019",
         download_link: "/vasyr/files/child_protection/Vault_CP_ViolentDiscipline.xlsx"
+    },
+    {
+        id: "ChildProtection-2023-ChildDiscipline-XLSX",
+        sector: "Child Protection",
+        indicator: "Child Discipline VASYR 2023 Results",
+        year: "2023",
+        download_link: "/vasyr/files/child_protection/2023-08-20 - Child Discipline 2023.xlsx"
+    },
+    {
+        id: "ChildProtection-2023-ChildLabour-XLSX",
+        sector: "Child Protection",
+        indicator: "Child Labour VASYR 2023 Results",
+        year: "2023",
+        download_link: "/vasyr/files/child_protection/2023-08-20 - Child Labour 2023.xlsx"
+    },
+    {
+        id: "ChildProtection-2023-ChildMarriage-XLSX",
+        sector: "Child Protection",
+        indicator: "Child Marriage VASYR 2023 Results",
+        year: "2023",
+        download_link: "/vasyr/files/child_protection/2023-08-20 - Child Marriage.xlsx"
+    },
+    {
+        id: "ChildProtection-2023-ChildDiscipline-SPS",
+        sector: "Child Protection",
+        indicator: "Child Discipline VASYR 2023 Syntax",
+        year: "2023",
+        download_link: "/vasyr/files/child_protection/2023-09-20 - Child Discipline 2023.sps"
+    },
+    {
+        id: "ChildProtection-2023-ChildLabour-SPS",
+        sector: "Child Protection",
+        indicator: "Child Labour VASYR 2023 Syntax",
+        year: "2023",
+        download_link: "/vasyr/files/child_protection/2023-09-20 - Child Labour 2023.sps"
+    },
+    {
+        id: "ChildProtection-2023-ChildMarriage-SPS",
+        sector: "Child Protection",
+        indicator: "Child Marriage VASYR 2023 Syntax",
+        year: "2023",
+        download_link: "/vasyr/files/child_protection/2023-09-20 - Child Marriage 2023.sps"
     },
     {
         id: "DE2019001",
@@ -2184,6 +2233,27 @@ const VAULT = [
         download_link: "/vasyr/files/education/Vault_EducationYouth.xlsx"
     },
     {
+        id: "Education-2023-Education-XLSX",
+        sector: "Education",
+        indicator: "Education VASYR 2023 Results",
+        year: "2023",
+        download_link: "/vasyr/files/education/2023-08-20 - Education 2023.xlsx"
+    },
+    {
+        id: "Education-2023-Education-SPS",
+        sector: "Education",
+        indicator: "Education VASYR 2023 Syntax",
+        year: "2023",
+        download_link: "/vasyr/files/education/2023-09-20 - Education 2023v2.sps"
+    },
+    {
+        id: "Education-2023-EducationUpdated-XLSX",
+        sector: "Education",
+        indicator: "Education VASYR 2023 Results",
+        year: "2023",
+        download_link: "/vasyr/files/education/2023-12-08 - Education 2023.xlsx"
+    },
+    {
         id: "EX2019001",
         sector: "Expenditure",
         indicator: "Household Expenditures",
@@ -2903,6 +2973,20 @@ const VAULT = [
         indicator: "Reduced Coping Strategy Index",
         year: "2019",
         download_link: "/vasyr/files/food_security/Vault_foodsecurity_foodconsumptionscorenutrition.xlsx"
+    },
+    {
+        id: "Nutrition-2023-IYCF-XLSX",
+        sector: "Nutrition",
+        indicator: "IYCF VASYR 2023 Results",
+        year: "2023",
+        download_link: "/vasyr/files/food_security/2023-08-22 - IYCF 2023.xlsx"
+    },
+    {
+        id: "Nutrition-2023-IYCF-SPS",
+        sector: "Nutrition",
+        indicator: "IYCF VASYR 2023 Syntax",
+        year: "2023",
+        download_link: "/vasyr/files/food_security/2023-09-20 - IYCF 2023.sps"
     },
     {
         id: "HE2019001",
@@ -3638,6 +3722,41 @@ const VAULT = [
         indicator: "Percent of individuals who had More than one job",
         year: "2019",
         download_link: "/vasyr/files/fs_livelihoods_economic/Vault_Sectors Individual.xlsx"
+    },
+    {
+        id: "Livelihoods-2023-Employment-XLSX",
+        sector: "Livelihoods",
+        indicator: "Livelihoods Employment",
+        year: "2023",
+        download_link: "/vasyr/files/fs_livelihoods_economic/Livelihoods_employment.xlsx"
+    },
+    {
+        id: "Livelihoods-2023-Income-XLSX",
+        sector: "Livelihoods",
+        indicator: "Livelihoods Income",
+        year: "2023",
+        download_link: "/vasyr/files/fs_livelihoods_economic/Livelihoods_Income.xlsx"
+    },
+    {
+        id: "Livelihoods-2023-MainIncome-XLSX",
+        sector: "Livelihoods",
+        indicator: "Livelihoods Main Source of Income",
+        year: "2023",
+        download_link: "/vasyr/files/fs_livelihoods_economic/Livelihoods_main source of income.xlsx"
+    },
+    {
+        id: "Livelihoods-2023-ThreeIncomeSources-XLSX",
+        sector: "Livelihoods",
+        indicator: "Livelihoods Three Main Income Sources",
+        year: "2023",
+        download_link: "/vasyr/files/fs_livelihoods_economic/Livelihoods_three main income sources.xlsx"
+    },
+    {
+        id: "Livelihoods-2023-Worksectors-XLSX",
+        sector: "Livelihoods",
+        indicator: "Livelihoods Work Sectors (Individual Data)",
+        year: "2023",
+        download_link: "/vasyr/files/fs_livelihoods_economic/Livelihoods_worksectors- Individual data.xlsx"
     },
     {
         id: "PR2019001",
@@ -5243,6 +5362,48 @@ const VAULT = [
         download_link: "/vasyr/files/wash/Vault_Water.xlsx"
     },
     {
+        id: "WASH-2023-Sanitation-XLSX",
+        sector: "WASH",
+        indicator: "WASH Sanitation VASYR 2023 Results",
+        year: "2023",
+        download_link: "/vasyr/files/wash/2023-09-05 - WASH 2023_Sanitation.xlsx"
+    },
+    {
+        id: "WASH-2023-Water-XLSX",
+        sector: "WASH",
+        indicator: "WASH Water VASYR 2023 Results",
+        year: "2023",
+        download_link: "/vasyr/files/wash/2023-09-22 - WASH 2023_Water.xlsx"
+    },
+    {
+        id: "WASH-2023-Hygiene-XLSX",
+        sector: "WASH",
+        indicator: "WASH Hygiene VASYR 2023 Results",
+        year: "2023",
+        download_link: "/vasyr/files/wash/2023-12-08 - VASyR-Hygiene.xlsx"
+    },
+    {
+        id: "WASH-2023-Sanitation-SPS",
+        sector: "WASH",
+        indicator: "WASH Sanitation VASYR 2023 Syntax",
+        year: "2023",
+        download_link: "/vasyr/files/wash/2023-09-20 - Santitation.sps"
+    },
+    {
+        id: "WASH-2023-WashFinal-SPS",
+        sector: "WASH",
+        indicator: "WASH Final VASYR 2023 Syntax",
+        year: "2023",
+        download_link: "/vasyr/files/wash/2023-09-20 - VASyR-2023_Washfinal.sps"
+    },
+    {
+        id: "WASH-2023-WASH-SPS",
+        sector: "WASH",
+        indicator: "WASH",
+        year: "2023",
+        download_link: "/vasyr/files/wash/WASH_23.sps"
+    },
+    {
         id: "YO2019001",
         sector: "Youth",
         indicator: "% Syrian youth aged 15-24 who are not employed, not in education, and not attending any training (NEET)",
@@ -5705,6 +5866,41 @@ const VAULT = [
         download_link: "/vasyr/files/energy/Energy_VASYR2020.xlsx"
     },
     {
+        id: "Energy-2023-01",
+        sector: "Energy",
+        indicator: "Energy VASYR 2023 Results",
+        year: "2023",
+        download_link: "/vasyr/files/energy/Energy_VASYR2023.Results.V1.xlsx"
+    },
+    {
+        id: "Energy-2023-02",
+        sector: "Energy",
+        indicator: "Energy VASYR 2023 Results",
+        year: "2023",
+        download_link: "/vasyr/files/energy/Energy_VASYR2023.Results.V2.xlsx"
+    },
+    {
+        id: "Energy-2023-03",
+        sector: "Energy",
+        indicator: "Energy VASYR 2023 Results",
+        year: "2023",
+        download_link: "/vasyr/files/energy/2. Energy_2_Global_W 2023.sps"
+    },
+    {
+        id: "Energy-2023-04",
+        sector: "Energy",
+        indicator: "Energy VASYR 2023 Results",
+        year: "2023",
+        download_link: "/vasyr/files/energy/1. Energy_1_Global_W 2023.sps"
+    },
+    {
+        id: "Energy-2023-Electricity-SPS",
+        sector: "Energy",
+        indicator: "Electricity Expenditures",
+        year: "2023",
+        download_link: "/vasyr/files/energy/Electricity expenditures 2023.sps"
+    },
+    {
         id: "He2020001",
         sector: "Health",
         indicator: "Percent of households that required primary health care in the last 6 months",
@@ -5843,6 +6039,34 @@ const VAULT = [
         indicator: "Place of birth for those born in Lebanon",
         year: "2020",
         download_link: "/vasyr/files/health/Health VASyR 2020 Vault.xlsx"
+    },
+    {
+        id: "Health-2023-01",
+        sector: "Health",
+        indicator: "Health VASYR 2023 Results",
+        year: "2020",
+        download_link: "/vasyr/files/health/Health 2023-R1.xlsx"
+    },
+    {
+        id: "Health-2023-02",
+        sector: "Health",
+        indicator: "Health VASYR 2023 Results",
+        year: "2020",
+        download_link: "/vasyr/files/health/Health_Child_scik.sps"
+    },
+    {
+        id: "Health-2023-03",
+        sector: "Health",
+        indicator: "Health VASYR 2023 Results",
+        year: "2020",
+        download_link: "/vasyr/files/health/Health VASyR 2020 Vault.xlsx"
+    },
+    {
+        id: "Health-2023-ECMEN-SPS",
+        sector: "Health",
+        indicator: "ECMEN",
+        year: "2023",
+        download_link: "/vasyr/files/health/ECMEN_2023.sps"
     },
     {
         id: "Pr2020001",
@@ -6293,6 +6517,20 @@ const VAULT = [
         download_link: "/vasyr/files/protection/Protection_VASyR_2020_VAULT.xlsx"
     },
     {
+        id: "Protection-2023-01",
+        sector: "Protection",
+        indicator: "Protection VASYR 2023 Results",
+        year: "2023",
+        download_link: "/vasyr/files/protection/Protection VASyR 2023 xtable tabulation.xlsx"
+    },
+    {
+        id: "Protection-2023-02",
+        sector: "Protection",
+        indicator: "Protection VASYR 2023 Results",
+        year: "2023",
+        download_link: "/vasyr/files/protection/Protection VASyR 2023results_Oct05.xlsx"
+    },
+    {
         id: "Sh2020001",
         sector: "Shelter",
         indicator: "Monthly average and median Rent in LBP",
@@ -6445,6 +6683,20 @@ const VAULT = [
         indicator: "Percentage of households sharing toilets and mean number of people sharing toilets",
         year: "2020",
         download_link: "/vasyr/files/shelter/Shelter_VASYR2020.xlsx"
+    },
+    {
+        id: "Shelter-2023-01",
+        sector: "Shelter",
+        indicator: "Shelter VASYR 2023 Results",
+        year: "2023",
+        download_link: "/vasyr/files/shelter/Shelter_VASYR2023.Indicators.V5.xlsx"
+    },
+    {
+        id: "Shelter-2023-02",
+        sector: "Shelter",
+        indicator: "Shelter VASYR 2023 Results",
+        year: "2023",
+        download_link: "/vasyr/files/shelter/Shelter_VASYR2023.Indicators.V7.xlsx"
     },
     {
         id: "Ex2020001",
@@ -7201,6 +7453,27 @@ const VAULT = [
         indicator: "Food related coping strategies: Sent Household Members to Eat Elsewhere",
         year: "2020",
         download_link: "/vasyr/files/food_security/Vault_Coping_2020.xlsx"
+    },
+    {
+        id: "CopingStrategies-2023-Livelihood-XLSX",
+        sector: "Food Security",
+        indicator: "Livelihood Coping Strategies",
+        year: "2023",
+        download_link: "/vasyr/files/food_security/Coping Strategies_Livelihood Coping Strategies.xlsx"
+    },
+    {
+        id: "CopingStrategies-2023-Reduced-XLSX",
+        sector: "Food Security",
+        indicator: "Reduced Coping Strategies",
+        year: "2023",
+        download_link: "/vasyr/files/food_security/Coping Strategies_Reduced Coping Strategies.xlsx"
+    },
+    {
+        id: "CopingStrategies-2023-rCSI-SPS",
+        sector: "Food Security",
+        indicator: "Reduced Coping Strategies Index (rCSI)",
+        year: "2023",
+        download_link: "/vasyr/files/food_security/rCSI_2023.sps"
     },
     {
         id: "co2020009",
@@ -8175,6 +8448,13 @@ const VAULT = [
         year: "2022", 
         download_link: "/vasyr/files/vasyr_vault_2022/Demographics + WGQ VASYR VAULT 2022.xlsx"
     },
+    {
+        id: "Demographics-2023-ADCS-SPS",
+        sector: "Demographics",
+        indicator: "ADCS",
+        year: "2023",
+        download_link: "/vasyr/files/demographics/ADCS_23.sps"
+    },
     { 
         id: "Disability-100031", 
         sector: "Disability", 
@@ -8623,6 +8903,41 @@ const VAULT = [
         year: "2022", 
         download_link: "/vasyr/files/vasyr_vault_2022/Econ_Vuln_2_debt_Final_2022 - V2.xlsx"
     },
+    {
+        id: "EconomicVulnerability-2023-Debt-XLSX",
+        sector: "Economic Vulnerability",
+        indicator: "Economic Vulnerability – Debt",
+        year: "2023",
+        download_link: "/vasyr/files/economic_vulnerability/Economic Vulnerability_debt.xlsx"
+    },
+    {
+        id: "EconomicVulnerability-2023-ExpenditureShares-XLSX",
+        sector: "Economic Vulnerability",
+        indicator: "Economic Vulnerability – Expenditure Shares",
+        year: "2023",
+        download_link: "/vasyr/files/economic_vulnerability/Economic Vulnerability_Expenditure shares.xlsx"
+    },
+    {
+        id: "EconomicVulnerability-2023-SMEB-XLSX",
+        sector: "Economic Vulnerability",
+        indicator: "Economic Vulnerability – SMEB",
+        year: "2023",
+        download_link: "/vasyr/files/economic_vulnerability/Economic Vulnerability_SMEB.xlsx"
+    },
+    {
+        id: "EconomicVulnerability-2023-SMEB-SPS",
+        sector: "Economic Vulnerability",
+        indicator: "SMEB Syntax",
+        year: "2023",
+        download_link: "/vasyr/files/economic_vulnerability/Below_SMEB_23 (1).sps"
+    },
+    {
+        id: "EconomicVulnerability-2023-Debt-SPS",
+        sector: "Economic Vulnerability",
+        indicator: "Debt Syntax",
+        year: "2023",
+        download_link: "/vasyr/files/economic_vulnerability/Syntax debt.sps"
+    },
     { 
         id: "Energy-400001", 
         sector: "Energy", 
@@ -8847,7 +9162,56 @@ const VAULT = [
         year: "2022", 
         download_link: "/vasyr/files/vasyr_vault_2022/Food_Security_Final_2022.xlsx"
     },
-{ 
+    {
+        id: "FoodSecurity-2023-FoodSecurity-XLSX",
+        sector: "Food Security",
+        indicator: "Food Security",
+        year: "2023",
+        download_link: "/vasyr/files/food_security/Food Security_Food security.xlsx"
+    },
+    {
+        id: "FoodSecurity-2023-FCS-XLSX",
+        sector: "Food Security",
+        indicator: "Food Consumption Score",
+        year: "2023",
+        download_link: "/vasyr/files/food_security/Food Security_Food consumption score.xlsx"
+    },
+    {
+        id: "FoodSecurity-2023-FCS-Nutrition-XLSX",
+        sector: "Food Security",
+        indicator: "Food Consumption Score (Nutrition)",
+        year: "2023",
+        download_link: "/vasyr/files/food_security/Food Security_Food consumption score Nutrition.xlsx"
+    },
+    {
+        id: "FoodSecurity-2023-FCS-SPS",
+        sector: "Food Security",
+        indicator: "Food Consumption Score Syntax",
+        year: "2023",
+        download_link: "/vasyr/files/food_security/FCS_23.sps"
+    },
+    {
+        id: "FoodSecurity-2023-FCS-N-SPS",
+        sector: "Food Security",
+        indicator: "Food Consumption Score Nutrition Syntax",
+        year: "2023",
+        download_link: "/vasyr/files/food_security/FCS_N_23.sps"
+    },
+    {
+        id: "FoodSecurity-2023-FoodExpenditure-SPS",
+        sector: "Food Security",
+        indicator: "Food Expenditure",
+        year: "2023",
+        download_link: "/vasyr/files/food_security/FOOD_EXPENDITURE_23.sps"
+    },
+    {
+        id: "FoodSecurity-2023-FS-CARI-FES-SPS",
+        sector: "Food Security",
+        indicator: "FS CARI FES",
+        year: "2023",
+        download_link: "/vasyr/files/food_security/FS_CARI_FES_2023.sps"
+    },
+    { 
         id: "Health-800001", 
         sector: "Health", 
         indicator: "Percent of individuals that required health care in the last 3 months", 
@@ -9315,6 +9679,20 @@ const VAULT = [
         indicator: "Reasons of incident with the landlord", 
         year: "2022", 
         download_link: "/vasyr/files/vasyr_vault_2022/Shelter_VASYR2022 VAULT.xlsx"
+    },
+    {
+        id: "Shelter-2023-NFI-SPS",
+        sector: "Shelter / NFI",
+        indicator: "Non-Food Items",
+        year: "2023",
+        download_link: "/vasyr/files/shelter/NFI 2023.sps"
+    },
+    {
+        id: "Shelter-2023-Rent-SPS",
+        sector: "Shelter / NFI",
+        indicator: "Rent",
+        year: "2023",
+        download_link: "/vasyr/files/shelter/rent 2023.sps"
     },
     { 
         id: "Protection-130001", 
@@ -9835,7 +10213,14 @@ const VAULT = [
         year: "2022", 
         download_link: "/vasyr/files/vasyr_vault_2022/Protection VASyR 2022 VAULT.xlsx"
 
-    }
+    },
+    {
+        id: "AAP-2023-Accountability-XLSX",
+        sector: "AAP",
+        indicator: "Accountability to Affected Populations",
+        year: "2023",
+        download_link: "/vasyr/files/aap/Accountability to Affected Populations_AAP.xlsx"
+    },
 ];
 
 export default {
