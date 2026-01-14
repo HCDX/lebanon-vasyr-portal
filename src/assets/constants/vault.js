@@ -1,612 +1,675 @@
 const VAULT = [
     {
-        id: 'De1',
-        sector: 'Demographics',
-        indicator: 'Average household size',
-        year: '2018',
-        download_link: '/vasyr/files/demographics/De1.xlsx'
+        id: "De1",
+        sector: "Demographics",
+        indicator: "Average household size",
+        year: "2018",
+        download_link: "/vasyr/files/demographics/De1.xlsx"
     },
     {
-        id: 'De2',
-        sector: 'Demographics',
-        indicator: 'Household size (by size categories)',
-        year: '2018',
-        download_link: '/vasyr/files/demographics/De2.xlsx'
+        id: "De2",
+        sector: "Demographics",
+        indicator: "Household size (by size categories)",
+        year: "2018",
+        download_link: "/vasyr/files/demographics/De2.xlsx"
     },
     {
-        id: 'De3',
-        sector: 'Demographics',
-        indicator: 'Head of HH by gender',
-        year: '2018',
-        download_link: '/vasyr/files/demographics/De3.xlsx'
+        id: "De3",
+        sector: "Demographics",
+        indicator: "Head of HH by gender",
+        year: "2018",
+        download_link: "/vasyr/files/demographics/De3.xlsx"
     },
     {
-        id: 'De4',
-        sector: 'Demographics',
-        indicator: '% HHs with a dependency ratio',
-        year: '2018',
-        download_link: '/vasyr/files/demographics/De4.xlsx'
+        id: "De4",
+        sector: "Demographics",
+        indicator: "% HHs with a dependency ratio",
+        year: "2018",
+        download_link: "/vasyr/files/demographics/De4.xlsx"
     },
     {
-        id: 'De5',
-        sector: 'Demographics',
-        indicator: '% HHs who reported all household members arriving to Lebanon at the same time',
-        year: '2018',
-        download_link: '/vasyr/files/demographics/De5.xlsx'
+        id: "De5",
+        sector: "Demographics",
+        indicator: "% HHs who reported all household members arriving to Lebanon at the same time",
+        year: "2018",
+        download_link: "/vasyr/files/demographics/De5.xlsx"
     },
     {
-        id: 'De6',
-        sector: 'Demographics',
-        indicator: 'Average dependency ratio',
-        year: '2018',
-        download_link: '/vasyr/files/demographics/De6.xlsx'
+        id: "De6",
+        sector: "Demographics",
+        indicator: "Average dependency ratio",
+        year: "2018",
+        download_link: "/vasyr/files/demographics/De6.xlsx"
     },
     {
-        id: 'De7',
-        sector: 'Demographics',
-        indicator: 'Gender ',
-        year: '2018',
-        download_link: '/vasyr/files/demographics/De7.xlsx'
+        id: "De7",
+        sector: "Demographics",
+        indicator: "Gender ",
+        year: "2018",
+        download_link: "/vasyr/files/demographics/De7.xlsx"
     },
     {
-        id: 'De8',
-        sector: 'Demographics',
-        indicator: '% HHs with 100% dependents',
-        year: '2018',
-        download_link: '/vasyr/files/demographics/De8.xlsx'
+        id: "De8",
+        sector: "Demographics",
+        indicator: "% HHs with 100% dependents",
+        year: "2018",
+        download_link: "/vasyr/files/demographics/De8.xlsx"
     },
     {
-        id: 'De9',
-        sector: 'Demographics',
-        indicator: 'Average age range of interviewees',
-        year: '2018',
-        download_link: '/vasyr/files/demographics/De9.xlsx'
+        id: "De9",
+        sector: "Demographics",
+        indicator: "Average age range of interviewees",
+        year: "2018",
+        download_link: "/vasyr/files/demographics/De9.xlsx"
     },
     {
-        id: 'De10',
-        sector: 'Demographics',
-        indicator: '% Child headed households with dependents ',
-        year: '2018',
-        download_link: '/vasyr/files/demographics/De10.xlsx'
+        id: "De10",
+        sector: "Demographics",
+        indicator: "% Child headed households with dependents ",
+        year: "2018",
+        download_link: "/vasyr/files/demographics/De10.xlsx"
     },
     {
-        id: 'De11',
-        sector: 'Demographics',
-        indicator: '% HH with child head of household (<15 years old)',
-        year: '2018',
-        download_link: '/vasyr/files/demographics/De11.xlsx'
+        id: "De11",
+        sector: "Demographics",
+        indicator: "% HH with child head of household (<15 years old)",
+        year: "2018",
+        download_link: "/vasyr/files/demographics/De11.xlsx"
     },
     {
-        id: 'De12',
-        sector: 'Demographics',
-        indicator: '% HH with child head of household (<18 years old)',
-        year: '2018',
-        download_link: '/vasyr/files/demographics/De12.xlsx'
+        id: "De12",
+        sector: "Demographics",
+        indicator: "% HH with child head of household (<18 years old)",
+        year: "2018",
+        download_link: "/vasyr/files/demographics/De12.xlsx"
     },
     {
-        id: 'De13',
-        sector: 'Demographics',
-        indicator: '% of child headed households with head of household between 15 and 18 years ',
-        year: '2018',
-        download_link: '/vasyr/files/demographics/De13.xlsx'
+        id: "De13",
+        sector: "Demographics",
+        indicator: "% of child headed households with head of household between 15 and 18 years ",
+        year: "2018",
+        download_link: "/vasyr/files/demographics/De13.xlsx"
     },
     {
-        id: 'De14',
-        sector: 'Demographics',
-        indicator: '% of HH with elderly head of household',
-        year: '2018',
-        download_link: '/vasyr/files/demographics/De14.xlsx'
+        id: "De14",
+        sector: "Demographics",
+        indicator: "% of HH with elderly head of household",
+        year: "2018",
+        download_link: "/vasyr/files/demographics/De14.xlsx"
     },
     {
-        id: 'De15',
-        sector: 'Demographics',
-        indicator: '% of HH with female head of household',
-        year: '2018',
-        download_link: '/vasyr/files/demographics/De15.xlsx'
+        id: "De15",
+        sector: "Demographics",
+        indicator: "% of HH with female head of household",
+        year: "2018",
+        download_link: "/vasyr/files/demographics/De15.xlsx"
     },
     {
-        id: 'De16',
-        sector: 'Demographics',
-        indicator: '% of HH with male head of household',
-        year: '2018',
-        download_link: '/vasyr/files/demographics/De16.xlsx'
+        id: "De16",
+        sector: "Demographics",
+        indicator: "% of HH with male head of household",
+        year: "2018",
+        download_link: "/vasyr/files/demographics/De16.xlsx"
     },
     {
-        id: 'De17',
-        sector: 'Demographics',
-        indicator: '% of HHs with dependents',
-        year: '2018',
-        download_link: '/vasyr/files/demographics/De17.xlsx'
+        id: "De17",
+        sector: "Demographics",
+        indicator: "% of HHs with dependents",
+        year: "2018",
+        download_link: "/vasyr/files/demographics/De17.xlsx"
     },
     {
-        id: 'De18',
-        sector: 'Demographics',
-        indicator: '% of HH with at least one member with specific needs',
-        year: '2018',
-        download_link: '/vasyr/files/demographics/De18.xlsx'
+        id: "De18",
+        sector: "Demographics",
+        indicator: "% of HH with at least one member with specific needs",
+        year: "2018",
+        download_link: "/vasyr/files/demographics/De18.xlsx"
     },
     {
-        id: 'Demographics-2023',
-        sector: 'Demographics',
-        indicator: 'demographics overall dataset 2023',
-        year: '2023',
-        download_link: '/vasyr/files/demographics/Demographics 2023.xlsx'
+        id: "Demographics-2023",
+        sector: "Demographics",
+        indicator: "demographics overall dataset 2023",
+        year: "2023",
+        download_link: "/vasyr/files/demographics/Demographics 2023.xlsx"
     },
     {
-        id: 'EC1',
-        sector: 'Economic Vulnerability',
-        indicator: '% of HHs who borrowed money in the past three months along with reason for borrowing and source',
-        year: '2018',
-        download_link: '/vasyr/files/economic_vulnerability/EC1.xlsx'
+        id: "EC1",
+        sector: "Economic Vulnerability",
+        indicator: "% of HHs who borrowed money in the past three months along with reason for borrowing and source",
+        year: "2018",
+        download_link: "/vasyr/files/economic_vulnerability/EC1.xlsx"
     },
     {
-        id: 'EC2',
-        sector: 'Economic Vulnerability',
-        indicator: 'Debt per Household & per capita ',
-        year: '2018',
-        download_link: '/vasyr/files/economic_vulnerability/EC2.xlsx'
+        id: "EC2",
+        sector: "Economic Vulnerability",
+        indicator: "Debt per Household & per capita ",
+        year: "2018",
+        download_link: "/vasyr/files/economic_vulnerability/EC2.xlsx"
     },
     {
-        id: 'EC3',
-        sector: 'Economic Vulnerability',
-        indicator: 'Household MEB/SMEB Categories',
-        year: '2018',
-        download_link: '/vasyr/files/economic_vulnerability/EC3.xlsx'
+        id: "EC3",
+        sector: "Economic Vulnerability",
+        indicator: "Household MEB/SMEB Categories",
+        year: "2018",
+        download_link: "/vasyr/files/economic_vulnerability/EC3.xlsx"
     },
     {
-        id: 'EC4',
-        sector: 'Economic Vulnerability',
-        indicator: 'Poverty Line per Capita per Day ',
-        year: '2018',
-        download_link: '/vasyr/files/economic_vulnerability/EC4.xlsx'
+        id: "EC4",
+        sector: "Economic Vulnerability",
+        indicator: "Poverty Line per Capita per Day ",
+        year: "2018",
+        download_link: "/vasyr/files/economic_vulnerability/EC4.xlsx"
     },
     {
-        id: 'EC5',
-        sector: 'Economic Vulnerability',
-        indicator: '% of HHs by debt categories',
-        year: '2018',
-        download_link: '/vasyr/files/economic_vulnerability/EC5.xlsx'
+        id: "EC5",
+        sector: "Economic Vulnerability",
+        indicator: "% of HHs by debt categories",
+        year: "2018",
+        download_link: "/vasyr/files/economic_vulnerability/EC5.xlsx"
     },
     {
-        id: 'CP1',
-        sector: 'Child Protection',
-        indicator: 'Child labour (age 5-17)',
-        year: '2018',
-        download_link: '/vasyr/files/child_protection/CP1.xlsx'
+        id: "CP1",
+        sector: "Child Protection",
+        indicator: "Child labour (age 5-17)",
+        year: "2018",
+        download_link: "/vasyr/files/child_protection/CP1.xlsx"
     },
     {
-        id: 'CP2',
-        sector: 'Child Protection',
-        indicator: 'Child Labour by type of labour (economic activities vs. household chores)',
-        year: '2018',
-        download_link: '/vasyr/files/child_protection/CP2.xlsx'
+        id: "CP2",
+        sector: "Child Protection",
+        indicator: "Child Labour by type of labour (economic activities vs. household chores)",
+        year: "2018",
+        download_link: "/vasyr/files/child_protection/CP2.xlsx"
     },
     {
-        id: 'CP3',
-        sector: 'Child Protection',
-        indicator: 'Children under 18 years old that have experienced at least one form of violent discipline',
-        year: '2018',
-        download_link: '/vasyr/files/child_protection/CP3.xlsx'
+        id: "CP3",
+        sector: "Child Protection",
+        indicator: "Children under 18 years old that have experienced at least one form of violent discipline",
+        year: "2018",
+        download_link: "/vasyr/files/child_protection/CP3.xlsx"
     },
     {
-        id: 'CP4',
-        sector: 'Child Protection',
-        indicator: 'Women age 15-19 years currently married',
-        year: '2018',
-        download_link: '/vasyr/files/child_protection/CP4.xlsx'
+        id: "CP4",
+        sector: "Child Protection",
+        indicator: "Women age 15-19 years currently married",
+        year: "2018",
+        download_link: "/vasyr/files/child_protection/CP4.xlsx"
     },
     {
-        id: 'HE1',
-        sector: 'Health',
-        indicator: '% HH that required primary health care',
-        year: '2018',
-        download_link: '/vasyr/files/health/HE1.xlsx'
+        id: "ChildProtection-2025-ChildHealth-XLSX",
+        sector: "Child Protection",
+        indicator: "Child Health VASYR 2025",
+        year: "2025",
+        download_link: "/vasyr/files/child_protection/2025_VASyR-Child Health.xlsx"
     },
     {
-        id: 'HE2',
-        sector: 'Health',
-        indicator: '% HH that received the required primary health care asisstance',
-        year: '2018',
-        download_link: '/vasyr/files/health/HE2.xlsx'
+        id: "ChildProtection-2025-ChildProtection-XLSX",
+        sector: "Child Protection",
+        indicator: "Child Protection VASYR 2025",
+        year: "2025",
+        download_link: "/vasyr/files/child_protection/2025_VASyR-Child_Protection.xlsx"
     },
     {
-        id: 'HE3',
-        sector: 'Health',
-        indicator: 'Method of accessing primary healthcare',
-        year: '2018',
-        download_link: '/vasyr/files/health/HE3.xlsx'
+        id: "HE1",
+        sector: "Health",
+        indicator: "% HH that required primary health care",
+        year: "2018",
+        download_link: "/vasyr/files/health/HE1.xlsx"
     },
     {
-        id: 'HE4',
-        sector: 'Health',
-        indicator: '% of households that required hospital health care',
-        year: '2018',
-        download_link: '/vasyr/files/health/HE4.xlsx'
+        id: "HE2",
+        sector: "Health",
+        indicator: "% HH that received the required primary health care asisstance",
+        year: "2018",
+        download_link: "/vasyr/files/health/HE2.xlsx"
     },
     {
-        id: 'HE5',
-        sector: 'Health',
-        indicator: '% HH that received the required hospital health care',
-        year: '2018',
-        download_link: '/vasyr/files/health/HE5.xlsx'
+        id: "HE3",
+        sector: "Health",
+        indicator: "Method of accessing primary healthcare",
+        year: "2018",
+        download_link: "/vasyr/files/health/HE3.xlsx"
     },
     {
-        id: 'HE6',
-        sector: 'Health',
-        indicator: '% HH that know where to access medical services/assistance in case of emergency',
-        year: '2018',
-        download_link: '/vasyr/files/health/HE6.xlsx'
+        id: "HE4",
+        sector: "Health",
+        indicator: "% of households that required hospital health care",
+        year: "2018",
+        download_link: "/vasyr/files/health/HE4.xlsx"
     },
     {
-        id: 'FO1',
-        sector: 'Food Security',
-        indicator: 'Food Consumption (diet, weekly consumption, score, number of meals consumed)',
-        year: '2018',
-        download_link: '/vasyr/files/food_security/FO1.xlsx'
+        id: "HE5",
+        sector: "Health",
+        indicator: "% HH that received the required hospital health care",
+        year: "2018",
+        download_link: "/vasyr/files/health/HE5.xlsx"
     },
     {
-        id: 'FO2',
-        sector: 'Food Security',
-        indicator: 'Vitamin, Iron, Protetin Consumption',
-        year: '2018',
-        download_link: '/vasyr/files/food_security/FO2.xlsx'
+        id: "HE6",
+        sector: "Health",
+        indicator: "% HH that know where to access medical services/assistance in case of emergency",
+        year: "2018",
+        download_link: "/vasyr/files/health/HE6.xlsx"
     },
     {
-        id: 'FO3',
-        sector: 'Food Security',
-        indicator: 'Expenditure share by category',
-        year: '2018',
-        download_link: '/vasyr/files/food_security/FO3.xlsx'
+        id: "FO1",
+        sector: "Food Security",
+        indicator: "Food Consumption (diet, weekly consumption, score, number of meals consumed)",
+        year: "2018",
+        download_link: "/vasyr/files/food_security/FO1.xlsx"
     },
     {
-        id: 'FO4',
-        sector: 'Food Security',
-        indicator: 'Food related coping strategies in the last 7 days ',
-        year: '2018',
-        download_link: '/vasyr/files/food_security/FO4.xlsx'
+        id: "FO2",
+        sector: "Food Security",
+        indicator: "Vitamin, Iron, Protetin Consumption",
+        year: "2018",
+        download_link: "/vasyr/files/food_security/FO2.xlsx"
     },
     {
-        id: 'FO5',
-        sector: 'Food Security',
-        indicator: 'Livelihood-related Coping Strategies in the Last 30 Days',
-        year: '2018',
-        download_link: '/vasyr/files/food_security/FO5.xlsx'
+        id: "FO3",
+        sector: "Food Security",
+        indicator: "Expenditure share by category",
+        year: "2018",
+        download_link: "/vasyr/files/food_security/FO3.xlsx"
     },
     {
-        id: 'FO6',
-        sector: 'Food Security',
-        indicator: 'Reduced Coping Strategy Index',
-        year: '2018',
-        download_link: '/vasyr/files/food_security/FO6.xlsx'
+        id: "FO4",
+        sector: "Food Security",
+        indicator: "Food related coping strategies in the last 7 days ",
+        year: "2018",
+        download_link: "/vasyr/files/food_security/FO4.xlsx"
     },
     {
-        id: 'FO7',
-        sector: 'Food Security',
-        indicator: 'Food Security Classification',
-        year: '2018',
-        download_link: '/vasyr/files/food_security/FO7.xlsx'
+        id: "FO5",
+        sector: "Food Security",
+        indicator: "Livelihood-related Coping Strategies in the Last 30 Days",
+        year: "2018",
+        download_link: "/vasyr/files/food_security/FO5.xlsx"
     },
     {
-        id: 'ED1',
-        sector: 'Education',
-        indicator: 'Reasons for not attending school',
-        year: '2018',
-        download_link: '/vasyr/files/education/ED1.xlsx'
+        id: "FO6",
+        sector: "Food Security",
+        indicator: "Reduced Coping Strategy Index",
+        year: "2018",
+        download_link: "/vasyr/files/food_security/FO6.xlsx"
     },
     {
-        id: 'ED2',
-        sector: 'Education',
-        indicator: 'Reasons for disabled children and adolescents not attending school',
-        year: '2018',
-        download_link: '/vasyr/files/education/ED2.xlsx'
+        id: "FO7",
+        sector: "Food Security",
+        indicator: "Food Security Classification",
+        year: "2018",
+        download_link: "/vasyr/files/food_security/FO7.xlsx"
     },
     {
-        id: 'ED3',
-        sector: 'Education',
-        indicator: 'Primary school net attendance ratio (adjusted)',
-        year: '2018',
-        download_link: '/vasyr/files/education/ED3.xlsx'
+        id: "FoodSecurity-2025-FCS-XLSX",
+        sector: "Food Security",
+        indicator: "Food Consumption Score",
+        year: "2025",
+        download_link: "/vasyr/files/food_security/FCS 2025.xlsx"
     },
     {
-        id: 'ED4',
-        sector: 'Education',
-        indicator: 'Lower secondary school net attendance ratio (adjusted)',
-        year: '2018',
-        download_link: '/vasyr/files/education/ED4.xlsx'
+        id: "FoodSecurity-2025-FCS-N-XLSX",
+        sector: "Food Security",
+        indicator: "Food Consumption Score (Nutrition)",
+        year: "2025",
+        download_link: "/vasyr/files/food_security/FCS_N 2025.xlsx"
     },
     {
-        id: 'ED5',
-        sector: 'Education',
-        indicator: 'Not in Education, Employment or Training (NEET)',
-        year: '2018',
-        download_link: '/vasyr/files/education/ED5.xlsx'
+        id: "FoodSecurity-2025-FoodSecurity-XLSX",
+        sector: "Food Security",
+        indicator: "Food Security",
+        year: "2025",
+        download_link: "/vasyr/files/food_security/Food security 2025.xlsx"
     },
     {
-        id: 'ED6',
-        sector: 'Education',
-        indicator: 'Reasons provided by refugee youth respondents aged 15 -18 years for school dropout',
-        year: '2018',
-        download_link: '/vasyr/files/education/ED6.xlsx'
+        id: "FoodSecurity-2025-rCSI-XLSX",
+        sector: "Food Security",
+        indicator: "Reduced Coping Strategies Index",
+        year: "2025",
+        download_link: "/vasyr/files/food_security/rCSI 2025.xlsx"
     },
     {
-        id: 'ED7',
-        sector: 'Education',
-        indicator: 'Reasons provided by refugee youth respondents aged 19 -24 years for school dropout',
-        year: '2018',
-        download_link: '/vasyr/files/education/ED7.xlsx'
+        id: "FoodSecurity-2025-LCSI-XLSX",
+        sector: "Food Security",
+        indicator: "Livelihood Coping Strategies Index",
+        year: "2025",
+        download_link: "/vasyr/files/food_security/LCSI 2025.xlsx"
     },
     {
-        id: 'PR1',
-        sector: 'Protection',
-        indicator: 'Legal residency of individuals above 15 years old',
-        year: '2018',
-        download_link: '/vasyr/files/protection/PR1.xlsx'
+        id: "ED1",
+        sector: "Education",
+        indicator: "Reasons for not attending school",
+        year: "2018",
+        download_link: "/vasyr/files/education/ED1.xlsx"
     },
     {
-        id: 'PR2',
-        sector: 'Protection',
-        indicator: 'Level of birth registration',
-        year: '2018',
-        download_link: '/vasyr/files/protection/PR2.xlsx'
+        id: "ED2",
+        sector: "Education",
+        indicator: "Reasons for disabled children and adolescents not attending school",
+        year: "2018",
+        download_link: "/vasyr/files/education/ED2.xlsx"
     },
     {
-        id: 'PR3',
-        sector: 'Protection',
-        indicator: 'Legal residency at  household level',
-        year: '2018',
-        download_link: '/vasyr/files/protection/PR3.xlsx'
+        id: "ED3",
+        sector: "Education",
+        indicator: "Primary school net attendance ratio (adjusted)",
+        year: "2018",
+        download_link: "/vasyr/files/education/ED3.xlsx"
     },
     {
-        id: 'PR4',
-        sector: 'Protection',
-        indicator: 'Level of marriage documentation for those married in Lebanon',
-        year: '2018',
-        download_link: '/vasyr/files/protection/PR4.xlsx'
+        id: "ED4",
+        sector: "Education",
+        indicator: "Lower secondary school net attendance ratio (adjusted)",
+        year: "2018",
+        download_link: "/vasyr/files/education/ED4.xlsx"
     },
     {
-        id: 'PR5',
-        sector: 'Protection',
-        indicator: '% HHs who received an eviction notice and/or any other threat of removal in the last 6 months and HHs above/below S/MEB',
-        year: '2018',
-        download_link: '/vasyr/files/protection/PR5.xlsx'
+        id: "ED5",
+        sector: "Education",
+        indicator: "Not in Education, Employment or Training (NEET)",
+        year: "2018",
+        download_link: "/vasyr/files/education/ED5.xlsx"
     },
     {
-        id: 'PR6',
-        sector: 'Protection',
-        indicator: '% HHs who received an eviction notice and/or any other threat of removal in the last 6 months and legal residency',
-        year: '2018',
-        download_link: '/vasyr/files/protection/PR6.xlsx'
+        id: "ED6",
+        sector: "Education",
+        indicator: "Reasons provided by refugee youth respondents aged 15 -18 years for school dropout",
+        year: "2018",
+        download_link: "/vasyr/files/education/ED6.xlsx"
     },
     {
-        id: 'PR7',
-        sector: 'Protection',
-        indicator: ' % HHs who received an eviction notice and/or any other threat of removal in the last 6 months and % expenditure on food',
-        year: '2018',
-        download_link: '/vasyr/files/protection/PR7.xlsx'
+        id: "ED7",
+        sector: "Education",
+        indicator: "Reasons provided by refugee youth respondents aged 19 -24 years for school dropout",
+        year: "2018",
+        download_link: "/vasyr/files/education/ED7.xlsx"
     },
     {
-        id: 'PR8',
-        sector: 'Protection',
-        indicator: '% HHs that received an eviction notice or other threat of removal in the past 6 months with type of occupancy',
-        year: '2018',
-        download_link: '/vasyr/files/protection/PR8.xlsx'
+        id: "Education-2025-Education-XLSX",
+        sector: "Education",
+        indicator: "Education VASYR 2025",
+        year: "2025",
+        download_link: "/vasyr/files/education/2025_VASyR-Education.xlsx"
     },
     {
-        id: 'PR9',
-        sector: 'Protection',
-        indicator: '% HHs that received an eviction notice or other threat of removal in the past 6 months with type of housing',
-        year: '2018',
-        download_link: '/vasyr/files/protection/PR9.xlsx'
+        id: "Education-2025-NEET-XLSX",
+        sector: "Education",
+        indicator: "NEET VASYR 2025",
+        year: "2025",
+        download_link: "/vasyr/files/education/2025_VASyR-NEET.xlsx"
     },
     {
-        id: 'PR10',
-        sector: 'Protection',
-        indicator: '% HHs that received an eviction notice or other threat of removal in the past 6 months and HHs adopting specific coping strategies',
-        year: '2018',
-        download_link: '/vasyr/files/protection/PR10.xlsx'
+        id: "PR1",
+        sector: "Protection",
+        indicator: "Legal residency of individuals above 15 years old",
+        year: "2018",
+        download_link: "/vasyr/files/protection/PR1.xlsx"
     },
     {
-        id: 'PR11',
-        sector: 'Protection',
-        indicator: 'Average HH size that received an eviction notice or other threat of removal in the past 6 months',
-        year: '2018',
-        download_link: '/vasyr/files/protection/PR11.xlsx'
+        id: "PR2",
+        sector: "Protection",
+        indicator: "Level of birth registration",
+        year: "2018",
+        download_link: "/vasyr/files/protection/PR2.xlsx"
     },
     {
-        id: 'SH1',
-        sector: 'Shelter',
-        indicator: '% of households with sufficient access to essential household assets',
-        year: '2018',
-        download_link: '/vasyr/files/shelter/SH1.xlsx'
+        id: "PR3",
+        sector: "Protection",
+        indicator: "Legal residency at  household level",
+        year: "2018",
+        download_link: "/vasyr/files/protection/PR3.xlsx"
     },
     {
-        id: 'SH2',
-        sector: 'Shelter',
-        indicator: 'Detailed conditions in surrounding setting, for those in an area with physical security threats',
-        year: '2018',
-        download_link: '/vasyr/files/shelter/SH2.xlsx'
+        id: "PR4",
+        sector: "Protection",
+        indicator: "Level of marriage documentation for those married in Lebanon",
+        year: "2018",
+        download_link: "/vasyr/files/protection/PR4.xlsx"
     },
     {
-        id: 'SH3',
-        sector: 'Shelter',
-        indicator: '% of households in different monthly rent categories',
-        year: '2018',
-        download_link: '/vasyr/files/shelter/SH3.xlsx'
+        id: "PR5",
+        sector: "Protection",
+        indicator: "% HHs who received an eviction notice and/or any other threat of removal in the last 6 months and HHs above/below S/MEB",
+        year: "2018",
+        download_link: "/vasyr/files/protection/PR5.xlsx"
     },
     {
-        id: 'SH4',
-        sector: 'Shelter',
-        indicator: 'Services included in rental payments',
-        year: '2018',
-        download_link: '/vasyr/files/shelter/SH4.xlsx'
+        id: "PR6",
+        sector: "Protection",
+        indicator: "% HHs who received an eviction notice and/or any other threat of removal in the last 6 months and legal residency",
+        year: "2018",
+        download_link: "/vasyr/files/protection/PR6.xlsx"
     },
     {
-        id: 'SH5',
-        sector: 'Shelter',
-        indicator: 'Types of rental agreements',
-        year: '2018',
-        download_link: '/vasyr/files/shelter/SH5.xlsx'
+        id: "PR7",
+        sector: "Protection",
+        indicator: " % HHs who received an eviction notice and/or any other threat of removal in the last 6 months and % expenditure on food",
+        year: "2018",
+        download_link: "/vasyr/files/protection/PR7.xlsx"
     },
     {
-        id: 'SH6',
-        sector: 'Shelter',
-        indicator: 'Reasons for selecting a place of residence',
-        year: '2018',
-        download_link: '/vasyr/files/shelter/SH6.xlsx'
+        id: "PR8",
+        sector: "Protection",
+        indicator: "% HHs that received an eviction notice or other threat of removal in the past 6 months with type of occupancy",
+        year: "2018",
+        download_link: "/vasyr/files/protection/PR8.xlsx"
     },
     {
-        id: 'SH7',
-        sector: 'Shelter',
-        indicator: 'Distribution of HHs among the three shelter categories',
-        year: '2018',
-        download_link: '/vasyr/files/shelter/SH7.xlsx'
+        id: "PR9",
+        sector: "Protection",
+        indicator: "% HHs that received an eviction notice or other threat of removal in the past 6 months with type of housing",
+        year: "2018",
+        download_link: "/vasyr/files/protection/PR9.xlsx"
     },
     {
-        id: 'SH8',
-        sector: 'Shelter',
-        indicator: 'Detailed conditions in surrounding setting, for those in an area with poor sanitation conditions',
-        year: '2018',
-        download_link: '/vasyr/files/shelter/SH8.xlsx'
+        id: "PR10",
+        sector: "Protection",
+        indicator: "% HHs that received an eviction notice or other threat of removal in the past 6 months and HHs adopting specific coping strategies",
+        year: "2018",
+        download_link: "/vasyr/files/protection/PR10.xlsx"
     },
     {
-        id: 'SH9',
-        sector: 'Shelter',
-        indicator: 'Density and overcrowding',
-        year: '2018',
-        download_link: '/vasyr/files/shelter/SH9.xlsx'
+        id: "PR11",
+        sector: "Protection",
+        indicator: "Average HH size that received an eviction notice or other threat of removal in the past 6 months",
+        year: "2018",
+        download_link: "/vasyr/files/protection/PR11.xlsx"
     },
     {
-        id: 'SH10',
-        sector: 'Shelter',
-        indicator: 'Period of rental agreement',
-        year: '2018',
-        download_link: '/vasyr/files/shelter/SH10.xlsx'
+        id: "SH1",
+        sector: "Shelter",
+        indicator: "% of households with sufficient access to essential household assets",
+        year: "2018",
+        download_link: "/vasyr/files/shelter/SH1.xlsx"
     },
     {
-        id: 'SH11',
-        sector: 'Shelter',
-        indicator: 'Monthly average and median Rental Cost in USD',
-        year: '2018',
-        download_link: '/vasyr/files/shelter/SH11.xlsx'
+        id: "SH2",
+        sector: "Shelter",
+        indicator: "Detailed conditions in surrounding setting, for those in an area with physical security threats",
+        year: "2018",
+        download_link: "/vasyr/files/shelter/SH2.xlsx"
     },
     {
-        id: 'SH12',
-        sector: 'Shelter',
-        indicator: 'Distribution of HHs among the different shelter types',
-        year: '2018',
-        download_link: '/vasyr/files/shelter/SH12.xlsx'
+        id: "SH3",
+        sector: "Shelter",
+        indicator: "% of households in different monthly rent categories",
+        year: "2018",
+        download_link: "/vasyr/files/shelter/SH3.xlsx"
     },
     {
-        id: 'SH13',
-        sector: 'Shelter',
-        indicator: 'Percentage of HHs sharing toilets/latrines',
-        year: '2018',
-        download_link: '/vasyr/files/shelter/SH13.xlsx'
+        id: "SH4",
+        sector: "Shelter",
+        indicator: "Services included in rental payments",
+        year: "2018",
+        download_link: "/vasyr/files/shelter/SH4.xlsx"
     },
     {
-        id: 'SH14',
-        sector: 'Shelter',
-        indicator: ' % HH that received an eviction notice or other threat of removal in the past 6 months',
-        year: '2018',
-        download_link: '/vasyr/files/shelter/SH14.xlsx'
+        id: "SH5",
+        sector: "Shelter",
+        indicator: "Types of rental agreements",
+        year: "2018",
+        download_link: "/vasyr/files/shelter/SH5.xlsx"
     },
     {
-        id: 'SH15',
-        sector: 'Shelter',
-        indicator: 'Source of eviction notice',
-        year: '2018',
-        download_link: '/vasyr/files/shelter/SH15.xlsx'
+        id: "SH6",
+        sector: "Shelter",
+        indicator: "Reasons for selecting a place of residence",
+        year: "2018",
+        download_link: "/vasyr/files/shelter/SH6.xlsx"
     },
     {
-        id: 'SH16',
-        sector: 'Shelter',
-        indicator: '% HH who had an incident with their current landlord in the past 6 months',
-        year: '2018',
-        download_link: '/vasyr/files/shelter/SH16.xlsx'
+        id: "SH7",
+        sector: "Shelter",
+        indicator: "Distribution of HHs among the three shelter categories",
+        year: "2018",
+        download_link: "/vasyr/files/shelter/SH7.xlsx"
     },
     {
-        id: 'SH17',
-        sector: 'Shelter',
-        indicator: 'Incidents with landlord in the past 6 months',
-        year: '2018',
-        download_link: '/vasyr/files/shelter/SH17.xlsx'
+        id: "SH8",
+        sector: "Shelter",
+        indicator: "Detailed conditions in surrounding setting, for those in an area with poor sanitation conditions",
+        year: "2018",
+        download_link: "/vasyr/files/shelter/SH8.xlsx"
     },
     {
-        id: 'SH18',
-        sector: 'Shelter',
-        indicator: ' % HH moved in the past 6 months',
-        year: '2018',
-        download_link: '/vasyr/files/shelter/SH18.xlsx'
+        id: "SH9",
+        sector: "Shelter",
+        indicator: "Density and overcrowding",
+        year: "2018",
+        download_link: "/vasyr/files/shelter/SH9.xlsx"
     },
     {
-        id: 'SH19',
-        sector: 'Shelter',
-        indicator: 'Reasons for changing accomodation in the past 6 months',
-        year: '2018',
-        download_link: '/vasyr/files/shelter/SH19.xlsx'
+        id: "SH10",
+        sector: "Shelter",
+        indicator: "Period of rental agreement",
+        year: "2018",
+        download_link: "/vasyr/files/shelter/SH10.xlsx"
     },
     {
-        id: 'SH20',
-        sector: 'Shelter',
-        indicator: 'Length of time living in current shelter',
-        year: '2018',
-        download_link: '/vasyr/files/shelter/SH20.xlsx'
+        id: "SH11",
+        sector: "Shelter",
+        indicator: "Monthly average and median Rental Cost in USD",
+        year: "2018",
+        download_link: "/vasyr/files/shelter/SH11.xlsx"
     },
     {
-        id: 'SH21',
-        sector: 'Shelter',
-        indicator: 'Type of previous shelter, for those who have moved in the past 6 months',
-        year: '2018',
-        download_link: '/vasyr/files/shelter/SH21.xlsx'
+        id: "SH12",
+        sector: "Shelter",
+        indicator: "Distribution of HHs among the different shelter types",
+        year: "2018",
+        download_link: "/vasyr/files/shelter/SH12.xlsx"
     },
     {
-        id: 'SH22',
-        sector: 'Shelter',
-        indicator: '% HH planning to move in the next 6 months',
-        year: '2018',
-        download_link: '/vasyr/files/shelter/SH22.xlsx'
+        id: "SH13",
+        sector: "Shelter",
+        indicator: "Percentage of HHs sharing toilets/latrines",
+        year: "2018",
+        download_link: "/vasyr/files/shelter/SH13.xlsx"
     },
     {
-        id: 'SH23',
-        sector: 'Shelter',
-        indicator: 'Reasons for planning to change accomodation, for those planning to move in the next 6 months',
-        year: '2018',
-        download_link: '/vasyr/files/shelter/SH23.xlsx'
+        id: "SH14",
+        sector: "Shelter",
+        indicator: " % HH that received an eviction notice or other threat of removal in the past 6 months",
+        year: "2018",
+        download_link: "/vasyr/files/shelter/SH14.xlsx"
     },
     {
-        id: 'SH24',
-        sector: 'Shelter',
-        indicator: 'Future type of accomodation, for those planning to move in the past 6 months',
-        year: '2018',
-        download_link: '/vasyr/files/shelter/SH24.xlsx'
+        id: "SH15",
+        sector: "Shelter",
+        indicator: "Source of eviction notice",
+        year: "2018",
+        download_link: "/vasyr/files/shelter/SH15.xlsx"
     },
     {
-        id: 'SH25',
-        sector: 'Shelter',
-        indicator: 'HHs who have been evicted during their stay in Lebanon',
-        year: '2018',
-        download_link: '/vasyr/files/shelter/SH25.xlsx'
+        id: "SH16",
+        sector: "Shelter",
+        indicator: "% HH who had an incident with their current landlord in the past 6 months",
+        year: "2018",
+        download_link: "/vasyr/files/shelter/SH16.xlsx"
     },
     {
-        id: 'SH26',
-        sector: 'Shelter',
-        indicator: 'Shelter conditions of HHs',
-        year: '2018',
-        download_link: '/vasyr/files/shelter/SH26.xlsx'
+        id: "SH17",
+        sector: "Shelter",
+        indicator: "Incidents with landlord in the past 6 months",
+        year: "2018",
+        download_link: "/vasyr/files/shelter/SH17.xlsx"
     },
     {
-        id: 'SH27',
-        sector: 'Shelter',
-        indicator: 'Type of occupancy',
-        year: '2018',
-        download_link: '/vasyr/files/shelter/SH27.xlsx'
+        id: "SH18",
+        sector: "Shelter",
+        indicator: " % HH moved in the past 6 months",
+        year: "2018",
+        download_link: "/vasyr/files/shelter/SH18.xlsx"
     },
     {
-        id: 'SH28',
-        sector: 'Shelter',
-        indicator: 'Conditions in surrounding setting',
-        year: '2018',
-        download_link: '/vasyr/files/shelter/SH28.xlsx'
+        id: "SH19",
+        sector: "Shelter",
+        indicator: "Reasons for changing accomodation in the past 6 months",
+        year: "2018",
+        download_link: "/vasyr/files/shelter/SH19.xlsx"
+    },
+    {
+        id: "SH20",
+        sector: "Shelter",
+        indicator: "Length of time living in current shelter",
+        year: "2018",
+        download_link: "/vasyr/files/shelter/SH20.xlsx"
+    },
+    {
+        id: "SH21",
+        sector: "Shelter",
+        indicator: "Type of previous shelter, for those who have moved in the past 6 months",
+        year: "2018",
+        download_link: "/vasyr/files/shelter/SH21.xlsx"
+    },
+    {
+        id: "SH22",
+        sector: "Shelter",
+        indicator: "% HH planning to move in the next 6 months",
+        year: "2018",
+        download_link: "/vasyr/files/shelter/SH22.xlsx"
+    },
+    {
+        id: "SH23",
+        sector: "Shelter",
+        indicator: "Reasons for planning to change accomodation, for those planning to move in the next 6 months",
+        year: "2018",
+        download_link: "/vasyr/files/shelter/SH23.xlsx"
+    },
+    {
+        id: "SH24",
+        sector: "Shelter",
+        indicator: "Future type of accomodation, for those planning to move in the past 6 months",
+        year: "2018",
+        download_link: "/vasyr/files/shelter/SH24.xlsx"
+    },
+    {
+        id: "SH25",
+        sector: "Shelter",
+        indicator: "HHs who have been evicted during their stay in Lebanon",
+        year: "2018",
+        download_link: "/vasyr/files/shelter/SH25.xlsx"
+    },
+    {
+        id: "SH26",
+        sector: "Shelter",
+        indicator: "Shelter conditions of HHs",
+        year: "2018",
+        download_link: "/vasyr/files/shelter/SH26.xlsx"
+    },
+    {
+        id: "SH27",
+        sector: "Shelter",
+        indicator: "Type of occupancy",
+        year: "2018",
+        download_link: "/vasyr/files/shelter/SH27.xlsx"
+    },
+    {
+        id: "SH28",
+        sector: "Shelter",
+        indicator: "Conditions in surrounding setting",
+        year: "2018",
+        download_link: "/vasyr/files/shelter/SH28.xlsx"
     },
     {
         id: "CH2019001",
@@ -2989,6 +3052,13 @@ const VAULT = [
         download_link: "/vasyr/files/food_security/2023-09-20 - IYCF 2023.sps"
     },
     {
+        id: "Nutrition-2025-Nutrition-XLSX",
+        sector: "Nutrition",
+        indicator: "Nutrition VASYR 2025",
+        year: "2025",
+        download_link: "/vasyr/files/food_security/2025_VASyR-Nutrition.xlsx"
+    },
+    {
         id: "HE2019001",
         sector: "Health",
         indicator: "% of households that required hospital health care assistance in the past 6 months",
@@ -3176,6 +3246,13 @@ const VAULT = [
         indicator: "Reasons for not receiving the required primary health care",
         year: "2019",
         download_link: "/vasyr/files/health/vault_Health_Primaryhealthcare.xlsx"
+    },
+    {
+        id: "Health-2025-HealthFinal-XLSX",
+        sector: "Health",
+        indicator: "Health",
+        year: "2025",
+        download_link: "/vasyr/files/health/Health 2025_Final.xlsx"
     },
     {
         id: "IY2019001",
@@ -3939,6 +4016,27 @@ const VAULT = [
         indicator: "% of individuals who have legal residency permits through courtesy",
         year: "2019",
         download_link: "/vasyr/files/protection/Protection_Legal_Residency.xlsx"
+    },
+    {
+        id: "Protection-2025-Tabulations-0810-XLSX",
+        sector: "Protection",
+        indicator: "Protection VASyR 2025 Tabulations (08-10-2025)",
+        year: "2025",
+        download_link: "/vasyr/files/protection/Protection VASyR 2025 tabulations_08102025.xlsx"
+    },
+    {
+        id: "Protection-2025-Tabulations-1006-XLSX",
+        sector: "Protection",
+        indicator: "Protection VASyR 2025 Tabulations (10-06-2025)",
+        year: "2025",
+        download_link: "/vasyr/files/protection/Protection VASyR 2025 tabulations_10062025.xlsx"
+    },
+    {
+        id: "Protection-2025-Tabulations-XLSX",
+        sector: "Protection",
+        indicator: "Protection VASyR 2025 Tabulations",
+        year: "2025",
+        download_link: "/vasyr/files/protection/Protection VASyR 2025 tabulations.xlsx"
     },
     {
         id: "SH2019001",
@@ -5138,6 +5236,13 @@ const VAULT = [
         download_link: "/vasyr/files/shelter/vault_shelter_Typeshelteroccupancy.xlsx"
     },
     {
+        id: "Shelter-2025-Findings-XLSX",
+        sector: "Shelter",
+        indicator: "Shelter VASYR 2025 Findings",
+        year: "2025",
+        download_link: "/vasyr/files/shelter/Shelter_VASYR2025 findings.xlsx"
+    },
+    {
         id: "ST2019001",
         sector: "Social transfers",
         indicator: "% children and adolescents under 18 living in households who received any kind of social transfers in the last 3 months",
@@ -5402,6 +5507,13 @@ const VAULT = [
         indicator: "WASH",
         year: "2023",
         download_link: "/vasyr/files/wash/WASH_23.sps"
+    },
+    {
+        id: "WASH-2025-WASH-XLSX",
+        sector: "WASH",
+        indicator: "WASH VASYR 2025",
+        year: "2025",
+        download_link: "/vasyr/files/wash/2025_VASyR-WASH.xlsx"
     },
     {
         id: "YO2019001",
@@ -7147,6 +7259,34 @@ const VAULT = [
         download_link: "/vasyr/files/economic_vulnerability/Vault_Econ_Vuln2_2020.xlsx"
     },
     {
+        id: "EconomicVulnerability-2025-Debt-XLSX",
+        sector: "Economic Vulnerability",
+        indicator: "Debt",
+        year: "2025",
+        download_link: "/vasyr/files/economic_vulnerability/Debt 2025.xlsx"
+    },
+    {
+        id: "EconomicVulnerability-2025-ExpenditureShares-XLSX",
+        sector: "Economic Vulnerability",
+        indicator: "Expenditure Shares",
+        year: "2025",
+        download_link: "/vasyr/files/economic_vulnerability/Expenditure shares 2025.xlsx"
+    },
+    {
+        id: "EconomicVulnerability-2025-Expenditures-XLSX",
+        sector: "Economic Vulnerability",
+        indicator: "Expenditures",
+        year: "2025",
+        download_link: "/vasyr/files/economic_vulnerability/Expenditures 2025.xlsx"
+    },
+    {
+        id: "EconomicVulnerability-2025-SMEB-XLSX",
+        sector: "Economic Vulnerability",
+        indicator: "SMEB",
+        year: "2025",
+        download_link: "/vasyr/files/economic_vulnerability/SMEB 2025.xlsx"
+    },
+    {
         id: "Fo2020001",
         sector: "Food Security",
         indicator: "Vitamin A Consumption: Never Consumed",
@@ -8455,6 +8595,13 @@ const VAULT = [
         year: "2023",
         download_link: "/vasyr/files/demographics/ADCS_23.sps"
     },
+    {
+        id: "Demographics-2025-Demographics-XLSX",
+        sector: "Demographics",
+        indicator: "Demographics",
+        year: "2025",
+        download_link: "/vasyr/files/demographics/Demographics 2025_Final.xlsx"
+    },
     { 
         id: "Disability-100031", 
         sector: "Disability", 
@@ -9400,6 +9547,34 @@ const VAULT = [
         year: "2022", 
         download_link: "/vasyr/files/vasyr_vault_2022/Livelihoods3_b_Final_2022.xlsx"
     },
+    {
+        id: "Livelihoods-2025-Employment-XLSX",
+        sector: "Livelihoods",
+        indicator: "Employment",
+        year: "2025",
+        download_link: "/vasyr/files/livelihoods/Employment 2025.xlsx"
+    },
+    {
+        id: "Livelihoods-2025-Income-XLSX",
+        sector: "Livelihoods",
+        indicator: "Income",
+        year: "2025",
+        download_link: "/vasyr/files/livelihoods/Income 2025.xlsx"
+    },
+    {
+        id: "Livelihoods-2025-MainIncome-XLSX",
+        sector: "Livelihoods",
+        indicator: "Main Source of Income",
+        year: "2025",
+        download_link: "/vasyr/files/livelihoods/Main source of income 2025.xlsx"
+    },
+    {
+        id: "Livelihoods-2025-ThreeIncomeSources-XLSX",
+        sector: "Livelihoods",
+        indicator: "Three Main Income Sources",
+        year: "2025",
+        download_link: "/vasyr/files/livelihoods/three main income sources 2025.xlsx"
+    },
     { 
         id: "rci-110001", 
         sector: "rci", 
@@ -10177,7 +10352,7 @@ const VAULT = [
     { 
         id: "Accountability to Affected population-130061", 
         sector: "Accountability to Affected population", 
-        indicator: "Challenges in lodging complaints'.", 
+        indicator: "Challenges in lodging complaints.", 
         year: "2022", 
         download_link: "/vasyr/files/vasyr_vault_2022/Protection VASyR 2022 VAULT.xlsx"
 
@@ -10185,7 +10360,7 @@ const VAULT = [
     { 
         id: "Accountability to Affected population-130062", 
         sector: "Accountability to Affected population", 
-        indicator: "Preference to give feedback or complaint'.", 
+        indicator: "Preference to give feedback or complaint.", 
         year: "2022", 
         download_link: "/vasyr/files/vasyr_vault_2022/Protection VASyR 2022 VAULT.xlsx"
 
@@ -10193,7 +10368,7 @@ const VAULT = [
     { 
         id: "Accountability to Affected population-130063", 
         sector: "Accountability to Affected population", 
-        indicator: "Preference to receive information'.", 
+        indicator: "Preference to receive information.", 
         year: "2022", 
         download_link: "/vasyr/files/vasyr_vault_2022/Protection VASyR 2022 VAULT.xlsx"
 
