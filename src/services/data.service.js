@@ -16,11 +16,12 @@ export default class DataService {
         '2019': '/vasyr/files/vasyr_reports/VASyR 2019 digital version.pdf',
         '2020': '/vasyr/files/vasyr_reports/VASyR 2020.pdf',
         '2021': '/vasyr/files/vasyr_reports/VASyR 2021.pdf',
-        '2022': '/vasyr/files/vasyr_reports/VASyR 2022.pdf'
-    };
-
-    vasyrPresentationsDownloadLinks = {
-        '2022': '/vasyr/files/vasyr_presentations/VASyR_presentation_2022.pptx'
+        '2022': '/vasyr/files/vasyr_reports/VASyR 2022.pdf',
+        '2022-presentation': '/vasyr/files/vasyr_presentations/VASyR_presentation_2022.pptx',
+        '2024-dashboard': '/vasyr/files/vasyr_reports/vasyr-2024-dashboard.pdf',
+        '2024-summary': '/vasyr/files/vasyr_reports/vasyr-2024-executive-summary.pdf',
+        '2025-dashboard': '/vasyr/files/vasyr_reports/vasyr-2025-dashboard.pdf',
+        '2025-summary': '/vasyr/files/vasyr_reports/vasyr-2025-executive-summary.pdf'
     };
 
     chaptersData = Chapters.CHAPTERS;
@@ -45,7 +46,7 @@ export default class DataService {
     homeIntro = {
         'part_1': `The Vulnerability Assessment of Syrian Refugees in Lebanon (VASyR) analyzes a representative sample 
                    of Syrian refugee households in Lebanon to provide a multi-sectoral update of the situation of this 
-                   population. Conducted annually, 2021 marks the ninth year of this assessment. The contents of this 
+                   population. Conducted annually, 2025 marks the thirteenth year of this assessment. The contents of this 
                    report, jointly issued by the United Nations High Commissioner for Refugees (UNHCR), 
                    the United Nations Children’s Fund (UNICEF), and the United Nations World Food Programme (WFP), 
                    show that the situation of Syrian refugees continues to worsen as Lebanon faces a compounded 
@@ -64,12 +65,14 @@ export default class DataService {
         return this.homeIntro;
     }
 
-    getVasyrDownloadLink(year) {
-        return this.vasyrDownloadLinks[year];
-    }
+    getVasyrDownloadLink(year, type) {
+        let key = year;
+        
+        if (type) {
+            key = `${year}-${type}`;
+        }
 
-    getVasyrPresentationLink(year) {
-        return this.vasyrPresentationsDownloadLinks[year];
+        return this.vasyrDownloadLinks[key];
     }
 
     getRoadMapData() {

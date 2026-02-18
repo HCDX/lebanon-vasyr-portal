@@ -8,7 +8,7 @@
     <div class="row chapters-main-container contained" style="margin: 0;" flex>
       <div v-for="(chapter, index) in chapters" v-bind:key="index" class="col col-md-6 col-lg-4 col-12 chapter">
         <div class="chapter-image top" v-if="(chapter.textPosition === 'bottom')">
-          <img alt="Chapter Image" :src="require('@/assets/' + chapter.image_url)"/>
+          <img alt="Chapter Image" :src="getImageUrl(chapter.image_url)"/>
         </div>
         <div class="chapter-info">
           <div class="title">
@@ -19,8 +19,8 @@
           </div>
           <div class="buttons">
             <div class="dropdown">
-                <div class="row" style="margin: 0; width: 100%;">
-                  <div class="col col-4" style="padding: 1px;" v-for="(version, index) in chapter.versions" v-bind:key="index">
+                <div class="row justify-content-center" style="margin: 0; width: 100%;">
+                  <div class="col-auto" style="padding: 1px;" v-for="(version, index) in chapter.versions" v-bind:key="index">
                     <a v-on:click="trackDownload(chapter, version.year)" class="dropdown-item button-custom" :href="version.download_url" target="_blank" download>{{version.year}}</a>
                   </div>
                 </div>
@@ -28,7 +28,7 @@
           </div>
         </div>
         <div class="chapter-image bottom" v-if="(chapter.textPosition === 'top')">
-          <img alt="Chapter Image" :src="require('@/assets/' + chapter.image_url)"/>
+          <img alt="Chapter Image" :src="getImageUrl(chapter.image_url)"/>
         </div>
       </div>
     </div>
@@ -36,9 +36,14 @@
 </template>
 <script>
 import DataService from '@/services/data.service';
+import { useAssets } from '@/composables/useAssets';
 
 export default {
   name: 'chapters',
+  setup() {
+    const { getImageUrl } = useAssets();
+    return { getImageUrl };
+  },
   data: () => ({
     dataService: new DataService(),
     chapters: []
@@ -66,13 +71,15 @@ export default {
 }
 
 .btn-info {
-  background-color: transparent !important;
-  border-color: white !important;
+  background-color: var(--var-theme-button-info) !important;
+  border-color: var(--var-theme-button-info) !important;
+  color: var(--var-theme-button-info-text) !important;
 }
 
 .btn-info:hover {
-  background-color: transparent !important;
+  background-color: var(--var-theme-button-info-hover) !important;
   border-color: var(--var-theme-button-info-hover) !important;
+  color: var(--var-theme-button-info-hover-text) !important;
 }
 
 .dropdown {
@@ -114,7 +121,7 @@ export default {
     margin: 1px !important;
     clear: both;
     font-weight: 400;
-    color: white;
+    color: var(--var-theme-button-info-text) !important;
     text-align: inherit;
     white-space: nowrap;
     background-color: var(--var-theme-button-info);
@@ -122,7 +129,7 @@ export default {
 }
 
 .dropdown-item:focus, .dropdown-item:hover {
-    color: white;
+    color: var(--var-theme-button-info-hover-text) !important;
     text-decoration: none;
     background-color:var(--var-theme-button-info-hover);
 }

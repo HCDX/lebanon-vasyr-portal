@@ -5,18 +5,18 @@
       <div class="logos-container">
         <div class="logos-row">
           <div class="organization-logo">
-            <img alt="vasyr logo" :src="require('@/assets/logos/Interagency-logo.png')">
+            <img alt="vasyr logo" :src="interagencyLogo">
           </div>
           <div class="organization-logo">
-            <img alt="vasyr logo" :src="require('@/assets/logos/unhcr-logo.png')">
+            <img alt="vasyr logo" :src="unhcrLogo">
           </div>
         </div>
         <div class="logos-row">
           <div class="organization-logo">
-            <img alt="vasyr logo" :src="require('@/assets/logos/wfp-logo.png')">
+            <img alt="vasyr logo" :src="wfpLogo">
           </div>
           <div class="organization-logo">
-            <img alt="vasyr logo" class="smaller" :src="require('@/assets/logos/unicef-logo.png')">
+            <img alt="vasyr logo" class="smaller" :src="unicefLogo">
           </div>
         </div>
       </div>
@@ -32,8 +32,11 @@
         </div>
       </div>
       <div class="download-button">
-        <a v-on:click="trackDownload()" :href="this.vasyrDownloadLink2022" v-bind:year="this.vasyrDownloadLink2022" target="_blank" class="btn btn-info-main" style="font-weight: bold;" download>
-          DOWNLOAD VASyR 2022
+        <a v-on:click="trackDownload()" :href="this.vasyrDownloadDashboard" v-bind:year="this.vasyrDownloadDashboard" target="_blank" class="btn btn-info-main" style="font-weight: bold;" download>
+          VASyR {{currentYear}} Dashboard
+        </a>
+        <a v-on:click="trackDownload()" :href="this.vasyrDownloadSummary" v-bind:year="this.vasyrDownloadSummary" target="_blank" class="btn btn-info-main" style="font-weight: bold;" download>
+          Executive Summary {{currentYear}}
         </a>
       </div>
     </div>
@@ -42,6 +45,10 @@
 <script>
 import DataService from '@/services/data.service';
 import helpers from '@/helpers/helpers';
+import interagencyLogo from '@/assets/logos/Interagency-logo.png';
+import unhcrLogo from '@/assets/logos/unhcr-logo.png';
+import wfpLogo from '@/assets/logos/wfp-logo.png';
+import unicefLogo from '@/assets/logos/unicef-logo.png';
 
 export default {
   name: 'main-sec',
@@ -49,14 +56,21 @@ export default {
     dataService: new DataService(),
     logos: [],
     introduction: '',
-    vasyrDownloadLink2022: '',
-    vasyrPresentationDownloadLink2022: ''
+    vasyrDownloadDashboard: '',
+    vasyrDownloadSummary: '',
+    vasyrPresentationDownloadLink2022: '',
+    interagencyLogo,
+    unhcrLogo,
+    wfpLogo,
+    unicefLogo,
+    currentYear: '2025'
   }),
   mounted() {
     this.$gtag.event('site_visit');
     this.introduction = this.dataService.getHomeIntro();
-    this.vasyrDownloadLink2022 = this.dataService.getVasyrDownloadLink('2022');
-    // this.vasyrPresentationDownloadLink2022 = this.dataService.getVasyrPresentationLink('2022');
+    this.vasyrDownloadDashboard = this.dataService.getVasyrDownloadLink('2025', 'dashboard');
+    this.vasyrDownloadSummary = this.dataService.getVasyrDownloadLink('2025', 'summary');
+
     let main = document.getElementById("main");
 
     if(!helpers.isMobile.any()) {
@@ -69,11 +83,8 @@ export default {
   methods: {
     trackDownload() {
       this.$gtag.event('file_download_clicked', {
-        file_name: 'Vasyr Full Report 2021'
+        file_name: 'VASyR 2024 Dashboard.pdf',
       });
-    },
-    getImgUrl(img) {
-      return require(img);
     },
     mouseMove(element) {
       var home = document.getElementById("main");
@@ -91,12 +102,12 @@ export default {
       let imageY = startImgPosition + (mouseY/h)*10;
       home.style["background-position"] = imageX + "% " + imageY + "%";
     },
-    mouseEnter(element) {
+    mouseEnter() {
       setTimeout(function() {
         this.main.classList.remove('main-transition');
       }, 150);
     },
-    mouseLeave(element) {
+    mouseLeave() {
       setTimeout(function() {
         this.main.classList.add('main-transition');
       }, 150);

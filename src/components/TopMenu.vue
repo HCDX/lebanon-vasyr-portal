@@ -161,10 +161,10 @@ export default {
 
       return elementEndPosition;
     },
-  	updateScroll() {
+    updateScroll() {
       if(window.scrollY > 0)
-  		this.currentScrollPosition = window.scrollY;
-  	}
+      this.currentScrollPosition = window.scrollY;
+    }
   }
 }
 </script>
@@ -189,6 +189,7 @@ export default {
   height: 75px;
   /*background-color: var(--var-theme-background);*/
   font-family: 'Montserrat-Bold' !important;
+  border-bottom: 1px solid #547d7a;
 }
 
 .menu-container li a {
@@ -229,7 +230,7 @@ li.is-active {
 }
 
 .darken_menu {
-  background-color: #0c0a0a;
+  background-color: #547d7a;
 }
 
 @media screen and (max-width: 804px)  {

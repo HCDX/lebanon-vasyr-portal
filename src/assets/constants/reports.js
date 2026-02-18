@@ -1,5 +1,17 @@
 const REPORTS = [
     {
+        title: 'VASyR 2024',
+        year: '2024',
+        image_url: '/images/reports/vasyr-2024.jpg',
+        download_url: '/vasyr/files/vasyr_reports/vasyr-2024-executive-summary.pdf'
+    },
+    {
+        title: 'VASyR 2023',
+        year: '2023',
+        image_url: '/images/reports/vasyr-2023.jpg',
+        download_url: '/vasyr/files/vasyr_reports/VASyR 2023.pdf'
+    },
+    {
         title: 'VASyR 2022',
         year: '2022',
         image_url: '/images/reports/vasyr-2022.jpg',

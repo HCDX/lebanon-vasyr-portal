@@ -15,7 +15,7 @@
             </div>
           </div>
           <div class="report-image">
-            <img alt="report Image" :src="require('@/assets' + report.image_url)"/>
+            <img alt="report Image" :src="getImageUrl(report.image_url)"/>
           </div>
         </div>
       </div>
@@ -25,9 +25,14 @@
 <script>
 	import DataService from '@/services/data.service';
   import helpers from '@/helpers/helpers';
-  
+  import { useAssets } from '@/composables/useAssets';
+
 	export default {
 		name: 'reports',
+    setup() {
+      const { getImageUrl } = useAssets();
+      return { getImageUrl };
+    },
 		data: () => ({
 			dataService: new DataService(),
 			reports: []
