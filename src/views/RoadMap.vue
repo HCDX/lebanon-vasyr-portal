@@ -11,11 +11,11 @@
 					</div>
 					<div class="title-container">
 						<div class="info-icon" v-if="group.scrollLocation" v-on:click="scrollTo(group.scrollLocation)">
-							<img alt="Icon" :src="require('@/assets' + group.icon)"/>
+							<img alt="Icon" :src="getImageUrl(group.icon)"/>
 						</div>
 						<div class="info-icon" v-if="group.url" >
 							<a :href="group.url" target="_blank">
-								<img alt="Icon" :src="require('@/assets' + group.icon)"/>
+								<img alt="Icon" :src="getImageUrl(group.icon)"/>
 							</a>
 						</div>
 						<div class="title">
@@ -36,9 +36,14 @@
 <script>
 	import DataService from '@/services/data.service';
   import helper from '@/helpers/helpers';
+  import { useAssets } from '@/composables/useAssets';
 
 	export default {
 		name: 'road-map',
+    setup() {
+      const { getImageUrl } = useAssets();
+      return { getImageUrl };
+    },
 		data: () => ({
 			dataService: new DataService(),
 			roadMapData: []

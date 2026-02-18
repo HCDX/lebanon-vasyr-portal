@@ -56,6 +56,11 @@ const CHAPTERS = [
                     'year': '2022',
                     'download_url': '/vasyr/files/vasyr_chapters/2022/VASyR 2022 - Executive Summary.pdf',
                     'knowledge_hub_url': ''
+                },
+                {
+                    'year': '2023',
+                    'download_url': '/vasyr/files/vasyr_chapters/2023/PR_VASyR 2023 - Executive Summary_PR.pdf',
+                    'knowledge_hub_url': ''
                 }
             ],
             // download_url: '/vasyr/files/vasyr_chapters/0 VASyR 2019 Executive Summary.pdf',
@@ -106,6 +111,11 @@ const CHAPTERS = [
                 {
                     'year': '2022',
                     'download_url': '/vasyr/files/vasyr_chapters/2022/VASyR 2022 - Methodology.pdf',
+                    'knowledge_hub_url': ''
+                },
+                {
+                    'year': '2023',
+                    'download_url': '/vasyr/files/vasyr_chapters/2022/PR_VASyR 2023 - Methodology.pdf',
                     'knowledge_hub_url': ''
                 }
             ],

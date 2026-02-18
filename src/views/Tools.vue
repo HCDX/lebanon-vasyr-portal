@@ -10,8 +10,8 @@
         <div v-for="(tool, index) in tools" v-bind:key="index" class="col col-md-3 col-12">
           <div class="tool-container">
             <div class="tool-icon" data-toggle="tooltip" data-html="true" v-tooltip:top="tool.description">
-              <a v-if="tool.url" :href="tool.url" target="_blank"><img alt="Tool Icon" :src="require('@/assets' + tool.icon)"/></a>
-              <a v-if="tool.download_url" :href="tool.download_url" target="_blank" download><img alt="Tool Icon" :src="require('@/assets' + tool.icon)"/></a>
+              <a v-if="tool.url" :href="tool.url" target="_blank"><img alt="Tool Icon" :src="getImageUrl(tool.icon)"/></a>
+              <a v-if="tool.download_url" :href="tool.download_url" target="_blank" download><img alt="Tool Icon" :src="getImageUrl(tool.icon)"/></a>
             </div>
             <div class="tool-title">
               {{tool.title}}
@@ -26,9 +26,14 @@
 <script>
 	import DataService from '@/services/data.service';
   import TrainingDialog from '@/components/TrainingTable.vue';
+  import { useAssets } from '@/composables/useAssets';
 
 	export default {
 		name: 'tools',
+    setup() {
+      const { getImageUrl } = useAssets();
+      return { getImageUrl };
+    },
 		data: () => ({
 			dataService: new DataService(),
 			tools: []

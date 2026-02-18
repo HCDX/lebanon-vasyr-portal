@@ -9,7 +9,7 @@
       <div v-for="(map, index) in maps" v-bind:key="index" class="col col-12" style="color: white;">
         <div class="map-container">
           <div class="map-image" data-toggle="tooltip" data-html="true" v-tooltip:top="map.description">
-            <a :href="map.url" target="_blank"><img alt="Map Image" :src="require('@/assets' + map.image)"/></a>
+            <a :href="map.url" target="_blank"><img alt="Map Image" :src="getImageUrl(map.image)"/></a>
           </div>
           <div class="map-title">
             {{map.title}}
@@ -21,9 +21,14 @@
 </template>
 <script>
 	import DataService from '@/services/data.service';
+  import { useAssets } from '@/composables/useAssets';
 
 	export default {
 		name: 'maps',
+    setup() {
+      const { getImageUrl } = useAssets();
+      return { getImageUrl };
+    },
 		data: () => ({
 			dataService: new DataService(),
 			maps: []

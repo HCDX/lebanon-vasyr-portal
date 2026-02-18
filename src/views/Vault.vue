@@ -73,6 +73,7 @@
       currentSort: 'id',
       sortDirection: 'asc',
       searchText: '',
+      debouncedSearchText: '',
       previousSearch: '',
       page: 1,
       numberOfPages: '',
@@ -90,71 +91,66 @@
         .join('')
 				.toLowerCase()
         .replace(/\s/g, '');
-        
+
         return data;
       });
+
+      // Initial sort by year
+      this.sortCategory('year');
+      this.sortData('year');
+    },
+    watch: {
+      searchText: _.debounce(function(newVal) {
+        this.debouncedSearchText = newVal;
+      }, 500)
     },
     computed: {
-      filteredVaultData: {
-        get() {
+      filteredVaultData() {
+        let searchTextDecapitalized = this.debouncedSearchText.toLowerCase();
+        let searchingFor = searchTextDecapitalized.split(' ');
+        var list = null;
 
-          let searchTextDecapitalized = this.searchText.toLowerCase();
-          let searchingFor = searchTextDecapitalized.split(' ');
-          var list = null;
+        if(searchingFor.length > 1) {
+          searchingFor = searchingFor.filter(function(item) {
+            return item !== "";
+          })
+        }
 
-          if(searchingFor.length > 1) {
-            searchingFor = searchingFor.filter(function(item) {
-              return item !== "";
-            })
-          }
-  
-          if(this.searchText != this.previousSearch) {
-            this.page = 1;
-            this.previousSearch = this.searchText;
-          }
+        if(this.debouncedSearchText !== this.previousSearch) {
+          this.page = 1;
+          this.previousSearch = this.debouncedSearchText;
+        }
 
-          if (searchingFor.length) {
-            this.sortCategory('year');
-            this.sortData('year');
+        if (searchingFor.length && searchTextDecapitalized) {
+          list = this.vaultData.filter(function(p) {
+            let data = p;
+            let allFound = true;
 
-            list = this.vaultData.filter(function(p) {
-              // return p.searchable.indexOf(searchingFor) > -1;
-              let data = p;
-
-              let allFound = true;
-
-              let list = searchingFor.filter(function(searchTerm) {
-                if(data.searchable.indexOf(searchTerm) == -1 ) {
-                  allFound = false;
-                }
-
-                return data.searchable.indexOf(searchTerm) > -1;
-              })
-  
-              if(list.length > 0 && allFound) {
-                return list;
+            let list = searchingFor.filter(function(searchTerm) {
+              if(data.searchable.indexOf(searchTerm) === -1 ) {
+                allFound = false;
               }
-            });
 
-            let paginatedData = helper.paginate(list, this.page);
-            this.numberOfPages = paginatedData.total_pages;
-            this.pagesToShow = paginatedData.pages_to_show;
-            return paginatedData.data;
-          } else {
-            this.sortCategory('year');
-            this.sortData('year');
+              return data.searchable.indexOf(searchTerm) > -1;
+            })
 
-            list = this.vaultData;
-            let paginatedData = helper.paginate(list, this.page);
-            this.numberOfPages = paginatedData.total_pages;
-            this.pagesToShow = paginatedData.pages_to_show;
-            return paginatedData.data;
-          }
-        },
-        set: _.debounce(function(newVal) {
-          this.searchText = newVal;
-        }, 500)
-      },
+            if(list.length > 0 && allFound) {
+              return list;
+            }
+          });
+
+          let paginatedData = helper.paginate(list, this.page);
+          this.numberOfPages = paginatedData.total_pages;
+          this.pagesToShow = paginatedData.pages_to_show;
+          return paginatedData.data;
+        } else {
+          list = this.vaultData;
+          let paginatedData = helper.paginate(list, this.page);
+          this.numberOfPages = paginatedData.total_pages;
+          this.pagesToShow = paginatedData.pages_to_show;
+          return paginatedData.data;
+        }
+      }
     },
     methods: {
       sortCategory(category) {
